@@ -67,22 +67,57 @@
 	</div>
 		<!-- <body> -->
 <form>
-					<div class="col-sm-12">
-						<div class="row">
-							<div class="col-sm-6 form-group">
-								<label>Program Name:</label>
-								<input type="text" placeholder="Enter First Name Here.." class="form-control">
-							</div>
-						</div>					
-						<div class="form-group">
-							<label>Course Name: </label>
-							<textarea placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
-						</div>	
-						<div class="row">
-					<div style = "padding-bottom:20px; padding-left:20px;">
-					<button type="button" class="btn btn-lg btn-info">Submit</button>
-						</div>		
-					</div>
-					</div>
-					
-				</form> 
+<div class ="container">
+	<div class="jumbotron text-left">
+		<div class="row">
+			<label>Program Name:</label>
+			<input type="text" placeholder="Enter Program Name Here" class="form-control">
+		</div>				
+		<br/>
+		<div class="row">
+		<label>Date: </label>
+		</ul>
+		<div class="containerA">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+</div>
+</div>
+		<div class="row">
+		<label>Course Name: </label>
+		
+		<br/>
+		
+		<select>
+		<option value="volvo">Choose Course</option>
+		<option value="volvo">A</option>
+		<option value="saab">B</option>
+		<option value="opel">C</option>
+		<option value="audi">D</option>
+		</select>
+
+		</div>
+		
+		<br/>
+		<div class="row">
+		<a href="addProgramsResult.html" class="btn btn-lg btn-info"> Submit </a>
+		</div>
+	
+	</div>
+</div>
+
+</form>
