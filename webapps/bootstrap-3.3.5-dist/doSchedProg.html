@@ -58,12 +58,57 @@
 		</div>
 	</div>
 
-	<!-- body -->
-	<div class="container">
-		<div class="jumbotron text-center">
-			<h2>Congratulations! :)</h2>
-			<p>This program has been added successfully!</p>
+	<!-- <body> -->
+	<form>
+		<div class="container">
+			<div class="jumbotron text-left">
+				<div class="row">
+					<label>Program Name:</label> <input type="text"
+						placeholder="Selected Program" class="form-control">
+				</div>
+				<br />
+				<div class="row">
+					<label>Course Name: </label> <br /> <select>
+						<option value="volvo">Choose Course</option>
+						<option value="volvo">A</option>
+						<option value="saab">B</option>
+						<option value="opel">C</option>
+						<option value="audi">D</option>
+					</select>
+				</div>
+				<br />
+				<div class="row">
+					<label>Date: </label>
+					</ul>
+					<div class="containerA">
+						<div class="row">
+							<div class='col-sm-6'>
+								<div class="form-group">
+									<div class='input-group date' id='datetimepicker1'>
+										<input type='text' class="form-control" /> <span
+											class="input-group-addon"> <span
+											class="glyphicon glyphicon-calendar"></span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+						</div>
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<a href="addProgramsResult.html" class="btn btn-lg btn-info">
+						Submit </a>
+				</div>
+
+			</div>
 		</div>
-	</div>
+
+	</form>
 </body>
 </html>
