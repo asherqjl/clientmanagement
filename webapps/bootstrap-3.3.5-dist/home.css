@@ -27,7 +27,6 @@ max-height:100%;
 
 .row{
 	padding-left:10px;
-	
 }
 
 .sidebar {
@@ -76,11 +75,27 @@ max-height:100%;
     margin-top: 100px;
 }
 
+/*  Manage Programs.html CSS */
+
 table, th, td {
-	border: 1px solid
-	black;
+	border: 1px solid black;
 }
 
 th, td{
 	padding: 15px;
 }
+
+tr {
+	text-align:center;
+}
+
+.tablepadding{
+	padding-left:50px;
+	padding-right: 50px;
+	text-align: center;
+}
+
+.sub-header{
+	padding-left:50px;
+}
+/* End of Manage Programs.html CSS */
