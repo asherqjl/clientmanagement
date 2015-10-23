@@ -1,176 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>I'MPOSSIBLE</title>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="home.css"rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!--  JQuery Link -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!--  End of JQuery Link -->
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>I'MPOSSIBLE</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="home.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  
-  <body>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-	     <div class="container">
-		     <div class="navbar-header">
-			     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                     <span class="sr-only">Toggle navigation</span>
-				     <span class="icon-bar"></span>
-				     <span class="icon-bar"></span>
-				     <span class="icon-bar"></span>
-				 </button>
-				 <a class="navbar-brand" href="#">
-				 <img id="brand-image" alt="Website logo" src="brandimage.PNG" /></a>
-				  <a class="navbar-brand" href="index.html">I'MPOSSIBLE</a>
-			 </div>
-			 
-			 <div class="navbar-collapse collapse">
-				     <ul class="nav navbar-nav navbar-right">
-				     <li><a href="index.html">Home</a></li>
-					 <li><a href="about.html">About</a></li>
-					 <li class="dropdown">
-					     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses & Programs<b class=caret></b></a>     
-					 <ul class="dropdown-menu">
-					     <li class="dropdown-header">Courses</li>
-						 <li><a href="#">All Courses</a></li>
-						 <li class="active"><li><a href="#">Courses Available Now</a></li>
-						 <li class="divider"></li>
-						 <li class="dropdown-header">Programs</li>
-						 <li><a href="ViewPrograms.html">All Programs</a></li>
-						 <li><a href="ViewPrograms.html">Programs Available Now</a></li>
-						 </ul>
-					 </li>
-					 <li><a href="ContactUs.html">Contact Us</a></li>
+</head>
 
-					 <li><input type="text" class="form-control" name="username" value="" placeholder="Username"></li>
-					 <li><input type="text" class="form-control" name="passsword" value="" placeholder="Password" ></li>
-					 <li><button type="submit" class="btn btn-success" style = "margin-top: 8px; margin-left:5px"><a href = href = "login.html"></a>Sign in</button></li>
-					 </ul>
-		     </div>
-	
-	    </div>
-	    </div>
-	    
-<div class="container" style = "margin-bottom: 50px" >
-    <div class="row">
-        <div class="col-md-12">
-            <div class="well well-sm">
-                <form class="form-horizontal" method="post">
-                    <fieldset>
-                        <legend class="text-center"><h3>Registration</h3></legend>
-                        <h3> Parent </h3>
-                        <div class="form-group">
-                            <div class="col-md-2 col-md-offset-1">
-                            <h4>First Name: </h4>
-                            <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <div class="col-md-2 col-md-offset-1">
-                            <h4>Last Name: </h4>
-                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
-                            </div>
-                        </div>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"> <img id="brand-image"
+					alt="Website logo" src="brandimage.PNG" /></a> <a class="navbar-brand"
+					href="index.html">I'MPOSSIBLE</a>
+			</div>
 
-                        <div class="form-group">
-                            <div class="col-md-2">
-                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                            </div>
-                        </div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Courses & Programs<b class=caret></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Courses</li>
+							<li><a href="#">All Courses</a></li>
+							<li class="active">
+							<li><a href="#">Courses Available Now</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Programs</li>
+							<li><a href="ViewPrograms.html">All Programs</a></li>
+							<li><a href="ViewPrograms.html">Programs Available Now</a></li>
+						</ul></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
 
-                        <div class="form-group">
-                            <div class="col-md-2 col-md-offset-0.5">
-                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                            </div>
-                        </div>
+					<li><input type="text" class="form-control" name="username"
+						value="" placeholder="Username"></li>
+					<li><input type="text" class="form-control" name="passsword"
+						value="" placeholder="Password"></li>
+					<li><button type="submit" class="btn btn-success"
+							style="margin-top: 8px; margin-left: 5px">
+							<a href="login.html"></a>Sign in
+						</button></li>
+				</ul>
+			</div>
 
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-1">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message for us here. We will get back to you within 2 business days." rows="7"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-2 col-md-offset-1">
-                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                            </div>
-                        </div>
-                        
-                        <h3> Child </h3>
-                        <div class="form-group">
-                            <div class="col-md-2 col-md-offset-1">
-                            <h4>First Name: </h4>
-                            <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <div class="col-md-2 col-md-offset-1">
-                            <h4>Last Name: </h4>
-                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-2">
-                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-2 col-md-offset-0.5">
-                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-1">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message for us here. We will get back to you within 2 business days." rows="7"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-2 col-md-offset-1">
-                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-        </div>	    
-	    </div>
-	    </div>
-	    
-	    
-	    <!-- <footer> -->
-	 <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-	    <div class="container">
-		     <div class="navbar-text pull-left">
-			     <p>&#169;COPYRIGHT 2015 I'MPOSSIBLE</p>
-	
-	         </div>
-			 <div class="navbar-text pull-right">
-			     <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-				 <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
-				 <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-			 </div>
-        </div>
+		</div>
 	</div>
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<h1 style="text-align: center;"> Registration Page </h1>
+	<div class="container" style="margin-bottom: 50px">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="well well-sm">
+					<form class="form-horizontal" method="post">
+						<fieldset>
+							<legend class="text-center header">Parent</legend>
+							<div class="form-group">
+								<div class="col-md-5 col-md-offset-1">
+									Full Name: <input id="name" name="fullname"
+										type="text" placeholder="Name" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									Contact Number:<input id="phonenumber" name="phone" type="tel"
+										placeholder="Mobile Number" class="form-control">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									Email Address : <input id="email" name="email" type="email"
+										placeholder="Email Address" class="form-control">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									Additional Message: <textarea class="form-control" id="message" name="message"
+										placeholder="Enter your message for us here."
+										rows="7"></textarea>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									Do you want to Register Counselling for your child? :
+										<form>
+										<br>
+										<input type="radio" name="sex" value="male" checked>Yes (Please fill up the registration form for the child as well.)
+										<br>
+										<input type="radio" name="sex" value="female">No (Please click on submit.)
+										</form>
+								</div>
+							</div>
+					</form>
+				</div>
+			</div>
+
+			<div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Show Popup Form</a>
+
+    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+      <form method="post" action="demoform.asp">
+        <div>
+          <h3>Login information</h3>
+          <label for="usrnm" class="ui-hidden-accessible">Username:</label>
+          <input type="text" name="user" id="usrnm" placeholder="Username">
+          <label for="pswd" class="ui-hidden-accessible">Password:</label>
+          <input type="password" name="passw" id="pswd" placeholder="Password">
+          <label for="log">Keep me logged in</label>
+          <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+          <input type="submit" data-inline="true" value="Log in">
+        </div>
+      </form>
+    </div>
+  </div>
+	<div class="container" style="margin-bottom: 50px">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="well well-sm">
+					<form class="form-horizontal" method="post">
+						<fieldset>
+							<legend class="text-center header">Child
+							<br><i style = "font: 20px"> Please fill up this form as well if your child needs any Counselling. </i></legend>
+							
+							<div class="form-group">
+								<div class="col-md-5 col-md-offset-1">
+									Full Name: <input id="name" name="fullname"
+										type="text" placeholder="Name" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									Contact Number:<input id="phonenumber" name="phone" type="text"
+										placeholder="Mobile Number" class="form-control">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									Email Address : <input id="email" name="email" type="text"
+										placeholder="Email Address" class="form-control">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									Additional Message: <textarea class="form-control" id="message" name="message"
+										placeholder="Enter your message for us here."
+										rows="7"></textarea>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-12 text-center">
+									<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+
+	<!-- <footer> -->
+	<div class="navbar navbar-inverse navbar-fixed-bottom"
+		role="navigation">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>&#169;COPYRIGHT 2015 I'MPOSSIBLE</p>
+
+			</div>
+			<div class="navbar-text pull-right">
+				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
+					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
+					class="fa fa-google-plus fa-2x"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
