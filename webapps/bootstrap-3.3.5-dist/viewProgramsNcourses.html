@@ -63,6 +63,9 @@
 
 		</div>
 	</div>
+	<!-- When database comes in, if onclick == currently available show those with status available else show full -->
+
+	<!-- Navigation bar -->
 	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 		<div class="col-sm-3 col-md-2 sidebar">
 			<ul class="nav nav-sidebar">
@@ -100,75 +103,109 @@
 
 		</div>
 
-<div class="row">
-			<div class="col-xs-6 col-lg-4">
-				<div class="alingment">
-					<p style="text-align: center">
-						<img src=about1.PNG align="middle">
-					</p>
-					<p></p>
-					<p>
-						<a class="btn btn-default" href="viewprogramdetails.html">
-							View Program &raquo; </a>
-					</p>
-				</div>
-			</div>
+		<!-- Programs&Courses -->
+		<!-- same, when database comes in, according to the option on the navigation bar
+		, the contents have to show accordingly -->
+		<!-- when the database comes, no more hardcoding, auto populate the page with contents
+		based on the number of data in the DB, use for loop. -->
+		<!-- ROW on programs -->
 
-			<div class="col-xs-6 col-lg-4">
-				<p style="text-align: center">
-					<img src=about2.PNG>
-				</p>
-				<p style="padding-top: 10px">
-				<p>
-					<a class="btn btn-default" href="#">View Program &raquo;</a>
-				</p>
-			</div>
-
-			<div class="col-xs-6 col-lg-4">
-				<p style="text-align: center">
-					<img src=about1.PNG>
-				</p>
-				<p></p>
-				<p>
-					<a class="btn btn-default" href="#">View Program &raquo;</a>
-				</p>
-			</div>
-			<!--/.col-xs-6.col-lg-4-->
-		</div>
-		<!--/row-->
-		
+		<h3>Programs</h3>
 		<div class="row">
 			<div class="col-xs-6 col-lg-4">
 				<div class="alingment">
-					<p style="text-align: center">
-						<img src=about1.PNG align="middle">
+					<p style="text-align: left">
+						<img src="courseAndProgram/bridginGen.jpg" width=50% height=50% />
 					</p>
-					<p></p>
+					<p>Title: Bridging Generation</p>
+					<p>Date: 12/11/2015</p>
 					<p>
 						<a class="btn btn-default" href="viewprogramdetails.html">
-							View Course &raquo; </a>
+							View Program &raquo; </a> <a class="btn btn-default"
+							href="register.html"> Register Here &raquo; </a>
 					</p>
 				</div>
 			</div>
 
 			<div class="col-xs-6 col-lg-4">
-				<p style="text-align: center">
-					<img src=about2.PNG>
-				</p>
-				<p style="padding-top: 10px">
-				<p>
-					<a class="btn btn-default" href="#">View Course &raquo;</a>
-				</p>
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/hapMar.jpg" width=50% height=50% />
+					</p>
+					<p>Title: Marriage Works</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewprogramdetails.html">
+							View Program &raquo; </a> <a class="btn btn-default"
+							href="register.html"> Register Here &raquo; </a>
+					</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-lg-4">
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/child.jpg" width=50% height=50% />
+					</p>
+					<p>Title: Loving Your Child</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewprogramdetails.html">
+							View Program &raquo; </a> <a class="btn btn-default"
+							href="register.html"> Register Here &raquo; </a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--/row-->
+
+		<!-- when the database comes, no more hardcoding, auto populate the page with contents
+		based on the number of data in the DB, use for loop. -->
+		<!-- ROW on courses -->
+		<h3>Courses</h3>
+		<div class="row">
+			<div class="col-xs-6 col-lg-4">
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/timeflies.jpg" width=50% height=50% />
+					</p>
+					<p>Title: Time Management</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewprogramdetails.html">
+							View Course &raquo; </a> <a class="btn btn-default"
+							href="register.html"> Register Here &raquo; </a>
+					</p>
+				</div>
 			</div>
 
 			<div class="col-xs-6 col-lg-4">
-				<p style="text-align: center">
-					<img src=about1.PNG>
-				</p>
-				<p></p>
-				<p>
-					<a class="btn btn-default" href="#">View Course &raquo;</a>
-				</p>
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/correctComm.jpg" width=50% height=50% />
+					</p>
+					<p>Title: Communicating the Right Way</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewprogramdetails.html">
+							View Course &raquo; </a> <a class="btn btn-default"
+							href="register.html"> Register Here &raquo; </a>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-lg-4">
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/anger.jpg" width=50% height=50% />
+					</p>
+					<p>Title: Anger Management</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewprogramdetails.html">
+							View Course &raquo; </a> <a class="btn btn-default"
+							href="register.html"> Register Here &raquo; </a>
+					</p>
+				</div>
 			</div>
 			<!--/.col-xs-6.col-lg-4-->
 		</div>
