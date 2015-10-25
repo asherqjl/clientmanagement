@@ -18,7 +18,21 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+<!-- for filter bar -->
+<style>
+.container {
+	margin-top: 30px;
+}
+
+.filter-col {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+</style>
+
 </head>
+
 <body>
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
@@ -44,9 +58,10 @@
 						data-toggle="dropdown">Courses & Programs<b class=caret></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">About</a></li>
-							<li class="active">
-							<li><a href="#"> Currently Available Now</a></li>
-							<li><a href="#">Full List</a></li>
+							<li class="active"><li><a
+								href="file:///C:/FYP/impossible/webapps/bootstrap-3.3.5-dist/viewProgramsNcourses.html"> Currently Available Now</a></li>
+							<li><a
+								href="file:///C:/FYP/impossible/webapps/bootstrap-3.3.5-dist/viewProgramsNcourses.html">Full List</a></li>
 						</ul></li>
 					<li><a href="ContactUs.html">Contact Us</a></li>
 
@@ -56,41 +71,53 @@
 						value="" placeholder="Password"></li>
 					<li><button type="submit" class="btn btn-success"
 							style="margin-top: 8px; margin-left: 5px">
-							<a href="login.html"></a>Sign in
+							<a
+								href="C:\FYP\impossible\webapps\bootstrap-3.3.5-dist\login.html"></a>Sign
+							in
 						</button></li>
 				</ul>
 			</div>
 
 		</div>
 	</div>
-	<!-- When database comes in, if onclick == currently available show those with status available else show full -->
 
-	<!-- Navigation bar -->
+	
+								<!-- When database comes in, if onclick == currently available show those with status available else show full -->
+
+								<!-- Navigation bar -->
 	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 		<div class="col-sm-3 col-md-2 sidebar">
 			<ul class="nav nav-sidebar">
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown">Categories <b class=caret></b></a>
+												data-toggle="dropdown">Categories <b class=caret></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Category1</a></li>
-						<li><a href="#">Category2</a></li>
-						<li><a href="#">Category3</a></li>
-						<li><a href="#">Category4</a></li>
+						<li><input type="checkbox" /> Category1</li>
+						<li><input type="checkbox" /> Category2</li>
+						<li><input type="checkbox" /> Category3</li>
+						<li><input type="checkbox" /> Category4</li>
 					</ul></li>
 			</ul>
 			<ul class="nav nav-sidebar">
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown">Courses & Programs <b class=caret></b></a>
+												data-toggle="dropdown">Courses & Programs <b class=caret></b></a>
 					<ul class="dropdown-menu">
 						<li class="dropdown-header">Courses</li>
-						<li><a href="#">Currently Available Courses</a></li>
-						<li><a href="">Full List of Courses</a></li>
+						<li><input type="checkbox" /> Currently Available Courses</li>
+						<li><input type="checkbox" /> Full List of Courses</li>
 						<li class="dropdown-header">Programs</li>
-						<li><a href="">Currently Available Programs</a></li>
-						<li><a href="">Full List of Programs</a></li>
+						<li><input type="checkbox" /> Currently Available Programs</li>
+						<li><input type="checkbox" /> Full List of Programs</li>
 					</ul></li>
 			</ul>
-
+			<!-- insert JS here
+			To see if something is checked then you write sql to show that thing. :)
+			<script>
+			$('#your_id').is(':checked')        // Returns a Boolean TRUE if checked
+			if ($('#your_id').is(':checked')) {
+    		// Checkbox was checked
+			}
+			</script>
+			 -->
 			<!--
 				<ul class="nav nav-sidebar">  
 				<li class="active"><a href="#">Category <span
@@ -100,8 +127,66 @@
 				<li><a href="#">Category3</a></li>
 			</ul>
 			-->
-
 		</div>
+
+		<!-- Filter Tab -->
+		<div class="container">
+			<div class="row">
+				<div id="filter-panel" class="collapse filter-panel">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<form class="form-inline" role="form">
+								<div class="form-group">
+									<label class="filter-col" style="margin-right: 0;"
+																	for="pref-perpage">Rows per page:</label> <select
+																	id="pref-perpage" class="form-control">
+										<!-- Use session to select next time -->
+										<option value="9">9</option>
+										<option selected="selected" value="10">10</option>
+										<option value="15">15</option>
+										<option value="20">20</option>
+										<option value="30">30</option>
+										<option value="40">40</option>
+										<option value="50">50</option>
+									</select>
+								</div>
+								<!-- form group [rows] -->
+								<div class="form-group">
+									<label class="filter-col" style="margin-right: 0;"
+																	for="pref-search">Course/Program Title:</label> <input
+																	type="text" class="form-control input-sm"
+																	id="pref-search">
+								</div>
+								<!-- form group [search] -->
+								<div class="form-group">
+									<label class="filter-col" style="margin-right: 0;"
+																	for="pref-orderby">Order by:</label> <select
+																	id="pref-orderby" class="form-control">
+										<option>Status</option>
+									</select>
+								</div>
+								<!-- form group [order by] -->
+								<div class="form-group">
+									<div class="checkbox"
+																	style="margin-left: 10px; margin-right: 10px;">
+										<label><input type="checkbox"> Remember
+											parameters</label>
+									</div>
+									<button type="submit" class="btn btn-default filter-col">
+										<span class="glyphicon glyphicon-record"></span> Save Settings
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="btn btn-primary" data-toggle="collapse"
+												data-target="#filter-panel">
+					<span class="glyphicon glyphicon-cog"></span> Advanced Search
+				</button>
+			</div>
+		</div>
+		<!-- /Filter Tab -->
 
 		<!-- Programs&Courses -->
 		<!-- same, when database comes in, according to the option on the navigation bar
@@ -109,7 +194,6 @@
 		<!-- when the database comes, no more hardcoding, auto populate the page with contents
 		based on the number of data in the DB, use for loop. -->
 		<!-- ROW on programs -->
-
 		<h3>Programs</h3>
 		<div class="row">
 			<div class="col-xs-6 col-lg-4">
@@ -120,9 +204,9 @@
 					<p>Title: Bridging Generation</p>
 					<p>Date: 12/11/2015</p>
 					<p>
-						<a class="btn btn-default" href="viewprogramdetails.html">
+						<a class="btn btn-default" href="viewProgramDetails.html">
 							View Program &raquo; </a> <a class="btn btn-default"
-							href="register.html"> Register Here &raquo; </a>
+														href="register.html"> Register Here &raquo; </a>
 					</p>
 				</div>
 			</div>
@@ -135,9 +219,9 @@
 					<p>Title: Marriage Works</p>
 					<p>Date: 12/11/2015</p>
 					<p>
-						<a class="btn btn-default" href="viewprogramdetails.html">
+						<a class="btn btn-default" href="viewProgramDetails.html">
 							View Program &raquo; </a> <a class="btn btn-default"
-							href="register.html"> Register Here &raquo; </a>
+														href="register.html"> Register Here &raquo; </a>
 					</p>
 				</div>
 			</div>
@@ -149,14 +233,116 @@
 					<p>Title: Loving Your Child</p>
 					<p>Date: 12/11/2015</p>
 					<p>
-						<a class="btn btn-default" href="viewprogramdetails.html">
+						<a class="btn btn-default" href="viewProgramDetails.html">
 							View Program &raquo; </a> <a class="btn btn-default"
-							href="register.html"> Register Here &raquo; </a>
+														href="register.html"> Register Here &raquo; </a>
 					</p>
 				</div>
 			</div>
 		</div>
 		<!--/row-->
+		<!-- Testing
+		
+/* GENERAL STYLES */
+body {
+	font-family: Verdana;
+}
+
+/* FANCY COLLAPSE PANEL STYLES */
+.fancy-collapse-panel .panel-default>.panel-heading {
+	padding: 0;
+}
+
+.fancy-collapse-panel .panel-heading a {
+	padding: 12px 35px 12px 15px;
+	display: inline-block;
+	width: 100%;
+	background-color: #EE556C;
+	color: #ffffff;
+	position: relative;
+	text-decoration: none;
+}
+
+.fancy-collapse-panel .panel-heading a:after {
+	font-family: "FontAwesome";
+	content: "\f147";
+	position: absolute;
+	right: 20px;
+	font-size: 20px;
+	font-weight: 400;
+	top: 50%;
+	line-height: 1;
+	margin-top: -10px;
+}
+
+.fancy-collapse-panel .panel-heading a.collapsed:after {
+	content: "\f196";
+}
+		
+		<div class="row">
+			<div class="fancy-collapse-panel">
+				<div class="panel-group" id="accordion" role="tablist"
+					aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion"
+									href="#collapseOne" aria-expanded="true"
+									aria-controls="collapseOne">Programs </a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in"
+							role="tabpanel" aria-labelledby="headingOne">
+							<div class="row">
+								<div class="alingment">
+									<p style="text-align: left">
+										<img src="courseAndProgram/bridginGen.jpg" width=50%
+											height=50% />
+									</p>
+									<p>Title: Bridging Generation</p>
+									<p>Date: 12/11/2015</p>
+									<p>
+										<a class="btn btn-default" href="viewprogramdetails.html">
+											View Program &raquo; </a> <a class="btn btn-default"
+											href="register.html"> Register Here &raquo; </a>
+									</p>
+								</div>
+								<div class="alingment">
+									<p style="text-align: left">
+										<img src="courseAndProgram/bridginGen.jpg" width=50%
+											height=50% />
+									</p>
+									<p>Title: Bridging Generation</p>
+									<p>Date: 12/11/2015</p>
+									<p>
+										<a class="btn btn-default" href="viewprogramdetails.html">
+											View Program &raquo; </a> <a class="btn btn-default"
+											href="register.html"> Register Here &raquo; </a>
+									</p>
+								</div>
+								<div class="alingment">
+									<p style="text-align: left">
+										<img src="courseAndProgram/bridginGen.jpg" width=50%
+											height=50% />
+									</p>
+									<p>Title: Bridging Generation</p>
+									<p>Date: 12/11/2015</p>
+									<p>
+										<a class="btn btn-default" href="viewprogramdetails.html">
+											View Program &raquo; </a> <a class="btn btn-default"
+											href="register.html"> Register Here &raquo; </a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+-->
+
+
 
 		<!-- when the database comes, no more hardcoding, auto populate the page with contents
 		based on the number of data in the DB, use for loop. -->
@@ -171,9 +357,9 @@
 					<p>Title: Time Management</p>
 					<p>Date: 12/11/2015</p>
 					<p>
-						<a class="btn btn-default" href="viewprogramdetails.html">
+						<a class="btn btn-default" href="viewCourseDetails.html">
 							View Course &raquo; </a> <a class="btn btn-default"
-							href="register.html"> Register Here &raquo; </a>
+														href="register.html"> Register Here &raquo; </a>
 					</p>
 				</div>
 			</div>
@@ -186,9 +372,9 @@
 					<p>Title: Communicating the Right Way</p>
 					<p>Date: 12/11/2015</p>
 					<p>
-						<a class="btn btn-default" href="viewprogramdetails.html">
+						<a class="btn btn-default" href="viewCourseDetails.html">
 							View Course &raquo; </a> <a class="btn btn-default"
-							href="register.html"> Register Here &raquo; </a>
+														href="register.html"> Register Here &raquo; </a>
 					</p>
 				</div>
 			</div>
@@ -201,9 +387,9 @@
 					<p>Title: Anger Management</p>
 					<p>Date: 12/11/2015</p>
 					<p>
-						<a class="btn btn-default" href="viewprogramdetails.html">
+						<a class="btn btn-default" href="viewCourseDetails.html">
 							View Course &raquo; </a> <a class="btn btn-default"
-							href="register.html"> Register Here &raquo; </a>
+														href="register.html"> Register Here &raquo; </a>
 					</p>
 				</div>
 			</div>
@@ -221,17 +407,18 @@
 			</div>
 			<div class="navbar-text pull-right">
 				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
-					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
-					class="fa fa-google-plus fa-2x"></i></a>
+												href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a
+												href="#"><i class="fa fa-google-plus fa-2x"></i></a>
 			</div>
 		</div>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+									src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
-</body>
+
+							</body>
 </html>
 
