@@ -1,47 +1,34 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>Programs</title>
-<base href="#" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script type="text/javascript"
-	src="view/javascript/jquery/jquery-2.1.1.min.js"></script>
-<script type="text/javascript"
-	src="view/javascript/bootstrap/js/bootstrap.min.js"></script>
-<!--
-<link href="view/javascript/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" />
-//-->
+<!--  JQuery Link -->
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!--  End of JQuery Link -->
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>I'MPOSSIBLE - Register</title>
 
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link href="view/javascript/bootstrap/less/bootstrap.less"
-	rel="stylesheet/less" />
-<script src="view/javascript/bootstrap/less-1.7.4.min.js"></script>
-
-
-<link href="view/javascript/font-awesome/css/font-awesome.min.css"
-	type="text/css" rel="stylesheet" />
-<link href="view/javascript/summernote/summernote.css" rel="stylesheet">
-<script type="text/javascript"
-	src="view/javascript/summernote/summernote.js"></script>
-<script src="view/javascript/jquery/datetimepicker/moment.min.js"
-	type="text/javascript"></script>
-<script
-	src="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js"
-	type="text/javascript"></script>
-<link
-	href="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css"
-	type="text/css" rel="stylesheet" media="screen" />
-
-<link type="text/css" href="doAddCourse.css" rel="stylesheet"
-	media="screen" />
-
-
-<script src="view/javascript/common.js" type="text/javascript"></script>
+<link href="home.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
 
+<body>
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -53,792 +40,124 @@
 				</button>
 				<a class="navbar-brand" href="#"> <img id="brand-image"
 					alt="Website logo" src="brandimage.PNG" /></a> <a class="navbar-brand"
-					href="#">I'MPOSSIBLE</a>
-
-
+					href="index.html">I'MPOSSIBLE</a>
 			</div>
 
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="index.html">Home</a></li>
-
 					<li><a href="about.html">About</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Courses & Programs<b class=caret></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Courses</li>
+							<li><a href="#">All Courses</a></li>
+							<li class="active">
+							<li><a href="#">Courses Available Now</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Programs</li>
+							<li><a href="ViewPrograms.html">All Programs</a></li>
+							<li><a href="ViewPrograms.html">Programs Available Now</a></li>
+						</ul></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
 
-					<li class="active"><a href="CoursePage.html">Courses &
-							Programs</a></li>
-					<li><a href="ContactUS.html">Contact Us</a></li>
-					<!-- 	 <li><a href="#contact" data-toggle="modal">Contact</a></li> -->
-					<!--  <li><form id="signin" class="navbar-form navbar-right" role="form">
-					 <div class="input-group">
-					      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-					      <input id="email" type="email"  class="form-control" name="email" placeholder="Email Address">
-					 </div>
-					 <div class="input-group">
-					     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-					      <input id="password" type="password"  class="form-control" name="password" placeholder="Password">
-					 </div>
-					 <button type="submit" class="btn btn-primary" onclick="validate();">Login</button>
-					 </form>
-					 
-					 
-					 
-					 </li> -->
-
+					<li><input type="text" class="form-control" name="username"
+						value="" placeholder="Username"></li>
+					<li><input type="text" class="form-control" name="passsword"
+						value="" placeholder="Password"></li>
+					<li><button type="submit" class="btn btn-success"
+							style="margin-top: 8px; margin-left: 5px">
+							<a href="login.html"></a>Sign in
+						</button></li>
 				</ul>
-
-
-
 			</div>
 
 		</div>
 	</div>
+	<h1 style="text-align: center;">Registration Page</h1>
+	<div class="container" style="margin-bottom: 50px">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="well well-sm">
+					<form class="form-horizontal" method="post">
+						<fieldset>
+							<legend class="text-center header">Parent</legend>
+							<div class="form-group">
+								<div class="col-md-5 col-md-offset-1">
+									Full Name: <input id="name" name="fullname" type="text"
+										placeholder="Name" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									Contact Number:<input id="phonenumber" name="phone" type="tel"
+										placeholder="Mobile Number" class="form-control">
+								</div>
+							</div>
 
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									Email Address : <input id="email" name="email" type="email"
+										placeholder="Email Address" class="form-control">
+								</div>
+							</div>
 
-	<div id="content">
-		<div class="page-header">
-			<div class="container-fluid">
-				<div class="pull-right">
-					<button type="submit" form="form-product" data-toggle="tooltip"
-						title="Save" class="btn btn-primary">
-						<i class="fa fa-save"></i>
-					</button>
-					<a href="#" data-toggle="tooltip" title="Cancel"
-						class="btn btn-default"><i class="fa fa-reply"></i></a>
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									Additional Message:
+									<textarea class="form-control" id="message" name="message"
+										placeholder="Enter your message for us here." rows="7"></textarea>
+								</div>
+							</div>
+					</form>
 				</div>
-				<h1>Programs</h1>
-				<ul class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Programs</a></li>
-				</ul>
 			</div>
-		</div>
-		<div class="container-fluid">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-						<i class="fa fa-pencil"></i> Add Programs
-					</h3>
-				</div>
-				<div class="panel-body">
-					<form action="#" method="post" enctype="multipart/form-data"
-						id="form-product" class="form-horizontal">
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#tab-general" data-toggle="tab">General</a></li>
-							<li><a href="#tab-discount" data-toggle="tab">Courses</a></li>
-							<li><a href="#tab-image" data-toggle="tab">Image</a></li>
 
+			<div data-role="main" class="ui-content">
+				<a href="#myPopup" data-rel="popup"
+					class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Show
+					Popup Form</a>
 
-						</ul>
-						<div class="tab-content">
-							<div class="tab-pane active" id="tab-general">
-								<ul class="nav nav-tabs" id="language">
-									<li><a href="#language1" data-toggle="tab"><img
-											src="view/image/flags/gb.png" title="English" /> English</a></li>
-								</ul>
-								<div class="tab-content">
-									<div class="tab-pane" id="language1">
-										<div class="form-group required">
-											<label class="col-sm-2 control-label" for="input-name1">Program
-												Name</label>
-											<div class="col-sm-10">
-												<input type="text" name="product_description[1][name]"
-													value="" placeholder="Program Name" id="input-name1"
-													class="form-control" />
-											</div>
-										</div>
-
-										<div class="form-group required">
-											<label class="col-sm-2 control-label" for="input-name1">Program
-												ID</label>
-											<div class="col-sm-10">
-												<input type="text" name="product_description[1][name]"
-													value="" placeholder="Program ID" id="input-name1"
-													class="form-control" />
-											</div>
-										</div>
-
-										<div class="form-group">
-											<label class="col-sm-2 control-label"
-												for="input-description1">Description</label>
-											<div class="col-sm-10">
-												<textarea name="product_description[1][description]"
-													placeholder="Description" id="input-description1"></textarea>
-											</div>
-										</div>
-
-
-										<div class="form-group">
-											<label class="col-sm-2 control-label" for="input-image">Image</label>
-											<div class="col-sm-10">
-												<a href="" id="thumb-image" data-toggle="image"
-													class="img-thumbnail"><img
-													src="http://demo.opencart.com/image/cache/no_image-100x100.png"
-													alt="" title=""
-													data-placeholder="http://demo.opencart.com/image/cache/no_image-100x100.png" /></a>
-												<input type="hidden" name="image" value="" id="input-image" />
-											</div>
-										</div>
-
-
-										<div class="form-group">
-											<label class="col-sm-2 control-label"
-												for="input-date-available">Date Available</label>
-											<div class="col-sm-3">
-												<div class="input-group date">
-													<input type="text" name="date_available" value="2015-10-20"
-														placeholder="Date Available" data-format="YYYY-MM-DD"
-														id="input-date-available" class="form-control" /> <span
-														class="input-group-btn">
-														<button class="btn btn-default" type="button">
-															<i class="fa fa-calendar"></i>
-														</button>
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-sm-2 control-label" for="input-price">Price</label>
-											<div class="col-sm-10">
-												<input type="text" name="price" value="" placeholder="Price"
-													id="input-price" class="form-control" />
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-sm-2 control-label" for="input-quantity">Class
-												Size</label>
-											<div class="col-sm-10">
-												<input type="text" name="quantity" value="1"
-													placeholder="Quantity" id="input-quantity"
-													class="form-control" />
-											</div>
-										</div>
-
-										<div class="form-group">
-											<label class="col-sm-2 control-label" for="input-status">Status</label>
-											<div class="col-sm-10">
-												<select name="status" id="input-status" class="form-control">
-													<option value="1" selected="selected">Enabled</option>
-													<option value="0">Disabled</option>
-												</select>
-											</div>
-										</div>
-
-
-
-
-									</div>
-								</div>
-							</div>
-
-
-
-							<div class="tab-pane" id="tab-discount">
-								<div class="table-responsive">
-									<table id="discount"
-										class="table table-striped table-bordered table-hover">
-										<thead>
-											<tr>
-												<td class="text-left">Courses Name</td>
-
-												<td class="text-left">Date Start</td>
-												<td class="text-left">Date End</td>
-												<td></td>
-											</tr>
-										</thead>
-										<tbody>
-										</tbody>
-										<tfoot>
-											<tr>
-												<td colspan="6"></td>
-												<td class="text-left"><button type="button"
-														onclick="addDiscount();" data-toggle="tooltip"
-														title="Add Discount" class="btn btn-primary">
-														<i class="fa fa-plus-circle"></i>
-													</button></td>
-											</tr>
-										</tfoot>
-									</table>
-								</div>
-							</div>
-
-							<div class="tab-pane" id="tab-image">
-								<div class="table-responsive">
-									<table id="images"
-										class="table table-striped table-bordered table-hover">
-										<thead>
-											<tr>
-												<td class="text-left">Image</td>
-												<td class="text-right">Sort Order</td>
-												<td></td>
-											</tr>
-										</thead>
-										<tbody>
-										</tbody>
-										<tfoot>
-											<tr>
-												<td colspan="2"></td>
-												<td class="text-left"><button type="button"
-														onclick="addImage();" data-toggle="tooltip"
-														title="Add Image" class="btn btn-primary">
-														<i class="fa fa-plus-circle"></i>
-													</button></td>
-											</tr>
-										</tfoot>
-									</table>
-								</div>
-							</div>
-
-
+				<div data-role="popup" id="myPopup" class="ui-content"
+					style="min-width: 250px;">
+					<form method="post" action="demoform.asp">
+						<div>
+							<h3>Login information</h3>
+							<label for="usrnm" class="ui-hidden-accessible">Username:</label>
+							<input type="text" name="user" id="usrnm" placeholder="Username">
+							<label for="pswd" class="ui-hidden-accessible">Password:</label>
+							<input type="password" name="passw" id="pswd"
+								placeholder="Password"> <label for="log">Keep me
+								logged in</label> <input type="checkbox" name="login" id="log" value="1"
+								data-mini="true"> <input type="submit"
+								data-inline="true" value="Log in">
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript"><!--
-$('#input-description1').summernote({height: 300});
-//--></script>
-		<script type="text/javascript"><!--
-// Manufacturer
-$('input[name=\'manufacturer\']').autocomplete({
-	'source': function(request, response) {
-		$.ajax({
-			url: 'index.php?route=catalog/manufacturer/autocomplete&token=dea3a99bdc4741939867b21600e3e3d7&filter_name=' +  encodeURIComponent(request),
-			dataType: 'json',			
-			success: function(json) {
-				json.unshift({
-					manufacturer_id: 0,
-					name: ' --- None --- '
-				});
-				
-				response($.map(json, function(item) {
-					return {
-						label: item['name'],
-						value: item['manufacturer_id']
-					}
-				}));
-			}
-		});
-	},
-	'select': function(item) {
-		$('input[name=\'manufacturer\']').val(item['label']);
-		$('input[name=\'manufacturer_id\']').val(item['value']);
-	}	
-});
-
-// Category
-$('input[name=\'category\']').autocomplete({
-	'source': function(request, response) {
-		$.ajax({
-			url: 'index.php?route=catalog/category/autocomplete&token=dea3a99bdc4741939867b21600e3e3d7&filter_name=' +  encodeURIComponent(request),
-			dataType: 'json',			
-			success: function(json) {
-				response($.map(json, function(item) {
-					return {
-						label: item['name'],
-						value: item['category_id']
-					}
-				}));
-			}
-		});
-	},
-	'select': function(item) {
-		$('input[name=\'category\']').val('');
-		
-		$('#product-category' + item['value']).remove();
-		
-		$('#product-category').append('<div id="product-category' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product_category[]" value="' + item['value'] + '" /></div>');	
-	}
-});
-
-$('#product-category').delegate('.fa-minus-circle', 'click', function() {
-	$(this).parent().remove();
-});
-
-// Filter
-$('input[name=\'filter\']').autocomplete({
-	'source': function(request, response) {
-		$.ajax({
-			url: 'index.php?route=catalog/filter/autocomplete&token=dea3a99bdc4741939867b21600e3e3d7&filter_name=' +  encodeURIComponent(request),
-			dataType: 'json',			
-			success: function(json) {
-				response($.map(json, function(item) {
-					return {
-						label: item['name'],
-						value: item['filter_id']
-					}
-				}));
-			}
-		});
-	},
-	'select': function(item) {
-		$('input[name=\'filter\']').val('');
-		
-		$('#product-filter' + item['value']).remove();
-		
-		$('#product-filter').append('<div id="product-filter' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product_filter[]" value="' + item['value'] + '" /></div>');	
-	}	
-});
-
-$('#product-filter').delegate('.fa-minus-circle', 'click', function() {
-	$(this).parent().remove();
-});
-
-// Downloads
-$('input[name=\'download\']').autocomplete({
-	'source': function(request, response) {
-		$.ajax({
-			url: 'index.php?route=catalog/download/autocomplete&token=dea3a99bdc4741939867b21600e3e3d7&filter_name=' +  encodeURIComponent(request),
-			dataType: 'json',			
-			success: function(json) {
-				response($.map(json, function(item) {
-					return {
-						label: item['name'],
-						value: item['download_id']
-					}
-				}));
-			}
-		});
-	},
-	'select': function(item) {
-		$('input[name=\'download\']').val('');
-		
-		$('#product-download' + item['value']).remove();
-		
-		$('#product-download').append('<div id="product-download' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product_download[]" value="' + item['value'] + '" /></div>');	
-	}	
-});
-
-$('#product-download').delegate('.fa-minus-circle', 'click', function() {
-	$(this).parent().remove();
-});
-
-// Related
-$('input[name=\'related\']').autocomplete({
-	'source': function(request, response) {
-		$.ajax({
-			url: 'index.php?route=catalog/product/autocomplete&token=dea3a99bdc4741939867b21600e3e3d7&filter_name=' +  encodeURIComponent(request),
-			dataType: 'json',			
-			success: function(json) {
-				response($.map(json, function(item) {
-					return {
-						label: item['name'],
-						value: item['product_id']
-					}
-				}));
-			}
-		});
-	},
-	'select': function(item) {
-		$('input[name=\'related\']').val('');
-		
-		$('#product-related' + item['value']).remove();
-		
-		$('#product-related').append('<div id="product-related' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product_related[]" value="' + item['value'] + '" /></div>');	
-	}	
-});
-
-$('#product-related').delegate('.fa-minus-circle', 'click', function() {
-	$(this).parent().remove();
-});
-//--></script>
-		<script type="text/javascript"><!--
-var attribute_row = 0;
-
-function addAttribute() {
-    html  = '<tr id="attribute-row' + attribute_row + '">';
-	html += '  <td class="text-left"><input type="text" name="product_attribute[' + attribute_row + '][name]" value="" placeholder="Attribute" class="form-control" /><input type="hidden" name="product_attribute[' + attribute_row + '][attribute_id]" value="" /></td>';
-	html += '  <td class="text-left">';
-		html += '<div class="input-group"><span class="input-group-addon"><img src="view/image/flags/gb.png" title="English" /></span><textarea name="product_attribute[' + attribute_row + '][product_attribute_description][1][text]" rows="5" placeholder="Text" class="form-control"></textarea></div>';
-    	html += '  </td>';
-	html += '  <td class="text-left"><button type="button" onclick="$(\'#attribute-row' + attribute_row + '\').remove();" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
-    html += '</tr>';
-	
-	$('#attribute tbody').append(html);
-	
-	attributeautocomplete(attribute_row);
-	
-	attribute_row++;
-}
-
-function attributeautocomplete(attribute_row) {
-	$('input[name=\'product_attribute[' + attribute_row + '][name]\']').autocomplete({
-		'source': function(request, response) {
-			$.ajax({
-				url: 'index.php?route=catalog/attribute/autocomplete&token=dea3a99bdc4741939867b21600e3e3d7&filter_name=' +  encodeURIComponent(request),
-				dataType: 'json',			
-				success: function(json) {
-					response($.map(json, function(item) {
-						return {
-							category: item.attribute_group,
-							label: item.name,
-							value: item.attribute_id
-						}
-					}));
-				}
-			});
-		},
-		'select': function(item) {
-			$('input[name=\'product_attribute[' + attribute_row + '][name]\']').val(item['label']);
-			$('input[name=\'product_attribute[' + attribute_row + '][attribute_id]\']').val(item['value']);
-		}
-	});
-}
-
-$('#attribute tbody tr').each(function(index, element) {
-	attributeautocomplete(index);
-});
-//--></script>
-		<script type="text/javascript"><!--	
-var option_row = 0;
-
-$('input[name=\'option\']').autocomplete({
-	'source': function(request, response) {
-		$.ajax({
-			url: 'index.php?route=catalog/option/autocomplete&token=dea3a99bdc4741939867b21600e3e3d7&filter_name=' +  encodeURIComponent(request),
-			dataType: 'json',			
-			success: function(json) {
-				response($.map(json, function(item) {
-					return {
-						category: item['category'],
-						label: item['name'],
-						value: item['option_id'],
-						type: item['type'],
-						option_value: item['option_value']
-					}
-				}));
-			}
-		});
-	},
-	'select': function(item) {
-		html  = '<div class="tab-pane" id="tab-option' + option_row + '">';
-		html += '	<input type="hidden" name="product_option[' + option_row + '][product_option_id]" value="" />';
-		html += '	<input type="hidden" name="product_option[' + option_row + '][name]" value="' + item['label'] + '" />';
-		html += '	<input type="hidden" name="product_option[' + option_row + '][option_id]" value="' + item['value'] + '" />';
-		html += '	<input type="hidden" name="product_option[' + option_row + '][type]" value="' + item['type'] + '" />';
-		
-		html += '	<div class="form-group">';
-		html += '	  <label class="col-sm-2 control-label" for="input-required' + option_row + '">Required</label>';
-		html += '	  <div class="col-sm-10"><select name="product_option[' + option_row + '][required]" id="input-required' + option_row + '" class="form-control">';
-		html += '	      <option value="1">Yes</option>';
-		html += '	      <option value="0">No</option>';
-		html += '	  </select></div>';
-		html += '	</div>';
-		
-		if (item['type'] == 'text') {
-			html += '	<div class="form-group">';
-			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
-			html += '	  <div class="col-sm-10"><input type="text" name="product_option[' + option_row + '][value]" value="" placeholder="Option Value" id="input-value' + option_row + '" class="form-control" /></div>';
-			html += '	</div>';
-		}
-		
-		if (item['type'] == 'textarea') {
-			html += '	<div class="form-group">';
-			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
-			html += '	  <div class="col-sm-10"><textarea name="product_option[' + option_row + '][value]" rows="5" placeholder="Option Value" id="input-value' + option_row + '" class="form-control"></textarea></div>';
-			html += '	</div>';			
-		}
-		 
-		if (item['type'] == 'file') {
-			html += '	<div class="form-group" style="display: none;">';
-			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
-			html += '	  <div class="col-sm-10"><input type="text" name="product_option[' + option_row + '][value]" value="" placeholder="Option Value" id="input-value' + option_row + '" class="form-control" /></div>';
-			html += '	</div>';
-		}
-						
-		if (item['type'] == 'date') {
-			html += '	<div class="form-group">';
-			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
-			html += '	  <div class="col-sm-3"><div class="input-group date"><input type="text" name="product_option[' + option_row + '][value]" value="" placeholder="Option Value" data-format="YYYY-MM-DD" id="input-value' + option_row + '" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></div>';
-			html += '	</div>';
-		}
-		
-		if (item['type'] == 'time') {
-			html += '	<div class="form-group">';
-			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
-			html += '	  <div class="col-sm-10"><div class="input-group time"><input type="text" name="product_option[' + option_row + '][value]" value="" placeholder="Option Value" data-format="HH:mm" id="input-value' + option_row + '" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></div>';
-			html += '	</div>';
-		}
-				
-		if (item['type'] == 'datetime') {
-			html += '	<div class="form-group">';
-			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
-			html += '	  <div class="col-sm-10"><div class="input-group datetime"><input type="text" name="product_option[' + option_row + '][value]" value="" placeholder="Option Value" data-format="YYYY-MM-DD HH:mm" id="input-value' + option_row + '" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></div>';
-			html += '	</div>';
-		}
-			
-		if (item['type'] == 'select' || item['type'] == 'radio' || item['type'] == 'checkbox' || item['type'] == 'image') {
-			html += '<div class="table-responsive">';
-			html += '  <table id="option-value' + option_row + '" class="table table-striped table-bordered table-hover">';
-			html += '  	 <thead>'; 
-			html += '      <tr>';
-			html += '        <td class="text-left">Option Value</td>';
-			html += '        <td class="text-right">Quantity</td>';
-			html += '        <td class="text-left">Subtract Stock</td>';
-			html += '        <td class="text-right">Price</td>';
-			html += '        <td class="text-right">Points</td>';
-			html += '        <td class="text-right">Weight</td>';
-			html += '        <td></td>';
-			html += '      </tr>';
-			html += '  	 </thead>';
-			html += '  	 <tbody>';
-			html += '    </tbody>';
-			html += '    <tfoot>';
-			html += '      <tr>';
-			html += '        <td colspan="6"></td>';
-			html += '        <td class="text-left"><button type="button" onclick="addOptionValue(' + option_row + ');" data-toggle="tooltip" title="Add Option Value" class="btn btn-primary"><i class="fa fa-plus-circle"></i></button></td>';
-			html += '      </tr>';
-			html += '    </tfoot>';
-			html += '  </table>';
-			html += '</div>';
-			
-            html += '  <select id="option-values' + option_row + '" style="display: none;">';
-			
-            for (i = 0; i < item['option_value'].length; i++) {
-				html += '  <option value="' + item['option_value'][i]['option_value_id'] + '">' + item['option_value'][i]['name'] + '</option>';
-            }
-
-            html += '  </select>';	
-			html += '</div>';	
-		}
-		
-		$('#tab-option .tab-content').append(html);
-			
-		$('#option > li:last-child').before('<li><a href="#tab-option' + option_row + '" data-toggle="tab"><i class="fa fa-minus-circle" onclick="$(\'a[href=\\\'#tab-option' + option_row + '\\\']\').parent().remove(); $(\'#tab-option' + option_row + '\').remove(); $(\'#option a:first\').tab(\'show\')"></i> ' + item['label'] + '</li>');
-		
-		$('#option a[href=\'#tab-option' + option_row + '\']').tab('show');
-		
-		$('.date').datetimepicker({
-			pickTime: false
-		});
-		
-		$('.time').datetimepicker({
-			pickDate: false
-		});
-		
-		$('.datetime').datetimepicker({
-			pickDate: true,
-			pickTime: true
-		});
-				
-		option_row++;
-	}	
-});
-//--></script>
-		<script type="text/javascript"><!--		
-var option_value_row = 0;
-
-function addOptionValue(option_row) {	
-	html  = '<tr id="option-value-row' + option_value_row + '">';
-	html += '  <td class="text-left"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][option_value_id]" class="form-control">';
-	html += $('#option-values' + option_row).html();
-	html += '  </select><input type="hidden" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][product_option_value_id]" value="" /></td>';
-	html += '  <td class="text-right"><input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][quantity]" value="" placeholder="Quantity" class="form-control" /></td>'; 
-	html += '  <td class="text-left"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][subtract]" class="form-control">';
-	html += '    <option value="1">Yes</option>';
-	html += '    <option value="0">No</option>';
-	html += '  </select></td>';
-	html += '  <td class="text-right"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][price_prefix]" class="form-control">';
-	html += '    <option value="+">+</option>';
-	html += '    <option value="-">-</option>';
-	html += '  </select>';
-	html += '  <input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][price]" value="" placeholder="Price" class="form-control" /></td>';
-	html += '  <td class="text-right"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][points_prefix]" class="form-control">';
-	html += '    <option value="+">+</option>';
-	html += '    <option value="-">-</option>';
-	html += '  </select>';
-	html += '  <input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][points]" value="" placeholder="Points" class="form-control" /></td>';	
-	html += '  <td class="text-right"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][weight_prefix]" class="form-control">';
-	html += '    <option value="+">+</option>';
-	html += '    <option value="-">-</option>';
-	html += '  </select>';
-	html += '  <input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][weight]" value="" placeholder="Weight" class="form-control" /></td>';
-	html += '  <td class="text-left"><button type="button" onclick="$(\'#option-value-row' + option_value_row + '\').remove();" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
-	html += '</tr>';
-	
-	$('#option-value' + option_row + ' tbody').append(html);
-
-	option_value_row++;
-}
-//--></script>
-		<script type="text/javascript"><!--
-var discount_row = 0;
-
-function addDiscount() {
-	html  = '<tr id="discount-row' + discount_row + '">'; 
-    html += '  <td class="text-left"><select name="product_discount[' + discount_row + '][customer_group_id]" class="form-control">';
-              html += '      <option value="1">Couples Counselling</option>';
-		html += '      <option value="2">Family Counselling</option>';
-		html += '      <option value="2">Individual Counselling</option>';
-		html += '      <option value="4">Child and Youth Counselling</option>';
-        html += '  </select></td>';		
-
-    html += '  <td class="text-left"><div class="input-group date"><input type="text" name="product_discount[' + discount_row + '][date_start]" value="" placeholder="Date Start" data-format="YYYY-MM-DD" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></td>';
-	html += '  <td class="text-left"><div class="input-group date"><input type="text" name="product_discount[' + discount_row + '][date_end]" value="" placeholder="Date End" data-format="YYYY-MM-DD" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></td>';
-
-	html += '</tr>';	
-	
-	$('#discount tbody').append(html);
-
-	$('.date').datetimepicker({
-		pickTime: false
-	});
-	
-	discount_row++;
-}
-//--></script>
-		<script type="text/javascript"><!--
-var special_row = 0;
-
-function addSpecial() {
-	html  = '<tr id="special-row' + special_row + '">'; 
-    html += '  <td class="text-left"><select name="product_special[' + special_row + '][customer_group_id]" class="form-control">';
-        html += '      <option value="1">Couples Counselling</option>';
-		html += '      <option value="2">Family Counselling</option>';
-		html += '      <option value="2">Individual Counselling</option>';
-		html += '      <option value="4">Child and Youth Counselling</option>';
-        html += '  </select></td>';		
-    html += '  <td class="text-right"><input type="text" name="product_special[' + special_row + '][priority]" value="" placeholder="Priority" class="form-control" /></td>';
-	html += '  <td class="text-right"><input type="text" name="product_special[' + special_row + '][price]" value="" placeholder="Price" class="form-control" /></td>';
-    html += '  <td class="text-left"><div class="input-group date"><input type="text" name="product_special[' + special_row + '][date_start]" value="" placeholder="Date Start" data-format="YYYY-MM-DD" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></td>';
-	html += '  <td class="text-left"><div class="input-group date"><input type="text" name="product_special[' + special_row + '][date_end]" value="" placeholder="Date End" data-format="YYYY-MM-DD" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></td>';
-	html += '  <td class="text-left"><button type="button" onclick="$(\'#special-row' + special_row + '\').remove();" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
-	html += '</tr>';
-	
-	$('#special tbody').append(html);
-
-	$('.date').datetimepicker({
-		pickTime: false
-	});
-		
-	special_row++;
-}
-//--></script>
-		<script type="text/javascript"><!--
-var image_row = 0;
-
-function addImage() {
-	html  = '<tr id="image-row' + image_row + '">';
-	html += '  <td class="text-left"><a href="" id="thumb-image' + image_row + '"data-toggle="image" class="img-thumbnail"><img src="http://demo.opencart.com/image/cache/no_image-100x100.png" alt="" title="" data-placeholder="http://demo.opencart.com/image/cache/no_image-100x100.png" /><input type="hidden" name="product_image[' + image_row + '][image]" value="" id="input-image' + image_row + '" /></td>';
-	html += '  <td class="text-right"><input type="text" name="product_image[' + image_row + '][sort_order]" value="" placeholder="Sort Order" class="form-control" /></td>';
-	html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + '\').remove();" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
-	html += '</tr>';
-	
-	$('#images tbody').append(html);
-	
-	image_row++;
-}
-//--></script>
-		<script type="text/javascript"><!--
-var recurring_count = 0;
-
-function addRecurring() {
-	recurring_count++;
-	
-	html  = '';
-	html += '<tr id="recurring-row' + recurring_count + '">';
-	html += '  <td class="left">';
-	html += '    <select name="product_recurrings[' + recurring_count + '][recurring_id]" class="form-control">>';
-		html += '    </select>';
-	html += '  </td>';
-	html += '  <td class="left">';
-	html += '    <select name="product_recurrings[' + recurring_count + '][customer_group_id]" class="form-control">>';
-		html += '      <option value="1">Default</option>';
-		html += '    <select>';
-	html += '  </td>';
-	html += '  <td class="left">';
-	html += '    <a onclick="$(\'#recurring-row' + recurring_count + '\').remove()" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></a>';
-	html += '  </td>';
-	html += '</tr>';
-	
-	$('#tab-recurring table tbody').append(html);
-}
-//--></script>
-		<script type="text/javascript"><!--
-$('.date').datetimepicker({
-	pickTime: false
-});
-
-$('.time').datetimepicker({
-	pickDate: false
-});
-
-$('.datetime').datetimepicker({
-	pickDate: true,
-	pickTime: true
-});
-//--></script>
-
-		<script type="text/javascript"> 
-
-
-if (window.FileReader) { 
-
-
-
-<input type="file" id="files" /> 
-
-
-<output id="list"></output>
-document.getElementById('files').addEventListener('change', handleFileSelect, false);
-
-function handleFileSelect(evt) { 
-
-
-        var files = evt.target.files; 
-
-
-        var f = files[0]; 
-
-
-        var reader = new FileReader(); 
-
-
-          
-
-
-          reader.onload = (function(theFile) { 
-
-
-                return function(e) { 
-
-
-                  document.getElementById('list').innerHTML = ['<img src="', e.target.result,'" title="', theFile.name, '" width="50" />'].join(''); 
-
-
-                }; 
-
-
-          })(f); 
-
-
-            
-
-
-          reader.readAsDataURL(f); 
-
-
-} 
-
-
-
-
-} else { 
-
-
-  alert('This browser does not support FileReader'); 
-
-
-} 
-
-
-</script>
-
-		<script type="text/javascript"><!--
-$('#language a:first').tab('show');
-$('#option a:first').tab('show');
-//--></script>
 	</div>
 
+	<!-- <footer> -->
+	<div class="navbar navbar-inverse navbar-fixed-bottom"
+		role="navigation">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>&#169;COPYRIGHT 2015 I'MPOSSIBLE</p>
 
+			</div>
+			<div class="navbar-text pull-right">
+				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
+					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
+					class="fa fa-google-plus fa-2x"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
