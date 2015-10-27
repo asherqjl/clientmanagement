@@ -13,6 +13,14 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/latest/css/bootstrap.css" />
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+   <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
 </head>
 <body>
 
@@ -66,54 +74,90 @@
  
  <div id="box">
  
- <div class="box-top">
- </div>
-  <div class="box-panel">
-  <form action="action_page.php">
-  <select name="Selected Course Title">
-    <option value="volvo">Therapy for woman</option>
-    
-  </select>
-  <br><br>
-  
-  Course ID:<br>
-  <input type="text" name="courseId" value="1221">
-  <br>
-  Start Date:<br>
-  <input type="text" name="startDate" >
- 
-        <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
 
-  End Date:<br>
-  <input type="text" name="endDate" >
+  <div class="box-panel">
   
-  Duration:<br>
-  <input type="text" name="duration" >
-  
-  Status:<br>
-  <input type="text" name="status" >
   <br><br>
-  <input type="submit">
-</form>
+  <div class="container">
+  
+  <form role="form">
+  <div class="dropdown">
+  <label for="pwd">Course Title:</label>
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Therapy for woman
+  <span class="caret"></span></button>
+<!--  <ul class="dropdown-menu">
+    <li class="selected"><a href="#">Therapy for woman</a></li>
+   
+  </ul>  -->
+</div>
+<br><br>
+    <div class="form-group">
+      <label for="pwd">Course ID:</label>
+      <input type="number" class="form-control" id="courseID">
+    </div>
+
+	 <div class="form-group">
+<label class="control-label">Upload Image:</label>
+<input id="input-1" type="file" class="file">
+  </div>
+  	      <div class="well">
+			  <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+				<input class="span2" size="16" type="text" value="12-02-2012" readonly>
+				<span class="add-on"><i class="icon-calendar"></i></span>
+			  </div>
+          </div>
+
+	<div class="form-group">
+      <label for="pwd">Start Date:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+	
+	<div class="form-group">
+      <label for="pwd">End Date:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+	<div class="form-group">
+      <label for="pwd">Duration:</label>
+      <input type="number" class="form-control" id="duration">
+    </div>
+	
+	<div class="form-group">
+      <label for="pwd">Number of register student:</label>
+      <input type="number" class="form-control" id="numberOfregisterStudent">
+    </div>
+	
+		<div class="form-group">
+      <label for="pwd">Status:</label>
+      <input type="text" class="form-control" id="status">
+    </div>
+	
+	
+	
+<div class="form-actions">
+<button type="submit" class="btn btn-primary">Save changes</button>
+<button type="button" class="btn btn-danger">Cancel</button>
+</div>
+
+
+  </form>
+</div>
+
+      
 
 
   </div>
  </div>
-
+<script type="text/javascript">
+$(function() {
+    $('input[name="daterange"]').daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 30,
+        locale: {
+            format: 'MM/DD/YYYY h:mm A'
+        }
+    });
+});
+</script>
 
  </div>
 </div>
