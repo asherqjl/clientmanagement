@@ -20,10 +20,22 @@
     <![endif]-->
 
 <script src="ckeditor/ckeditor.js"></script>
+<style>
+#uploadImages .thumbnail {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin: 2px;
+}
 
+#uploadImages .thumbnail img {
+	width: 150px;
+	height: 150px;
+}
+</style>
 </head>
 <body>
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -72,27 +84,128 @@
 		</div>
 	</div>
 
-
 	<!-- <Start> -->
 	<form>
 		<div class="container">
 			<div class="jumbotron text-left">
-				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Library</a></li>
-					<li class="active">Data</li>
-				</ol>
 				<div class="row">
-					<label>Course Name:</label> <input type="text"
-						placeholder="New Course Name" class="form-control">
+					<!-- whethere it is edit/selected depends on sql query already -->
+					<label>Program Name:</label> <input type="text"
+						placeholder="New Program Name / Selected Program Name"
+						class="form-control">
+				</div>
+				<br>
+				<div class="panel panel-default">
+					<!-- Default panel contents -->
+					<div class="panel-heading">Add Course</div>
+
+					<!-- Table -->
+					<table class="table table-striped">
+						<tr>
+							<td>Anger Management</td>
+							<td>
+								<!-- use sql to extract the contents of a particular table -->
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="true">
+										Date <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										<li><a href="#">21/10/2015</a></li>
+										<li><a href="#">12/11/2015</a></li>
+										<li><a href="#">10/11/2015</a></li>
+										<li><a href="#">25/11/2015</a></li>
+										<li><a href="#">Add New...</a></li>
+									</ul>
+								</div>
+							</td>
+							<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+
+						</tr>
+						<tr>
+							<td>Stress Management</td>
+							<td>
+								<!-- use sql to extract the contents of a particular table -->
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="true">
+										Date <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										<li><a href="#">21/10/2015</a></li>
+										<li><a href="#">12/11/2015</a></li>
+										<li><a href="#">10/11/2015</a></li>
+										<li><a href="#">25/11/2015</a></li>
+										<li><a href="#">Add New...</a></li>
+									</ul>
+								</div>
+							</td>
+							<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+
+						</tr>
+						<tr>
+							<td>Relaxing</td>
+							<td>
+								<!-- use sql to extract the contents of a particular table -->
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="true">
+										Date <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										<li><a href="#">21/10/2015</a></li>
+										<li><a href="#">12/11/2015</a></li>
+										<li><a href="#">10/11/2015</a></li>
+										<li><a href="#">25/11/2015</a></li>
+										<li><a href="#">Add New...</a></li>
+									</ul>
+								</div>
+							</td>
+							<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+
+						</tr>
+						<tr>
+							<td>Resting</td>
+							<td>
+								<!-- use sql to extract the contents of a particular table -->
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="true">
+										Date <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										<li><a href="#">21/10/2015</a></li>
+										<li><a href="#">12/11/2015</a></li>
+										<li><a href="#">10/11/2015</a></li>
+										<li><a href="#">25/11/2015</a></li>
+										<li><a href="#">Add New...</a></li>
+									</ul>
+								</div>
+							</td>
+							<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+						</tr>
+					</table>
+				</div>
+				<br>
+
+				<!-- Next time need to explore on how to upload the file up to the server with sql js and all the bullshuits -->
+				<div class="row">
+					<label>Program Image:</label><input type="file" id="fileinput"
+						multiple="multiple" accept="image/*" />
+					<div id="uploadImages"></div>
+					<script src="uploadImages.js"></script>
 				</div>
 
-				<br />
+				<br>
 
 				<div class="row">
-					<label>Course Description:</label>
+					<label>Program Description:</label>
 					<textarea name="editor1" id="editor1" rows="10" cols="80">
-						Enter Course Description            	
+						Enter Program Description / Edit Program Description            	
 						</textarea>
 					<script>
 	                // Replace the <textarea id="editor1"> with a CKEditor
@@ -101,57 +214,41 @@
 	            	</script>
 				</div>
 
-				<br />
-
-				<div class="row">
-					<label>Start Date: </label>
-					<div class="containerA">
-						<div class="row">
-							<div class='col-sm-6'>
-								<div class="form-group">
-									<div class='input-group date' id='datetimepicker1'>
-										<input type='text' class="form-control" /> <span
-											class="input-group-addon"> <span
-											class="glyphicon glyphicon-calendar"></span>
-										</span>
-									</div>
-								</div>
-							</div>
-							<script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<label>End Date: </label>
-					<div class="containerA">
-						<div class="row">
-							<div class='col-sm-6'>
-								<div class="form-group">
-									<div class='input-group date' id='datetimepicker1'>
-										<input type='text' class="form-control" /> <span
-											class="input-group-addon"> <span
-											class="glyphicon glyphicon-calendar"></span>
-										</span>
-									</div>
-								</div>
-							</div>
-							<script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
-						</div>
-					</div>
+				<br>
+				<!-- use sql to extract the contents of a particular table -->
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						Category <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li><a href="#">Type 1</a></li>
+						<li><a href="#">Type 2</a></li>
+						<li><a href="#">Type 3</a></li>
+						<li><a href="#">Type 4</a></li>
+					</ul>
 				</div>
 
-				<br />
+				<br>
+				<!-- use sql to extract the contents of a particular table -->
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						Status <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+						<li><a href="#">Available</a></li>
+						<li><a href="#">Coming Soon</a></li>
+					</ul>
+				</div>
+
+				<br>
+
 				<div class="row">
 					<a href="addProgramsResult.html" class="btn btn-lg btn-info">
-						Submit </a>
+						Add Program </a>
 				</div>
 
 			</div>
@@ -162,8 +259,7 @@
 
 
 	<!-- <footer> -->
-	<div class="navbar navbar-inverse navbar-fixed-bottom"
-		role="navigation">
+	<div class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="container">
 			<div class="navbar-text pull-left">
 				<p>&#169;COPYRIGHT 2015 I'MPOSSIBLE</p>
