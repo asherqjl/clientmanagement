@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>I'MPOSSIBLE Admin Dashboard</title>
+<title>I'MPOSSIBLE - Manage Course</title>
 <link rel="stylesheet" type="text/css" href="adminIndex.css" />
 <link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -50,8 +50,8 @@
 
  <li><a href="adminIndex.html" href="#"><i class="flaticon-transport10"> Dashboard</i></a></li>
  <li><a href="adminIndex.html"><i class="flaticon-options24"> Manage Category</i></a></li>
- <li><a href="NewCourseAdmin.html"><i class="flaticon-labels2"> Manage Course</i></a></li>
- <li><a class="selected"><i class="flaticon-labels2"> Manage Program</i></a></li>
+ <li><a class="selected"><i class="flaticon-labels2"> Manage Course</i></a></li>
+ <li><a href="NewProgramAdmin.html"><i class="flaticon-labels2"> Manage Program</i></a></li>
  <li><a href="judithschedule.html"><i class="flaticon-calendar146"> Manage Schedule</i></a></li>
  <li><a href="adminIndex.html"><i class="flaticon-23"> Manage Status</i></a></li>
   <li><a href="adminIndex.html"><i class="flaticon-multiple25"> Manage Users</i></a></li>
@@ -60,12 +60,12 @@
 
  </div>
  <div class="content">
- <h1>Manage Programs</h1>
+ <h1>Manage Course</h1>
 
  
  <div id="box">
      <div class="box-panel">
-	 <div class="panel-body">
+ <div class="panel-body">
 		<h2>Search</h2>
 		<div class="well">
 			<div class="row">
@@ -120,13 +120,13 @@
 	</div>
 	<!--  Icons for delete, edit and copy -->
 	<p class="icons">
-		<a href="doAddProgramLatest.html"><button type="button" class="btn btn-default btn-sm">
+		<a href="doAddCourseLatest.html"><button type="button" class="btn btn-default btn-sm">
 			<span class="glyphicon glyphicon-plus"></span> Add
 		</button></a>
 		<button type="button" class="btn btn-default btn-sm">
 			<span class="glyphicon glyphicon-trash"></span> Delete
 		</button>
-		<a href="doAddProgramLatest.html"><button type="button" class="btn btn-default btn-sm">
+		<a href="doAddCourseLatest.html"><button type="button" class="btn btn-default btn-sm">
 			<span class="glyphicon glyphicon-edit"></span> Edit
 		</button></a>
 		<button type="button" class="btn btn-default btn-sm">
@@ -144,11 +144,10 @@
 					<th><input type="checkbox" name="checkbox" value="checkbox"
 						style="text-align: center"></th>
 					<th>Image</th>
-					<th>Program Name</th>
 					<th>Course Name</th>
 					<th>Course ID</th>
-					<th>Start Date</th>
-					<th>End Date</th>
+					<th>Price</th>
+					<th>Class Size</th>
 					<th>Status</th>
 				</tr>
 			</thead>
@@ -156,48 +155,25 @@
 				<tr>
 					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
 					<td>Image1</td>
-					<td>Financial Accounting</td>
-					<td>Managing Time, Dealing with Stress</td>
+					<td>Showing Love</td>
 					<td>C223</td>
-					<td>23/11/2015</td>
-					<td>23/11/2015</td>
+					<td>$23</td>
+					<td>30</td>
 					<td>Available</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
 					<td>Image 2</td>
-					<td>Managing Stress</td>
-					<td>Managing Time, Dealing with Stress</td>
+					<td>Loving the Right Way</td>
 					<td>C221</td>
-				<td>23/11/2015</td>
-				<td>23/11/2015</td>
-					<td>Available</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
-					<td>Image 2</td>
-					<td>Managing Stress</td>
-					<td>Managing Time, Dealing with Stress</td>
-					<td>C221</td>
-			<td>23/11/2015</td>
-	<td>23/11/2015</td>
+					<td>$30</td>
+					<td>30</td>
 					<td>Coming Soon</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
 					<td>Image 2</td>
-					<td>Managing Stress</td>
-					<td>Managing Time, Dealing with Stress</td>
-					<td>C221</td>
-				<td>23/11/2015</td>
-					<td>23/11/2015</td>
-					<td>Coming Soon</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
-					<td>Image 2</td>
-					<td>Managing Stress</td>
-					<td>Managing Time, Dealing with Stress</td>
+					<td>Communicating the Right Way</td>
 					<td>C221</td>
 					<td>$30</td>
 					<td>30</td>
@@ -206,26 +182,44 @@
 				<tr>
 					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
 					<td>Image 2</td>
-					<td>Managing Stress</td>
-					<td>Managing Time, Dealing with Stress</td>
+					<td>Anger Management</td>
 					<td>C221</td>
-				<td>23/11/2015</td>
-					<td>23/11/2015</td>
+					<td>$30</td>
+					<td>30</td>
+					<td>Coming Soon</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+					<td>Image 2</td>
+					<td>Communicating the Right Way</td>
+					<td>C221</td>
+					<td>$30</td>
+					<td>30</td>
 					<td>Available</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
 					<td>Image 2</td>
-					<td>Managing Stress</td>
-					<td>Managing Time, Dealing with Stress</td>
+					<td>Managing Time</td>
 					<td>C221</td>
-				<td>23/11/2015</td>
-			<td>23/11/2015</td>
+					<td>$30</td>
+					<td>30</td>
 					<td>Coming Soon</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+					<td>Image 2</td>
+					<td>Dealing with Stress</td>
+					<td>C221</td>
+					<td>$30</td>
+					<td>30</td>
+					<td>Available</td>
 				</tr>
 		</table>
 	</div>
 
+ 
+  </div>
  </div>
 
 
