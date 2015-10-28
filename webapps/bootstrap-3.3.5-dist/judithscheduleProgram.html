@@ -29,6 +29,7 @@
 <script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
 <link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
 
+
   </head>
   <body>
 <div id="header">
@@ -76,14 +77,15 @@
 
  </div>
  <div class="content">
+ 
 	<div class="page-header">
 			
-				<h1><i class="fa fa-clock-o fa-1x "></i>  Course Schedule</h1>
+				<h1><i class="fa fa-clock-o fa-1x "></i>  Program Schedule</h1>
 				<ul class="breadcrumb">
 					<li><a
-						href="#">Course</a></li>
+						href="judithschedule">Course</a></li>
 					<li><a
-						href="#">Program</a></li>
+						href="judithscheduleProgram">Program</a></li>
 				</ul>
 		
 		</div>
@@ -98,7 +100,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						<i class="fa fa-list"></i> Course Schedule List
+						<i class="fa fa-list"></i> Program Schedule List
 					</h3>
 				</div>
 				<div class="panel-body">
@@ -110,7 +112,7 @@
 				
 					<div class="row">
 					<div class="pull-right">
-					<a href="#" data-toggle="tooltip" title="Add New"
+					<a href="editProgramSchedule.html" data-toggle="tooltip" title="Add New"
 						class="btn btn-primary"><i class="fa fa-plus"></i></a>
 					<button type="submit" form="form-product"
 						formaction="#"
@@ -129,99 +131,111 @@
 						action="#"
 						method="post" enctype="multipart/form-data" id="form-product">
 						<div class="table-responsive">
-							<table class="table table-bordered table-hover">
-								<thead>
-									<tr>
-										<td style="width: 1px;" class="text-center"><input
-											type="checkbox"
-											onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
-								
-										<td class="text-left"><a href="#" class="asc">Course Title</a></td>
-										<td class="text-left"><a href="#">Course ID</a></td>
-									<td class="text-left"><a href="#">Start date</a></td>
-									<td class="text-left"><a href="#">End date</a></td>
-									<td class="text-left"><a href="#">Trainer</a></td>
-									<td class="text-left"><a href="#">Venue</a></td>
-					
-										<td class="text-right">Action</td>
-									</tr>
-								</thead>
-								<tbody>
+	<table class="table table-striped">
 
-									<tr>
-										<td class="text-center"><input type="checkbox"
-											name="selected[]" value="47" /></td>
+			<thead>
+				<tr>
+					<th><input type="checkbox" name="checkbox" value="checkbox"
+						style="text-align: center"></th>
+					<th>Image</th>
+					<th>Program Name</th>
+					<th>Course Name</th>
+					<th>Course ID</th>
+					<th>Start Date</th>
+					<th>End Date</th>
+					<th>Status</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+					<td>Image1</td>
+					<td>Financial Accounting</td>
+					<td>Managing Time, Dealing with Stress</td>
+					<td>C223</td>
+					<td>23/11/2015</td>
+					<td>23/11/2015</td>
+					<td>Available</td>
+						<td class="text-right"><a
+											href="editProgramSchedule.html"
+											data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
+												class="fa fa-pencil"></i></a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+					<td>Image 2</td>
+					<td>Managing Stress</td>
+					<td>Managing Time, Dealing with Stress</td>
+					<td>C221</td>
+				<td>23/11/2015</td>
+				<td>23/11/2015</td>
+					<td>Available</td>
+						<td class="text-right"><a
+											href="editProgramSchedule.html"
+											data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
+												class="fa fa-pencil"></i></a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+					<td>Image 2</td>
+					<td>Managing Stress</td>
+					<td>Managing Time, Dealing with Stress</td>
+					<td>C221</td>
+			<td>23/11/2015</td>
+	<td>23/11/2015</td>
+					<td>Coming Soon</td>
+						<td class="text-right"><a
+											href="#"
+											data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
+												class="fa fa-pencil"></i></a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+					<td>Image 2</td>
+					<td>Managing Stress</td>
+					<td>Managing Time, Dealing with Stress</td>
+					<td>C221</td>
+				<td>23/11/2015</td>
+					<td>23/11/2015</td>
+					<td>Coming Soon</td>
+						<td class="text-right"><a
+											href="editProgramSchedule.html"
+											data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
+												class="fa fa-pencil"></i></a></td>
+				</tr>
+		
+				<tr>
+					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+					<td>Image 2</td>
+					<td>Managing Stress</td>
+					<td>Managing Time, Dealing with Stress</td>
+					<td>C221</td>
+				<td>23/11/2015</td>
+					<td>23/11/2015</td>
 						
-										<td class="text-left">Therapy for woman</td>
-										
-										<td class="text-left">1221</td>
-										<td class="text-left">23/10/2015</td>
-										<td class="text-left">23/10/2015</td>
-											<td class="text-left">Alice Tan</td>
-											<td class="text-left">Seminar Room</td>
-										<td class="text-right"><a
-											href="editCourseSchedule.html"
-											data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-												class="fa fa-pencil"></i></a>
-												</td>
-									</tr>
-									<tr>
-										<td class="text-center"><input type="checkbox"
-											name="selected[]" value="28" /></td>
-								
-										<td class="text-left">Adjustment/Transition Change
-											Therapy for Women</td>
-										<td class="text-left">1222</td>
-										<td class="text-left">23/10/2015</td>
-										<td class="text-left">23/10/2015</td>
-										<td class="text-left">Ben Quek</td>
-										<td class="text-left">Class W65D</td>
-										
-										<td class="text-right"><a
-											href="#"
+					<td>Available</td>
+					<td class="text-right"><a
+											href="editProgramSchedule.html"
 											data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
 												class="fa fa-pencil"></i></a></td>
-									</tr>
-									<tr>
-										<td class="text-center"><input type="checkbox"
-											name="selected[]" value="41" /></td>
-									
-										<td class="text-left">Mid-Life Transition Therapy for
-											Women</td>
-										<td class="text-left">1223</td>
-										<td class="text-left">23/10/2015</td>
-										<td class="text-left">23/10/2015</td>
-											<td class="text-left">Charles Koh</td>
-											<td class="text-left">Class W65F</td>
-										
-										<td class="text-right"><a
-											href="#"
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+					<td>Image 2</td>
+					<td>Managing Stress</td>
+					<td>Managing Time, Dealing with Stress</td>
+					<td>C221</td>
+				<td>23/11/2015</td>
+			<td>23/11/2015</td>
+			<td>Coming Soon</td?>
+				<td class="text-right"><a
+											href="editProgramSchedule.html"
 											data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
 												class="fa fa-pencil"></i></a></td>
-									</tr>
-									<tr>
-										<td class="text-center"><input type="checkbox"
-											name="selected[]" value="40" /></td>
-										
-										<td class="text-left">Grief Therapy for Women</td>
-										<td class="text-left">1224</td>
-										<td class="text-left">23/10/2015</td>
-										<td class="text-left">23/10/2015</td>
-										<td class="text-left">Dick Tan</td>
-										<td class="text-left">Class W65Q</td>
-										
-										<td class="text-right"><a
-											href="#"
-											data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-												class="fa fa-pencil"></i></a></td>
-									</tr>
-
-
-
-
-
-								</tbody>
-							</table>
+		
+				</tr>
+		</table>
 						</div>
 					</form>
 					<div class="row">
