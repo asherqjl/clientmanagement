@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>I'MPOSSIBLE - Manage Program</title>
+<title>I'MPOSSIBLE - Manage Course</title>
 <link rel="stylesheet" type="text/css" href="css/adminIndex.css" />
 <link rel="stylesheet" type="text/css" href="css/flaticon.css">
 <meta
@@ -63,10 +63,10 @@
 						class="flaticon-transport10"> Dashboard</i></a></li>
 				<li><a href="adminIndex.html"><i class="flaticon-options24">
 							Manage Category</i></a></li>
-				<li><a href="NewCourseAdmin.html"><i
-						class="flaticon-labels2"> Manage Course</i></a></li>
 				<li><a class="selected"><i class="flaticon-labels2">
-							Manage Program</i></a></li>
+							Manage Course</i></a></li>
+				<li><a href="NewProgramAdmin.html"><i
+						class="flaticon-labels2"> Manage Program</i></a></li>
 				<li><a href="judithschedule.html"><i
 						class="flaticon-calendar146"> Manage Schedule</i></a></li>
 				<li><a href="adminIndex.html"><i class="flaticon-23">
@@ -78,7 +78,7 @@
 
 		</div>
 		<div class="content">
-			<h1>Manage Programs</h1>
+			<h1>Manage Course</h1>
 
 
 			<div id="box">
@@ -95,59 +95,61 @@
 											placeholder="Course Name" />
 									</div>
 
-									<div class="form-group">
-										<label class="control-label" for="input-model">Course
-											ID</label> <input type="text" name="filter_model" value=""
-											placeholder="Course ID" />
-									</div>
+
 
 								</div>
 
 								<div class="col-sm-4">
 
 									<div class="form-group">
-										<label class="control-label" for="input-price">Duration</label>
-										<input type="text" name="filter_price" value=""
-											placeholder="Duration" />
+										<label class="control-label" for="input-price">Start
+											Date</label> <input type="text" name="filter_price" value=""
+											placeholder="Start Date" />
 									</div>
 
-									<div class="form-group">
-										<label class="control-label" for="input-quantity">Class
-											size</label> <input type="text" name="filter_quantity" value=""
-											placeholder="Class size" />
-									</div>
+
 
 								</div>
+								<div class="col-sm-4">
 
+									<div class="form-group">
+										<label class="control-label" for="input-price">End
+											Date</label> <input type="text" name="filter_price" value=""
+											placeholder="End Date" />
+									</div>
+								</div>
 								<div class="col-sm-4">
 									<div class="form-group">
 										<label class="control-label" for="input-status">Status</label>
 										<select name="filter_status" id="input-status">
-											<option value="*"></option>
+											<option value="2">Draft</option>
 											<option value="1">Available</option>
 											<option value="0">Coming Soon</option>
 										</select>
 									</div>
-
+								</div>
+								<div class="col-sm-4"></div>
+								<div class="col-sm-4">
 									<button type="button" id="button-filter"
 										class="btn btn-primary pull-right">
 										<i class="fa fa-search"></i> Filter
 									</button>
 
 								</div>
+
 							</div>
 						</div>
 					</div>
 					<!--  Icons for delete, edit and copy -->
 					<p class="icons">
-						<a href="doAddProgramLatest.html"><button type="button"
-								class="btn btn-default btn-sm">
+						<a href="doAddCourseLatestNEWUPDATED.html"><button
+								type="button" class="btn btn-default btn-sm">
 								<span class="glyphicon glyphicon-plus"></span> Add
 							</button></a>
 						<button type="button" class="btn btn-default btn-sm">
 							<span class="glyphicon glyphicon-trash"></span> Delete
 						</button>
-						<a href="doAddProgramLatest.html"><button type="button"
+						<a href="doAddCourseLatestNEWUPDATED"><button type="button"
 								class="btn btn-default btn-sm">
 								<span class="glyphicon glyphicon-edit"></span> Edit
 							</button></a>
@@ -166,11 +168,13 @@
 									<th><input type="checkbox" name="checkbox"
 										value="checkbox" style="text-align: center"></th>
 									<th>Image</th>
-									<th>Program Name</th>
 									<th>Course Name</th>
-									<th>Course ID</th>
 									<th>Start Date</th>
 									<th>End Date</th>
+									<th>Start Time</th>
+									<th>End Time</th>
+									<th>Price</th>
+									<th>Class Size</th>
 									<th>Status Description</th>
 								</tr>
 							</thead>
@@ -179,86 +183,103 @@
 									<td><input type="checkbox" name="checkbox"
 										value="checkbox"></td>
 									<td>Image1</td>
-									<td>Financial Accounting</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C223</td>
+									<td>Showing Love</td>
 									<td>23/11/2015</td>
 									<td>23/11/2015</td>
+									<td>17:06</td>
+									<td>17:06</td>
+									<td>$23</td>
+									<td>30</td>
 									<td>Available</td>
 								</tr>
 								<tr>
 									<td><input type="checkbox" name="checkbox"
 										value="checkbox"></td>
 									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
+									<td>Loving the Right Way</td>
 									<td>23/11/2015</td>
 									<td>23/11/2015</td>
+									<td>17:06</td>
+									<td>17:06</td>
+									<td>$23</td>
+									<td>30</td>
 									<td>Available</td>
 								</tr>
 								<tr>
 									<td><input type="checkbox" name="checkbox"
 										value="checkbox"></td>
 									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
+									<td>Communicating the Right Way</td>
 									<td>23/11/2015</td>
 									<td>23/11/2015</td>
-									<td>Coming Soon</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>Coming Soon</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
+									<td>17:06</td>
+									<td>17:06</td>
+									<td>$23</td>
+									<td>30</td>
 									<td>Available</td>
 								</tr>
 								<tr>
 									<td><input type="checkbox" name="checkbox"
 										value="checkbox"></td>
 									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
+									<td>Anger Management</td>
 									<td>23/11/2015</td>
 									<td>23/11/2015</td>
+									<td>17:06</td>
+									<td>17:06</td>
+									<td>$23</td>
+									<td>30</td>
 									<td>Available</td>
 								</tr>
 								<tr>
 									<td><input type="checkbox" name="checkbox"
 										value="checkbox"></td>
 									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
+									<td>Communicating the Right Way</td>
 									<td>23/11/2015</td>
 									<td>23/11/2015</td>
-									<td>Coming Soon</td>
+									<td>17:06</td>
+									<td>17:06</td>
+									<td>$23</td>
+									<td>30</td>
+									<td>Available</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="checkbox"
+										value="checkbox"></td>
+									<td>Image 2</td>
+									<td>Managing Time</td>
+									<td>23/11/2015</td>
+									<td>23/11/2015</td>
+									<td>17:06</td>
+									<td>17:06</td>
+									<td>$23</td>
+									<td>30</td>
+									<td>Draft</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="checkbox"
+										value="checkbox"></td>
+									<td>Image 2</td>
+									<td>Dealing with Stress</td>
+									<td>23/11/2015</td>
+									<td>23/11/2015</td>
+									<td>17:06</td>
+									<td>17:06</td>
+									<td>$23</td>
+									<td>30</td>
+									<td>Draft</td>
 								</tr>
 						</table>
 					</div>
 
+
 				</div>
-
-
 			</div>
+
+
 		</div>
+	</div>
+
 </body>
 </html>

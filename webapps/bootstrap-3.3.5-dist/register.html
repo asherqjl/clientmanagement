@@ -5,13 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--  JQuery Link -->
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!--  JQuery Link <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 <!--  End of JQuery Link -->
+
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE</title>
+<title>I'MPOSSIBLE - Register</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,10 +24,21 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
+<style>
+.hello{
+
+
+padding-top:10px;
+
+}
+
+</style>
+
+	</head>
+
 
 <body>
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -39,6 +50,8 @@
 				<a class="navbar-brand" href="#"> <img id="brand-image"
 					alt="Website logo" src="brandimage.PNG" /></a> <a class="navbar-brand"
 					href="index.html">I'MPOSSIBLE</a>
+
+
 			</div>
 
 			<div class="navbar-collapse collapse">
@@ -48,14 +61,11 @@
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">Courses & Programs<b class=caret></b></a>
 						<ul class="dropdown-menu">
-							<li class="dropdown-header">Courses</li>
-							<li><a href="#">All Courses</a></li>
+							<li><a href="#">About</a></li>
 							<li class="active">
-							<li><a href="#">Courses Available Now</a></li>
-							<li class="divider"></li>
-							<li class="dropdown-header">Programs</li>
-							<li><a href="ViewPrograms.html">All Programs</a></li>
-							<li><a href="ViewPrograms.html">Programs Available Now</a></li>
+							<li><a href="viewProgramsNcourses.html"> Currently
+									Available Now</a></li>
+							<li><a href="viewProgramsNcourses.html">Full List</a></li>
 						</ul></li>
 					<li><a href="ContactUs.html">Contact Us</a></li>
 
@@ -63,10 +73,10 @@
 						value="" placeholder="Username"></li>
 					<li><input type="text" class="form-control" name="passsword"
 						value="" placeholder="Password"></li>
-					<li><button type="submit" class="btn btn-success"
-							style="margin-top: 8px; margin-left: 5px">
-							<a href="login.html"></a>Sign in
-						</button></li>
+					<li><button type="submit" class="btn btn-success" style="margin-top: 8px; margin-left: 5px">
+							<a href="C:\FYP\impossible\webapps\bootstrap-3.3.5-dist\login.html"></a>Sign in
+						</button>
+					</li>
 				</ul>
 			</div>
 
@@ -79,51 +89,95 @@
 				<div class="well well-sm">
 					<form class="form-horizontal" method="post">
 						<fieldset>
-							<legend class="text-center header">Parent</legend>
-							<div class="form-group">
-								<div class="col-md-5 col-md-offset-1">
-									Full Name: <input id="name" name="fullname"
-										type="text" placeholder="Name" class="form-control">
-								</div>
+							<legend class="text-center">Parent</legend>
+							  
+							  <div class="col-xs-5">
+							   Surname: <input id="name" name="fullname" type="text" class="form-control" placeholder="Name">
+							  </div>
+							  
+							  <div class="col-xs-6">
+							  Given Name: <input type="text" class="form-control" placeholder="">
+							  </div>
+							  
+							
+							  <div class="col-xs-5">
+							  <div class = "hello">
+							  Contact Number: <input id="phonenumber" name="phone" type="tel" class="form-control" placeholder="Mobile Number">
+							  </div>
+							
+								
+								
 							</div>
-							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
-									Contact Number:<input id="phonenumber" name="phone" type="tel"
-										placeholder="Mobile Number" class="form-control">
+							
+							 <div class="col-xs-5">
+							  <div class = "hello">
+							  Date of Birth: <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="Birthdate">
+							  </div>
+							  </div>
+							
+							<div class="col-xs-5">
+							 <div class = "hello">
+							  Marital Status: <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="Married/Single/Widowed">
+							  </div>
+							  </div>
+							 
+							<div class="col-xs-5">
+							<div class = "hello">
+							  NRIC number / Passport No: <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="">
+							  </div>
+							  </div>
+							  
+							  <div class="col-xs-8">
+							<div class = "hello">
+							  Issues facing: <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="short description of issues facing">
+							  </div>
+							  </div>
+							  <div class="col-xs-5">
+							 <div class = "hello">
+									Gender:
+										<form>
+										<br>
+										<input type="radio" name="sex" value="male" checked>Male
+										<br>
+										<input type="radio" name="sex" value="female">Female
+										</form>
+										</div>
 								</div>
-							</div>
+							<div class="col-xs-10">
+							<hr/>
+							<b><h4> Address </h4></b>
 
-							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
-									Email Address : <input id="email" name="email" type="email"
-										placeholder="Email Address" class="form-control">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
-									Additional Message: <textarea class="form-control" id="message" name="message"
-										placeholder="Enter your message for us here."
-										rows="7"></textarea>
-								</div>
-							</div>
+							   <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="Address Line 1">
+							   <i> Address Line 1: </i>
+							  </div>
+							  
+							<div class="col-xs-10">
+							   <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="Address Line 2">
+							  <i> Address Line 2: </i>
+							  </div>
+							  
+							<div class="col-xs-5">
+							   <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="Postal Code">
+							<i>Postal Code: </i>							 
+							 <hr/>
+							  </div>
 							
 							<div class="form-group">
 								<div class="col-md-10 col-md-offset-1">
 									Do you want to Register Counselling for your child? :
-										<form>
+										
 										<br>
-										<input type="radio" name="sex" value="male" checked>Yes (Please fill up the registration form for the child as well.)
+										<input type="radio" name="No" value="No" checked> Yes (Please fill up the registration form for the child as well.)
 										<br>
-										<input type="radio" name="sex" value="female">No (Please click on submit.)
-										</form>
+										<input type="radio" name="Yes" value="Yes"> No (Please click on submit.)
+										
 								</div>
 							</div>
 					</form>
 				</div>
 			</div>
 
-			<div data-role="main" class="ui-content">
+			<!--<div data-role="main" class="ui-content">
     <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Show Popup Form</a>
 
     <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
@@ -140,7 +194,8 @@
         </div>
       </form>
     </div>
-  </div>
+  </div> -->
+  
 	<div class="container" style="margin-bottom: 50px">
 		<div class="row">
 			<div class="col-md-6">
@@ -148,48 +203,102 @@
 					<form class="form-horizontal" method="post">
 						<fieldset>
 							<legend class="text-center header">Child
-							<br><i style = "font: 20px"> Please fill up this form as well if your child needs any Counselling. </i></legend>
+							<br><i style = "font: 10px"> Please fill up this form as well if your child needs any Counselling. </i></legend>
 							
-							<div class="form-group">
-								<div class="col-md-5 col-md-offset-1">
-									Full Name: <input id="name" name="fullname"
-										type="text" placeholder="Name" class="form-control">
-								</div>
+							<div class="col-xs-5">
+							   Surname: <input id="childsurname" name="childsurname" type="text" class="form-control" placeholder="Surname">
+							  </div>
+							  
+							  <div class="col-xs-6">
+							  Given Name: <input type="text" class="form-control" placeholder="">
+							  </div>
+							  
+							
+							  <div class="col-xs-5">
+							  <div class = "hello">
+							  Contact Number: <input id="phonenumber" name="phone" type="tel" class="form-control" placeholder="Mobile Number">
+							  </div>
 							</div>
-							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
-									Contact Number:<input id="phonenumber" name="phone" type="text"
-										placeholder="Mobile Number" class="form-control">
+							
+							 <div class="col-xs-5">
+							  <div class = "hello">
+							  Date of Birth: <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="Birthdate">
+							  </div>
+							  </div>
+							
+							<div class="col-xs-5">
+							 <div class = "hello">
+							  Marital Status: <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="Married/Single/Widowed">
+							  </div>
+							  </div>
+							 
+							<div class="col-xs-5">
+							<div class = "hello">
+							  NRIC number / Passport No: <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="">
+							  </div>
+							  </div>
+							  
+							  <div class="col-xs-8">
+							<div class = "hello">
+							  Issues facing: <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="short description of issues facing">
+							  </div>
+							  </div>
+							  
+							  <div class="col-xs-6">
+							<div class = "hello">
+							  Relationship to child: <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="short description of issues facing">
+							  </div>
+							  </div>
+							  
+							  <div class="col-xs-5">
+							 <div class = "hello">
+									Gender:
+										<form>
+										<br>
+										<input type="radio" name="sex" value="male" checked>Male
+										<br>
+										<input type="radio" name="sex" value="female">Female
+										</form>
+										</div>
 								</div>
-							</div>
+							<div class="col-xs-10">
+							<hr/>
+							<b><h4> Address </h4></b>
 
-							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
-									Email Address : <input id="email" name="email" type="text"
-										placeholder="Email Address" class="form-control">
-								</div>
-							</div>
+							   <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="Address Line 1">
+							   <i> Address Line 1: </i>
+							  </div>
+							  
+							<div class="col-xs-10">
+							   <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="Address Line 2">
+							  <i> Address Line 2: </i>
+							  </div>
+							  
+							<div class="col-xs-5">
+							   <input id="dateofbirth" name="phone" type="tel" class="form-control" placeholder="Postal Code">
+							<i>Postal Code: </i>
+							  </div>
 
-							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
-									Additional Message: <textarea class="form-control" id="message" name="message"
-										placeholder="Enter your message for us here."
-										rows="7"></textarea>
-								</div>
-							</div>
+							
 
-							<div class="form-group">
-								<div class="col-md-12 text-center">
+							
+						</fieldset>
+					</form>
+					
+				</div>
+				<div class="form-group">
+								<div class="col-md-12" style = 'padding-left:450px'>
 									<button type="submit" class="btn btn-primary btn-lg">Submit</button>
 								</div>
 							</div>
-						</fieldset>
-					</form>
-				</div>
 			</div>
+			
 			</div>
+			
 			</div>
+			
 			</div>
+			
 			</div>
 
 	<!-- <footer> -->

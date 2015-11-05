@@ -18,16 +18,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-<!-- for filter bar -->
 <style>
-.container {
-	margin-top: 30px;
-}
-
-.filter-col {
-	padding-left: 10px;
-	padding-right: 10px;
+.testing {
+	border: 5px solid black;
+	margin-right: 300px;
+	margin-top: -395px;
+	margin-left: 450px;
+	padding-bottom: 20x;
 }
 </style>
 
@@ -89,10 +86,11 @@
 	<!-- when the database comes, no more hardcoding, auto populate the page with contents
 		based on the number of data in the DB, use for loop. -->
 	<!-- ROW on programs -->
-	<h3>Course</h3>
 	<div class="row">
 		<div class="col-xs-6 col-lg-4">
 			<div class="alingment">
+				<h3>Course</h3>
+			
 				<p>Course Name: Time Management</p>
 				<p style="text-align: left">
 					<img src="courseAndProgram/timeflies.jpg" width=75% height=75% />
@@ -102,38 +100,50 @@
 				<p>Price:</p>
 			</div>
 		</div>
-
-		<div class="col-xs-6 col-lg-4">
-			<h3>Course Schedules:</h3>
-
-			<table style="width: 60%">
-				<tr>
-					<td>Schedule 1</td>
-					<td>Status: Available</td>
-					<td>Date: 12/11/2015</td>
-					<td>Venue:</td>
-					<td><a class="btn btn-default" href="register.html">
-							Register Here &raquo; </a></td>
-				</tr>
-				<tr>
-					<td>Schedule 2</td>
-					<td>Status: Coming Soon</td>
-					<td>Date: 21/11/2015</td>
-					<td>Venue:</td>
-					<td><a class="btn btn-default" href="register.html">
-							Register Here &raquo; </a></td>
-				</tr>
-				<tr>
-					<td>Schedule 3</td>
-					<td>Status: Coming Soon</td>
-					<td>Date: 25/11/2015</td>
-					<td>Venue:</td>
-					<td><a class="btn btn-default" href="register.html">
-							Register Here &raquo; </a></td>
-				</tr>
-			</table>
-		</div>
 	</div>
+	<div class="testing">
+		<div class="row">
+			<div class="col-xs-6 col-lg-4">
+				<h3>Course Schedules:</h3>
+
+				<table style="width: 60%">
+					<tr>
+						<th>Start Date:</th>
+						<th>End Date:</th>
+						<th>Start Time:</th>
+						<th>End Time:</th>
+						<th>Venue:</th>
+					</tr>
+					<tr>
+						<td>12/11/2015</td>
+						<td>12/11/2015</td>
+						<td>17:06</td>
+						<td>17:06</td>
+						<td>Venue</td>
+						<td><a class="btn btn-default" href="register.html">
+								Register Here &raquo; </a></td>
+					</tr>
+					<tr>
+						<td>12/11/2015</td>
+						<td>12/11/2015</td>
+						<td>17:06</td>
+						<td>17:06</td>
+						<td>Venue</td>
+						<td><a class="btn btn-default" href="register.html">
+								Register Here &raquo; </a></td>
+					</tr>
+					<tr>
+						<td>12/11/2015</td>
+						<td>12/11/2015</td>
+						<td>17:06</td>
+						<td>17:06</td>
+						<td>Venue</td>
+						<td><a class="btn btn-default" href="register.html">
+								Register Here &raquo; </a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</div>
 	<!--/row-->
 
