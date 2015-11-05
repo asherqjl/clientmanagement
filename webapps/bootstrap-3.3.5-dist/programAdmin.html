@@ -75,190 +75,201 @@
 						class="flaticon-multiple25"> Manage Users</i></a></li>
 			</ul>
 
-
 		</div>
-		<div class="content">
-			<h1>Manage Programs</h1>
+	</div>
+	<div class="content">
+		<h1>Manage Programs</h1>
 
 
-			<div id="box">
-				<div class="box-panel">
-					<div class="panel-body">
-						<h2>Search</h2>
-						<div class="well">
-							<div class="row">
-								<div class="col-sm-4">
+		<div id="box">
+			<div class="box-panel">
+				<div class="panel-body">
+					<h2>Search</h2>
+					<div class="well">
+						<div class="row">
+							<div class="col-sm-4">
 
-									<div class="form-group">
-										<label class="control-label" for="input-name">Course
-											Name</label> <input type="text" name="filter_name" value=""
-											placeholder="Course Name" />
-									</div>
-
-									<div class="form-group">
-										<label class="control-label" for="input-model">Course
-											ID</label> <input type="text" name="filter_model" value=""
-											placeholder="Course ID" />
-									</div>
-
+								<div class="form-group">
+									<label class="control-label" for="input-name">Program
+										Name</label> <input type="text" name="filter_name" value=""
+										placeholder="Program Name" />
 								</div>
 
-								<div class="col-sm-4">
 
-									<div class="form-group">
-										<label class="control-label" for="input-price">Duration</label>
-										<input type="text" name="filter_price" value=""
-											placeholder="Duration" />
-									</div>
 
-									<div class="form-group">
-										<label class="control-label" for="input-quantity">Class
-											size</label> <input type="text" name="filter_quantity" value=""
-											placeholder="Class size" />
-									</div>
+							</div>
 
+							<div class="col-sm-4">
+
+								<div class="form-group">
+									<label class="control-label" for="input-price">Start
+										Date</label> <input type="text" name="filter_price" value=""
+										placeholder="Start Date" />
 								</div>
 
-								<div class="col-sm-4">
-									<div class="form-group">
-										<label class="control-label" for="input-status">Status</label>
-										<select name="filter_status" id="input-status">
-											<option value="*"></option>
-											<option value="1">Available</option>
-											<option value="0">Coming Soon</option>
-										</select>
-									</div>
 
-									<button type="button" id="button-filter"
-										class="btn btn-primary pull-right">
-										<i class="fa fa-search"></i> Filter
-									</button>
 
+							</div>
+							<div class="col-sm-4">
+
+								<div class="form-group">
+									<label class="control-label" for="input-price">End Date</label>
+									<input type="text" name="filter_price" value=""
+										placeholder="End Date" />
 								</div>
 							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="control-label" for="input-status">Status</label>
+									<select name="filter_status" id="input-status">
+										<option value="2">Draft</option>
+										<option value="1">Available</option>
+										<option value="0">Coming Soon</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4"></div>
+							<div class="col-sm-4">
+								<button type="button" id="button-filter"
+									class="btn btn-primary pull-right">
+									<i class="fa fa-search"></i> Filter
+								</button>
+
+							</div>
+
 						</div>
 					</div>
-					<!--  Icons for delete, edit and copy -->
-					<p class="icons">
-						<a href="doAddProgramLatest.html"><button type="button"
-								class="btn btn-default btn-sm">
-								<span class="glyphicon glyphicon-plus"></span> Add
-							</button></a>
-						<button type="button" class="btn btn-default btn-sm">
-							<span class="glyphicon glyphicon-trash"></span> Delete
-						</button>
-						<a href="doAddProgramLatest.html"><button type="button"
-								class="btn btn-default btn-sm">
-								<span class="glyphicon glyphicon-edit"></span> Edit
-							</button></a>
-						<button type="button" class="btn btn-default btn-sm">
-							<span class="glyphicon glyphicon-copy"></span> Copy
-						</button>
-					</p>
+				</div>
+				<!--  Icons for delete, edit and copy -->
+				<p class="icons">
+					<a href="doAddProgramLatest.html"><button type="button"
+							class="btn btn-default btn-sm">
+							<span class="glyphicon glyphicon-plus"></span> Add
+						</button></a>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-trash"></span> Delete
+					</button>
+					<a href="doAddProgramLatest.html"><button type="button"
+							class="btn btn-default btn-sm">
+							<span class="glyphicon glyphicon-edit"></span> Edit
+						</button></a>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-copy"></span> Copy
+					</button>
+				</p>
 
-					<h2 class="sub-header">Section title</h2>
-					<div class="tablepadding">
+				<h2 class="sub-header">Section title</h2>
+				<div class="tablepadding">
 
-						<table class="table table-striped">
+					<table class="table table-striped">
 
-							<thead>
-								<tr>
-									<th><input type="checkbox" name="checkbox"
-										value="checkbox" style="text-align: center"></th>
-									<th>Image</th>
-									<th>Program Name</th>
-									<th>Course Name</th>
-									<th>Course ID</th>
-									<th>Start Date</th>
-									<th>End Date</th>
-									<th>Status Description</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image1</td>
-									<td>Financial Accounting</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C223</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>Available</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>Available</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>Coming Soon</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>Coming Soon</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>Available</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>Available</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Managing Stress</td>
-									<td>Managing Time, Dealing with Stress</td>
-									<td>C221</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>Coming Soon</td>
-								</tr>
-						</table>
-					</div>
-
+						<thead>
+							<tr>
+								<th><input type="checkbox" name="checkbox" value="checkbox"
+									style="text-align: center"></th>
+								<th>Image</th>
+								<th>Program Name</th>
+								<th>Start Date</th>
+								<th>End Date</th>
+								<th>Start Time</th>
+								<th>End Time</th>
+								<th>Price</th>
+								<th>Class Size</th>
+								<th>Status Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image1</td>
+								<td>Financial Accounting</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Coming Soon</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Draft</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Coming Soon</td>
+							</tr>
+					</table>
 				</div>
 
-
 			</div>
+
+
 		</div>
+	</div>
 </body>
 </html>
