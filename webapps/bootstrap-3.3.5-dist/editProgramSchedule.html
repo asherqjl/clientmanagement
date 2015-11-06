@@ -16,9 +16,11 @@
   
   
 
-     <!-- Bootstrap CSS and bootstrap datepicker CSS used for styling the demo pages-->
-        <link rel="stylesheet" href="css/datepicker.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
+     <!-- Bootstrap CSS and bootstrap datepicker CSS used for styling datepicker-->
+
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+
 
 
 </head>
@@ -94,24 +96,9 @@
 </div>
 
 
-        <div class="container">
-            <div class="hero-unit">
-                <input  type="text" placeholder="click to show datepicker"  id="example1">
-            </div>
-        </div>
-        <!-- Load jQuery and bootstrap datepicker scripts -->
-        <script src="js/jquery-1.9.1.min.js"></script>
-        <script src="js/bootstrap-datepicker.js"></script>
-        <script type="text/javascript">
-            // When the document is ready
-            $(document).ready(function () {
-                
-                $('#example1').datepicker({
-                    format: "dd/mm/yyyy"
-                });  
-            
-            });
-        </script>
+
+
+
 
 
   <div class="row">
@@ -121,12 +108,12 @@
     </div>
 	
 <div class="col-xs-2">
-      <label for="pwd">Start Date</label>
-      <input type="number" class="form-control" id="courseName" value="23/11/2015">
+      <label for="dp">Start Date</label>
+	<input type="date" class="form-control" id="dp" />
     </div>
 	<div class="col-xs-2">
-      <label for="pwd">End Date</label>
-      <input type="number" class="form-control" id="courseName" value="23/11/2015">
+      <label for="dp2">End Date</label>
+	  <input type="date" class="form-control" id="dp2" />
     </div>
 </div>
 	
@@ -136,12 +123,12 @@
       <input type="number" class="form-control" id="courseName" value="Stress Management">
     </div>
 <div class="col-xs-2">
-      <label for="pwd">Start Date</label>
-      <input type="number" class="form-control" id="courseName" value="23/11/2015">
+      <label for="dp3">Start Date</label>
+	<input type="date" class="form-control" id="dp3" />
     </div>
 	<div class="col-xs-2">
-      <label for="pwd">End Date</label>
-      <input type="number" class="form-control" id="courseName" value="23/11/2015">
+      <label for="dp4">End Date</label>
+	  <input type="date" class="form-control" id="dp4" />
     </div>
 
 
@@ -152,12 +139,12 @@
       <input type="number" class="form-control" id="courseName" value="Stress Management">
     </div>
 <div class="col-xs-2">
-      <label for="pwd">Start Date</label>
-      <input type="number" class="form-control" id="courseName" value="23/11/2015">
+      <label for="dp5">Start Date</label>
+	<input type="date" class="form-control" id="dp5" />
     </div>
 	<div class="col-xs-2">
-      <label for="pwd">End Date</label>
-      <input type="number" class="form-control" id="courseName" value="23/11/2015">
+      <label for="dp6">End Date</label>
+	  <input type="date" class="form-control" id="dp6" />
     </div>
 
 
@@ -201,7 +188,38 @@
 
 
  </div>
-</div>
+<script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+     $( "#dp" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	
+	$( "#dp2" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	$( "#dp3" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	$( "#dp4" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	$( "#dp5" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	$( "#dp6" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+
+    </script>
+
 
 </body>
 </html> 
