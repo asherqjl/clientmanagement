@@ -10,6 +10,8 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href="css/home.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,7 +54,8 @@
 							<li><a href="viewProgramsNcourses.html">Full List</a></li>
 						</ul></li>
 					<li><a href="ContactUs.html">Contact Us</a></li>
-
+                     <li><a href="#login" data-toggle="modal">Log In</a></li>
+					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
 				
 				</ul>
 			</div>
@@ -120,7 +123,7 @@
 			<!-- <a href="#" class="thumbnail" title="Couples Counselling"></a> --> 
 			<h3> <img
 				src="http://www.alliancecounselling.com.sg/newsite/wp-content/themes/medicenter/images/icons_small/green_light/heart.png" /> Couples Counselling</h3>
-			<p>When relationship conflict surfaces, it��s important to
+			<p>When relationship conflict surfaces, it's important to
 				remember that there are options.</p>
 			<a href="#" class="btn btn-danger">View</a>
 		</div>
@@ -191,28 +194,40 @@
 
 
 	<!-- 	Place bootstrap core javascript below so pages load faster -->
-	<div class="modal fade" id="contact">
+	<div class="modal fade" id="login">
 		<div class="modal-dialog">
 			<div class="modal-content">
+			<form class ="form-horizontal" role="form">
 				<div class="modal-header">
-					<h4>Contact</h4>
+					<h4>Sign in to I'MPOSSIBLE</h4>
 				</div>
 				<div class="modal-body">
-					<p>For general inquiries please email contact@bootstrapbay.com</p>
+				<div class="form-group">
+				      <label for="login-email" class="col-sm-2 control-label">Email:</label>
+					  <div class="col-sm-5">
+					  <input type="text" class="form-control" id="Login-email" placeholder="tomcat@domain.com">
+					  </div>
+					  </div>
+					  
+					  <div class="form-group">
+				      <label for="login-pwd" class="col-sm-2 control-label">Password*</label>
+					  <div class="col-sm-5">
+					  <input type="password" class="form-control" id="Login-name" placeholder="Password">
+					  </div>
+					  </div>
 				</div>
 				<div class="modal-footer">
-					<a class="btn btn-primary" data-dismiss="modal">Close</a>
+					<a class="btn btn-default" data-dismiss="modal">Close</a>
+					<button type="submit" class="btn btn-primary">Sign In</button>
 				</div>
+             </form>
 
-
-				<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-				<script
-					src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-				<!-- Include all compiled plugins (below), or include individual files as needed -->
-				<script src="js/bootstrap.min.js"></script>
+		
 			</div>
 		</div>
 	</div>
+	
+	
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -223,6 +238,12 @@
         interval: 3000
     })
 </script>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+				<script
+					src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<!-- Include all compiled plugins (below), or include individual files as needed -->
+				<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
 
