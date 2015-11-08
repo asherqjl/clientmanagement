@@ -9,6 +9,7 @@
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" /> 
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans'
@@ -62,7 +63,17 @@
 					<li><a href="ContactUs.html">Contact Us</a></li>
 					<li><a href="#login" data-toggle="modal">Log In</a></li>
 					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
-
+            <!-- add search form -->
+            <form class="navbar-form navbar-right" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search I'MPOSSIBLE.COM">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </form>
 				</ul>
 			</div>
 
@@ -99,6 +110,13 @@
 						</div>
 					</div>
 					<div class="item">
+						<img src="http://placehold.it/1200x315" alt="...">
+						<div class="carousel-caption">
+							<h3>Caption Text</h3>
+						</div>
+					</div>
+					
+						<div class="item">
 						<img src="http://placehold.it/1200x315" alt="...">
 						<div class="carousel-caption">
 							<h3>Caption Text</h3>
@@ -270,6 +288,9 @@
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
 
