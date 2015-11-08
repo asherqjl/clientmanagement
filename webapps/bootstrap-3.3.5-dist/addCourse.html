@@ -74,7 +74,9 @@
 						value="" placeholder="Password"></li>
 					<li><button type="submit" class="btn btn-success"
 							style="margin-top: 8px; margin-left: 5px">
-							<a href="C:\FYP\impossible\webapps\bootstrap-3.3.5-dist\login.html"></a>Sign in
+							<a
+								href="C:\FYP\impossible\webapps\bootstrap-3.3.5-dist\login.html"></a>Sign
+							in
 						</button></li>
 				</ul>
 			</div>
@@ -93,14 +95,20 @@
 						class="form-control">
 				</div>
 				<br>
-				
+
 				<div class="row">
-					<!-- whethere it is edit/selected depends on sql query already -->
-					<label>Course ID:</label> <input type="text"
-						placeholder="New Course ID / Selected Course ID "
-						class="form-control">
+					<!-- whether it is edit/selected depends on sql query already -->
+					<div class="panel panel-default">
+						<!-- Default panel contents -->
+						<div class="panel-heading"><label>Related Programs</label></div>
+
+						<table class="table table-striped">
+							<tr>
+								<td>Show list of related programs(when it is edit session)</td>
+							</tr>
+						</table>
+					</div>
 				</div>
-				
 				<br>
 				<!-- Next time need to explore on how to upload the file up to the server with sql js and all the bullshuits -->
 				<div class="row">
@@ -149,6 +157,7 @@
 						Status <span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+						<li><a href="#">Draft</a></li>
 						<li><a href="#">Available</a></li>
 						<li><a href="#">Coming Soon</a></li>
 					</ul>
@@ -163,7 +172,6 @@
 
 			</div>
 		</div>
-
 	</form>
 	<!-- <End> -->
 
