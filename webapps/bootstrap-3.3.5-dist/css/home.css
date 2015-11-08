@@ -13,7 +13,7 @@ h2 {
 	 
 body {
 padding-top: 70px;
-padding - bottom:100px;
+padding-bottom: 100px;
 }
 
 p{font-family: 'Open Sans', sans-serif;}
@@ -129,7 +129,8 @@ background-color:transparent;
 
 #brand-image
 {
-height: 35px;
+height: 30px;
+
 
 }
 #brand
