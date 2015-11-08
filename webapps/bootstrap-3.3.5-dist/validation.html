@@ -39,7 +39,6 @@
 
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-				<li><a href="userpage.html">User</a></li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -56,51 +55,54 @@
 						</ul></li>
 					<li><a href="ContactUs.html">Contact Us</a></li>
 
-					<li><input type="text" class="form-control" name="username"
-						value="" placeholder="Username"></li>
-					<li><input type="text" class="form-control" name="passsword"
-						value="" placeholder="Password"></li>
+
 					<li><button type="submit" class="btn btn-success"
 							style="margin-top: 8px; margin-left: 5px">
-							<a href="C:\FYP\impossible\webapps\bootstrap-3.3.5-dist\login.html"></a>Sign in
+							<a href="C:\FYP\impossible\webapps\bootstrap-3.3.5-dist\login.html"></a>
+							Log Out
 						</button></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	
-	
-		<div class="container">
-		<div class="row">
 
-							<div class="jumbotron">
-			<p>Hello User! You have successfully validated this account! Please fill in the box and change the password.</p>
-		</div>
-		
-		<div class="jumbotron">
-            <div class="panel-heading">
-            </div>
-            <div class="panel-body">
-               <form class="form-signin">
-        <label for="inputEmail" class="sr-only">Username</label>
-		Username
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>
-		Existing Password<label for="inputPassword" class="sr-only">Existing Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder=" Existing Password" required>
-        New Password<label for="inputPassword" class="sr-only"> New Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder=" New Password" required>
-		Re confirm Password<label for="inputPassword" class="sr-only">Re confirm Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Re Confrim Password" required>
-<br/>
-        <button class="btn btn-lg btn-success btn-block" type="submit">Confirm</button>
-      </form>
-            </div>
-		</div>
-			
-									</div>
-									
-									</div>
-		<!-- <footer> -->
+<form class="form-horizontal" method="post">
+	<div class="container">
+
+			<div class="jumbotron text-center">
+				<p>Hello User! You have successfully validated this account!
+					Please change your password.</p>
+			</div>
+
+			<div class="jumbotron">
+						
+						Username
+						<label for="inputEmail" class="sr-only"> </label>
+						<input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>
+						<br/>
+						
+						Existing Password		
+						<label for="inputPassword" class="sr-only"> </label>
+						<input type="password" id="inputPassword" class="form-control" placeholder="Existing Password" required>
+						<br/>
+						
+						New Password
+						<label for="inputPassword" class="sr-only">  </label>
+						<input type="password" id="inputPassword" class="form-control" placeholder="New Password" required>
+						<br/>
+						
+						Re-confirm Password
+						<label for="inputPassword" class="sr-only"> </label>
+						<input type="password" id="inputPassword" class="form-control" placeholder="Re-Confirm Password" required>
+						<br/>
+						
+						<button type="submit" class="btn btn-primary btn-lg" style="float: right"> Confirm </button>
+	
+			</div>
+</div>
+</form>
+
+	<!-- <footer> -->
 	<div class="navbar navbar-inverse navbar-fixed-bottom"
 		role="navigation">
 		<div class="container">
@@ -114,8 +116,6 @@
 					class="fa fa-google-plus fa-2x"></i></a>
 			</div>
 		</div>
-	</div>
-	</div>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
