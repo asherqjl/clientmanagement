@@ -37,18 +37,23 @@
 </head>
 
 <body>
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target=".navbar-collapse">
 					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
+					<!-- for the responsive icon bar when page shrink -->
+					<span class="icon-bar"></span>
+					<!-- for the responsive icon bar when page shrink -->
+					<span class="icon-bar"></span>
+					<!-- for the responsive icon bar when page shrink -->
 				</button>
-				<a class="navbar-brand" href="#"> <img id="brand-image"
-					alt="Website logo" src="brandimage.PNG" /></a> <a class="navbar-brand"
-					href="#">I'MPOSSIBLE</a>
+
+				<a class="navbar-brand" href="index.html"> <img id="brand-image"
+					alt="Website logo" src="brandimage.PNG" />I'MPOSSIBLE
+				</a>
 
 
 			</div>
@@ -57,29 +62,17 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Courses & Programs<b class=caret></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">About</a></li>
-							<li class="active">
-							<li><a
-								href="viewProgramsNcourses.html">
-									Currently Available Now</a></li>
-							<li><a
-								href="viewProgramsNcourses.html">Full
-									List</a></li>
-						</ul></li>
-					<li><a href="ContactUs.html">Contact Us</a></li>
 
-					<li><input type="text" class="form-control" name="username"
-						value="" placeholder="Username"></li>
-					<li><input type="text" class="form-control" name="passsword"
-						value="" placeholder="Password"></li>
-				<li><button type="submit" class="btn btn-success"  style="margin-top: 8px; margin-left: 5px;">
-							<a href="#" style = "color:white">Sign in</a>
-						</button>
-						
-					</li>
+
+
+					<li><a href=viewProgramsNcourses.html>Courses & Programs</a></li>
+
+
+
+					<li><a href="ContactUs.html">Contact Us</a></li>
+					<li><a href="#login" data-toggle="modal">Log In</a></li>
+					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
+
 				</ul>
 			</div>
 
@@ -169,21 +162,70 @@
 
 
 
-	<!-- <footer> -->
-	<div class="navbar navbar-inverse navbar-fixed-bottom"
-		role="navigation">
+	<!-- <Fixed footer> -->
+	<div class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="container">
 			<div class="navbar-text pull-left">
-				<p>&copyCOPYRIGHT 2015 I'MPOSSIBLE</p>
+				<p>COPYRIGHT 2015 I'MPOSSIBLE</p>
 
 			</div>
 			<div class="navbar-text pull-right">
 				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
 					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
-					class="fa fa-google-plus fa-2x"></i></a>
+					class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
+					class="fa fa-linkedin-square fa-2x"></i></a>
 			</div>
 		</div>
 	</div>
+
+
+	<!-- 	Place bootstrap core javascript below so pages load faster -->
+	<div class="modal fade" id="login">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="form-horizontal" role="form">
+					<div class="modal-header">
+						<h4>Sign in to I'MPOSSIBLE</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="login-email" class="col-sm-2 control-label">Email:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" id="Login-email"
+									placeholder="tomcat@domain.com">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="login-pwd" class="col-sm-2 control-label">Password*</label>
+							<div class="col-sm-5">
+								<input type="password" class="form-control" id="Login-name"
+									placeholder="Password">
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<button type="submit" class="btn btn-primary">Sign In</button>
+					</div>
+				</form>
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script>
+		$('.carousel').carousel({
+			interval : 3000
+		})
+	</script>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
@@ -192,3 +234,5 @@
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
