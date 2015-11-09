@@ -96,12 +96,11 @@
 				</div>
 
 				<br>
-				
 				<div class="panel panel-default">
 					<!-- Default panel contents -->
-					<div class="panel-heading"><label>Add Course</label></div>
-
-					<!-- Table -->
+					<div class="panel-heading">
+						<label>Courses</label>
+					</div>
 					<table class="table table-striped">
 						<tr>
 							<td>Anger Management</td>
@@ -126,75 +125,14 @@
 
 						</tr>
 						<tr>
-							<td>Stress Management</td>
-							<td>
-								<!-- use sql to extract the contents of a particular table -->
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button"
-										id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="true">
-										Date <span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-										<li><a href="#">21/10/2015</a></li>
-										<li><a href="#">12/11/2015</a></li>
-										<li><a href="#">10/11/2015</a></li>
-										<li><a href="#">25/11/2015</a></li>
-										<li><a href="#">Add New...</a></li>
-									</ul>
-								</div>
-							</td>
-							<td><input type="checkbox" name="checkbox" value="checkbox"></td>
-
-						</tr>
-						<tr>
-							<td>Relaxing</td>
-							<td>
-								<!-- use sql to extract the contents of a particular table -->
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button"
-										id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="true">
-										Date <span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-										<li><a href="#">21/10/2015</a></li>
-										<li><a href="#">12/11/2015</a></li>
-										<li><a href="#">10/11/2015</a></li>
-										<li><a href="#">25/11/2015</a></li>
-										<li><a href="#">Add New...</a></li>
-									</ul>
-								</div>
-							</td>
-							<td><input type="checkbox" name="checkbox" value="checkbox"></td>
-
-						</tr>
-						<tr>
-							<td>Resting</td>
-							<td>
-								<!-- use sql to extract the contents of a particular table -->
-								<div class="dropdown">
-									<button class="btn btn-default dropdown-toggle" type="button"
-										id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="true">
-										Date <span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-										<li><a href="#">21/10/2015</a></li>
-										<li><a href="#">12/11/2015</a></li>
-										<li><a href="#">10/11/2015</a></li>
-										<li><a href="#">25/11/2015</a></li>
-										<li><a href="#">Add New...</a></li>
-									</ul>
-								</div>
-							</td>
-							<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+							<td colspan="3"><div class="text-right">
+									<a href="#addCourse" data-toggle="modal">Add More Courses...</a>
+								</div></td>
 						</tr>
 					</table>
 				</div>
-				
-				<br>
 
+				<br>
 				<!-- Next time need to explore on how to upload the file up to the server with sql js and all the bullshuits -->
 				<div class="row">
 					<label>Program Image:</label><input type="file" id="fileinput"
@@ -216,7 +154,13 @@
 	                CKEDITOR.replace( 'editor1' );
 	            	</script>
 				</div>
-
+				<br>
+				<div class="row">
+					<div class="col-sm-1">
+						<label>Price:</label><input type="text" class="form-control"
+							id="program_price" placeholder="Price">
+					</div>
+				</div>
 				<br>
 				<!-- use sql to extract the contents of a particular table -->
 				<div class="dropdown">
@@ -242,20 +186,13 @@
 						Status <span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-						<li><a href="#">Draft</a></li>					
+						<li><a href="#">Draft</a></li>
 						<li><a href="#">Available</a></li>
 						<li><a href="#">Coming Soon</a></li>
 					</ul>
 				</div>
 
-				<br>
-				<div class="col-sm-3">
-				<label>Price:</label> 
-				<input type="number"
-						placeholder="Price"
-						class="form-control">
-				</div>
-				
+
 				<br>
 				<div class="row">
 					<a href="addProgramsResult.html" class="btn btn-lg btn-info">
@@ -283,6 +220,133 @@
 			</div>
 		</div>
 	</div>
+
+
+	<!-- 	Place bootstrap core javascript below so pages load faster -->
+	<div class="modal fade" id="addCourse">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="form-horizontal">
+					<div class="modal-header">
+						<h4>Courses</h4>
+					</div>
+
+					<div class="modal-body">
+						<div class="panel panel-default">
+							<!-- Default panel contents -->
+							<div class="panel-heading">
+								<label>Add Course</label>
+							</div>
+
+							<!-- Table -->
+							<table class="table table-striped">
+								<tr>
+									<td>Anger Management</td>
+									<td>
+										<!-- use sql to extract the contents of a particular table -->
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" type="button"
+												id="dropdownMenu1" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="true">
+												Date <span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+												<li><a href="#">21/10/2015</a></li>
+												<li><a href="#">12/11/2015</a></li>
+												<li><a href="#">10/11/2015</a></li>
+												<li><a href="#">25/11/2015</a></li>
+												<li><a href="#">Add New...</a></li>
+											</ul>
+										</div>
+									</td>
+									<td><input type="checkbox" name="checkbox"
+										value="checkbox"></td>
+
+								</tr>
+								<tr>
+									<td>Stress Management</td>
+									<td>
+										<!-- use sql to extract the contents of a particular table -->
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" type="button"
+												id="dropdownMenu1" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="true">
+												Date <span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+												<li><a href="#">21/10/2015</a></li>
+												<li><a href="#">12/11/2015</a></li>
+												<li><a href="#">10/11/2015</a></li>
+												<li><a href="#">25/11/2015</a></li>
+												<li><a href="#">Add New...</a></li>
+											</ul>
+										</div>
+									</td>
+									<td><input type="checkbox" name="checkbox"
+										value="checkbox"></td>
+
+								</tr>
+								<tr>
+									<td>Relaxing</td>
+									<td>
+										<!-- use sql to extract the contents of a particular table -->
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" type="button"
+												id="dropdownMenu1" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="true">
+												Date <span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+												<li><a href="#">21/10/2015</a></li>
+												<li><a href="#">12/11/2015</a></li>
+												<li><a href="#">10/11/2015</a></li>
+												<li><a href="#">25/11/2015</a></li>
+												<li><a href="#">Add New...</a></li>
+											</ul>
+										</div>
+									</td>
+									<td><input type="checkbox" name="checkbox"
+										value="checkbox"></td>
+
+								</tr>
+								<tr>
+									<td>Resting</td>
+									<td>
+										<!-- use sql to extract the contents of a particular table -->
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" type="button"
+												id="dropdownMenu1" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="true">
+												Date <span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+												<li><a href="#">21/10/2015</a></li>
+												<li><a href="#">12/11/2015</a></li>
+												<li><a href="#">10/11/2015</a></li>
+												<li><a href="#">25/11/2015</a></li>
+												<li><a href="#">Add New...</a></li>
+											</ul>
+										</div>
+									</td>
+									<td><input type="checkbox" name="checkbox"
+										value="checkbox"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<button type="submit" class="btn btn-primary">Add Course</button>
+					</div>
+				</form>
+
+
+			</div>
+		</div>
+	</div>
+
+	<!-- /the popout signin shit -->
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
