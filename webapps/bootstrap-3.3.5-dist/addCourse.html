@@ -89,7 +89,7 @@
 		<div class="container">
 			<div class="jumbotron text-left">
 				<div class="row">
-					<!-- whethere it is edit/selected depends on sql query already -->
+					<!-- whether it is edit/selected depends on sql query already -->
 					<label>Course Name:</label> <input type="text"
 						placeholder="New Course Name / Selected Course Name"
 						class="form-control">
@@ -100,7 +100,9 @@
 					<!-- whether it is edit/selected depends on sql query already -->
 					<div class="panel panel-default">
 						<!-- Default panel contents -->
-						<div class="panel-heading"><label>Related Programs</label></div>
+						<div class="panel-heading">
+							<label>Related Programs</label>
+						</div>
 
 						<table class="table table-striped">
 							<tr>
@@ -131,7 +133,13 @@
 	                CKEDITOR.replace( 'editor1' );
 	            	</script>
 				</div>
-
+				<br>
+				<div class="row">
+					<div class="col-sm-1">
+						<label>Price:</label><input type="text" class="form-control"
+							id="course_price" placeholder="Price">
+					</div>
+				</div>
 				<br>
 				<!-- use sql to extract the contents of a particular table -->
 				<div class="dropdown">
@@ -163,18 +171,9 @@
 					</ul>
 				</div>
 
+
 				<br>
-				<div class="row">
-				
-						
-							<div class="col-sm-3">
-								Price:<input type="text" class="form-control" id="Course-price"
-									placeholder="$4500">
-							</div>
-			
-						
-				</div>
-	<br>
+
 				<div class="row">
 					<a href="addProgramsResult.html" class="btn btn-lg btn-info">
 						Add Course </a>
