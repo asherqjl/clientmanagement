@@ -1,7 +1,0 @@
-resources
-
-flatUIcolors.com - generalise palette for ui project
-google fonts
-colorpiker
-css-tricks/media quries
-
