@@ -33,10 +33,11 @@
 
 </head>
 
-
 <body>
 	<div class="navbar navbar-default navbar-fixed-top">
+
 		<div class="container">
+
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target=".navbar-collapse">
@@ -44,11 +45,9 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"> <img id="brand-image"
-					alt="Website logo" src="brandimage.PNG" /></a> <a class="navbar-brand"
-					href="index.html">I'MPOSSIBLE</a>
-
-
+				<a class="navbar-brand" href="index.html"> <img id="brand-image"
+					alt="Website logo" src="brandimage.PNG" />I'MPOSSIBLE
+				</a>
 			</div>
 
 			<div class="navbar-collapse collapse">
@@ -56,41 +55,49 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Courses & Programs<b class=caret></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">About</a></li>
-							<li class="active">
-							<li><a href="viewProgramsNcourses.html"> Currently
-									Available Now</a></li>
-							<li><a href="viewProgramsNcourses.html">Full List</a></li>
-						</ul></li>
+						data-toggle="dropdown">Courses & Programs</a></li>
 					<li><a href="ContactUs.html">Contact Us</a></li>
 
-					<li><input type="text" class="form-control" name="username"
-						value="" placeholder="Username"></li>
-					<li><input type="text" class="form-control" name="passsword"
-						value="" placeholder="Password"></li>
-					<li><button type="submit" class="btn btn-success"
-							style="margin-top: 8px; margin-left: 5px">
-							<a
-								href="C:\FYP\impossible\webapps\bootstrap-3.3.5-dist\login.html"></a>Sign
-							in
-						</button></li>
+					<li><a href="#login" data-toggle="modal">Log In</a></li>
+					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
+
+					<!-- add search form -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search ">
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-default">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</form>
 				</ul>
 			</div>
 
 		</div>
 	</div>
-	
+
 	<form class="form-horizontal" method="post">
-	<h1 style = "text-align: center">Registration Page</h1>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="well well-sm">
-					
+		<h1 style="text-align: center">Registration Page</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="well well-sm">
+
 						<fieldset>
 							<legend class="text-center">Parent</legend>
+
+							<div class="col-xs-5">
+								Salutation: <select class="form-control">
+									<option>Mr</option>
+									<option>Mrs</option>
+									<option>Ms</option>
+									<option>Mdm</option>
+									<option>Dct</option>
+									<option>Prf</option>
+								</select>
+							</div>
 
 							<div class="col-xs-5">
 								Surname: <input id="name" name="fullname" type="text"
@@ -98,8 +105,10 @@
 							</div>
 
 							<div class="col-xs-6">
-								Given Name: <input type="text" class="form-control"
-									placeholder="">
+								<div class="hello">
+									Given Name: <input type="text" class="form-control"
+										placeholder="">
+								</div>
 							</div>
 
 
@@ -109,20 +118,6 @@
 										class="form-control" placeholder="Mobile Number">
 								</div>
 
-							</div>
-
-							<div class="col-xs-5">
-								<div class="hello">
-									Date of Birth: <input id="dateofbirth" name="phone" type="tel"
-										class="form-control" placeholder="Birthdate">
-								</div>
-							</div>
-
-							<div class="col-xs-5">
-								<div class="hello">
-									NRIC number / Passport No: <input id="dateofbirth" name="phone"
-										type="tel" class="form-control" placeholder="S...">
-								</div>
 							</div>
 
 							<div class="col-xs-5">
@@ -163,13 +158,13 @@
 									click on submit.)
 
 								</div>
-					
+
+							</div>
+					</div>
 				</div>
-			</div>
-		</div>
-					</form>
-					
-			<!--<div data-role="main" class="ui-content">
+	</form>
+
+	<!--<div data-role="main" class="ui-content">
     <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Show Popup Form</a>
 
     <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
@@ -188,123 +183,132 @@
     </div>
   </div> -->
 
-			<div class="container" style="margin-bottom: 50px">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="well well-sm">
-							<form class="form-horizontal" method="post">
-								<fieldset>
-									<legend class="text-center header">
-										Child <br> <i style="font: 10px"> Please fill up this
-											form as well if your child needs any Counselling. </i>
-									</legend>
+	<div class="container" style="margin-bottom: 50px">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="well well-sm">
+					<form class="form-horizontal" method="post">
+						<fieldset>
+							<legend class="text-center header">
+								Child <br> <i style="font: 10px"> Please fill up this
+									form as well if your child needs any Counselling. </i>
+							</legend>
 
-									<div class="col-xs-5">
-										Surname: <input id="childsurname" name="childsurname"
-											type="text" class="form-control" placeholder="Surname">
-									</div>
-
-									<div class="col-xs-6">
-										Given Name: <input type="text" class="form-control"
-											placeholder="">
-									</div>
-
-
-									<div class="col-xs-5">
-										<div class="hello">
-											Contact Number: <input id="phonenumber" name="phone"
-												type="tel" class="form-control" placeholder="Mobile Number">
-										</div>
-									</div>
-
-									<div class="col-xs-5">
-										<div class="hello">
-											Date of Birth: <input id="dateofbirth" name="phone"
-												type="tel" class="form-control" placeholder="Birthdate">
-										</div>
-									</div>
-
-									<div class="col-xs-5">
-										<div class="hello">
-											Marital Status: <input id="dateofbirth" name="phone"
-												type="tel" class="form-control"
-												placeholder="Married/Single/Widowed">
-										</div>
-									</div>
-
-									<div class="col-xs-5">
-										<div class="hello">
-											NRIC number / Passport No: <input id="dateofbirth"
-												name="phone" type="tel" class="form-control" placeholder="">
-										</div>
-									</div>
-
-									<div class="col-xs-8">
-										<div class="hello">
-											Issues facing: <input id="dateofbirth" name="phone"
-												type="tel" class="form-control"
-												placeholder="short description of issues facing">
-										</div>
-									</div>
-
-									<div class="col-xs-6">
-										<div class="hello">
-											Relationship to child: <input id="dateofbirth" name="phone"
-												type="tel" class="form-control"
-												placeholder="">
-										</div>
-									</div>
-
-									<div class="col-xs-5">
-										<div class="hello">
-											Gender:
-											<form>
-												<br> <input type="radio" name="sex" value="male"
-													checked>Male <br> <input type="radio"
-													name="sex" value="female">Female
-											</form>
-										</div>
-									</div>
-									<div class="col-xs-10">
-										<hr />
-										<b><h4>Address</h4></b> <input id="dateofbirth" name="phone"
-											type="tel" class="form-control" placeholder="Address Line 1">
-										<i> Address Line 1: </i>
-									</div>
-
-									<div class="col-xs-10">
-										<input id="dateofbirth" name="phone" type="tel"
-											class="form-control" placeholder="Address Line 2"> <i>
-											Address Line 2: </i>
-									</div>
-
-									<div class="col-xs-5">
-										<input id="dateofbirth" name="phone" type="tel"
-											class="form-control" placeholder="Postal Code"> <i>Postal
-											Code: </i>
-									</div>
-
-
-
-
-								</fieldset>
-							</form>
-
-						</div>
-						<div class="form-group">
-							<div class="col-md-12" style='padding-left: 450px'>
-								<a class="btn btn-primary btn-lg" href="doRegister.html">Submit</a>
+							<div class="col-xs-5">
+								Salutation: <select class="form-control">
+									<option>Mr</option>
+									<option>Mrs</option>
+									<option>Ms</option>
+									<option>Mdm</option>
+									<option>Dct</option>
+									<option>Prf</option>
+								</select>
 							</div>
-						</div>
-					</div>
+
+							<div class="col-xs-5">
+								Surname: <input id="name" name="fullname" type="text"
+									class="form-control" placeholder="Name">
+							</div>
+
+
+							<div class="col-xs-6">
+								<div class="hello">
+									Given Name: <input type="text" class="form-control"
+										placeholder="">
+								</div>
+							</div>
+
+
+							<div class="col-xs-5">
+								<div class="hello">
+									Contact Number: <input id="phonenumber" name="phone" type="tel"
+										class="form-control" placeholder="Mobile Number">
+								</div>
+							</div>
+
+							<div class="col-xs-5">
+								<div class="hello">
+									Date of Birth: <input id="dateofbirth" name="phone" type="tel"
+										class="form-control" placeholder="Birthdate">
+								</div>
+							</div>
+
+							<div class="col-xs-5">
+								<div class="hello">
+									Marital Status: <input id="dateofbirth" name="phone" type="tel"
+										class="form-control" placeholder="Married/Single/Widowed">
+								</div>
+							</div>
+
+							<div class="col-xs-5">
+								<div class="hello">
+									NRIC number / Passport No: <input id="dateofbirth" name="phone"
+										type="tel" class="form-control" placeholder="">
+								</div>
+							</div>
+
+							<div class="col-xs-6">
+								<div class="hello">
+									Relationship to child: <input id="dateofbirth" name="phone"
+										type="tel" class="form-control" placeholder="">
+								</div>
+							</div>
+
+							<div class="col-xs-8">
+								<div class="hello">
+									Issues facing: <input id="dateofbirth" name="phone" type="tel"
+										class="form-control"
+										placeholder="short description of issues facing">
+								</div>
+							</div>
+
+							<div class="col-xs-5">
+								<div class="hello">
+									Gender:
+									<form>
+										<br> <input type="radio" name="sex" value="male" checked>Male
+										<br> <input type="radio" name="sex" value="female">Female
+									</form>
+								</div>
+							</div>
+							<div class="col-xs-10">
+								<hr />
+								<b><h4>Address</h4></b> <input id="addressline1"
+									name="addressline1" type="tel" class="form-control"
+									placeholder="Address Line 1"> <i> Address Line 1: </i>
+							</div>
+
+							<div class="col-xs-10">
+								<input id="addressline2" name="phone" type="tel"
+									class="form-control" placeholder="Address Line 2"> <i>
+									Address Line 2: </i>
+							</div>
+
+							<div class="col-xs-5">
+								<input id="code" name="phone" type="tel" class="form-control"
+									placeholder="Postal Code"> <i>Postal Code: </i>
+							</div>
+
+							<div class="col-xs-5" style='text-align:right'>
+								<button type="button" class="btn btn-success btn-sm">Same
+									as parent</button>
+							</div>
+
+						</fieldset>
+					</form>
 
 				</div>
-
+				<div class="form-group">
+					<div class="col-md-12" style='text-align:right'>
+						<a class="btn btn-primary btn-lg" href="doRegister.html">Submit</a>
+					</div>
+				</div>
 			</div>
 
 		</div>
 
 	</div>
+
 
 	<!-- <footer> -->
 	<div class="navbar navbar-inverse navbar-fixed-bottom"
@@ -327,5 +331,7 @@
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+
 </body>
+
 </html>

@@ -33,10 +33,14 @@
 	font-size: 27px;
 	padding: 10px;
 }
+
 .navbar-fixed-bottom {
- height: 15px;
+	height: 15px;
 }
 
+.hello {
+	padding-top: 10px;
+}
 </style>
 </head>
 
@@ -77,6 +81,17 @@
 					<li><a href="#login" data-toggle="modal">Log In</a></li>
 					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
 
+					<!-- add search form -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search ">
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-default">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</form>
 				</ul>
 			</div>
 
@@ -89,81 +104,85 @@
 				<div class="well well-sm">
 					<form class="form-horizontal" method="post">
 						<fieldset>
-							<legend class="text-center header">Contact us</legend>
-									<div class="form-group">
-							<label for="subject" class="col-sm-3 control-label">Subject:</label>
-							<label class="radio-inline">
-      <input type="radio" name="optradio">Enquiry
-    </label>
-	
-	<label class="radio-inline">
-      <input type="radio" name="optradio">Feed back
-    </label>
-						</div>
-
-	<div class="form-group">
-					
-							 <label for="Salutation" class="col-sm-3 control-label">Salutation: </label>
-      <select class="form-class"  id="sel1">
-	   <option>--Please select--</option>
-        <option>Mr</option>
-        <option>Mrs</option>
-        <option>Ms</option>
-        <option>Mdm</option>
-		<option>Dr</option>
-		<option>Prof</option>
-      </select>
-
-	  </div>
-	
+							<legend class="text-center header">Contact Us</legend>
 							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
-									<input id="Sname" name="Surname" type="text"
-										placeholder="Surname" class="form-control">
-								</div>
+								<label for="subject" class="col-sm-3 control-label">Subject:</label>
+								<label class="radio-inline"> <input type="radio"
+									name="optradio">Enquiry
+								</label> <label class="radio-inline"> <input type="radio"
+									name="optradio">Feedback
+								</label>
 							</div>
-							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
-									<input id="gname" name="gname" type="text"
-										placeholder="Given Name" class="form-control">
+							
+							<div class="col-xs-5">
+								Salutation: <select class="form-control">
+									<option>Mr</option>
+									<option>Mrs</option>
+									<option>Ms</option>
+									<option>Mdm</option>
+									<option>Dct</option>
+									<option>Prf</option>
+								</select>
+							</div>
+
+							<div class="col-xs-5">
+								Surname: <input id="name" name="fullname" type="text"
+									class="form-control" placeholder="Name">
+							</div>
+
+
+							<div class="col-xs-6">
+								<div class="hello">
+									Given Name: <input type="text" class="form-control"
+										placeholder="">
 								</div>
 							</div>
 
-							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
-									<input id="email" name="email" type="text"
-										placeholder="Email Address" class="form-control">
+
+							<div class="col-xs-5">
+								<div class="hello">
+									Contact Number: <input id="phonenumber" name="phone" type="tel"
+										class="form-control" placeholder="Mobile Number">
 								</div>
 							</div>
 
-							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
-									<input id="phone" name="phone" type="text" placeholder="Phone"
-										class="form-control">
+							<div class="col-xs-5">
+								<div class="hello">
+									Email Address: <input id="emailaddress" name="mail" type="email"
+										class="form-control" placeholder="jane.doe@example.com">
 								</div>
 							</div>
 
-							<div class="form-group">
-								<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-12">
+								<hr />
+								<div class="hello">
+									Message For Us:
 									<textarea class="form-control" id="message" name="message"
-										placeholder="Enter your massage for us here. We will get back to you within 2 business days."
+										placeholder="Enter your message for us here. We will get back to you within 2 business days."
 										rows="7"></textarea>
 								</div>
 							</div>
 
+
 							<div class="form-group">
-								<div class="col-md-12 text-center">
-									<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+								<div class="col-md-10 col-md-offset-1"></div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-12" style='text-align: right'>
+									<a class="btn btn-primary btn-lg" href="doRegister.html">Submit</a>
 								</div>
 							</div>
 						</fieldset>
 					</form>
 				</div>
 			</div>
+
+
 			<div class="col-md-6">
 				<div>
 					<div class="panel panel-default">
-						<div class="text-center header">Our Office</div>
+						<legend class="text-center header">Our Office</legend>
 						<div class="panel-body text-center">
 							<h4>Address</h4>
 							<div>
@@ -172,6 +191,7 @@
 								to find us: Closest MRT: Botanical Gardens MRT<br />
 							</div>
 							<hr />
+							
 							<div id="map1" class="map">
 								<iframe
 									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5533445145584!2d103.785503!3d1.4428249999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1305aa7388d7%3A0x2b7f5e0463382f8!2sRepublic+Polytechnic!5e0!3m2!1sen!2ssg!4v1444296070701"
@@ -184,12 +204,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
 
 
 	<!-- <Fixed footer> -->
