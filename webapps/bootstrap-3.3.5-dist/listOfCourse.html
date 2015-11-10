@@ -139,20 +139,8 @@
 		
 	
 			
-				<h2><i class="fa fa-clock-o fa-1x "></i>  Program Schedule</h2>
-			<ul class="breadcrumb">
-					<li><a
-						href="adminCourseSchedule.html">Course Schedule </a></li>
-					<li class="active"><a
-						href="adminProgramSchedule.html">Program Schedule</a></li>
-				</ul>
 		
-
-
-			<div id="wrapper">
-            <div id="myScheduler"></div>
-            </div>
-		</div>
+		
 
 			<div class="container-fluid">
 			<!-- <div class="alert alert-danger">
@@ -163,32 +151,15 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						<i class="fa fa-list"></i> Program Schedule List
+						<i class="fa fa-list"></i> List of Courses for Therapy for woman Programs
 					</h3>
 				</div>
 				<div class="panel-body">
 				
-				<div id="wrapper">
-  <div id="myScheduler"></div>
-</div>
+
 			
 				
-					<div class="row">
-					<div class="pull-right">
-					<a href="addProgramSchedule.html" data-toggle="tooltip" title="Add New"
-						class="btn btn-primary"><i class="fa fa-plus"></i></a>
-					<button type="submit" form="form-product"
-						formaction="#"
-						data-toggle="tooltip" title="Copy" class="btn btn-default">
-						<i class="fa fa-copy"></i>
-					</button>
-					<button type="button" data-toggle="tooltip" title="Delete"
-						class="btn btn-danger"
-						onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : false;">
-						<i class="fa fa-trash-o"></i>
-					</button>
-				</div>
-					</div>
+	
 		
 					<form action="#" method="post" enctype="multipart/form-data"
 								id="form-product">
@@ -200,15 +171,18 @@
 													type="checkbox"
 													onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
 
-												<th class="text-middle">Program Title
+												<th class="text-middle">Course Title
 													</th>
-											
-												<th class="text-middle">Start date</th>
-												<th class="text-middle">End date</th>
+														<th class="text-middle">Start time</th>
+												<th class="text-middle">End time</th>
+										
+												<th class="text-middle">Start time</th>
+												<th class="text-middle">End time</th>
+												
 											
 	
 
-												<th class="text-middle">Action</th>
+									
 											</tr>
 										</thead>
 										<tbody>
@@ -217,59 +191,57 @@
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="47" /></td>
 
-												<td class="text-left"><a href="listOfCourse.html" class="asc">Therapy for woman</a></td>
-
-												<td class="text-left">23/10/2015</td>
-												<td class="text-left">23/10/2015</td>
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Therapy for woman</a></td>
+		<td class="text-left">24/10/2015</td>
+		<td class="text-left">24/10/2015</td>
+												<td class="text-left">17:00</td>
+												<td class="text-left">09:00</td>
+								
 									
-												<td class="text-right"><a
-													href="editCourseSchedule.html" data-toggle="tooltip"
-													title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+											
 											</tr>
 											<tr>
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="28" /></td>
 
-												<td class="text-left"><a href="listOfCourse.html" class="asc">Adjustment/Transition Change
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Adjustment/Transition Change
 													Therapy for Women</a></td>
+													<td class="text-left">24/10/2015</td>
+													<td class="text-left">24/10/2015</td>
 										
-												<td class="text-left">23/10/2015</td>
-												<td class="text-left">23/10/2015</td>
+												<td class="text-left">10:00</td>
+												<td class="text-left">20:00</td>
 									
 
-												<td class="text-right"><a href="#"
-													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+											
 											</tr>
 											<tr>
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="41" /></td>
 
-												<td class="text-left"><a href="listOfCourse.html" class="asc">Mid-Life Transition Therapy for
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Mid-Life Transition Therapy for
 													Women</a></td>
+													<td class="text-left">24/10/2015</td>
+													<td class="text-left">24/10/2015</td>
 							
-												<td class="text-left">23/10/2015</td>
-												<td class="text-left">23/10/2015</td>
+												<td class="text-left">12:00</td>
+												<td class="text-left">17:00</td>
 								
 
-												<td class="text-right"><a href="#"
-													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+												
 											</tr>
 											<tr>
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="40" /></td>
 
-												<td class="text-left"><a href="listOfCourse.html" class="asc">Grief Therapy for Women</a></td>
-
-												<td class="text-left">23/10/2015</td>
-												<td class="text-left">23/10/2015</td>
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Grief Therapy for Women</a></td>
+												<td class="text-left">24/10/2015</td>
+<td class="text-left">24/10/2015</td>
+												<td class="text-left">13:00</td>
+												<td class="text-left">21:00</td>
 									
 
-												<td class="text-right"><a href="#"
-													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+												
 											</tr>
 
 
@@ -282,20 +254,28 @@
 							</form>
 						</div>
 					</form>
-					<div class="row">
-						<div class="col-sm-6 text-left"></div>
-						<div class="col-sm-6 text-right">Showing 1 to 19 of 19 (1
-							Pages)</div>
-							
-							
-					</div>
-					<ul class="pager">
-  <li class="previous"><a href="#">Previous</a></li>
-  <li class="next"><a href="#">Next</a></li>
-</ul>
+					
 	
 					
 				</div>
+				
+				
+				<br><br>
+		<div class="form-group">
+  
+	
+	
+	
+<div class="form-actions">
+ <a href="adminProgramSchedule.html" ><button type="submit" class="btn btn-primary">Back </button></a>
+
+
+
+</div>
+
+
+
+</div>
 							
 							
 
@@ -341,53 +321,7 @@
 
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script>
-	YUI().use(
-  'aui-scheduler',
-  function(Y) {
-    var events = [
-      {
-        content: 'Partial Lunar Eclipse',
-        endDate: new Date(2013, 3, 25, 5),
-        startDate: new Date(2013, 3, 25, 1)
-      },
-      {
-        color: "#8d8",
-        content: 'Earth Day Lunch',
-        disabled: true,
-        endDate: new Date(2013, 3, 22, 13),
-        meeting: true,
-        reminder: true,
-        startDate: new Date(2013, 3, 22, 12)
-      },
-      {
-        content: "Weeklong",
-        endDate: new Date(2013, 3, 27),
-        startDate: new Date(2013, 3, 21)
-      }
-    ];
 
-    var agendaView = new Y.SchedulerAgendaView();
-    var dayView = new Y.SchedulerDayView();
-    var weekView = new Y.SchedulerWeekView();
-    var monthView = new Y.SchedulerMonthView();
-
-    var eventRecorder = new Y.SchedulerEventRecorder();
-
-    new Y.Scheduler(
-      {
-        activeView: weekView,
-        boundingBox: '#myScheduler',
-        date: new Date(2013, 3, 25),
-        eventRecorder: eventRecorder,
-        items: events,
-        render: true,
-        views: [dayView, weekView, monthView, agendaView]
-      }
-    );
-  }
-);
-</script>
 </body>
 </html>
 
