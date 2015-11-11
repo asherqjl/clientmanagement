@@ -75,7 +75,75 @@ text-align: center;
 			</div>
 		</div>
 	</div>
+	<div class="container">
 
+		
+	<div class="jumbotron text-center">	
+	<div class="content">
+		
+			
+				<div class="panel-body">
+				
+				<h2>Search</h2>
+						<div class="well">
+							<div class="row">
+								<div class="col-sm-4">
+
+									<div class="form-group">
+										<label class="control-label" for="input-name">Course
+											Name</label> <input type="text" name="filter_name" value=""
+											placeholder="Course Name" />
+									</div>
+
+
+
+								</div>
+
+								<div class="col-sm-4">
+
+									<div class="form-group">
+										<label class="control-label" for="input-price">Start
+											Date</label> <input type="text" name="filter_price" value=""
+											placeholder="Start Date" />
+									</div>
+
+
+
+								</div>
+								<div class="col-sm-4">
+
+									<div class="form-group">
+										<label class="control-label" for="input-price">End
+											Date</label> <input type="text" name="filter_price" value=""
+											placeholder="End Date" />
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label class="control-label" for="input-status">Status</label>
+										<select name="filter_status" id="input-status">
+											<option value="2">Draft</option>
+											<option value="1">Available</option>
+											<option value="0">Coming Soon</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-sm-4"></div>
+								<div class="col-sm-4">
+									<button type="button" id="button-filter"
+										class="btn btn-primary pull-right">
+										<i class="fa fa-search"></i> Filter
+									</button>
+
+								</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				
+			</div>	
 	<form class="form-horizontal" method="post">
 		<div class="container">
 			<div class="jumbotron text-left">
@@ -84,19 +152,90 @@ text-align: center;
 
 		<div class="row">
 						<p class="icons">
-					<a href="newcoachnote.html"><button type="button"
+					<a href="coachnotes.html"><button type="button"
 							class="btn btn-default btn-sm" style = "float:right">
 							<span class="glyphicon glyphicon-plus" ></span> Write a new note
 						</button></a>
 						</p>
-						</a>
-						<b><h4>Notes</h4></b>
-						<a href = "coachnotes.html"> Note 1 </a>
+
+						<b><h4> Most Recent Notes</h4></b>
+						<div class="table-responsive">
+
+						<table class="table table-striped">
+						<table class="table table-hover"> <!--  table for hovering  -->
+						
+							<thead >
+								<tr>
+									<th>#</th>
+									<th>Date</th>
+									<th>Time Submitted Note</th>
+									<th>Student Name</th>
+									
+								</tr>
+							</thead>
+						
+						
+							<tbody>
+
+								<tr>
+									<td>1</td>
+									<td><a href = "doCounsellor.html">3 November 2015</a></td>
+									<td>2:00PM</td>
+									<td>Yes</td>
+								</tr>
+
+								<tr>
+									<td>2</td>
+									<td><a href = "doCounsellor.html">4 November 2015</a></td>
+									<td>3:00PM</td>
+									<td>No</td>
+								</tr>
+
+								<tr>
+									<td>3</td>
+									<td><a href = "doCounsellor.html">5 November 2015</a></td>
+									<td>2:00PM</td>
+									<td>Yes</td>
+								</tr>
+
+								<tr>
+									<td>4</td>
+									<td><a href = "doCounsellor.html">6 November 2015</a></td>
+									<td>2:00PM</td>
+									<td>Yes</td>
+								</tr>
+
+								<tr>
+									<td>5</td>
+									<td><a href = "doCounsellor.html">7 November 2015</a></td>
+									<td>2:00PM</td>
+									<td>Yes</td>
+								</tr>
+
+								<tr>
+									<td>6</td>
+									<td><a href = "doCounsellor.html">8 November 2015</a></td>
+									<td>2:00PM</td>
+									<td>Yes</td>
+								</tr>
+							</tbody>
+							
+						</table>
+						</table>
+						
+						<ul class="pagination pagination-sm" style="float: right; margin-top:10px">
+						<li class="disabled"><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+					
+					<br/>
 					</div>
-					
-					
 					<hr/>
-					
 						<b><h4>Journal's</h4></b>
 						<div class="table-responsive">
 
