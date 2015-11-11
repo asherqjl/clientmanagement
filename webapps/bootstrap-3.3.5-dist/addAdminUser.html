@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>I'MPOSSIBLE - Admin Add Course Schedule</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+		
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+<link rel="stylesheet" type="text/css" href="css/home.css" />
+</head>
+<body>
+	<!-- style="height:2500px" -->
+
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span>
+					<!-- for the responsive icon bar when page shrink -->
+					<span class="icon-bar"></span>
+					<!-- for the responsive icon bar when page shrink -->
+					<span class="icon-bar"></span>
+					<!-- for the responsive icon bar when page shrink -->
+				</button>
+
+				<a class="navbar-brand" href="index.html"> <img id="brand-image"
+					alt="Website logo" src="brandimage.PNG" /> I'MPOSSIBLE
+				</a>
+
+
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a href="index.html" class="dropdown-toggle"
+						data-toggle="dropdown">Home<b class=caret></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="index.html">Public homepage</a></li>
+							<li class="active">
+							<li><a
+								href="viewProgramsNcourses.html">
+									User Homepage</a></li>
+									
+									</li>
+							<li><a href="index.html">Admin homepage</a></li>
+
+						</ul>
+
+						
+					</li>
+					
+					
+					
+						<li class="dropdown"><a href="index.html" class="dropdown-toggle"
+						data-toggle="dropdown">Manage<b class=caret></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="adminManageCategory.html"> Manage Category</a></li>
+							<li class="active">
+							<li><a
+								href="courseAdmin.html">
+									Manage Course</a></li>
+									<li><a href="programAdmin.html"> Manage Program</a></li>
+									<li><a href="adminCourseSchedule.html"> Manage Course Schedule</a></li>
+									<li><a href="adminProgramSchedule.html"> Manage Program Schedule</a></li>
+									<li><a href="manageStatus.html"> Manage Status</a></li>
+										<li><a href="adminIndex.html"> Manage Users</a></li>
+										<li><a href="adminIndex.html"> Manage Enrollment</a></li>
+									
+
+									
+
+						</ul></li>
+
+						
+					</li>
+					
+					
+								<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Courses & Programs<b class=caret></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">About</a></li>
+							<li class="active">
+							<li><a
+								href="viewProgramsNcourses.html">
+									Currently Available Now</a></li>
+							<li><a
+								href="viewProgramsNcourses.html">Full
+									List</a></li>
+						</ul></li>
+						
+					</li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+
+						 <li><a href="#"><span class="hidden-xs hidden-sm hidden-md">Logout</span> <i class="fa fa-sign-out fa-lg"></i></a></li>
+
+					<!-- add search form -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search ">
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-default">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</form>
+
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="jumbotron">
+			<div class="container-fluid">
+			<!-- <div class="alert alert-danger">
+				<i class="fa fa-exclamation-circle"></i> Warning: You do not have
+				permission to modify courses!
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+			</div> -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<i class="fa fa-pencil"></i> Add New Admin User
+					</h3>
+				</div>
+				<div class="panel-body">
+ <div class="content">
+
+ 
+
+<form class="form-horizontal" role="form">
+    <div class="form-group form-group-md">
+  
+
+  
+
+
+    <div class="form-group form-group-md">
+      <label class="col-sm-2 control-label" for="cName">Name:</label>
+      <div class="col-sm-9">
+        <input class="form-control" type="text" id="cName" value="Please enter a name">
+      </div>
+    </div>
+	
+	
+  <div class="form-group form-group-md">
+      <label class="col-sm-2 control-label" for="dp1">Title For new admin:</label>
+  <div class="col-sm-3">
+      <input type="date" class="form-control" id="dp1" value="DickSon">
+	    </div>
+
+	
+
+
+
+<br><br>
+	<br><br>
+	
+	
+
+
+  
+    <div class="form-group form-group-md">
+      <label class="col-sm-2 control-label" for="status">Role:</label>
+	  	    <div class="col-sm-4">
+      <select class="form-control" id="status">
+    <option>System Admin</option>
+        <option>Admin</option>
+    
+
+      </select>
+	     </div>
+
+    </div>
+	
+	<br><br>
+	
+	    <div class="form-group form-group-md">
+      <label class="col-sm-2 control-label" for="status">Status:</label>
+	  	    <div class="col-sm-4">
+      <select class="form-control" id="status">
+    <option>Active</option>
+        <option>Inactive</option>
+    
+
+      </select>
+	     </div>
+
+    </div>
+
+</div>
+
+</div>
+</form>
+
+		<div class="form-group">
+  
+	
+	
+	
+<div class="form-actions">
+<button type="submit" class="btn btn-primary">Save changes</button>
+ <a href="manageAdminUser.html" ><button type="button" class="btn btn-danger">Cancel</button></a>
+
+</div>
+
+
+  </form>
+</div>
+
+      
+
+ </div>
+		
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+ </div>
+		
+		</div>
+
+
+
+
+	</div>
+
+	<!-- <Fixed footer> -->
+	<div class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>COPYRIGHT 2015 I'MPOSSIBLE</p>
+
+			</div>
+			<div class="navbar-text pull-right">
+				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
+					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
+					class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
+					class="fa fa-linkedin-square fa-2x"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+
+
+
+<script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+     $( "#dp1" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	 $( "#dp2" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	
+	
+ </script>
+   
+	    <script>
+YUI().use(
+                                     'aui-timepicker',
+                                     function(Y) {
+                                       new Y.TimePicker(
+                                         {
+                                           trigger: '#time',
+                                           popover: {
+                                             zIndex: 1
+                                           },
+                                           on: {
+                                             selectionChange: function(event) {
+                                               console.log(event.newSelection)
+                                             }
+                                           }
+                                         }
+                                       );
+                                     }
+                                    );
+                                    
+ </script>
+ 
+
+</body>
+</html>
+
+

@@ -140,7 +140,7 @@
 		
 	
 			
-				<h2><i class="fa fa-clock-o fa-1x "></i>  Manage User</h2>
+				<h2><i class="fa fa-clock-o fa-1x "></i>  Manage Coach User</h2>
 				<ul class="breadcrumb">
 					<li class="active"><a
 						href="adminIndex.html">Home </a></li>
@@ -167,7 +167,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						<i class="fa fa-list"></i> Client User List
+						<i class="fa fa-list"></i> Coach User List
 					</h3>
 				</div>
 				<div class="panel-body">
@@ -176,7 +176,7 @@
 				
 					<div class="row">
 					<div class="pull-right">
-					<a href="addCourseSchedule.html" data-toggle="tooltip" title="Add New"
+					<a href="editCoachUser.html" data-toggle="tooltip" title="Add New"
 						class="btn btn-primary"><i class="fa fa-plus"></i></a>
 					<button type="submit" form="form-product formaction="#"
 						data-toggle="tooltip" title="Copy" class="btn btn-default">
@@ -200,17 +200,18 @@
 													type="checkbox"
 													onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
 
-												<td class="text-left"><a href="#" class="asc">Client Name</a></td>
+												<td class="text-left"><a href="addAdminUser.html" class="asc">Coach Name</a></td>
+												<td class="text-left"><a href="#">Coach Email</a></td>
 											
-												<td class="text-left"><a href="#">Client Email</a></td>
+												<td class="text-left"><a href="#">Coach HP</a></td>
 										
-												<td class="text-left"><a href="#">Client DOB</a></td>
-												<td class="text-left"><a href="#">Client School </a></td>
-												<td class="text-left"><a href="#">Date Enrollment</a></td>
+												
+														<td class="text-left"><a href="#">Registered Date</a></td>
+											
 	
 										
 						
-	                                              <td class="text-left"><a href="#">Client Status</a></td>
+	                                              <td class="text-left"><a href="#"> Status</a></td>
 												<td class="text-right">Action</td>
 											</tr>
 										</thead>
@@ -220,17 +221,17 @@
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="47" /></td>
 
-												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Allen Tan Yao Hui</a></td>
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Dr Wong Sue Ann</a></td>
 
 												<td class="text-left"> 123@12345.com </td>
-												<td class="text-left">23/10/1996</td>
-												<td class="text-left">Raffles Institution</td>
-													<td class="text-left">23/10/2015</td>
-												<td class="text-left">Active</td>
+												<td class="text-left">98765500</td>
+												<td class="text-left">May 1,2015 Friday</td>
+								
+												<td class="text-left">Coach</td>
 												
 										
 												<td class="text-right"><a
-													href="editUser.html" data-toggle="tooltip"
+													href="editCoachUser.html" data-toggle="tooltip"
 													title="Edit" class="btn btn-primary"><i
 														class="fa fa-pencil"></i></a></td>
 											</tr>
@@ -238,15 +239,15 @@
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="28" /></td>
 
-												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Bendict Ng Jian Hao</a></td>
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Dr Kavitha </a></td>
 										
 												<td class="text-left"> 123@12345@gmail.com </td>
-												<td class="text-left">23/10/1996</td>
-												<td class="text-left">International Institution</td>
-															<td class="text-left">23/10/2015</td>
-												<td class="text-left">Inctive</td>
+													<td class="text-left">98765500</td>
+														<td class="text-left">Jun 3,2015 Wednesday</td>
+									
+										<td class="text-left">Coach</td>
 
-												<td class="text-right"><a href="editUser.html"
+												<td class="text-right"><a href="editCoachUser.html"
 													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
 														class="fa fa-pencil"></i></a></td>
 											</tr>
@@ -254,15 +255,15 @@
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="41" /></td>
 
-												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Charles Dickson Diana</a></td>
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Dr Teo Tian Guan</a></td>
 							
 											<td class="text-left"> abc@hotmail.com </td>
-												<td class="text-left">23/10/1996</td>
-												<td class="text-left">Flower Institution</td>
-															<td class="text-left">23/10/2015</td>
-												<td class="text-left">Active</td>
+														<td class="text-left">98765500</td>
+												<td class="text-left">Jun 3,2015 Wednesday</td>
+								<td class="text-left">Coach</td>
+												
 
-												<td class="text-right"><a href="editUser.html"
+												<td class="text-right"><a href="editCoachUser.html"
 													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
 														class="fa fa-pencil"></i></a></td>
 											</tr>
@@ -270,15 +271,14 @@
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="40" /></td>
 
-												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Grace Tan Yi Ru</a></td>
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Dr Toh Kee Heng</a></td>
 
 												<td class="text-left"> flower1996@hotmail.com </td>
-												<td class="text-left">23/10/1996</td>
-												<td class="text-left">Sport Institution</td>
-															<td class="text-left">23/10/2015</td>
-												<td class="text-left">Inactive</td>
+												<td class="text-left">98765500</td>
+														<td class="text-left">Jun 3,2015 Wednesday</td>
+											<td class="text-left">Coach</td>
 
-												<td class="text-right"><a href="editUser.html"
+												<td class="text-right"><a href="editCoachUser.html"
 													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
 														class="fa fa-pencil"></i></a></td>
 											</tr>
