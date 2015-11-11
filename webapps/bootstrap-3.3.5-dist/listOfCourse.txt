@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE - Admin Course Schedule</title>
+<title>I'MPOSSIBLE - Admin Program Schedule</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -75,15 +75,14 @@
 						<li class="dropdown"><a href="index.html" class="dropdown-toggle"
 						data-toggle="dropdown">Manage<b class=caret></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="adminManageCategory.html"> Manage Category</a></li>
+							<li><a href="adminIndex.html"> Manage Category</a></li>
 							<li class="active">
 							<li><a
 								href="courseAdmin.html">
 									Manage Course</a></li>
 									<li><a href="programAdmin.html"> Manage Program</a></li>
-										<li><a href="adminCourseSchedule.html"> Manage Course Schedule</a></li>
-									<li><a href="adminProgramSchedule.html"> Manage Program Schedule</a></li>
-									<li><a href="manageStatus.html"> Manage Status</a></li>
+									<li><a href="judithschedule.html"> Manage Schedule</a></li>
+									<li><a href="adminIndex.html"> Manage Status</a></li>
 										<li><a href="adminIndex.html"> Manage Users</a></li>
 										<li><a href="adminIndex.html"> Manage Enrollment</a></li>
 									
@@ -111,7 +110,7 @@
 						
 					</li>
 					<li><a href="ContactUs.html">Contact Us</a></li>
-	      
+
 						
 						 <li><a href="#"><span class="hidden-xs hidden-sm hidden-md">Logout</span> <i class="fa fa-sign-out fa-lg"></i></a></li>
 
@@ -140,16 +139,8 @@
 		
 	
 			
-				<h2><i class="fa fa-clock-o fa-1x "></i>  Manage Enrollment</h2>
-				<ul class="breadcrumb">
-					<li class="active"><a
-						href="adminIndex.html">Home </a></li>
-					<li><a
-						href="manageEnrollment.html">Manage Enrollment</a></li>
-				</ul>
 		
-
-		</div>
+		
 
 			<div class="container-fluid">
 			<!-- <div class="alert alert-danger">
@@ -160,30 +151,17 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						<i class="fa fa-list"></i> Enrollment Listul
+						<i class="fa fa-list"></i> Registered Course By Student
 					</h3>
 				</div>
 				<div class="panel-body">
+				
 
 			
 				
-					<div class="row">
-					<div class="pull-right">
-					<a href="addCourseSchedule.html" data-toggle="tooltip" title="Add New"
-						class="btn btn-primary"><i class="fa fa-plus"></i></a>
-					<button type="submit" form="form-product formaction="#"
-						data-toggle="tooltip" title="Copy" class="btn btn-default">
-						<i class="fa fa-copy"></i>
-					</button> 
-					<button type="button" data-toggle="tooltip" title="Delete"
-						class="btn btn-danger"
-						onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : false;">
-						<i class="fa fa-trash-o"></i>
-					</button>
-				</div>
-					</div>
+	
 		
-	<form action="#" method="post" enctype="multipart/form-data"
+					<form action="#" method="post" enctype="multipart/form-data"
 								id="form-product">
 								<div class="table-responsive">
 									<table class="table table-bordered table-hover">
@@ -193,21 +171,19 @@
 													type="checkbox"
 													onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
 
-												<td class="text-left"><a href="#" class="asc">Client Name</a></td>
-											
-												<td class="text-left"><a href="#">Client Email</a></td>
-												<td class="text-left"><a href="#">Client Password</a></td>
+												<th class="text-middle">Student Name
+													</th>
+														<th class="text-middle">Course </th>
+														<th class="text-middle">Start Date</th>
+												<th class="text-middle">End Date</th>
 										
-												<td class="text-left"><a href="#">Client DOB</a></td>
-												<td class="text-left"><a href="#">Client School </a></td>
-											
-												<td class="text-left"><a href="#">Date Enrollment</a></td>
+												<th class="text-middle">Start time</th>
+												<th class="text-middle">End time</th>
+												
 											
 	
-										
-							<td class="text-left"><a href="#">Role</a></td>
-	                                              <td class="text-left"><a href="#">Client Status</a></td>
-												<td class="text-right">Action</td>
+
+									
 											</tr>
 										</thead>
 										<tbody>
@@ -216,75 +192,55 @@
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="47" /></td>
 
-												<td class="text-left"><a href="listOfCourseStudentRegistered.html" class="asc">Allen Tan Yao Hui</a></td>
-
-												<td class="text-left"> 123@12345.com </td>
-													<td class="text-left"> absdabsa </td>
-												<td class="text-left">23/10/1996</td>
-												<td class="text-left">Raffles Institution</td>
-													<td class="text-left">23/10/2015</td>
-													<td class="text-left">Student</td>
-												<td class="text-left">Active</td>
-												
-										
-												<td class="text-right"><a
-													href="editCourseSchedule.html" data-toggle="tooltip"
-													title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Judith Tan</a></td>
+													<th class="text-middle">Therapy for woman </th>
+		<td class="text-left">24/10/2015</td>
+		<td class="text-left">24/10/2015</td>
+												<td class="text-left">17:00</td>
+												<td class="text-left">09:00</td>
+								
+									
+											
 											</tr>
 											<tr>
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="28" /></td>
 
-												<td class="text-left"><a href="listOfCourseStudentRegistered.html" class="asc">Bendict Ng Jian Hao</a></td>
-										
-												<td class="text-left"> 123@12345@gmail.com </td>
-												<td class="text-left"> absdabsa </td>
-												<td class="text-left">23/10/1996</td>
-												<td class="text-left">International Institution</td>
-															<td class="text-left">23/10/2015</td>
-																<td class="text-left">Student</td>
-												<td class="text-left">Inctive</td>
+										<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Judith Tan</a></td>
+													<th class="text-middle">Grief Therapy for woman </th>
+		<td class="text-left">24/10/2015</td>
+		<td class="text-left">24/10/2015</td>
+												<td class="text-left">17:00</td>
+												<td class="text-left">09:00</td>
+									
 
-												<td class="text-right"><a href="#"
-													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+											
 											</tr>
 											<tr>
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="41" /></td>
 
-												<td class="text-left"><a href="listOfCourseStudentRegistered.html" class="asc">Charles Dickson Diana</a></td>
-							
-											<td class="text-left"> abc@hotmail.com </td>
-												<td class="text-left">23/10/1996</td>
-												<td class="text-left"> absdabsa </td>
-												<td class="text-left">Flower Institution</td>
-															<td class="text-left">23/10/2015</td>
-																<td class="text-left">Student</td>
-												<td class="text-left">Active</td>
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Judith Tan</a></td>
+													<th class="text-middle">Stress Therapy for woman </th>
+		<td class="text-left">24/10/2015</td>
+		<td class="text-left">24/10/2015</td>
+												<td class="text-left">17:00</td>
+												<td class="text-left">09:00</td>
 
-												<td class="text-right"><a href="#"
-													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+												
 											</tr>
 											<tr>
 												<td class="text-center"><input type="checkbox"
 													name="selected[]" value="40" /></td>
+<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Judith Tan</a></td>
+													<th class="text-middle">School Project Therapy for woman </th>
+		<td class="text-left">24/10/2015</td>
+		<td class="text-left">24/10/2015</td>
+												<td class="text-left">17:00</td>
+												<td class="text-left">09:00</td>
+									
 
-												<td class="text-left"><a href="listOfCourseStudentRegistered.html" class="asc">Grace Tan Yi Ru</a></td>
-
-												<td class="text-left"> flower1996@hotmail.com </td>
-												<td class="text-left"> absdabsa </td>
-												<td class="text-left">23/10/1996</td>
-												<td class="text-left">Sport Institution</td>
-															<td class="text-left">23/10/2015</td>
-																<td class="text-left">Student</td>
-												<td class="text-left">Inactive</td>
-
-												<td class="text-right"><a href="listOfCourseStudentRegistered.html"
-													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+												
 											</tr>
 
 
@@ -297,19 +253,34 @@
 							</form>
 						</div>
 					</form>
-					<div class="row">
-						<div class="col-sm-6 text-left"></div>
-						<div class="col-sm-6 text-right">Showing 1 to 19 of 19 (1
-							Pages)</div>
-					</div>
-							
-					<ul class="pager">
-  <li class="previous"><a href="#">Previous</a></li>
-  <li class="next"><a href="#">Next</a></li>
-</ul>
-
+					
+	
+					
 				</div>
+				
+				
+				<br><br>
+		<div class="form-group">
+  
+	
+	
+	
+<div class="form-actions">
+ <a href="manageEnrollment.html" ><button type="submit" class="btn btn-primary">Back </button></a>
+
+
+
+</div>
+
+
+
+</div>
+							
+							
+
+
 			</div>
+			
 		</div>
 	
 
