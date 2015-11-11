@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE - Manage Add Program</title>
+<title>I'MPOSSIBLE - Manage Course</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -57,79 +57,75 @@
 
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown"><a href="index.html" class="dropdown-toggle"
-						data-toggle="dropdown">Home<b class=caret></b></a>
+					<li class="dropdown"><a href="index.html"
+						class="dropdown-toggle" data-toggle="dropdown">Home<b
+							class=caret></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="index.html">Public homepage</a></li>
 							<li class="active">
-							<li><a
-								href="viewProgramsNcourses.html">
-									User Homepage</a></li>
-									
-									</li>
-							<li><a href="index.html">Admin homepage</a></li>
+							<li><a href="viewProgramsNcourses.html"> User Homepage</a></li></li>
+					<li><a href="index.html">Admin homepage</a></li>
 
-						</ul>
+				</ul>
 
-						
-					</li>
-					
-					
-					
-						<li class="dropdown"><a href="index.html" class="dropdown-toggle"
-						data-toggle="dropdown">Manage<b class=caret></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="adminManageCategory.html"> Manage Category</a></li>
-							<li class="active">
-							<li><a
-								href="courseAdmin.html">
-									Manage Course</a></li>
-									<li><a href="programAdmin.html"> Manage Program</a></li>
-									<li><a href="adminCourseSchedule.html"> Manage Course Schedule</a></li>
-									<li><a href="adminProgramSchedule.html"> Manage Program Schedule</a></li>
-									<li><a href="manageStatus.html"> Manage Status</a></li>
-										<li><a href="adminIndex.html"> Manage Users</a></li>
-										<li><a href="adminIndex.html"> Manage Enrollment</a></li>
-									
 
-									
+				</li>
 
-						</ul></li>
 
-						
-					</li>
-					
-					
-								<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Courses & Programs<b class=caret></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">About</a></li>
-							<li class="active">
-							<li><a
-								href="viewProgramsNcourses.html">
-									Currently Available Now</a></li>
-							<li><a
-								href="viewProgramsNcourses.html">Full
-									List</a></li>
-						</ul></li>
-						
-					</li>
-					<li><a href="ContactUs.html">Contact Us</a></li>
 
-						
-						 <li><a href="#"><span class="hidden-xs hidden-sm hidden-md">Logout</span> <i class="fa fa-sign-out fa-lg"></i></a></li>
+				<li class="dropdown"><a href="index.html"
+					class="dropdown-toggle" data-toggle="dropdown">Manage<b
+						class=caret></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="adminManageCategory.html"> Manage Category</a></li>
+						<li class="active">
+						<li><a href="courseAdmin.html"> Manage Course</a></li>
+						<li><a href="programAdmin.html"> Manage Program</a></li>
+						<li><a href="adminCourseSchedule.html"> Manage Course
+								Schedule</a></li>
+						<li><a href="adminProgramSchedule.html"> Manage Program
+								Schedule</a></li>
+						<li><a href="manageStatus.html"> Manage Status</a></li>
+						<li><a href="adminIndex.html"> Manage Users</a></li>
+						<li><a href="adminIndex.html"> Manage Enrollment</a></li>
 
-					<!-- add search form -->
-					<form class="navbar-form navbar-right" role="search">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search ">
-							<span class="input-group-btn">
-								<button type="submit" class="btn btn-default">
-									<span class="glyphicon glyphicon-search"></span>
-								</button>
-							</span>
-						</div>
-					</form>
+
+
+
+					</ul></li>
+
+
+				</li>
+
+
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown">Courses & Programs<b class=caret></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">About</a></li>
+						<li class="active">
+						<li><a href="viewProgramsNcourses.html"> Currently
+								Available Now</a></li>
+						<li><a href="viewProgramsNcourses.html">Full List</a></li>
+					</ul></li>
+
+				</li>
+				<li><a href="ContactUs.html">Contact Us</a></li>
+
+
+				<li><a href="#"><span class="hidden-xs hidden-sm hidden-md">Logout</span>
+						<i class="fa fa-sign-out fa-lg"></i></a></li>
+
+				<!-- add search form -->
+				<form class="navbar-form navbar-right" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search ">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</form>
 
 
 				</ul>
@@ -141,224 +137,235 @@
 
 	<div class="container">
 
-		
-	<div class="jumbotron text-center">	
-	<div class="content">
 
-
-
-		
-			
+		<div class="jumbotron text-center">
+			<div class="content">
 				<div class="panel-body">
-				<h1>Manage Course</h1>
+					<h1>Manage Course</h1>
+					<ul class="breadcrumb">
+						<li class="active"><a href="courseAdmin.html">Manage
+								Courses</a></li>
+						<li><a href="programAdmin.html">Manage Programs</a></li>
+					</ul>
+					<h2>Search</h2>
+					<div class="well">
+						<div class="row">
+							<div class="col-sm-4">
 
-
-		
-						<h2>Search</h2>
-						<div class="well">
-							<div class="row">
-								<div class="col-sm-4">
-
-									<div class="form-group">
-										<label class="control-label" for="input-name">Course
-											Name</label> <input type="text" name="filter_name" value=""
-											placeholder="Course Name" />
-									</div>
-
-
-
+								<div class="form-group">
+									<label class="control-label" for="input-name">Course
+										Name</label> <input type="text" name="filter_name" value=""
+										placeholder="Course Name" />
 								</div>
 
-								<div class="col-sm-4">
-
-									<div class="form-group">
-										<label class="control-label" for="input-price">Start
-											Date</label> <input type="text" name="filter_price" value=""
-											placeholder="Start Date" />
-									</div>
 
 
+							</div>
 
+							<div class="col-sm-4">
+
+								<div class="form-group">
+									<label class="control-label" for="input-price">Start
+										Date</label> <input type="text" name="filter_price" value=""
+										placeholder="Start Date" />
 								</div>
-								<div class="col-sm-4">
 
-									<div class="form-group">
-										<label class="control-label" for="input-price">End
-											Date</label> <input type="text" name="filter_price" value=""
-											placeholder="End Date" />
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="form-group">
-										<label class="control-label" for="input-status">Status</label>
-										<select name="filter_status" id="input-status">
-											<option value="2">Draft</option>
-											<option value="1">Available</option>
-											<option value="0">Coming Soon</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-sm-4"></div>
-								<div class="col-sm-4">
-									<button type="button" id="button-filter"
-										class="btn btn-primary pull-right">
-										<i class="fa fa-search"></i> Filter
-									</button>
 
+
+							</div>
+							<div class="col-sm-4">
+
+								<div class="form-group">
+									<label class="control-label" for="input-price">End Date</label>
+									<input type="text" name="filter_price" value=""
+										placeholder="End Date" />
 								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="control-label" for="input-status">Status</label>
+									<select name="filter_status" id="input-status">
+										<option value="2">Draft</option>
+										<option value="1">Available</option>
+										<option value="0">Coming Soon</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4"></div>
+							<div class="col-sm-4">
+								<button type="button" id="button-filter"
+									class="btn btn-primary pull-right">
+									<i class="fa fa-search"></i> Filter
+								</button>
+
+							</div>
 
 						</div>
 					</div>
 				</div>
 			</div>
-				</div>		
-	
-							
-				<!--  Icons for delete, edit and copy -->
-					<p class="icons">
-						<a href="addCourse.html"><button
-								type="button" class="btn btn-default btn-sm">
-								<span class="glyphicon glyphicon-plus"></span> Add
-							</button></a>
-						<button type="button" class="btn btn-default btn-sm">
-							<span class="glyphicon glyphicon-trash"></span> Delete
-						</button>
-						<a href="addCourse.html"><button type="button"
-								class="btn btn-default btn-sm">
-								<span class="glyphicon glyphicon-edit"></span> Edit
-							</button></a>
-						<button type="button" class="btn btn-default btn-sm">
-							<span class="glyphicon glyphicon-copy"></span> Copy
-						</button>
-					</p>
+		</div>
 
-					<h2 class="sub-header">Section title</h2>
-					<div class="tablepadding">
 
-						<table class="table table-striped">
+		<div class="container-fluid">
+			<!-- <div class="alert alert-danger">
+			<i class="fa fa-exclamation-circle"></i> Warning: You do not have
+			permission to modify courses!
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+		</div> -->
 
-							<thead>
-								<tr>
-									<th><input type="checkbox" name="checkbox"
-										value="checkbox" style="text-align: center"></th>
-									<th>Image</th>
-									<th>Course Name</th>
-									<th>Start Date</th>
-									<th>End Date</th>
-									<th>Start Time</th>
-									<th>End Time</th>
-									<th>Price</th>
-									<th>Class Size</th>
-									<th>Status Description</th>
-									<th>Venue</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image1</td>
-									<td>Showing Love</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>17:06</td>
-									<td>17:06</td>
-									<td>$23</td>
-									<td>30</td>
-									<td>Available</td>
-									<td>Venue A</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Loving the Right Way</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>17:06</td>
-									<td>17:06</td>
-									<td>$23</td>
-									<td>30</td>
-									<td>Available</td>
-									<td>Venue A</td>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<i class="fa fa-list"></i> Courses
+					</h3>
+				</div>
 
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Communicating the Right Way</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>17:06</td>
-									<td>17:06</td>
-									<td>$23</td>
-									<td>30</td>
-									<td>Available</td>
-									<td>Venue A</td>
-									
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Anger Management</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>17:06</td>
-									<td>17:06</td>
-									<td>$23</td>
-									<td>30</td>
-									<td>Available</td>
-									<td>Venue A</td>
-									
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Communicating the Right Way</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>17:06</td>
-									<td>17:06</td>
-									<td>$23</td>
-									<td>30</td>
-									<td>Available</td>
-									<td>Venue A</td>
-									
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Managing Time</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>17:06</td>
-									<td>17:06</td>
-									<td>$23</td>
-									<td>30</td>
-									<td>Draft</td>
-									<td>Venue A</td>
-									
-								</tr>
-								<tr>
-									<td><input type="checkbox" name="checkbox"
-										value="checkbox"></td>
-									<td>Image 2</td>
-									<td>Dealing with Stress</td>
-									<td>23/11/2015</td>
-									<td>23/11/2015</td>
-									<td>17:06</td>
-									<td>17:06</td>
-									<td>$23</td>
-									<td>30</td>
-									<td>Draft</td>
-									<td>Venue A</td>
-									
-								</tr>
-						</table>
+				<div class="panel-body">
+
+					<div id="wrapper">
+						<div id="myScheduler"></div>
+					</div>
+					<div class="row">
+						<div class="pull-right">
+							<!--  Icons for delete, edit and copy -->
+							<p class="icons">
+								<a href="addCourse.html"><button type="button"
+										class="btn btn-default btn-sm">
+										<span class="glyphicon glyphicon-plus"></span> Add
+									</button></a>
+								<button type="button" class="btn btn-default btn-sm"
+									onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : false;">
+									<span class="glyphicon glyphicon-trash"></span> Delete
+								</button>
+								<a href="addCourse.html"><button type="button"
+										class="btn btn-default btn-sm">
+										<span class="glyphicon glyphicon-edit"></span> Edit
+									</button></a>
+								<button type="button" class="btn btn-default btn-sm">
+									<span class="glyphicon glyphicon-copy"></span> Copy
+								</button>
+							</p>
+						</div>
+					</div>
+
+					<table class="table table-striped">
+
+						<thead>
+							<tr>
+								<th><input type="checkbox" name="checkbox" value="checkbox"
+									style="text-align: center"></th>
+								<th>Image</th>
+								<th>Course Name</th>
+								<th>Start Date</th>
+								<th>End Date</th>
+								<th>Start Time</th>
+								<th>End Time</th>
+								<th>Price</th>
+								<th>Class Size</th>
+								<th>Status Description</th>
+								<th>Venue</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image1</td>
+								<td>Showing Love</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+								<td>Venue A</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Loving the Right Way</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+								<td>Venue A</td>
+
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Communicating the Right Way</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+								<td>Venue A</td>
+
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Anger Management</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+								<td>Venue A</td>
+
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Communicating the Right Way</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+								<td>Venue A</td>
+
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Time</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Draft</td>
+								<td>Venue A</td>
+
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Dealing with Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Draft</td>
+								<td>Venue A</td>
+
+							</tr>
+					</table>
 				</div>
 
 			</div>
@@ -388,7 +395,7 @@
 
 
 
-<!-- 	Place bootstrap core javascript below so pages load faster -->
+	<!-- 	Place bootstrap core javascript below so pages load faster -->
 	<div class="modal fade" id="addCourse">
 		<div class="modal-dialog">
 			<div class="modal-content">
