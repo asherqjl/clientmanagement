@@ -26,6 +26,7 @@ rel='stylesheet' type='text/css'>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+<script src="ckeditor/ckeditor.js"></script>
 <link href="css/home.css" rel="stylesheet">
 
 </head>
@@ -138,12 +139,12 @@ rel='stylesheet' type='text/css'>
 	
 
 		
-			<h2><i class="fa fa-clock-o fa-1x "></i>  Categories</h2>
+			<h2><i class="fa fa-clock-o fa-1x "></i>  Status</h2>
 			<ul class="breadcrumb">
 				<li class="active"><a
 					href="newAdminIndex.html">Home </a></li>
 				<li><a
-					href="adminProgramSchedule.html">Categories</a></li>
+					href="adminProgramSchedule.html">Manage Status</a></li>
 			</ul>
 	
 	
@@ -157,8 +158,7 @@ rel='stylesheet' type='text/css'>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">
-					<i class="fa fa-pencil"></i> Add Category 
-				</h3>
+					<i class="fa fa-pencil"></i> Edit Status
 			</div>
 			<div class="panel-body">
 			
@@ -172,52 +172,30 @@ rel='stylesheet' type='text/css'>
 <form class="form-horizontal" role="form">
 							
 				    <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="cName">*Category Name:</label>
+      <label class="col-sm-2 control-label" for="cName">*Status Name:</label>
       <div class="col-sm-9">
         <input class="form-control" type="text" id="cName">
       </div>
     </div>
 <br><br>
-    <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="seo">SEO Keyword:</label>
-      <div class="col-sm-9">
-        <input class="form-control" type="text" id="seo" value="couplecouselling"> 
-      </div>
-    </div>	
+				<div class="row">
+					<label>Status Description:</label>
+					<textarea name="editor1" id="editor1" rows="10" cols="80">
+						Enter Status Description / Edit Status Description            	
+						</textarea>
+					<script>
+	                // Replace the <textarea id="editor1"> with a CKEditor
+	                // instance, using default configuration.
+	                CKEDITOR.replace( 'editor1' );
+	            	</script>
+				</div>
 	
 	<br><br>
 
-  <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="status">Top:</label>
-	  	    <div class="col-sm-6">
-      <div class="checkbox">
-      <input type="checkbox">
-    </div>
-	     </div>
 
-    </div>		
-	<br><br>
-	
-	   <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="seo">Sort:</label>
-      <div class="col-sm-9">
-        <input class="form-control" type="text" id="seo" value="0"> 
-      </div>
-    </div>	
+
 						
-<br><br>
-  <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="status">Status:</label>
-	  	    <div class="col-sm-4">
-      <select class="form-control" id="status">
-    <option>Active</option>
-        <option>Inactive</option>
-        <option>Draft</option>
 
-      </select>
-	     </div>
-
-    </div>
 
 					
 </form>
@@ -231,7 +209,7 @@ rel='stylesheet' type='text/css'>
 	
 <div class="form-actions">
 <button type="submit" class="btn btn-primary">Save changes</button>
- <a href="adminManageCategory.html" ><button type="button" class="btn btn-danger">Cancel</button></a>
+ <a href="manageStatus.html" ><button type="button" class="btn btn-danger">Cancel</button></a>
 
 </div>
 
