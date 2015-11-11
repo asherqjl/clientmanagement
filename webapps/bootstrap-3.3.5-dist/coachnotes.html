@@ -74,8 +74,6 @@
 	<div class="container">
 
 	<div class="jumbotron">
-	
-	
 
 		<div class="container-fluid">
 		<!-- <div class="alert alert-danger">
@@ -97,51 +95,54 @@
 
 	
 <form class="form-horizontal" role="form">
-							
-				    <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="cName"> Student Name:</label>
-      <div class="col-sm-9">
-        <input class="form-control" type="text" id="cName">
-      </div>
-    </div>
-<br><br>
 
-		<div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="seo">Date of counselling:</label>
-      <div class="col-sm-9">
-        <input class="form-control" type="text" id="seo" value=""> 
-      </div>
-    </div>
+<div class="form-group form-group-md">
+      <label class="col-sm-2 control-label" for="status">Student Name:</label>
+	  	    <div class="col-sm-4">
+      <select class="form-control" id="status">
+    <option>Judith</option>
+        <option>Jia Le</option>
+        <option>Xenia</option>
 
+      </select>
+	     </div>
+
+    </div>
+	<br><br>
 	
-<br><br>
   <div class="form-group form-group-md">
       <label class="col-sm-2 control-label" for="status">Privacy:</label>
 	  	    <div class="col-sm-4">
       <select class="form-control" id="status">
-    <option>Allow Everybody</option>
-        <option>Only this user</option>
+    <option>Allow All</option>
+        <option>Only Me</option>
         <option>Only Counsellor</option>
 
       </select>
 	     </div>
 
     </div>
+<br><br>	
+<div class="form-group form-group-md">
+      <label class="col-sm-2 control-label" for="dp1">Date Of Counselling:</label>
+  <div class="col-sm-3">
+      <input type="date" class="form-control" id="dp1" value="11/11/2015">
+	    </div>
+    </div>
+	
 <br><br>
 
-
-    <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="seo">Note:</label>
-      <div class="col-sm-9">
-        <input class="form-control" type="text" id="seo" value="couplecouselling"> 
-      </div>
-    </div>	
 	
-	<br><br>
+	<div class="form-group form-group-md">
+	<label class="col-sm-2 control-label" for="seo">Counsellor's Comment:</label>
+	<div class="col-sm-9">
+        <textarea class="form-control" id="message" name="message" placeholder="Counsellor's comment is entered here." rows="7"></textarea>
+      </div>
+	  
+	
+	</div>
 					
 </form>
-
-	<br><br>
 			<div class="form-group">	
 	
 <div class="form-actions" style = "text-align:right">
