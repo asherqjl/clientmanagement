@@ -30,8 +30,8 @@
 
 </head>
 <body>
-	<!-- style="height:2500px" -->
-<div class="navbar navbar-default navbar-fixed-top">
+<!-- style="height:2500px" -->
+	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -70,7 +70,7 @@
 
 
 
-				<li class="dropdown"><a href="index.html"
+				<li class="dropdown"><a href="newAdminIndex.html"
 					class="dropdown-toggle" data-toggle="dropdown">Manage<b
 						class=caret></b></a>
 					<ul class="dropdown-menu">
@@ -83,16 +83,16 @@
 						<li><a href="adminProgramSchedule.html"> Manage Program
 								Schedule</a></li>
 						<li><a href="manageStatus.html"> Manage Status</a></li>
-						<li><a href="adminIndex.html"> Manage Users</a></li>
-						<li><a href="adminIndex.html"> Manage Enrollment</a></li>
+						<li><a href="manageUser.html"> Manage Users</a></li>
+						<li><a href="manageEnrollment.html"> Manage Enrollment</a></li>
 
 
 
 
-					</ul></li>
-
-
+					</ul>
 				</li>
+
+
 
 				<li><a href="ContactUs.html">Contact Us</a></li>
 
@@ -121,7 +121,7 @@
 
 	<div class="container">
 
-		<div class="jumbotron ">
+		<div class="jumbotron text-center ">
 
 
 
@@ -334,52 +334,43 @@
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script>
-YUI().use(
-'aui-scheduler',
-function(Y) {
-var events = [
-  {
-	content: 'Partial Lunar Eclipse',
-	endDate: new Date(2013, 3, 25, 5),
-	startDate: new Date(2013, 3, 25, 1)
-  },
-  {
-	color: "#8d8",
-	content: 'Earth Day Lunch',
-	disabled: true,
-	endDate: new Date(2013, 3, 22, 13),
-	meeting: true,
-	reminder: true,
-	startDate: new Date(2013, 3, 22, 12)
-  },
-  {
-	content: "Weeklong",
-	endDate: new Date(2013, 3, 27),
-	startDate: new Date(2013, 3, 21)
-  }
-];
+		YUI().use('aui-scheduler', function(Y) {
+			var events = [ {
+				content : 'Partial Lunar Eclipse',
+				endDate : new Date(2013, 3, 25, 5),
+				startDate : new Date(2013, 3, 25, 1)
+			}, {
+				color : "#8d8",
+				content : 'Earth Day Lunch',
+				disabled : true,
+				endDate : new Date(2013, 3, 22, 13),
+				meeting : true,
+				reminder : true,
+				startDate : new Date(2013, 3, 22, 12)
+			}, {
+				content : "Weeklong",
+				endDate : new Date(2013, 3, 27),
+				startDate : new Date(2013, 3, 21)
+			} ];
 
-var agendaView = new Y.SchedulerAgendaView();
-var dayView = new Y.SchedulerDayView();
-var weekView = new Y.SchedulerWeekView();
-var monthView = new Y.SchedulerMonthView();
+			var agendaView = new Y.SchedulerAgendaView();
+			var dayView = new Y.SchedulerDayView();
+			var weekView = new Y.SchedulerWeekView();
+			var monthView = new Y.SchedulerMonthView();
 
-var eventRecorder = new Y.SchedulerEventRecorder();
+			var eventRecorder = new Y.SchedulerEventRecorder();
 
-new Y.Scheduler(
-  {
-	activeView: weekView,
-	boundingBox: '#myScheduler',
-	date: new Date(2013, 3, 25),
-	eventRecorder: eventRecorder,
-	items: events,
-	render: true,
-	views: [dayView, weekView, monthView, agendaView]
-  }
-);
-}
-);
-</script>
+			new Y.Scheduler({
+				activeView : weekView,
+				boundingBox : '#myScheduler',
+				date : new Date(2013, 3, 25),
+				eventRecorder : eventRecorder,
+				items : events,
+				render : true,
+				views : [ dayView, weekView, monthView, agendaView ]
+			});
+		});
+	</script>
 </body>
 </html>
 
