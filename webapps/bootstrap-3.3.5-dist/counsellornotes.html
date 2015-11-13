@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE - Counsellor</title>
+<title>I'MPOSSIBLE - Counsellor Notes</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -54,11 +54,13 @@ text-align: center;
 						</ul></li>
 
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown"> Counsellor <b class=caret></b></a>
+						data-toggle="dropdown"> Courses & Programs <b class=caret></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="counsellornotes.html">All Notes</a></li>
+							<li><a href="myCourseNPrograms.html">My Courses &
+									Programs</a></li>
 							<li class="active">
-							<li><a href="counsellorjournals.html">All Journals</a></li>
+							<li><a href="viewProgramsNcourses.html">All Courses &
+									Programs</a></li>
 						</ul></li>
 
 					<li><a href="ContactUs.html">Contact Us</a></li>
@@ -73,82 +75,21 @@ text-align: center;
 			</div>
 		</div>
 	</div>
-	<div class="container">
 
-		
-	<div class="jumbotron text-center">	
-	<div class="content">
-		
-			
-				<div class="panel-body">
-				
-				<h2>Search</h2>
-						<div class="well">
-							<div class="row">
-								<div class="col-sm-4">
-
-									<div class="form-group">
-										<label class="control-label" for="input-name">Course
-											Name</label> <input type="text" name="filter_name" value=""
-											placeholder="Course Name" />
-									</div>
-
-
-
-								</div>
-
-								<div class="col-sm-4">
-
-									<div class="form-group">
-										<label class="control-label" for="input-price">Start
-											Date</label> <input type="text" name="filter_price" value=""
-											placeholder="Start Date" />
-									</div>
-
-
-
-								</div>
-								<div class="col-sm-4">
-
-									<div class="form-group">
-										<label class="control-label" for="input-price">End
-											Date</label> <input type="text" name="filter_price" value=""
-											placeholder="End Date" />
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="form-group">
-										<label class="control-label" for="input-status">Status</label>
-										<select name="filter_status" id="input-status">
-											<option value="2">Draft</option>
-											<option value="1">Available</option>
-											<option value="0">Coming Soon</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-sm-4"></div>
-								<div class="col-sm-4">
-									<button type="button" id="button-filter"
-										class="btn btn-primary pull-right">
-										<i class="fa fa-search"></i> Filter
-									</button>
-
-								</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-				</div>
-				
-			</div>
-			
-	<form class="form-horizontal" method="post">
-		<div class="container">
+<div class="container">
 			<div class="jumbotron text-left">
 
 					<legend class="text-center"> Hi Counsellor! </legend>
-						<b><h4>Journal's</h4></b>
+					
+					<div class="row">
+						<p class="icons">
+					<a href="coachnotes.html"><button type="button"
+							class="btn btn-default btn-sm" style = "float:right">
+							<span class="glyphicon glyphicon-plus" ></span> Write a new note
+						</button></a>
+						</p>
+
+						<b><h4> All Notes </h4></b>
 						<div class="table-responsive">
 
 						<table class="table table-striped">
@@ -158,8 +99,9 @@ text-align: center;
 								<tr>
 									<th>#</th>
 									<th>Date</th>
-									<th>Time Submitted Journal</th>
-									<th>Comments Given</th>
+									<th>Time Submitted Note</th>
+									<th>Student Name</th>
+									
 								</tr>
 							</thead>
 						
@@ -211,8 +153,9 @@ text-align: center;
 							
 						</table>
 						</table>
-
-					<ul class="pagination pagination-sm" style="float: right; margin-top:10px">
+						
+						
+						<ul class="pagination pagination-sm" style="float: right; margin-top:10px">
 						<li class="disabled"><a href="#">&laquo;</a></li>
 						<li class="active"><a href="#">1</a></li>
 						<li><a href="#">2</a></li>
@@ -221,10 +164,15 @@ text-align: center;
 						<li><a href="#">5</a></li>
 						<li><a href="#">&raquo;</a></li>
 					</ul>
-			</div>
-		</div>
-	</form>
-
+					
+					<br/>
+					</div>
+					<hr/>
+					</div>
+					</div>
+					</div>
+					
+					
 	<!-- <footer> -->
 	<div class="navbar navbar-inverse navbar-fixed-bottom"
 		role="navigation">
