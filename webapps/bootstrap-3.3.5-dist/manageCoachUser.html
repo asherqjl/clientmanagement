@@ -161,19 +161,28 @@
 			
 				
 					<div class="row">
-					<div class="pull-right">
-					<a href="editCoachUser.html" data-toggle="tooltip" title="Add New"
-						class="btn btn-primary"><i class="fa fa-plus"></i></a>
-					<button type="submit" form="form-product formaction="#"
-						data-toggle="tooltip" title="Copy" class="btn btn-default">
-						<i class="fa fa-copy"></i>
-					</button> 
-					<button type="button" data-toggle="tooltip" title="Delete"
-						class="btn btn-danger"
-						onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : false;">
-						<i class="fa fa-trash-o"></i>
-					</button>
-				</div>
+<div class="pull-right">
+							
+								<!--  Icons for delete, edit and copy -->
+							<p class="icons">
+								<a href="editCoachUser.html"><button type="button"
+										class="btn btn-default btn-sm">
+										<span class="glyphicon glyphicon-plus"></span> Add
+									</button></a>
+								<button type="button" class="btn btn-default btn-sm"
+									onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : 
+false;">
+									<span class="glyphicon glyphicon-trash"></span> Delete
+								</button>
+								<a href="editCoachUser.html"><button type="button"
+										class="btn btn-default btn-sm">
+										<span class="glyphicon glyphicon-edit"></span> Edit
+									</button></a>
+								<button type="button" class="btn btn-default btn-sm">
+									<span class="glyphicon glyphicon-copy"></span> Copy
+								</button>
+							</p>
+						</div>
 					</div>
 		
 	<form action="#" method="post" enctype="multipart/form-data"
@@ -198,7 +207,7 @@
 										
 						
 	                                              <td class="text-left"><a href="#"> Status</a></td>
-												<td class="text-right">Action</td>
+							
 											</tr>
 										</thead>
 										<tbody>
@@ -216,10 +225,7 @@
 												<td class="text-left">Coach</td>
 												
 										
-												<td class="text-right"><a
-													href="editCoachUser.html" data-toggle="tooltip"
-													title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+						
 											</tr>
 											<tr>
 												<td class="text-center"><input type="checkbox"
@@ -233,9 +239,7 @@
 									
 										<td class="text-left">Coach</td>
 
-												<td class="text-right"><a href="editCoachUser.html"
-													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+			
 											</tr>
 											<tr>
 												<td class="text-center"><input type="checkbox"
@@ -249,9 +253,7 @@
 								<td class="text-left">Coach</td>
 												
 
-												<td class="text-right"><a href="editCoachUser.html"
-													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
+								
 											</tr>
 											<tr>
 												<td class="text-center"><input type="checkbox"
@@ -264,9 +266,6 @@
 														<td class="text-left">Jun 3,2015 Wednesday</td>
 											<td class="text-left">Coach</td>
 
-												<td class="text-right"><a href="editCoachUser.html"
-													data-toggle="tooltip" title="Edit" class="btn btn-primary"><i
-														class="fa fa-pencil"></i></a></td>
 											</tr>
 
 
