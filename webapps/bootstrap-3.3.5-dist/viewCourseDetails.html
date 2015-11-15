@@ -65,8 +65,8 @@
 					<li><a href="ContactUs.html">Contact Us</a></li>
 					<li><a href="#login" data-toggle="modal">Log In</a></li>
 					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
-					
-					
+
+
 					<!-- add search form -->
 					<form class="navbar-form navbar-right" role="search">
 						<div class="input-group">
@@ -84,11 +84,11 @@
 		</div>
 	</div>
 	<!-- When database comes in, if onclick == currently available show those with status available else show full -->
-	<!-- Program -->
+	<!-- Courses -->
 
 	<!-- when the database comes, no more hardcoding, auto populate the page with contents
 		based on the number of data in the DB, use for loop. -->
-	<!-- ROW on programs -->
+	<!-- ROW on Courses -->
 	<div class="row">
 		<div class="col-xs-6 col-lg-4">
 			<div class="alingment">
@@ -104,51 +104,93 @@
 			</div>
 		</div>
 	</div>
-	<div class="testing">
-		<div class="row">
-			<div class="col-xs-6 col-lg-4">
-				<h3>Course Schedules:</h3>
+	<!-- how in the world am i supposed to remove the borders of a td... seriously -->
+	<form>
+		<div class="col-xs-9" style="padding-bottom: 50px";>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<i class="fa fa-list"></i> Course Schedule
+					</h3>
+				</div>
+				<br />
+				<div class="row">
+					<div class="container">
+						<h2>Basic Table</h2>
+						<p>The .table class adds basic styling (light padding and only
+							horizontal dividers) to a table:</p>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Firstname</th>
+									<th>Lastname</th>
+									<th>Email</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>John</td>
+									<td>Doe</td>
+									<td>john@example.com</td>
+								</tr>
+								<tr>
+									<td>Mary</td>
+									<td>Moe</td>
+									<td>mary@example.com</td>
+								</tr>
+								<tr>
+									<td>July</td>
+									<td>Dooley</td>
+									<td>july@example.com</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
-				<table style="width: 60%">
-					<tr>
-						<th>Start Date:</th>
-						<th>End Date:</th>
-						<th>Start Time:</th>
-						<th>End Time:</th>
-						<th>Venue:</th>
-					</tr>
-					<tr>
-						<td>12/11/2015</td>
-						<td>12/11/2015</td>
-						<td>17:06</td>
-						<td>17:06</td>
-						<td>Venue</td>
-						<td><a class="btn btn-default" href="register.html">
-								Register Here &raquo; </a></td>
-					</tr>
-					<tr>
-						<td>12/11/2015</td>
-						<td>12/11/2015</td>
-						<td>17:06</td>
-						<td>17:06</td>
-						<td>Venue</td>
-						<td><a class="btn btn-default" href="register.html">
-								Register Here &raquo; </a></td>
-					</tr>
-					<tr>
-						<td>12/11/2015</td>
-						<td>12/11/2015</td>
-						<td>17:06</td>
-						<td>17:06</td>
-						<td>Venue</td>
-						<td><a class="btn btn-default" href="register.html">
-								Register Here &raquo; </a></td>
-					</tr>
-				</table>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 col-lg-4">
+						<table style="width: 60%">
+							<tr>
+								<th>Start Date:</th>
+								<th>End Date:</th>
+								<th>Start Time:</th>
+								<th>End Time:</th>
+								<th>Venue:</th>
+							</tr>
+							<tr>
+								<td>12/11/2015</td>
+								<td>12/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>Venue</td>
+
+							</tr>
+
+							<tr>
+								<td>12/11/2015</td>
+								<td>12/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>Venue</td>
+								<td><a class="btn btn-default" href="register.html">
+										Register Here &raquo; </a></td>
+							</tr>
+							<tr>
+								<td>12/11/2015</td>
+								<td>12/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>Venue</td>
+								<td><a class="btn btn-default" href="register.html">
+										Register Here &raquo; </a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!--/row-->
+	</form>
 
 	<!-- <Fixed footer> -->
 	<div class="navbar navbar-inverse navbar-fixed-bottom">

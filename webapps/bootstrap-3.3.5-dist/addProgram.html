@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE - Manage Add Program</title>
+<title>I'MPOSSIBLE - Add Program</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -44,7 +44,7 @@
 }
 </style>
 <body>
-<!-- style="height:2500px" -->
+	<!-- style="height:2500px" -->
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -103,8 +103,7 @@
 
 
 
-					</ul>
-				</li>
+					</ul></li>
 
 
 
@@ -228,40 +227,48 @@
 									</div>
 									<br>
 									<div class="row">
-										<div class="col-sm-5">
-											<label>Price:</label><input type="text" class="form-control"
-												id="program_price" placeholder="Price">
+										<!-- use sql to extract the contents of a particular table -->
+										<div class="form-group form-group-md">
+											<label class="col-sm-2 control-label" for="category">Pice:</label>
+											<div class="col-sm-2">
+
+												<input type="text" class="form-control" id="course_price"
+													placeholder="Price">
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<!-- use sql to extract the contents of a particular table -->
+										<div class="form-group form-group-md">
+											<label class="col-sm-2 control-label" for="category">Category:</label>
+											<div class="col-sm-4">
+
+												<select class="form-control" id="status">
+													<option>Category1</option>
+													<option>Category2</option>
+													<option>Category3</option>
+													<option>Category4</option>
+													<option>Category5</option>
+
+												</select>
+											</div>
 										</div>
 									</div>
 									<br>
 									<!-- use sql to extract the contents of a particular table -->
-									<div class="dropdown">
-										<button class="btn btn-default dropdown-toggle" type="button"
-											id="dropdownMenu1" data-toggle="dropdown"
-											aria-haspopup="true" aria-expanded="true">
-											Category <span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-											<li><a href="#">Type 1</a></li>
-											<li><a href="#">Type 2</a></li>
-											<li><a href="#">Type 3</a></li>
-											<li><a href="#">Type 4</a></li>
-										</ul>
-									</div>
+									<div class="row">
+										<div class="form-group form-group-md">
+											<label class="col-sm-2 control-label" for="status">Status:</label>
+											<div class="col-sm-4">
+												<select class="form-control" id="status">
+													<option>Draft</option>
+													<option>Available</option>
+													<option>Coming Soon</option>
 
-									<br>
-									<!-- use sql to extract the contents of a particular table -->
-									<div class="dropdown">
-										<button class="btn btn-default dropdown-toggle" type="button"
-											id="dropdownMenu1" data-toggle="dropdown"
-											aria-haspopup="true" aria-expanded="true">
-											Status <span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-											<li><a href="#">Draft</a></li>
-											<li><a href="#">Available</a></li>
-											<li><a href="#">Coming Soon</a></li>
-										</ul>
+												</select>
+											</div>
+										</div>
 									</div>
 
 

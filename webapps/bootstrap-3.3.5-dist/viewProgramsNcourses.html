@@ -72,9 +72,8 @@
 
 					<form class="navbar-form navbar-right" role="search">
 						<div class="input-group">
-							<input type="text" class="form-control"
-								placeholder="Search "> <span
-								class="input-group-btn">
+							<input type="text" class="form-control" placeholder="Search ">
+							<span class="input-group-btn">
 								<button type="submit" class="btn btn-default">
 									<span class="glyphicon glyphicon-search"></span>
 								</button>
@@ -94,40 +93,41 @@
 	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 		<div class="col-sm-3 col-md-2 sidebar">
 			<form>
-
 				<b>Categories</b>
+				<div class="checkbox">
+					<label><input type="checkbox" value="" checked>All Categories</label>
+				</div>
 				<div class="checkbox">
 					<label><input type="checkbox" value="" checked>Category1</label>
 				</div>
 				<div class="checkbox">
-					<label><input type="checkbox" value="">Category2</label>
+					<label><input type="checkbox" value="" checked>Category2</label>
 				</div>
 				<div class="checkbox">
-					<label><input type="checkbox" value="">Category3</label>
+					<label><input type="checkbox" value="" checked>Category3</label>
 				</div>
 				<div class="checkbox">
-					<label><input type="checkbox" value="">Category4</label>
+					<label><input type="checkbox" value="" checked>Category4</label>
 				</div>
 				<div class="checkbox">
-					<label><input type="checkbox" value="">Category5</label>
+					<label><input type="checkbox" value="" checked>Category5</label>
 				</div>
-				<b>Courses & Programs </b> <a>Courses</a>
+				<b>Program & Courses</b>
 				<div class="checkbox">
-					<label><input type="checkbox" value="" checked>Currently
-						Available Courses</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="">Full List of
-						Courses</label>
-				</div>
-				<a>Programs</a>
-				<div class="checkbox ">
-					<label><input type="checkbox" value="" checked>Currently
-						Available Programs</label>
+					<label><input type="checkbox" value="" checked>Programs and Courses</label>
 				</div>
 				<div class="checkbox">
-					<label><input type="checkbox" value="">Full List of
-						Programs</label>
+					<label><input type="checkbox" value="">Programs only</label>
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox" value="">Courses only</label>
+				</div>
+				<a>Types Of Course</a>
+				<div class="checkbox">
+					<label><input type="checkbox" value="">Coaching Courses</label>
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox" value="">Workshop Courses</label>
 				</div>
 				<div class="form-group">
 					<label class="filter-col" style="margin-right: 0;"
@@ -136,26 +136,26 @@
 						<!-- Use session to select next time -->
 						<option value="9">9</option>
 						<option selected="selected" value="10">10</option>
-						<option value="15">15</option>
-						<option value="20">20</option>
-						<option value="30">30</option>
-						<option value="40">40</option>
-						<option value="50">50</option>
+						<option value="15">11</option>
+						<option value="20">12</option>
+						<option value="30">13</option>
+						<option value="40">14</option>
+						<option value="50">15</option>
 					</select>
 				</div>
 				<div class="form-group">
 					<label class="filter-col" style="margin-right: 0;"
 						for="pref-orderby">Order by:</label> <select id="pref-orderby"
 						class="form-control">
-						<option>Available</option>
-						<option>Coming soon</option>
+						<option>Date closest relative to today</option>
+						<option>Date furthest relative to today</option>
 					</select>
 				</div>
 				<button type="submit" class="btn btn-default filter-col">
-					<span class="glyphicon glyphicon-record"></span> Save Settings
+					<span class="glyphicon glyphicon-record"></span> Save Options
 				</button>
 			</form>
-			
+
 			<!-- /Filter Tab -->
 			<!-- insert JS here
 			To see if something is checked then you write sql to show that thing. :)
@@ -177,12 +177,12 @@
 		based on the number of data in the DB, use for loop. -->
 		<!-- ROW on programs -->
 		<div class="testing">
-			<h3>Programs</h3>
 			<div class="row">
 				<div class="col-xs-6 col-lg-4">
 					<div class="alingment">
 						<p style="text-align: left">
-							<img src="courseAndProgram/bridginGen.jpg" style = "width:200px; height:150px "/>
+							<img src="courseAndProgram/bridginGen.jpg"
+								style="width: 200px; height: 150px" />
 						</p>
 						<p>Program Name: Bridging Generation</p>
 						<p>Date: 12/11/2015</p>
@@ -197,7 +197,8 @@
 				<div class="col-xs-6 col-lg-4">
 					<div class="alingment">
 						<p style="text-align: left">
-							<img src="courseAndProgram/hapMar.jpg"style = "width:200px; height:150px " />
+							<img src="courseAndProgram/hapMar.jpg"
+								style="width: 200px; height: 150px" />
 						</p>
 						<p>Program Name: Marriage Works</p>
 						<p>Date: 12/11/2015</p>
@@ -211,7 +212,8 @@
 				<div class="col-xs-6 col-lg-4">
 					<div class="alingment">
 						<p style="text-align: left">
-							<img src="courseAndProgram/child.jpg" style = "width:200px; height:150px "/>
+							<img src="courseAndProgram/child.jpg"
+								style="width: 200px; height: 150px" />
 						</p>
 						<p>Program Name: Loving Your Child</p>
 						<p>Date: 12/11/2015</p>
@@ -330,12 +332,12 @@ body {
 			<!-- when the database comes, no more hardcoding, auto populate the page with contents
 		based on the number of data in the DB, use for loop. -->
 			<!-- ROW on courses -->
-			<h3>Courses</h3>
 			<div class="row">
 				<div class="col-xs-6 col-lg-4">
 					<div class="alingment">
 						<p style="text-align: left">
-							<img src="courseAndProgram/timeflies.jpg" style = "width:200px; height:150px " />
+							<img src="courseAndProgram/timeflies.jpg"
+								style="width: 200px; height: 150px" />
 						</p>
 						<p>Course Name: Time Management</p>
 						<p>Date: 12/11/2015</p>
@@ -350,7 +352,8 @@ body {
 				<div class="col-xs-6 col-lg-4">
 					<div class="alingment">
 						<p style="text-align: left">
-							<img src="courseAndProgram/correctComm.jpg" style = "width:200px; height:150px " />
+							<img src="courseAndProgram/correctComm.jpg"
+								style="width: 200px; height: 150px" />
 						</p>
 						<p>Course Name: Communicating the Right Way</p>
 						<p>Date: 12/11/2015</p>
@@ -365,7 +368,8 @@ body {
 				<div class="col-xs-6 col-lg-4">
 					<div class="alingment">
 						<p style="text-align: left">
-							<img src="courseAndProgram/anger.jpg" style = "width:200px; height:150px " />
+							<img src="courseAndProgram/anger.jpg"
+								style="width: 200px; height: 150px" />
 						</p>
 						<p>Course Name: Anger Management</p>
 						<p>Date: 12/11/2015</p>
@@ -395,6 +399,7 @@ body {
 			</div>
 		</div>
 	</div>
+
 	<!-- 	Place bootstrap core javascript below so pages load faster -->
 	<div class="modal fade" id="login">
 		<div class="modal-dialog">
