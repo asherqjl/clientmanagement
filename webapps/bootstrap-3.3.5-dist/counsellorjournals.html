@@ -61,7 +61,6 @@ text-align: center;
 							<li><a href="viewProgramsNcourses.html">All Journals</a></li>
 						</ul></li>
 
-					<li><a href="ContactUs.html">Contact Us</a></li>
 
 					<li><button type="submit" class="btn btn-success"
 							style="margin-top: 8px; margin-left: 5px">
@@ -156,7 +155,171 @@ text-align: center;
 			</div>
 		</div>
 	</form>
+<div class="container">
 
+		<div class="container-fluid">
+			<!-- <div class="alert alert-danger">
+			<i class="fa fa-exclamation-circle"></i> Warning: You do not have
+			permission to modify courses!
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+		</div> -->
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<i class="fa fa-list"></i> Programs
+					</h3>
+				</div>
+
+				<div class="panel-body">
+
+					<div id="wrapper">
+						<div id="myScheduler"></div>
+					</div>
+					<div class="row">
+						<div class="pull-right">
+
+							<!--  Icons for delete, edit and copy -->
+							<p class="icons">
+								<a href="addProgram.html"><button type="button"
+										class="btn btn-default btn-sm">
+										<span class="glyphicon glyphicon-plus"></span> Add
+									</button></a>
+								<button type="button" class="btn btn-default btn-sm"
+									onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : 
+false;">
+									<span class="glyphicon glyphicon-trash"></span> Delete
+								</button>
+								<a href="addProgram.html"><button type="button"
+										class="btn btn-default btn-sm">
+										<span class="glyphicon glyphicon-edit"></span> Edit
+									</button></a>
+								<button type="button" class="btn btn-default btn-sm">
+									<span class="glyphicon glyphicon-copy"></span> Copy
+								</button>
+							</p>
+						</div>
+					</div>
+
+					<table class="table table-striped">
+
+						<thead>
+							<tr>
+								<th><input type="checkbox" name="checkbox" value="checkbox"
+									style="text-align: center"></th>
+								<th>Image</th>
+								<th>Program Name</th>
+								<th>Start Date</th>
+								<th>End Date</th>
+								<th>Start Time</th>
+								<th>End Time</th>
+								<th>Price</th>
+								<th>Class Size</th>
+								<th>Status Description</th>
+								<th>Venue</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image1</td>
+								<td>Financial Accounting</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+								<td>Venue B</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+								<td>Venue B</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+								<td>Venue B</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Available</td>
+								<td>Venue B</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Coming Soon</td>
+								<td>Venue B</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Draft</td>
+								<td>Venue B</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="checkbox" value="checkbox"></td>
+								<td>Image 2</td>
+								<td>Managing Stress</td>
+								<td>23/11/2015</td>
+								<td>23/11/2015</td>
+								<td>17:06</td>
+								<td>17:06</td>
+								<td>$23</td>
+								<td>30</td>
+								<td>Coming Soon</td>
+								<td>Venue B</td>
+							</tr>
+					</table>
+				</div>
+
+			</div>
+
+
+		</div>
+		</div>
+		
 	<!-- <footer> -->
 	<div class="navbar navbar-inverse navbar-fixed-bottom"
 		role="navigation">
