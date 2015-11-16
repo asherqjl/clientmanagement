@@ -25,7 +25,7 @@ position: fixed;
   top: 35%;
   left: 20%;
   margin-top: -50px;
-  margin-left: -100px;
+  margin-left: -150px;
 }
 .center{
 padding-top:60px;
@@ -84,17 +84,36 @@ padding-bottom:60px;
 	<div class="container">
 	
 <div class="row">
-        <div class="col-sm-5">
+        <div class="col-sm-6">
           <div class="panel panel-success">
             <div class="panel-heading">
               <h3 class="panel-title">Log In</h3>
             </div>
+			
             <div class="panel-body">
-               <form class="form-signin">
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+               <form class="form-horizontal" role="form" >
+			   
+			   		<div class="form-group">
+							<label for="login-email" class="col-sm-2 control-label">Email:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" id="Login-email"
+									placeholder="tomcat@domain.com">
+							</div>
+						</div>
+				
+						<div class="form-group">
+							<label for="login-pwd" class="col-sm-2 control-label">Password:</label>
+							<div class="col-sm-5">
+								<input type="password" class="form-control" id="Login-name"
+									placeholder="Password">
+							</div>
+						</div>
+				
+						
+       <!-- <label for="login-email" class="col-sm-2 control-label">Email:</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> -->
+ <!--        <label for="login-pwd" class="col-sm-2 control-label">Password:</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required> -->
         <div class="checkbox">
 		<a href = "">Forgot your password? </a>
 		<br/>
@@ -102,12 +121,14 @@ padding-bottom:60px;
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <button class="btn btn-lg btn-success btn-block" type="submit">Sign in</button>
+		<div class="form-group">
+						<button type="submit" class="btn btn-primary">Sign In</button>
+					</div>
       </form>
             </div>
           </div>
         </div><!-- /.col-sm-4 -->
-        <div class="col-sm-5">
+        <div class="col-sm-6">
 		
           <div class="panel panel-primary">
 		  
@@ -119,7 +140,7 @@ padding-bottom:60px;
             <div class="panel-body" style = "text-align: center">
               Don't have an account? Sign up with us now!
 			  <br/>
-			  <button class="btn btn-lg btn-primary btn-block" type="submit"><a href = register.html> Register!</a></button>
+			  <button class="btn btn-lg btn-success btn-block" type="submit"><a href = register.html> Register!</a></button>
 			  
             </div>
 			
@@ -176,6 +197,14 @@ padding-bottom:60px;
 						</div>
 					</div>
 					<div class="modal-footer">
+					
+					 <div class="checkbox" style = "text-align:left">
+		<a href = "">Forgot your password? </a>
+		<br/>
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
 						<a class="btn btn-default" data-dismiss="modal">Close</a>
 						<button type="submit" class="btn btn-primary">Sign In</button>
 					</div>
