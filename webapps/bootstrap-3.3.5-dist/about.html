@@ -20,6 +20,7 @@
     <![endif]-->
 </head>
 <body>
+	<!-- Start of navigation Bar -->
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -35,7 +36,7 @@
 				</button>
 
 				<a class="navbar-brand" href="index.html"> <img id="brand-image"
-					alt="Website logo" src="brandimage.PNG" /> I'MPOSSIBLE
+					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
 				</a>
 
 			</div>
@@ -53,6 +54,7 @@
 
 					<li><a href="ContactUs.html">Contact Us</a></li>
 					<li><a href="#login" data-toggle="modal">Log In</a></li>
+					
 					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
 					
 					<!-- add search form -->
@@ -71,8 +73,10 @@
 
 		</div>
 	</div>
+	
+		<!-- End of navigation Bar -->
 
-
+		<!-- Start of Body  -->
 	<div class="container">
 
 		<div class="jumbotron text-center">
@@ -100,12 +104,10 @@
 			<p>Communicate with a therapist who speaks your native language.
 				We speak English, French, German, Spanish, Portuguese, Swedish,
 				Cantonese and Mandarin.</p>
-			<p>
-				<img id="brand" alt="Website image" src="about1.PNG" /></a> <img
-					id="brand" alt="Website image" src="about2.PNG" /></a>
-			</p>
+
 		</div>
 	</div>
+			<!-- End of Body  -->
 
 
 
@@ -124,15 +126,16 @@
 			</div>
 		</div>
 	</div>
-
-
-	<!-- 	Place bootstrap core javascript below so pages load faster -->
+	<!-- End <Fixed footer> -->
+	
+		<!-- Start of Log In Popup Modal -->
+<!-- 	Place bootstrap core javascript below so pages load faster -->
 	<div class="modal fade" id="login">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<form class="form-horizontal" role="form">
 					<div class="modal-header">
-						<img src="impossiblelogo.png" alt="image logo" align="middle"
+						<img src="image/impossiblelogo.png" alt="image logo" align="middle"
 							style="width: 204px; height: 48px;">
 					</div>
 					<div class="modal-body">
@@ -164,16 +167,11 @@
 	</div>
 
 
+		<!-- End of Log In Popup Modal -->
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
-	<script>
-		$('.carousel').carousel({
-			interval : 3000
-		})
-	</script>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
