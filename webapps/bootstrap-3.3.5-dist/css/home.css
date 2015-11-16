@@ -146,6 +146,9 @@ background-color:transparent;
 #brand-image
 {
 height: 30px;
+ 
+  src: url(image/brandimage.PNG) no-repeat;
+
 
 
 }
