@@ -119,6 +119,78 @@
 
 		</div>
 	</div>
+	<div class="container">
+
+
+		<div class="jumbotron text-center">
+			<div class="content">
+				<div class="panel-body">
+					<h1>Manage Programs</h1>
+					<ul class="breadcrumb">
+						<li class="active"><a href="courseAdmin.html">Manage
+								Courses</a></li>
+						<li><a href="programAdmin.html">Manage Programs</a></li>
+					</ul>
+					<h2>Search</h2>
+					<div class="well">
+						<div class="row">
+							<div class="col-sm-4">
+
+								<div class="form-group">
+									<label class="control-label" for="input-name">Course
+										Name</label> <input type="text" name="filter_name" value=""
+										placeholder="Course Name" />
+								</div>
+
+
+
+							</div>
+
+							<div class="col-sm-4">
+
+								<div class="form-group">
+									<label class="control-label" for="input-price">Start
+										Date</label> <input type="text" name="filter_price" value=""
+										placeholder="Start Date" />
+								</div>
+
+
+
+							</div>
+							<div class="col-sm-4">
+
+								<div class="form-group">
+									<label class="control-label" for="input-price">End Date</label>
+									<input type="text" name="filter_price" value=""
+										placeholder="End Date" />
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="control-label" for="input-status">Status</label>
+									<select name="filter_status" id="input-status">
+										<option value="2">Draft</option>
+										<option value="1">Available</option>
+										<option value="0">Coming Soon</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-sm-4">
+								<button type="button" id="button-filter"
+									class="btn btn-primary pull-right">
+									<i class="fa fa-search"></i> Filter
+								</button>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 
 		<div class="container-fluid">
 			<!-- <div class="alert alert-danger">
@@ -136,9 +208,7 @@
 
 				<div class="panel-body">
 
-					<div id="wrapper">
-						<div id="myScheduler"></div>
-					</div>
+			
 					<div class="row">
 						<div class="pull-right">
 
