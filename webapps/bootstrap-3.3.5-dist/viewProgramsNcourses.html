@@ -10,449 +10,356 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="css/home.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 <!-- for filter bar -->
 <style>
 .filter-col {
-	padding-left: 10px;
-	padding-right: 10px;
+padding-left: 10px;
+padding-right: 10px;
 }
 
 .testing {
-	margin-bottom: 100px;
+margin-bottom: 100px;
 }
 </style>
 
 </head>
 
 <body>
-	<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-					<span class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-					<span class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-				</button>
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span>
+				<!-- for the responsive icon bar when page shrink -->
+				<span class="icon-bar"></span>
+				<!-- for the responsive icon bar when page shrink -->
+				<span class="icon-bar"></span>
+				<!-- for the responsive icon bar when page shrink -->
+			</button>
 
-				<a class="navbar-brand" href="index.html"> <img id="brand-image"
-					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
-				</a>
+			<a class="navbar-brand" href="index.html"> <img id="brand-image"
+				alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
+			</a>
 
-
-			</div>
-
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-
-
-
-					<li><a href=viewProgramsNcourses.html>Courses & Programs</a></li>
-
-
-
-					<li><a href="ContactUs.html">Contact Us</a></li>
-					<li><a href="#login" data-toggle="modal">Log In</a></li>
-					<!--  #login is for reference for jquery, #data-toggle to triggle function -->
-
-					<form class="navbar-form navbar-right" role="search">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search ">
-							<span class="input-group-btn">
-								<button type="submit" class="btn btn-default">
-									<span class="glyphicon glyphicon-search"></span>
-								</button>
-							</span>
-						</div>
-					</form>
-
-				</ul>
-			</div>
 
 		</div>
-	</div>
 
-	<!-- When database comes in, if onclick == currently available show those with status available else show full -->
-
-	<!-- Navigation bar -->
-	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-		<div class="col-sm-3 col-md-2 sidebar">
-			<form>
-				<b>Categories</b>
-				<div class="checkbox">
-					<label><input type="checkbox" value="" checked>All Categories</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="" checked>Category1</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="" checked>Category2</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="" checked>Category3</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="" checked>Category4</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="" checked>Category5</label>
-				</div>
-				<b>Program & Courses</b>
-				<div class="checkbox">
-					<label><input type="checkbox" value="" checked>Programs and Courses</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="">Programs only</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="">Courses only</label>
-				</div>
-				<a>Types Of Course</a>
-				<div class="checkbox">
-					<label><input type="checkbox" value="">Coaching Courses</label>
-				</div>
-				<div class="checkbox">
-					<label><input type="checkbox" value="">Workshop Courses</label>
-				</div>
-				<div class="form-group">
-					<label class="filter-col" style="margin-right: 0;"
-						for="pref-perpage">Rows per page:</label> <select
-						id="pref-perpage" class="form-control">
-						<!-- Use session to select next time -->
-						<option value="9">9</option>
-						<option selected="selected" value="10">10</option>
-						<option value="15">11</option>
-						<option value="20">12</option>
-						<option value="30">13</option>
-						<option value="40">14</option>
-						<option value="50">15</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label class="filter-col" style="margin-right: 0;"
-						for="pref-orderby">Order by:</label> <select id="pref-orderby"
-						class="form-control">
-						<option>Date closest relative to today</option>
-						<option>Date furthest relative to today</option>
-					</select>
-				</div>
-				<button type="submit" class="btn btn-default filter-col">
-					<span class="glyphicon glyphicon-record"></span> Save Options
-				</button>
-			</form>
-
-			<!-- /Filter Tab -->
-			<!-- insert JS here
-			To see if something is checked then you write sql to show that thing. :)
-			<script>
-			$('#your_id').is(':checked')        // Returns a Boolean TRUE if checked
-			if ($('#your_id').is(':checked')) {
-    		// Checkbox was checked
-			}
-			</script>
-			 -->
-		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
 
 
 
-		<!-- Programs&Courses -->
-		<!-- same, when database comes in, according to the option on the navigation bar
-		, the contents have to show accordingly -->
-		<!-- when the database comes, no more hardcoding, auto populate the page with contents
-		based on the number of data in the DB, use for loop. -->
-		<!-- ROW on programs -->
-		<div class="testing">
-			<div class="row">
-				<div class="col-xs-6 col-lg-4">
-					<div class="alingment">
-						<p style="text-align: left">
-							<img src="courseAndProgram/bridginGen.jpg"
-								style="width: 200px; height: 150px" />
-						</p>
-						<p>Program Name: Bridging Generation</p>
-						<p>Date: 12/11/2015</p>
-						<p>
-							<a class="btn btn-default" href="viewProgramDetails.html">
-								View Program &raquo; </a> <a class="btn btn-default"
-								href="login.html"> Register Here &raquo; </a>
-						</p>
-					</div>
-				</div>
-
-				<div class="col-xs-6 col-lg-4">
-					<div class="alingment">
-						<p style="text-align: left">
-							<img src="courseAndProgram/hapMar.jpg"
-								style="width: 200px; height: 150px" />
-						</p>
-						<p>Program Name: Marriage Works</p>
-						<p>Date: 12/11/2015</p>
-						<p>
-							<a class="btn btn-default" href="viewProgramDetails.html">
-								View Program &raquo; </a> <a class="btn btn-default"
-								href="login.html"> Register Here &raquo; </a>
-						</p>
-					</div>
-				</div>
-				<div class="col-xs-6 col-lg-4">
-					<div class="alingment">
-						<p style="text-align: left">
-							<img src="courseAndProgram/child.jpg"
-								style="width: 200px; height: 150px" />
-						</p>
-						<p>Program Name: Loving Your Child</p>
-						<p>Date: 12/11/2015</p>
-						<p>
-							<a class="btn btn-default" href="viewProgramDetails.html">
-								View Program &raquo; </a> <a class="btn btn-default"
-								href="login.html"> Register Here &raquo; </a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<!--/row-->
-			<!-- Testing
-		
-/* GENERAL STYLES */
-body {
-	font-family: Verdana;
-}
-
-/* FANCY COLLAPSE PANEL STYLES */
-.fancy-collapse-panel .panel-default>.panel-heading {
-	padding: 0;
-}
-
-.fancy-collapse-panel .panel-heading a {
-	padding: 12px 35px 12px 15px;
-	display: inline-block;
-	width: 100%;
-	background-color: #EE556C;
-	color: #ffffff;
-	position: relative;
-	text-decoration: none;
-}
-
-.fancy-collapse-panel .panel-heading a:after {
-	font-family: "FontAwesome";
-	content: "\f147";
-	position: absolute;
-	right: 20px;
-	font-size: 20px;
-	font-weight: 400;
-	top: 50%;
-	line-height: 1;
-	margin-top: -10px;
-}
-
-.fancy-collapse-panel .panel-heading a.collapsed:after {
-	content: "\f196";
-}
-		
-		<div class="row">
-			<div class="fancy-collapse-panel">
-				<div class="panel-group" id="accordion" role="tablist"
-					aria-multiselectable="true">
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
-							<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion"
-									href="#collapseOne" aria-expanded="true"
-									aria-controls="collapseOne">Programs </a>
-							</h4>
-						</div>
-						<div id="collapseOne" class="panel-collapse collapse in"
-							role="tabpanel" aria-labelledby="headingOne">
-							<div class="row">
-								<div class="alingment">
-									<p style="text-align: left">
-										<img src="courseAndProgram/bridginGen.jpg" width=50%
-											height=50% />
-									</p>
-									<p>Title: Bridging Generation</p>
-									<p>Date: 12/11/2015</p>
-									<p>
-										<a class="btn btn-default" href="viewprogramdetails.html">
-											View Program &raquo; </a> <a class="btn btn-default"
-											href="register.html"> Register Here &raquo; </a>
-									</p>
-								</div>
-								<div class="alingment">
-									<p style="text-align: left">
-										<img src="courseAndProgram/bridginGen.jpg" width=50%
-											height=50% />
-									</p>
-									<p>Title: Bridging Generation</p>
-									<p>Date: 12/11/2015</p>
-									<p>
-										<a class="btn btn-default" href="viewprogramdetails.html">
-											View Program &raquo; </a> <a class="btn btn-default"
-											href="register.html"> Register Here &raquo; </a>
-									</p>
-								</div>
-								<div class="alingment">
-									<p style="text-align: left">
-										<img src="courseAndProgram/bridginGen.jpg" width=50%
-											height=50% />
-									</p>
-									<p>Title: Bridging Generation</p>
-									<p>Date: 12/11/2015</p>
-									<p>
-										<a class="btn btn-default" href="viewprogramdetails.html">
-											View Program &raquo; </a> <a class="btn btn-default"
-											href="register.html"> Register Here &raquo; </a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
--->
+				<li><a href=viewProgramsNcourses.html>Courses & Programs</a></li>
 
 
 
-			<!-- when the database comes, no more hardcoding, auto populate the page with contents
-		based on the number of data in the DB, use for loop. -->
-			<!-- ROW on courses -->
-			<div class="row">
-				<div class="col-xs-6 col-lg-4">
-					<div class="alingment">
-						<p style="text-align: left">
-							<img src="courseAndProgram/timeflies.jpg"
-								style="width: 200px; height: 150px" />
-						</p>
-						<p>Course Name: Time Management</p>
-						<p>Date: 12/11/2015</p>
-						<p>
-							<a class="btn btn-default" href="viewCourseDetails.html">
-								View Course &raquo; </a> <a class="btn btn-default"
-								href="login.html"> Register Here &raquo; </a>
-						</p>
-					</div>
-				</div>
+				<li><a href="ContactUs.html">Contact Us</a></li>
+				<li><a href="#login" data-toggle="modal">Log In</a></li>
+				<!--  #login is for reference for jquery, #data-toggle to triggle function -->
 
-				<div class="col-xs-6 col-lg-4">
-					<div class="alingment">
-						<p style="text-align: left">
-							<img src="courseAndProgram/correctComm.jpg"
-								style="width: 200px; height: 150px" />
-						</p>
-						<p>Course Name: Communicating the Right Way</p>
-						<p>Date: 12/11/2015</p>
-						<p>
-							<a class="btn btn-default" href="viewCourseDetails.html">
-								View Course &raquo; </a> <a class="btn btn-default"
-								href="login.html"> Register Here &raquo; </a>
-						</p>
-					</div>
-				</div>
-
-				<div class="col-xs-6 col-lg-4">
-					<div class="alingment">
-						<p style="text-align: left">
-							<img src="courseAndProgram/anger.jpg"
-								style="width: 200px; height: 150px" />
-						</p>
-						<p>Course Name: Anger Management</p>
-						<p>Date: 12/11/2015</p>
-						<p>
-							<a class="btn btn-default" href="viewCourseDetails.html">
-								View Course &raquo; </a> <a class="btn btn-default"
-								href="login.html"> Register Here &raquo; </a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<!--/row-->
-		</div>
-	</div>
-	<!-- <Fixed footer> -->
-	<div class="navbar navbar-inverse navbar-fixed-bottom">
-		<div class="container">
-			<div class="navbar-text pull-left">
-				<p>&#169;COPYRIGHT 2015 I'MPOSSIBLE</p>
-
-			</div>
-			<div class="navbar-text pull-right">
-				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
-					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
-					class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
-					class="fa fa-linkedin-square fa-2x"></i></a>
-			</div>
-		</div>
-	</div>
-
-	<!-- 	Place bootstrap core javascript below so pages load faster -->
-	<div class="modal fade" id="login">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<form class="form-horizontal" role="form">
-					<div class="modal-header">
-						<img src="image/impossiblelogo.png" alt="image logo" align="middle"
-							style="width: 204px; height: 48px;">
-					</div>
-					<div class="modal-body">
-						<div class="form-group">
-							<label for="login-email" class="col-sm-2 control-label">Email:</label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" id="Login-email"
-									placeholder="tomcat@domain.com">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="login-pwd" class="col-sm-2 control-label">Password*</label>
-							<div class="col-sm-5">
-								<input type="password" class="form-control" id="Login-name"
-									placeholder="Password">
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<a class="btn btn-default" data-dismiss="modal">Close</a>
-						<button type="submit" class="btn btn-primary">Sign In</button>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search ">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
 					</div>
 				</form>
 
-
-			</div>
+			</ul>
 		</div>
+
+	</div>
+</div>
+
+<!-- When database comes in, if onclick == currently available show those with status available else show full -->
+
+<!-- Navigation bar -->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	<div class="col-sm-3 col-md-2 sidebar">
+		<form>
+			<b>Categories</b>
+			<div class="checkbox">
+				<label><input type="checkbox" value="" checked>All Categories</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="" checked>Category1</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="" checked>Category2</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="" checked>Category3</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="" checked>Category4</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="" checked>Category5</label>
+			</div>
+			<b>Program & Courses</b>
+			<div class="checkbox">
+				<label><input type="checkbox" value="" checked>Programs and Courses</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Programs only</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Courses only</label>
+			</div>
+			<a>Types Of Course</a>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Coaching Courses</label>
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Workshop Courses</label>
+			</div>
+			<div class="form-group">
+				<label class="filter-col" style="margin-right: 0;"
+					for="pref-perpage">Rows per page:</label> <select
+					id="pref-perpage" class="form-control">
+					<!-- Use session to select next time -->
+					<option value="9">9</option>
+					<option selected="selected" value="10">10</option>
+					<option value="15">11</option>
+					<option value="20">12</option>
+					<option value="30">13</option>
+					<option value="40">14</option>
+					<option value="50">15</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label class="filter-col" style="margin-right: 0;"
+					for="pref-orderby">Order by:</label> <select id="pref-orderby"
+					class="form-control">
+					<option>Date closest relative to today</option>
+					<option>Date furthest relative to today</option>
+				</select>
+			</div>
+			<button type="submit" class="btn btn-default filter-col">
+				<span class="glyphicon glyphicon-record"></span> Save Options
+			</button>
+		</form>
+
+		<!-- /Filter Tab -->
+		<!-- insert JS here
+		To see if something is checked then you write sql to show that thing. :)
+		<script>
+		$('#your_id').is(':checked')        // Returns a Boolean TRUE if checked
+		if ($('#your_id').is(':checked')) {
+		// Checkbox was checked
+		}
+		</script>
+		 -->
 	</div>
 
 
 
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!-- Programs&Courses -->
+	<!-- same, when database comes in, according to the option on the navigation bar
+	, the contents have to show accordingly -->
+	<!-- when the database comes, no more hardcoding, auto populate the page with contents
+	based on the number of data in the DB, use for loop. -->
+	<!-- ROW on programs -->
+	<div class="testing">
+		<div class="row">
+			<div class="col-xs-6 col-lg-4">
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/bridginGen.jpg"
+							style="width: 200px; height: 150px" />
+					</p>
+					<p>Program Name: Bridging Generation</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewProgramDetails.html">
+							View Program &raquo; </a> <a class="btn btn-default"
+							href="login.html"> Register Here &raquo; </a>
+					</p>
+				</div>
+			</div>
 
-	<script>
-		$('.carousel').carousel({
-			interval : 3000
-		})
-	</script>
+			<div class="col-xs-6 col-lg-4">
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/hapMar.jpg"
+							style="width: 200px; height: 150px" />
+					</p>
+					<p>Program Name: Marriage Works</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewProgramDetails.html">
+							View Program &raquo; </a> <a class="btn btn-default"
+							href="login.html"> Register Here &raquo; </a>
+					</p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-lg-4">
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/child.jpg"
+							style="width: 200px; height: 150px" />
+					</p>
+					<p>Program Name: Loving Your Child</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewProgramDetails.html">
+							View Program &raquo; </a> <a class="btn btn-default"
+							href="login.html"> Register Here &raquo; </a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--/row-->
+		<!-- when the database comes, no more hardcoding, auto populate the page with contents
+	based on the number of data in the DB, use for loop. -->
+		<!-- ROW on courses -->
+		<div class="row">
+			<div class="col-xs-6 col-lg-4">
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/timeflies.jpg"
+							style="width: 200px; height: 150px" />
+					</p>
+					<p>Course Name: Time Management</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewCourseDetails.html">
+							View Course &raquo; </a> <a class="btn btn-default"
+							href="login.html"> Register Here &raquo; </a>
+					</p>
+				</div>
+			</div>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
+			<div class="col-xs-6 col-lg-4">
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/correctComm.jpg"
+							style="width: 200px; height: 150px" />
+					</p>
+					<p>Course Name: Communicating the Right Way</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewCourseDetails.html">
+							View Course &raquo; </a> <a class="btn btn-default"
+							href="login.html"> Register Here &raquo; </a>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-lg-4">
+				<div class="alingment">
+					<p style="text-align: left">
+						<img src="courseAndProgram/anger.jpg"
+							style="width: 200px; height: 150px" />
+					</p>
+					<p>Course Name: Anger Management</p>
+					<p>Date: 12/11/2015</p>
+					<p>
+						<a class="btn btn-default" href="viewCourseDetails.html">
+							View Course &raquo; </a> <a class="btn btn-default"
+							href="login.html"> Register Here &raquo; </a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<ul class="pagination pagination-sm" style="float: right;">
+						<li class="disabled"><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+		<!--/row-->
+	</div>
+	
+</div>
+
+
+
+
+<!-- <Fixed footer> -->
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container">
+		<div class="navbar-text pull-left">
+			<p>&#169;COPYRIGHT 2015 I'MPOSSIBLE</p>
+
+		</div>
+		<div class="navbar-text pull-right">
+			<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
+				href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
+				class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
+				class="fa fa-linkedin-square fa-2x"></i></a>
+		</div>
+	</div>
+</div>
+
+<!-- 	Place bootstrap core javascript below so pages load faster -->
+<div class="modal fade" id="login">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form class="form-horizontal" role="form">
+				<div class="modal-header">
+					<img src="image/impossiblelogo.png" alt="image logo" align="middle"
+						style="width: 204px; height: 48px;">
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="login-email" class="col-sm-2 control-label">Email:</label>
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="Login-email"
+								placeholder="tomcat@domain.com">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="login-pwd" class="col-sm-2 control-label">Password*</label>
+						<div class="col-sm-5">
+							<input type="password" class="form-control" id="Login-name"
+								placeholder="Password">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a class="btn btn-default" data-dismiss="modal">Close</a>
+					<button type="submit" class="btn btn-primary">Sign In</button>
+				</div>
+			</form>
+
+
+		</div>
+	</div>
+</div>
+
+
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
