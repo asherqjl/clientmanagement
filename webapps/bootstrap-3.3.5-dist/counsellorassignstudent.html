@@ -69,7 +69,7 @@ text-align: center;
 							<li class="active">
 							<li><a href="counsellorjournals.html">All Journals</a></li>
 						</ul></li>
-
+					<li><a href="counsellorassignstudent.html"> Assign timing</a></li>
 
 					<li><button type="submit" class="btn btn-success"
 							style="margin-top: 8px; margin-left: 5px">
@@ -81,58 +81,75 @@ text-align: center;
 			</div>
 		</div>
 	</div>
-	
-		<div class="container">
-
-		<div class="container-fluid">
-	<ul class="nav nav-tabs">
-  <li class="active"><a href="studentdetails.html">Programs Registered</a></li>
-  <li><a href="passedjournals.html">Passed Journals</a> </li>
-  <li><a href="studentaddress.html">Address</a></li>
-</ul>
-
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-						<i class="fa fa-list"></i> Student Details: Judith
-					</h3>
-				</div>
-
+	<div class="jumbotron text-center">
+			<div class="content">
 				<div class="panel-body">
-				<p class="icons">
-							<a href="coachnotes.html"><button type="button"
-									class="btn btn-default btn-sm" style="float: right">
-									<span class="glyphicon glyphicon-plus"></span> Write a new note
-								</button></a> <br />
-						</p>
-					<div id="wrapper">
-						<div id="myScheduler"></div>
-					</div>
-					
-					<div class="row">
-						<h4> Program / Courses Registered </h4>
-					<a href="ReflectionJournal.html"> Stress Management</a> - Lesson 1
+					<h2>Search</h2>
+					<div class="well">
+						<div class="row">
+							<div class="col-sm-4">
 
-						</a>
+								<div class="form-group">
+									<label class="control-label" for="input-name">Student
+										Name</label> <input type="text" name="filter_name" value=""
+										placeholder="Student Name" />
+								</div>
 
+
+
+							</div>
+
+							<div class="col-sm-4">
+
+								<div class="form-group">
+									<label class="control-label" for="input-price">Start
+										Date</label> <input type="text" name="filter_price" value=""
+										placeholder="Start Date" />
+								</div>
+
+
+
+							</div>
+							<div class="col-sm-4">
+
+								<div class="form-group">
+									<label class="control-label" for="input-price">End Date</label>
+									<input type="text" name="filter_price" value=""
+										placeholder="End Date" />
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="control-label" for="input-status">Status</label>
+									<select name="filter_status" id="input-status">
+										<option value="2">Draft</option>
+										<option value="1">Available</option>
+										<option value="0">Coming Soon</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="control-label" for="course_type">Course Type</label>
+									<select name="filter_status" id="course_type">
+										<option value="2">Coaching</option>
+										<option value="1">Workshop</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<button type="button" id="button-filter"
+									class="btn btn-primary pull-right">
+									<i class="fa fa-search"></i> Filter
+								</button>
+
+							</div>
+
+						</div>
 					</div>
-					
-					<ul class="pagination pagination-sm" style="float: right;">
-						<li class="disabled"><a href="#">&laquo;</a></li>
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">&raquo;</a></li>
-					</ul>
 				</div>
-
 			</div>
-
-
 		</div>
-	</div>
 				
 			</div>
 			
@@ -154,6 +171,7 @@ text-align: center;
 			</div>
 		</div>
 	</div>
+
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
