@@ -31,7 +31,7 @@ font-family: 'Oswald', sans-serif;
 
 @media(min-width:768px) {
     body {
-        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+        padding-top: 40px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
 
 .navbar-fixed-top .navbar-brand {
@@ -158,6 +158,19 @@ max-width:100%;
 max-height:100%;
 }
 
+.home-thumb img:hover{
+transform:scale(1.1);
+}
+
+.thumbnail img{  
+transition: all 0.3s ease 0s; /* property, duration,timing, delay */
+width:100%:
+
+}
+
+.thumbnail{
+overflow:hidden;
+}
 .slider-size {
 height: 400px; /* This is your slider height */
 }
