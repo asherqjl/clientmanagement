@@ -7,7 +7,6 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>I'MPOSSIBLE - Admin Add Course Schedule</title>
 
-
 <link rel="stylesheet" type="text/css" href="css/flaticon.css">
 <meta
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
@@ -18,7 +17,6 @@
 <link rel="stylesheet"
 	href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -33,8 +31,8 @@
 	rel="stylesheet"></link>
 <link rel="stylesheet" type="text/css" href="css/home.css" />
 </head>
+
 <body>
-<!-- style="height:2500px" -->
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -52,8 +50,6 @@
 				<a class="navbar-brand" href="index.html"> <img id="brand-image"
 					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
 				</a>
-
-
 			</div>
 
 			<div class="navbar-collapse collapse">
@@ -66,13 +62,9 @@
 							<li class="active">
 							<li><a href="viewProgramsNcourses.html"> User Homepage</a></li></li>
 					<li><a href="index.html">Admin homepage</a></li>
-
 				</ul>
 
-
 				</li>
-
-
 
 				<li class="dropdown"><a href="newAdminIndex.html"
 					class="dropdown-toggle" data-toggle="dropdown">Manage<b
@@ -89,12 +81,7 @@
 						<li><a href="manageStatus.html"> Manage Status</a></li>
 						<li><a href="manageUser.html"> Manage Users</a></li>
 						<li><a href="manageEnrollment.html"> Manage Enrollment</a></li>
-
-
-
-
-					</ul>
-				</li>
+					</ul></li>
 
 
 
@@ -115,7 +102,6 @@
 						</span>
 					</div>
 				</form>
-
 
 				</ul>
 			</div>
@@ -141,14 +127,8 @@
 					<div class="panel-body">
 						<div class="content">
 
-
-
 							<form class="form-horizontal" role="form">
 								<div class="form-group form-group-md">
-
-
-
-
 
 									<div class="form-group form-group-md">
 										<label class="col-sm-2 control-label" for="cName">Course
@@ -158,7 +138,6 @@
 										</div>
 									</div>
 
-
 									<div class="form-group form-group-md">
 										<label class="col-sm-2 control-label" for="dp1">Start
 											Date:</label>
@@ -167,9 +146,6 @@
 												value="3/11/2015">
 										</div>
 
-
-
-
 										<label class="col-sm-2 control-label" for="dp2">End
 											Date:</label>
 										<div class="col-sm-3">
@@ -177,7 +153,6 @@
 												value="3/11/2015">
 										</div>
 									</div>
-
 
 									<div class="form-group form-group-md">
 										<label class="col-sm-2 control-label" for="stime">
@@ -188,8 +163,6 @@
 
 										</div>
 
-
-
 										<label class="col-sm-2 control-label" for="etime"> End
 											Time:</label>
 										<div class="col-sm-3">
@@ -197,7 +170,6 @@
 												id="etime" value="17:00">
 										</div>
 									</div>
-
 
 									<div class="form-group form-group-md">
 										<label class="col-sm-2 control-label" for="sel2">Trainer
@@ -237,11 +209,9 @@
 
 											</select>
 										</div>
-
 									</div>
 
-									<br>
-									<br>
+									<br> <br>
 
 									<div class="form-group form-group-md">
 										<label class="col-sm-2 control-label" for="status">Status:</label>
@@ -260,10 +230,6 @@
 						</form>
 
 						<div class="form-group">
-
-
-
-
 							<div class="form-actions">
 								<button type="submit" class="btn btn-primary">Save
 									changes</button>
@@ -271,31 +237,13 @@
 										class="btn btn-danger">Cancel</button></a>
 
 							</div>
-
-
 							</form>
 						</div>
-
-
-
 					</div>
-
 				</div>
-
-
-
-
 			</div>
-
-
-
-
 		</div>
-
 	</div>
-
-
-
 
 	</div>
 
@@ -315,53 +263,35 @@
 		</div>
 	</div>
 
-
-
-
-
-
-
-
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script>
-     $( "#dp1" ).datepicker({
+		$("#dp1").datepicker({
 		//changeMonth: true,
 		//changeYear: true
-	});
-	 $( "#dp2" ).datepicker({
+		});
+		$("#dp2").datepicker({
 		//changeMonth: true,
 		//changeYear: true
-	});
-	
-	
- </script>
+		});
+	</script>
 
 	<script>
-YUI().use(
-                                     'aui-timepicker',
-                                     function(Y) {
-                                       new Y.TimePicker(
-                                         {
-                                           trigger: '#time',
-                                           popover: {
-                                             zIndex: 1
-                                           },
-                                           on: {
-                                             selectionChange: function(event) {
-                                               console.log(event.newSelection)
-                                             }
-                                           }
-                                         }
-                                       );
-                                     }
-                                    );
-                                    
- </script>
-
+		YUI().use('aui-timepicker', function(Y) {
+			new Y.TimePicker({
+				trigger : '#time',
+				popover : {
+					zIndex : 1
+				},
+				on : {
+					selectionChange : function(event) {
+						console.log(event.newSelection)
+					}
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>
-
-
