@@ -6,16 +6,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>I'MPOSSIBLE - Assign Student</title>
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans'
-	rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Oswald'
-	rel='stylesheet' type='text/css'>
-<link href="css/home.css" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+		
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.11.0.js'></script>
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css">
+<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/home.css" />
 </head>
 
 <body>
@@ -184,7 +197,60 @@
 			</div>
 		</div>
 	</div>
+<script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+     $( "#dp1" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	 $( "#dp2" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	
+	
+ </script>
+   
+	    <script>
+YUI().use(
+                                     'aui-timepicker',
+                                     function(Y) {
+                                       new Y.TimePicker(
+                                         {
+                                           trigger: '#time',
+                                           popover: {
+                                             zIndex: 1
+                                           },
+                                           on: {
+                                             selectionChange: function(event) {
+                                               console.log(event.newSelection)
+                                             }
+                                           }
+                                         }
+                                       );
+                                     }
+                                    );
+                                    
+ </script>
+ 
+ 
+ <script>
+$('#add-row').on('click', function(e){
+    e.preventDefault();
+    var tableBody = $('.table > tbody'), 
+      lastRowClone = $('tr:last-child', tableBody).clone();
+    $('input[type=text]', 'input[type=date]',lastRowClone).val('');  
+    tableBody.append(lastRowClone);
+});
 
+$('.table').on('click', '.remove-row', function(e){
+  e.preventDefault();
+  var row = $(this).parent().parent();
+  row.remove();
+})
+</script>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
