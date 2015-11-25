@@ -94,17 +94,26 @@
 </div>
 <div class="col-sm-4">
 <div class="thumbnail">
-	<img src="courseAndProgram/timeflies.jpg" alt="I'MPOSSIBLE Time Management Course" />
+<img src="courseAndProgram/timeflies.jpg" alt="I'MPOSSIBLE Time Management Course" />
+
 	
 	
 </div>
+
+</div>
+
+
+
+  <form class="form-horizontal" role="form">
+<div class="col-sm-8">
+ <form class="form-horizontal" role="form">
 <div class="alingment">
 		
 
-				<h3>Course Name: Time Management</h3>
+				<h3>Program Name: Bridging Generation</h3>
 				
 
-				<h4>Course Description:</h4>
+				<h4>Program Description:</h4>
 				<p>Time management is an important tool that can help you succeed in school, work and other personal endeavors. By learning how to manage your time you will be able to:
 ?Achieve More
 ?Lead a Balanced Life
@@ -113,77 +122,45 @@
 ?Overcome Procrastination
 ?Reduce Stress
 </p>
-	<p><b>Duration:</b> 1 day, 9.00 a.m. to 5.00 p.m.</p>
+	<p><b>Length:</b> 1 day, 9.00 a.m. to 5.00 p.m.</p>
 
-
+<p><b>Tentative Duration:</b> December 2015</p>
 
 <p><b>Maximum group size:</b> 16</p>
 
 <p><b>Course Fees:</b> $636.65 (including GST)</p>
 
-			</div>
-</div>
 
-
-
-
-<div class="col-sm-8">
-
-<form>
 	
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-						<i class="fa fa-list"></i> Course Schedule
-					</h3>
-				</div>
-				<br />
+     <div class="form-group">       
+     
+	      <label class="control-label col-sm-1" for="quantity">Quantity:</label>
+		  
+		   <div class="col-sm-2">
+		      <div class="input-group spinner" data-trigger="spinner">
+          <input type="text" class="form-control" value="1" data-rule="quantity">
+          <div class="input-group-addon">
+            <a href="javascript:;" class="spin-up" data-spin="up"><i class="icon-sort-up"></i></a>
+            <a href="javascript:;" class="spin-down" data-spin="down"><i class="icon-sort-down"></i></a>
+          </div>
+		  </div>
+        </div>
+		 </div>
+<br><br>
 
+    <div class="form-group">        
+      <div class="col-sm-offset-10 col-sm-2">
+       
+	<a class="btn btn-default"
+							href="login.html"> Register Here &raquo; </a>
+      </div>
+    </div>
 
-				
-			
-						<table style="width: 60%">
-							<tr>
-								<th>Start Date</th>
-								<th>End Date</th>
-								<th>Start Time</th>
-								<th>End Time</th>
-								<th>Venue</th>
-							</tr>
-							<tr>
-								<td>12/11/2015</td>
-								<td>12/11/2015</td>
-								<td>17:06</td>
-								<td>17:06</td>
-								<td>Professional Development Centre, Toa Payoh</td>
-								<td><a class="btn btn-default" href="register.html">
-										Register Here &raquo; </a></td>
-							</tr>
+		</div>	
 
-							<tr>
-								<td>12/11/2015</td>
-								<td>12/11/2015</td>
-								<td>17:06</td>
-								<td>17:06</td>
-								<td>Professional Development Centre, Toa Payoh</td>
-								<td><a class="btn btn-default" href="register.html">
-										Register Here &raquo; </a></td>
-							</tr>
-							<tr>
-								<td>12/11/2015</td>
-								<td>12/11/2015</td>
-								<td>17:06</td>
-								<td>17:06</td>
-								<td>Professional Development Centre, Toa Payoh</td>
-								<td><a class="btn btn-default" href="register.html">
-										Register Here &raquo; </a></td>
-							</tr>
-						</table>
-				
-			</div>
-		</div>
-	</form>
+</form>
 
+</div>
 </div>
 
 
