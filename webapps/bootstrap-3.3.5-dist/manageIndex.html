@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE - Manage Category</title>
+<title>I'MPOSSIBLE - Home</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body id="index">
 	<!-- style="height:2500px" -->
 <!-- start of navigation bar  -->
 	<div class="navbar navbar-default navbar-fixed-top">
@@ -50,7 +50,7 @@
 
 			</div>
 
-
+			
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown"><a href="index.html"
@@ -132,219 +132,155 @@
 	
 <!-- End of navigation bar  -->
 
+<!-- start of body container -->
+<!-- start of body rotating banner -->
 
-<div class ="container">
-<div class ="page-header text-center">
-<h1>Manage Categories</h1>
-</div>
-<div class="col-sm-3">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
 
-<div class="alingment" >
-		
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
 
-				<ul class="breadcrumb">
-				<li class="active"><a href="newAdminIndex.html">Home </a></li>
-				<li><a href="adminProgramSchedule.html">Categories</a></li>
-			</ul>
-				<h2>Search</h2>
-					<div class="well">
-						<div class="row">
-							<div class="col-sm-2">
-
-								<div class="form-group">
-									<label class="control-label" for="input-name">Categories:
-									</label> <input type="text" name="filter_name" value=""
-										placeholder="Categories Name" />
-								</div>
-
-
-
-							</div>
-
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="http://placehold.it/1600x400" alt="...">
+						<div class="carousel-caption">
+							<h3>Caption Text</h3>
 						</div>
-						<div class="row">
-							
-							<div class=" pull-right">
-								<button type="button" id="button-filter"
-									class="btn btn-primary pull-right">
-									<i class="fa fa-search"></i> Filter
-								</button>
-
-							</div>
-							
-							</div>
-
-						
 					</div>
-			</div>
-</div>
-
-
-
-
-<div class="col-sm-9">
-
-
-	
-			<div class="container-fluid">
-				<!-- <div class="alert alert-danger">
-			<i class="fa fa-exclamation-circle"></i> Warning: You do not have
-			permission to modify courses!
-			<button type="button" class="close" data-dismiss="alert">&times;</button>
-		</div> -->
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">
-							<i class="fa fa-list"></i> Category List
-						</h3>
-					</div>
-					<div class="panel-body">
-
-						<div class="row">
-							<div class="pull-right">
-								<!--  Icons for delete, edit and copy -->
-								<p class="icons">
-									<a href="addCategory.html"><button type="button"
-											class="btn btn-default btn-sm">
-											<span class="glyphicon glyphicon-plus"></span> Add
-										</button></a>
-									<button type="button" class="btn btn-default btn-sm"
-										onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : false;">
-										<span class="glyphicon glyphicon-trash"></span> Delete
-									</button>
-									<a href="addCategory.html"><button type="button"
-											class="btn btn-default btn-sm">
-											<span class="glyphicon glyphicon-edit"></span> Edit
-										</button></a>
-									<button type="button" class="btn btn-default btn-sm">
-										<span class="glyphicon glyphicon-copy"></span> Copy
-									</button>
-								</p>
-							</div>
+					<div class="item">
+						<img src="BannerImage/Students-storyBanner1.jpg" alt="...">
+						<div class="carousel-caption">
+							<h3>Caption Text</h3>
 						</div>
-
-						<form action="#" method="post" enctype="multipart/form-data"
-							id="form-product">
-							<div class="table-responsive">
-								<table class="table table-bordered table-hover">
-									<thead>
-										<tr>
-											<td style="width: 1px;" class="text-center"><input
-												type="checkbox"
-												onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
-		
-		
-		
-		                                 <td class="text-left"><a href="#" class="asc">
-													#</a></td>
-
-										<th>Category
-													Name</th>
-
-										
-
-
-										</tr>
-									</thead>
-									<tbody>
-
-										<tr>
-											<td class="text-center"><input type="checkbox"
-												name="selected[]" value="47" /></td>
-												
-											<td class="text-left"><a href="editCategory.html"
-												class="asc">1 </a></td>
-
-											<td class="text-left"><a href="editCategory.html"
-												class="asc"> Couples Counselling </a></td>
-
-
-										</tr>
-										<tr>
-											<td class="text-center"><input type="checkbox"
-												name="selected[]" value="28" /></td>
-													<td class="text-left"><a href="editCategory.html"
-												class="asc">2</a></td>
-
-											<td class="text-left"><a href="editCategory.html"
-												class="asc">Family Counseling </a></td>
-
-
-
-										</tr>
-										<tr>
-											<td class="text-center"><input type="checkbox"
-												name="selected[]" value="41" /></td>
-												
-																<td class="text-left"><a href="editCategory.html"
-												class="asc">3</a></td>
-
-											<td class="text-left"><a href="editCategory.html"
-												class="asc">Individual Counselling </a></td>
-
-
-										<tr>
-											<td class="text-center"><input type="checkbox"
-												name="selected[]" value="40" /></td>
-																<td class="text-left"><a href="editCategory.html"
-												class="asc">4</a></td>
-
-											<td class="text-left"><a href="editCategory.html"
-												class="asc">Child and Youth Counselling </a></td>
-
-											
-
-										</tr>
-										<tr>
-											<td class="text-center"><input type="checkbox"
-												name="selected[]" value="40" /></td>
-																<td class="text-left"><a href="editCategory.html"
-												class="asc">5</a></td>
-
-											<td class="text-left"><a href="editCategory.html"
-												class="asc">Adjustment/Transition Change Counselling </a></td>
-
-
-
-										</tr>
-
-										<tr>
-											<td class="text-center"><input type="checkbox"
-												name="selected[]" value="40" /></td>
-																<td class="text-left"><a href="editCategory.html"
-												class="asc">6</a></td>
-
-											<td class="text-left"><a href="editCategory.html"
-												class="asc">Grief Counselling </a></td>
-
-									
-
-										</tr>
-
-
-
-
-									</tbody>
-								</table>
-							</div>
-						</form>
+					</div>
+					<div class="item">
+						<img src="http://placehold.it/1600x400" alt="...">
+						<div class="carousel-caption">
+							<h3>Caption Text</h3>
+						</div>
 					</div>
 
-					<div class="row">
-						<div class="col-sm-6 text-left"></div>
-						<div class="col-sm-6 text-right">Showing 1 to 19 of 19 (1
-							Pages)</div>
+					<div class="item">
+						<img src="http://placehold.it/1600x400" alt="...">
+						<div class="carousel-caption">
+							<h3>Caption Text</h3>
+						</div>
 					</div>
-
-					<ul class="pager">
-						<li class="previous"><a href="#">Previous</a></li>
-						<li class="next"><a href="#">Next</a></li>
-					</ul>
 				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic"
+					role="button" data-slide="prev"> <span
+					class="glyphicon glyphicon-chevron-left"></span>
+				</a> <a class="right carousel-control" href="#carousel-example-generic"
+					role="button" data-slide="next"> <span
+					class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+	
+			<!-- Carousel -->
+<!-- end of body rotating banner -->
+<!-- 
+			<h1>I'MPOSSIBLE</h1>
+			<p>I'MPOSSIBLE IS #1 Counselling agency</p> -->
+			<!-- <a href="register.html" class="btn btn-primary">Register with us!</a>
+			<a href="viewProgramsNCourses.html" class="btn btn-success">View Courses</a> -->
+	
+	</div>
+
+<br><br>
+			
+
+<!-- start of lastest courses -->
+	<div class="container">
+
+<div class ="page-header">
+<h2>Latest Courses and Programs</h2>
+</div>
+
+
+		<div class="row">
+
+			<div class="col-sm-4">
+			    <a href="#" class= "thumbnail home-thumb">
+				<img src="image/couples-counselling.jpg" style="width: 280px; height: 228px;" alt="New Courses"/> 
+				</a>
+							<h3>Couples Counselling	</h3>
+			
+				<p>When relationship conflict surfaces, it's important to
+					remember that there are options.</p>
+				<a href="viewProgramsNcourses.html" class="btn btn-danger">View</a>
 			</div>
 
+			<div class="col-sm-4">
+		
+				 <a href="#" class= "thumbnail home-thumb"> <img src="image/family.jpg" style="width: 250px; height: 228px;" />
+						</a>
+					<h3>Family Counseling </h3>
+				<p>Family counseling helps you to understand and better cope
+					with the stresses and strains of family..</p>
+				<a href="viewProgramsNcourses.html" class="btn btn-danger">View</a>
+			</div>
 
-</div>
+			<div class="col-sm-4">
+		            <a href="#" class= "thumbnail home-thumb">
+					<img src="image/individual-counselling.jpg"	style="width: 280px; height: 228px;" />
+					</a>
+						<h3>Individual Counselling</h3>
+				<p>Move forward in life with a renewed sense of meaning, purpose
+					and hope.</p>
+				<a href="viewProgramsNcourses.html" class="btn btn-danger">View</a>
+			</div>
+
+		</div>
+		<!--/row-->
+
+<br>
+		<div class="row">
+			<div class="col-sm-4">
+				
+				  <a href="#" class= "thumbnail home-thumb">
+					<img src="image/Family-image.jpg" style="width: 280px; height: 228px;" />
+					</a>
+				<h3>	Child and Youth Counselling </h3>
+				<p>It is important for children and teens to be given positive
+					affirmation as</p>
+				<a href="viewProgramsNcourses.html" class="btn btn-danger">View</a>
+			</div>
+			<div class="col-sm-4">
+	
+	  <a href="#" class= "thumbnail home-thumb">
+					<img src="image/transition-image.jpg"
+						style="width: 280px; height: 228px;" />
+						
+							</a>
+					<h3>Transition Change Counselling
+				</h3>
+				<p>Transitions are life's way of asking us to reexamine our
+					present way of</p>
+				<a href="viewProgramsNcourses.html" class="btn btn-danger">View</a>
+			</div>
+			<div class="col-sm-4">
+				<!-- <a href="#" class="thumbnail" title="Grief Counselling"></a> -->
+				  <a href="#" class= "thumbnail home-thumb">
+					<img src="image/grief-counselling.jpg"
+						style="width: 280px; height: 228px;" />
+				 </a>
+						<h3>Grief Counselling</h3>
+				<p>One of life's most challenging events is mourning the loss of
+					someone or something we care deeply for.</p>
+				<a href="viewProgramsNcourses.html" class="btn btn-danger">View</a>
+
+			</div>
+		</div>
+		<!-- row -->
+	</div>
+
+<!-- end of lastest courses -->
 
 
 	<!-- Start of <Fixed footer> -->
@@ -410,7 +346,13 @@
 	<script src="js/bootstrap.min.js"></script>
 	
 	
-	
+	<!-- start of /the rotating banner javascript -->
+	<script>
+		$('.carousel').carousel({
+			interval : 3000
+		})
+	</script>
+		<!-- end of /the rotating banner javascript -->
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
