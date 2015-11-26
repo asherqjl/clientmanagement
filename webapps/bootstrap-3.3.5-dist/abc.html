@@ -128,14 +128,11 @@
 
 <p><b>Course Fees:</b> $636.65 (including GST)</p>
 
+   <div class="form-group"  style = "text-align:right"> 
+ <a class="btn btn-default" href="#login1" href= data-toggle="moda"> Schedule &raquo;</a>
+	<a class="btn btn-default" href="login.html"> Register Here &raquo; </a>
 
-    <div class="form-group">        
-      <div class="col-sm-offset-10 col-sm-2">
-       
-	<a class="btn btn-default"
-							href="login.html"> Register Here &raquo; </a>
       </div>
-    </div>
 
 		</div>	
 
@@ -161,6 +158,8 @@
 		</div>
 	</div>
 	<!-- End of <Fixed footer> -->
+	
+	
 <!-- start of login popup modal -->
 	<!-- 	Place bootstrap core javascript below so pages load faster -->
 	<div class="modal fade" id="login">
@@ -203,6 +202,48 @@
 
 	<!-- end of /the popout signin shit -->
 
+		<!-- 	Schedule Pop Up -->
+	<div class="moda fade" id="login1">
+		<div class="moda-dialog">
+			<div class="moda-content">
+				<form class="form-horizontal" role="form">
+					<div class="moda-header">
+						<img src="image/impossiblelogo.png" alt="image logo" align="middle"
+							style="width: 204px; height: 48px;">
+
+
+					</div>
+					<div class="moda-body">
+						<div class="form-group">
+							<label for="login-email" class="col-sm-2 control-label">Email:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" id="Login-email"
+									placeholder="tomcat@domain.com">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="login-pwd" class="col-sm-2 control-label">Password*</label>
+							<div class="col-sm-5">
+								<input type="password" class="form-control" id="Login-name"
+									placeholder="Password">
+							</div>
+						</div>
+					</div>
+					<div class="moda-footer">
+						<a class="btn btn-default" data-dismiss="moda">Close</a>
+						<button type="submit" class="btn btn-primary">Sign In</button>
+					</div>
+				</form>
+
+
+			</div>
+		</div>
+	</div>
+
+	<!-- end of schedule pop out -->
+	
+	
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
