@@ -92,41 +92,77 @@ margin-bottom: 100px;
 
 
 						<fieldset>
-							<h3>Parent</h3>
+							<h3> Parent</h3>
+							<div class="row">
+										<div class="form-group form-group-md">
+											<label class="col-sm-2 control-label" for="category">Salutation:</label>
+											<div class="col-sm-4">
 
-							<div class="col-xs-5">
-								Salutation: <select class="form-control">
-									<option>Mr</option>
+												<select class="form-control" id="status">
+													<option>Mr</option>
 									<option>Mrs</option>
 									<option>Ms</option>
 									<option>Mdm</option>
 									<option>Dct</option>
 									<option>Prf</option>
-								</select>
-							</div>
 
-							<div class="col-xs-5">
-								Surname: <input id="name" name="fullname" type="text"
-									class="form-control" placeholder="Name">
-							</div>
+												</select>
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="form-group form-group-md">
+											<label class="col-sm-2 control-label" for="category">Surname:</label>
+											<div class="col-sm-2">
 
-							<div class="col-xs-6">
-								<div class="hello">
-									Given Name: <input type="text" class="form-control"
-										placeholder="">
-								</div>
-							</div>
+												<input type="text" class="form-control" id="course_price"
+													placeholder="Surname">
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="form-group form-group-md">
+											<label class="col-sm-2 control-label" for="category">Given Name:</label>
+											<div class="col-sm-2">
 
+												<input type="text" class="form-control" id="course_price"
+													placeholder="GivenName">
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="form-group form-group-md">
+											<label class="col-sm-2 control-label" for="category">Contact Number:</label>
+											<div class="col-sm-2">
 
-							<div class="col-xs-5">
-								<div class="hello">
-									Contact Number: <input id="phonenumber" name="phone" type="tel"
-										class="form-control" placeholder="Mobile Number">
-								</div>
+												<input type="text" class="form-control" id="course_price"
+													placeholder="ContactNumber">
+											</div>
+										</div>
+									</div>
+									<br>
+									
+									<div class="row">
+										<div class="form-group form-group-md">
+											<label class="col-sm-2 control-label" for="category">Gender:</label>
+											<div class="col-sm-2">
 
-							</div>
+												<select class="form-control" id="status">
+													<option>Male</option>
+									<option>Female</option>
 
-							<div class="col-xs-5">
+												</select>
+											</div>
+										</div>
+									</div>
+									<br>
+									
+									
+
+							<!-- <div class="col-xs-5">
 								<div class="hello">
 									Gender:
 									<form>
@@ -134,7 +170,9 @@ margin-bottom: 100px;
 										<br> <input type="radio" name="sex" value="female">Female
 									</form>
 								</div>
-							</div>
+							</div> -->
+							
+							
 							<div class="col-xs-10">
 								<hr />
 								<b><h4>Address</h4></b> <input id="dateofbirth" name="phone"
@@ -209,11 +247,18 @@ margin-bottom: 100px;
 										type="tel" class="form-control" placeholder="">
 								</div>
 							</div>
+							
+							
+							
 
 							<div class="col-xs-6">
 								<div class="hello">
-									Relationship to child: <input id="dateofbirth" name="phone"
-										type="tel" class="form-control" placeholder="">
+									Relationship to child: <select class="form-control">
+									<option>Mother</option>
+									<option>Father</option>
+									<option>Guardian</option>
+									<option>Others</option>
+								</select>
 								</div>
 							</div>
 
