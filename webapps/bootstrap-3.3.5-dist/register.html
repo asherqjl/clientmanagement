@@ -11,7 +11,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet"
 href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link href="css/home.css" rel="stylesheet">
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -20,6 +20,30 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
 <![endif]-->
 
 <!-- for filter bar -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<!-- Ionicons -->
+<link rel="stylesheet"
+	href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/jquery-ui.min.css" rel="stylesheet">
+<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css"
+	rel="stylesheet"></link>
+<link rel="stylesheet" type="text/css" href="css/home.css" />
+
+
+
 <style>
 .filter-col {
 padding-left: 10px;
@@ -29,9 +53,11 @@ padding-right: 10px;
 .testing {
 margin-bottom: 100px;
 }
+h3{font-family: 'Oswald', sans-serif;}
 </style>
 
 </head>
+
 <body>
 	<div class="navbar navbar-default navbar-fixed-top">
 
@@ -93,10 +119,10 @@ margin-bottom: 100px;
 
 
 						<fieldset>
-							<h3> Parent</h3>
+							<h3>Basic Details Of Parent</h3>
 							<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Salutation:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Salutation:</label>
 											<div class="col-sm-4">
 
 												<select class="form-control" id="status">
@@ -114,7 +140,7 @@ margin-bottom: 100px;
 									<br>
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Surname:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Surname:</label>
 											<div class="col-sm-2">
 
 												<input type="text" class="form-control" id="course_price"
@@ -125,7 +151,7 @@ margin-bottom: 100px;
 									<br>
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Given Name:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Given Name:</label>
 											<div class="col-sm-2">
 
 												<input type="text" class="form-control" id="course_price"
@@ -137,7 +163,7 @@ margin-bottom: 100px;
 									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Gender:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Gender:</label>
 											<div class="col-sm-2">
 
 												<select class="form-control" id="status">
@@ -148,27 +174,22 @@ margin-bottom: 100px;
 											</div>
 										</div>
 									</div>
-									<br>
-
-							<!-- <div class="col-xs-5">
-								<div class="hello">
-									Gender:
-									<form>
-										<br> <input type="radio" name="sex" value="male" checked>Male
-										<br> <input type="radio" name="sex" value="female">Female
-									</form>
-								</div>
-							</div> -->							
+									<br>						
 
 							<hr/>
 							
-							<h3> Contact Information </h3>
-							
-							
-									<div class="row">
+							<h3> Contact Information Of Parent</h3>
+							<div class="row">
+							<div class="col-sm-3">
+							<i>Please provide the contact details we should use in the event for the latest updates of IM' Counselling.</i>
+									</div>
+									</div>
+									
+									
+									<div class = "row">
 										<div class="form-group form-group-md">
-											<label class="col-md-4 col-md-offset-4 control-label" for="category">Contact Number:</label>
-											<div class="col-sm-2">
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Contact Number:</label>
+											<div class="col-sm-3">
 
 												<input type="text" class="form-control" id="course_price"
 													placeholder="ContactNumber">
@@ -180,7 +201,7 @@ margin-bottom: 100px;
 									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-md-4 col-md-offset-4 control-label" for="category">Address Line 1:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Address Line 1:</label>
 											<div class="col-sm-2">
 
 												<input type="text" class="form-control" id="course_price"
@@ -192,7 +213,7 @@ margin-bottom: 100px;
 									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-md-4 col-md-offset-4 control-label" for="category">Address Line 2:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Address Line 2:</label>
 											<div class="col-sm-2">
 
 												<input type="text" class="form-control" id="course_price"
@@ -204,7 +225,7 @@ margin-bottom: 100px;
 									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-md-4 col-md-offset-4 control-label" for="category">Postal
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Postal
 									Code:</label>
 											<div class="col-sm-2">
 
@@ -216,11 +237,10 @@ margin-bottom: 100px;
 									<br>
 							
 							<hr/>
-								<h3>Child</h3>
-<b><h4>Address</h4></b>
+								<h3>Basic Details Of Child</h3>
 							<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Salutation:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Salutation:</label>
 											<div class="col-sm-4">
 
 												<select class="form-control" id="status">
@@ -236,9 +256,10 @@ margin-bottom: 100px;
 										</div>
 									</div>
 									<br>
-<div class="row">
+									
+									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Surname:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Surname:</label>
 											<div class="col-sm-2">
 
 												<input type="text" class="form-control" id="course_price"
@@ -249,7 +270,7 @@ margin-bottom: 100px;
 									<br>
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Given Name:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Given Name:</label>
 											<div class="col-sm-2">
 
 												<input type="text" class="form-control" id="course_price"
@@ -261,11 +282,14 @@ margin-bottom: 100px;
 									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Contact Number:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Gender:</label>
 											<div class="col-sm-2">
 
-												<input type="text" class="form-control" id="course_price"
-													placeholder="ContactNumber">
+												<select class="form-control" id="status">
+													<option>Male</option>
+									<option>Female</option>
+
+												</select>
 											</div>
 										</div>
 									</div>
@@ -273,19 +297,16 @@ margin-bottom: 100px;
 									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Date of Birth:</label>
-											<div class="col-sm-2">
-
-												<input type="text" class="form-control" id="course_price"
-													placeholder="Birthdate">
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Date of Birth:</label>
+											<div class="col-sm-3">
+												<input type="date" class="form-control" id="dp1" value="3/11/2015">
 											</div>
 										</div>
 									</div>
 									<br>
-									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Marital Status:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Marital Status:</label>
 											<div class="col-sm-4">
 
 												<select class="form-control" id="status">
@@ -300,20 +321,7 @@ margin-bottom: 100px;
 									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">NRIC Number : </label>
-											<div class="col-sm-2">
-
-												<input type="text" class="form-control" id="course_price"
-													placeholder="NRIC Number">
-											</div>
-										</div>
-									</div>
-									
-									<br>
-									
-									<div class="row">
-										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Relationship to child:</label>
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Relationship to child:</label>
 											<div class="col-sm-4">
 
 												<select class="form-control" id="status">
@@ -329,44 +337,39 @@ margin-bottom: 100px;
 									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Issues facing:</label>
-											<div class="col-sm-6">
-
-												<input type="text" class="form-control" id="course_price"
-													placeholder="short description of issues facing">
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Issues facing:</label>
+											
+											<div class="col-sm-5">
+											<textarea class="form-control" rows="3"></textarea>
 											</div>
 										</div>
 									</div>
 									
 									<br>
 									
-									<div class="row">
-										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Gender:</label>
-											<div class="col-sm-2">
-
-												<select class="form-control" id="status">
-													<option>Male</option>
-									<option>Female</option>
-
-												</select>
-											</div>
-										</div>
-									</div>
-									<br>
 									
 									<hr/>
+									
+									<h3> Contact Information Of Child </h3>
+							<div class="row">
+							<div class="col-sm-3">
+							<i>Please provide the contact details we should use in the event for the latest updates of IM' Counselling.</i>
+									</div>
+									</div>
+									
+									
 									<div style='text-align:right'>
 								<button type="button" class="btn btn-success btn-sm">Same
 									as parent</button>
 							</div>
+							
+									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Address Line 1:</label>
-											<div class="col-sm-2">
-
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Contact Number:</label>
+											<div class="col-sm-3">
 												<input type="text" class="form-control" id="course_price"
-													placeholder="addressline1">
+													placeholder="ContactNumber">
 											</div>
 										</div>
 									</div>
@@ -374,11 +377,11 @@ margin-bottom: 100px;
 									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Address Line 2:</label>
-											<div class="col-sm-2">
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Address Line 1:</label>
+											<div class="col-sm-5">
 
 												<input type="text" class="form-control" id="course_price"
-													placeholder="addressline2">
+													placeholder="address line 1">
 											</div>
 										</div>
 									</div>
@@ -386,7 +389,19 @@ margin-bottom: 100px;
 									
 									<div class="row">
 										<div class="form-group form-group-md">
-											<label class="col-sm-2 control-label" for="category">Postal
+											<label class="col-md-2 col-md-offset-4 control-label" for="category">Address Line 2:</label>
+											<div class="col-sm-5">
+
+												<input type="text" class="form-control" id="course_price"
+													placeholder="address line 2">
+											</div>
+										</div>
+									</div>
+									<br>
+									
+									<div class="row">
+										<div class="form-group form-group-md">
+											<label class="col-md-2 col-md-offset-4 control-label"for="category">Postal
 									Code:</label>
 											<div class="col-sm-2">
 
@@ -395,18 +410,13 @@ margin-bottom: 100px;
 											</div>
 										</div>
 									</div>
-									<br>
-									<hr/>
-									
-							
-
 						</fieldset>
 					</form>
 
 				</div>
 				<div class="form-group">
 					<div class="col-md-12" style='text-align:right'>
-						<a class="btn btn-primary btn-lg" href="doRegister.html">Submit</a>
+						<a class="btn btn-primary btn-lg" href="doRegister.html">Next</a>
 					</div>
 				</div>
 							
@@ -459,7 +469,37 @@ margin-bottom: 100px;
 			</div>
 		</div>
 	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$("#dp1").datepicker({
+		//changeMonth: true,
+		//changeYear: true
+		});
+		$("#dp2").datepicker({
+		//changeMonth: true,
+		//changeYear: true
+		});
+	</script>
 
+	<script>
+		YUI().use('aui-timepicker', function(Y) {
+			new Y.TimePicker({
+				trigger : '#time',
+				popover : {
+					zIndex : 1
+				},
+				on : {
+					selectionChange : function(event) {
+						console.log(event.newSelection)
+					}
+				}
+			});
+		});
+	</script>
+	
+	
 	<!-- <footer> -->
 	<div class="navbar navbar-inverse navbar-fixed-bottom"
 		role="navigation">
