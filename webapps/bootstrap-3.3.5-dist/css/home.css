@@ -42,8 +42,18 @@ font-family: 'Oswald', sans-serif;
 
 .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
-    }
+    }.navbar-nav{
+padding-right:15px;
+
 }
+
+.navbar-header{
+padding-left:15px;
+
+}
+}
+	
+
 .navbar-default {
 background-color:#2C3E50;
 border-color:#FFFFFF;
@@ -152,8 +162,6 @@ background-color:transparent;
 #brand-image
 {
 height: 30px;
- 
-
 
 }
 #brand
@@ -161,6 +169,8 @@ height: 30px;
 max-width:100%;
 max-height:100%;
 }
+
+
 
 .registrationpanel{
  padding-left: 80px;
