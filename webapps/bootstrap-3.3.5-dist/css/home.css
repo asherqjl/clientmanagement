@@ -155,8 +155,6 @@ height: 30px;
  
 
 
-
-
 }
 #brand
 {
@@ -184,6 +182,10 @@ height: 400px; /* This is your slider height */
 width:100%; 
 margin:0 auto; /* center your carousel if other than 100% */ 
 }
+
+
+
+
 .row{
 	padding-left:10px;
 }
