@@ -31,7 +31,7 @@ font-family: 'Oswald', sans-serif;
 
 @media(min-width:768px) {
     #index{
-	padding-top: 40px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+	padding-top: 30px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 	}
 	
 
