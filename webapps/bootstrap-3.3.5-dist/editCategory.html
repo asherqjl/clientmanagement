@@ -5,32 +5,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE - Admin Course Schedule</title>
+<title>I'MPOSSIBLE - Edit Category</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans'
-rel='stylesheet' type='text/css'>
+	rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Oswald'
-rel='stylesheet' type='text/css'>
-
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-
+	rel='stylesheet' type='text/css'>
 <link href="css/home.css" rel="stylesheet">
-
+<script src="ckeditor/ckeditor.js"></script>
 </head>
 <body>
-<!-- style="height:2500px" -->
+	<!-- style="height:2500px" -->
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -48,10 +38,7 @@ rel='stylesheet' type='text/css'>
 				<a class="navbar-brand" href="index.html"> <img id="brand-image"
 					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
 				</a>
-
-
 			</div>
-
 
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
@@ -63,7 +50,6 @@ rel='stylesheet' type='text/css'>
 							<li class="active">
 							<li><a href="viewProgramsNcourses.html"> User Homepage</a></li></li>
 					<li><a href="newAdminIndex.html">Admin homepage</a></li>
-
 				</ul>
 				</li>
 
@@ -83,14 +69,11 @@ rel='stylesheet' type='text/css'>
 						<li><a href="manageStatus.html"> Manage Status</a></li>
 						<li><a href="manageUser.html"> Manage Users</a></li>
 						<li><a href="manageEnrollment.html"> Manage Enrollment</a></li>
-
 					</ul></li>
 
 
 
 
-
-			
 
 				<!-- add search form -->
 				<li><form class="navbar-form navbar-right" role="search">
@@ -104,9 +87,7 @@ rel='stylesheet' type='text/css'>
 					</div>
 				</form></li>
 				
-			
-								
-				        <li class="dropdown">
+				       <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
@@ -124,168 +105,106 @@ rel='stylesheet' type='text/css'>
                         </li>
                     </ul>
                 </li>
+				
+								
+
 				</ul>
 			</div>
 
 		</div>
 	</div>
 
-<div class="container">
 
-	<div class="jumbotron">
-	
-
-		
-			<h2><i class="fa fa-clock-o fa-1x "></i>  Categories</h2>
-			<ul class="breadcrumb">
-				<li class="active"><a
-					href="newAdminIndex.html">Home </a></li>
-				<li><a
-					href="adminProgramSchedule.html">Categories</a></li>
-			</ul>
-	
-	
-
-		<div class="container-fluid">
-		<!-- <div class="alert alert-danger">
-			<i class="fa fa-exclamation-circle"></i> Warning: You do not have
-			permission to modify courses!
-			<button type="button" class="close" data-dismiss="alert">&times;</button>
-		</div> -->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">
-					<i class="fa fa-pencil"></i> Edit Category 
-				</h3>
-			</div>
-			<div class="panel-body">
-
-		
-			
-
-	
-<form class="form-horizontal" role="form">
-							
-							
-				    <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="cName">*Category Name:</label>
-      <div class="col-sm-9">
-        <input class="form-control" type="text" id="cName">
-      </div>
-    </div>
-<br><br>
-    <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="seo">SEO Keyword:</label>
-      <div class="col-sm-9">
-        <input class="form-control" type="text" id="seo" value="couplecouselling"> 
-      </div>
-    </div>	
-	
-	<br><br>
-
-  <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="status">Top:</label>
-	  	    <div class="col-sm-6">
-      <div class="checkbox">
-      <input type="checkbox">
-    </div>
-	     </div>
-
-    </div>		
-	<br><br>
-	
-	   <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="seo">Sort:</label>
-      <div class="col-sm-9">
-        <input class="form-control" type="text" id="seo" value="0"> 
-      </div>
-    </div>	
-						
-<br><br>
-  <div class="form-group form-group-md">
-      <label class="col-sm-2 control-label" for="status">Status:</label>
-	  	    <div class="col-sm-4">
-      <select class="form-control" id="status">
-    <option>Active</option>
-        <option>Inactive</option>
-        <option>Draft</option>
-
-      </select>
-	     </div>
-
-    </div>
-
-					
-</form>
-
-
-	<br><br>
-			<div class="form-group">
-  
-	
-	
-	
-<div class="form-actions">
-<button type="submit" class="btn btn-primary">Save changes</button>
- <a href="adminManageCategory.html" ><button type="button" class="btn btn-danger">Cancel</button></a>
-
-</div>
-
-
-  </form>
-</div>				
-					
-					
-					
-					</div>
-
-
-						
-
-</div>
-			</div>
-		</div>
-	</div>
-
-
-
-</div>
-
-<!-- <Fixed footer> -->
-<div class="navbar navbar-inverse navbar-fixed-bottom">
 	<div class="container">
-		<div class="navbar-text pull-left">
-			<p>COPYRIGHT 2015 I'MPOSSIBLE</p>
+		
 
-		</div>
-		<div class="navbar-text pull-right">
-			<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
-				href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
-				class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
-				class="fa fa-linkedin-square fa-2x"></i></a>
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+   
+      <h1>Categories</h1>
+	  
+  <ul class="breadcrumb" >
+			<li><a href="newAdminIndex.html">Home</a></li>
+			<li><a href="manageCategory.html">Categories</a></li>
+		  </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+        <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> Edit Category</h3>
+      </div>
+      <div class="panel-body">
+        <form action="#" method="post" enctype="multipart/form-data" id="form-category" class="form-horizontal">
+
+
+        
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-name1">Category Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="category_description[1][name]" value="" placeholder="Couples Counselling" id="input-name1" class="form-control" />
+                                          </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-description1">Description</label>
+                    <div class="col-sm-10">
+                      <textarea name="category_description[1][description]" placeholder="Description" id="input-description1" class="form-control" >Much of our satisfaction depends on our ability to create and maintain meaningful and mutually fulfilling relationships. Our attachments to partners can be a great source of love, comfort, and pleasure. Emotional, physical, and sexual intimacy together forms the foundation of our bond.
+When relationship conflict surfaces, whether because of a communication breakdown, finances, work stress, infidelity, or other issues, it¡¯s important to remember that there are options.
+When couples have the right skills to communicate and connect with each other emotionally, they are able to gain support and strength through their relationship and turn to each other to manage life stressors together, rather than have the relationship be a source of stress.</textarea>
+					  
+	
+										<script>
+											// Replace the <textarea id="editor1"> with a CKEditor
+											// instance, using default configuration.
+											CKEDITOR.replace('category_description[1][description]');
+										</script>
+                    </div>
+                  </div>
+	<br>
+										<div class="form-actions">
+								<button type="submit" class="btn btn-primary">Save
+									changes</button>
+								<a href="adminManageCategory.html"><button type="button"
+										class="btn btn-danger">Cancel</button></a>
+
+							</div>
+
+		    </div>
+    </div>
+	
+	</div>
+	</div>
+	</div>
+	<!-- <Fixed footer> -->
+	<div class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>COPYRIGHT 2015 I'MPOSSIBLE</p>
+
+			</div>
+			<div class="navbar-text pull-right">
+				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
+					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
+					class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
+					class="fa fa-linkedin-square fa-2x"></i></a>
+			</div>
 		</div>
 	</div>
-</div>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 
-
-
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/jquery-1.10.2.js"></script>
-<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
 
 </body>
 </html>
-
-

@@ -130,17 +130,51 @@ rel='stylesheet' type='text/css'>
 
 <!-- End of navigation bar  -->
 <div class="container">
+
+<div class="jumbotron text-center">	
 <div id="content">
+
 <div class="page-header">
 <div class="container-fluid">
+
   
   <h1>Categories</h1>
   <ul class="breadcrumb">
 			<li><a href="newAdminIndex.html">Home</a></li>
-			<li><a href="adminProgramSchedule.html">Categories</a></li>
+			<li><a href="newAdminIndex.html">Categories</a></li>
 		  </ul>
+		  	<h2>Search</h2>
+					<div class="well">
+						<div class="row">
+							<div class="col-sm-4">
+
+								<div class="form-group">
+									<label class="control-label" for="category-name"> Category
+										Name</label> <input type="text" name="filter_name" value=""
+										placeholder="Course Name" />
+								</div>
+
+
+
+							</div>
+
+					
+							<div class="col-sm-4">
+								<button type="button" id="button-filter"
+									class="btn btn-primary pull-right">
+									<i class="fa fa-search"></i> Filter
+								</button>
+
+							</div>
+
+						</div>
+					</div>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class="container">
 <div class="container-fluid">
 		<div class="panel panel-default">
   <div class="panel-heading">
@@ -160,7 +194,7 @@ rel='stylesheet' type='text/css'>
 									onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : false;">
 									<span class="glyphicon glyphicon-trash"></span> Delete
 								</button>
-								<a href="addCategory.html"><button type="button"
+								<a href="editCategory.html"><button type="button"
 										class="btn btn-default btn-sm">
 										<span class="glyphicon glyphicon-edit"></span> Edit
 									</button></a>
@@ -172,11 +206,12 @@ rel='stylesheet' type='text/css'>
 		
 	<form action="#" method="post" enctype="multipart/form-data" id="form-category">
 	  <div class="table-responsive">
-		<table class="table table-bordered table-hover">
+		<table class="table table-bordered table-hover" >
 		  <thead>
 			<tr>
 			  <td style="width: 1px;" class="text-center"><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
 			  <td class="text-left">                    <a href="#" class="asc">Category Name</a>
+		
 				</td>
    
 			</tr>
@@ -230,6 +265,7 @@ rel='stylesheet' type='text/css'>
 	  <div class="col-sm-6 text-right">Showing 1 to 20 of 38 (2 Pages)</div>
 	</div>
   </div>
+</div>
 </div>
 </div>
 </div>
