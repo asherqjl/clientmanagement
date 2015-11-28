@@ -315,3 +315,31 @@ tr {
 }
 
 /* End of Manage Programs.html CSS */
+
+
+/*change breadcrumb background color*/
+.breadcrumb {
+   display: inline-block;
+	background: none;
+	margin: 0;
+	padding: 0 10px;
+}
+
+.breadcrumb li a {
+	color: #999999;
+	font-size: 11px;
+	padding: 0px;
+	margin: 0px;	
+}
+.breadcrumb li:last-child a {
+	color: #1e91cf;
+}
+.breadcrumb li a:hover {
+	text-decoration: none;
+}
+.breadcrumb li + li:before {
+	content: "/";
+	font-family: FontAwesome;
+	color: #BBBBBB;
+	padding: 0 5px;	
+}
