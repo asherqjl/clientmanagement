@@ -130,54 +130,37 @@
 	
 <!-- End of navigation bar  -->
 
-
-<div class ="container">
-<div class="jumbotron text-center">	
-<div class ="page-header text-center">
-<h1>Manage Status</h1>
-</div>
+<div class="container">
 
 
-<div class="alingment" >
-		
+	<div class="jumbotron text-center">
+	 <div class="container-fluid">
+            <div class="panel panel-default">
+				<h1>Manage Status</h1>
 
 				<ul class="breadcrumb">
-				<li class="active"><a href="newAdminIndex.html">Home </a></li>
-				<li><a href="manageStatus.html">Manage Status</a></li>
-			</ul>
-				<h2>Search</h2>
-					<div class="well">
-						<div class="row">
-							<div class="col-sm-2">
+					<li><a href="newAdminIndex.html">Home</a></li>
+					<li class="active"><a href="manageStatus.html">Manage Status</a></li>
+				</ul>
+  
+     
+        <div class="well">
+          <div class="row">
 
-								<div class="form-group">
-									<label class="control-label" for="input-name">Status:
-									</label> <input type="text" name="filter_name" value=""
-										placeholder="Status Name" />
-								</div>
-
-
-
-							</div>
-
-						</div>
-						<div class="row">
-							
-							<div class=" pull-right">
-								<button type="button" id="button-filter"
-									class="btn btn-primary pull-right">
-									<i class="fa fa-search"></i> Filter
-								</button>
-
-							</div>
-							
-							</div>
-
-						
-					</div>
-			</div>
-</div>
-
+      
+            <div class="col-sm-offset-4 col-sm-4">
+              <div class="form-group">
+                <label class="control-label" for="input-name">Status Name</label>
+                  <input type="text" name="filter_name" value="" placeholder="Status Name" id="input-name" class="form-control" />
+              </div>
+              <button type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fa fa-search"></i> Filter</button>
+            </div>
+          </div>
+        </div>
+		          </div>
+          </div>
+        </div>
+		    </div>
 
 
 
@@ -200,11 +183,11 @@
 					<div class="panel-body">
 
 					
-						<div class="row">
+			
 							<div class="pull-right">
 								<!--  Icons for delete, edit and copy -->
 								<p class="icons">
-									<a href="addCategory.html"><button type="button"
+									<a href="addStatus.html"><button type="button"
 											class="btn btn-default btn-sm">
 											<span class="glyphicon glyphicon-plus"></span> Add
 										</button></a>
@@ -212,7 +195,7 @@
 										onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : false;">
 										<span class="glyphicon glyphicon-trash"></span> Delete
 									</button>
-									<a href="addCategory.html"><button type="button"
+									<a href="editStatus.html"><button type="button"
 											class="btn btn-default btn-sm">
 											<span class="glyphicon glyphicon-edit"></span> Edit
 										</button></a>
@@ -221,7 +204,7 @@
 									</button>
 								</p>
 							</div>
-						</div>
+			
 
 <form action="#" method="post" enctype="multipart/form-data"
 							id="form-product">
@@ -290,20 +273,18 @@
 					</div>
 
 					<div class="row">
-						<div class="col-sm-6 text-left"></div>
-						<div class="col-sm-6 text-right">Showing 1 to 19 of 19 (1
-							Pages)</div>
-					</div>
-
-					<ul class="pager">
-						<li class="previous"><a href="#">Previous</a></li>
-						<li class="next"><a href="#">Next</a></li>
-					</ul>
-				</div>
-			</div>
-
-
+	  <div class="col-sm-6 text-left"><ul class="pagination"><li class="active"><span>1</span></li><li><a href="
+#">2</a></li><li><a href="
+#">&gt;</a><li><a href="
+#">&gt;|</a></ul></div>
+	  <div class="col-sm-6 text-right">Showing 1 to 20 of 38 (2 Pages)</div>
+	</div>
+  </div>
 </div>
+</div>
+</div>
+</div>
+
 
 
 	<!-- Start of <Fixed footer> -->
