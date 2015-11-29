@@ -43,13 +43,10 @@
 					<li><a href="about.html">About</a></li>
 					
 					
-					<li><a href=viewProgramsNcourses.html>Courses & Programs</a></li>
+					<li><a href= "viewProgramsNcourses.html" >Courses & Programs</a></li>
 					<li><a href="ContactUs.html">Contact Us</a></li>
 					
 					<li><a href="#login" data-toggle="modal">Log In</a></li>
-					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
-
-					<!-- add search form -->
 					<form class="navbar-form navbar-right" role="search">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Search ">
@@ -62,33 +59,28 @@
 					</form>
 				</ul>
 			</div>
-
 		</div>
 	</div>
-	<div class="container">
-		<div class="jumbotron">
-			<p>Hello User! You have registered successfully for this program!
-				We will send you a verification email within 24hours with your user name and password!</p>
+
+	<form class="form-horizontal" method="post">
+		<div class="container">
+
+			<div class="container-fluid">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Program Registered</h3>
+						</div>
+
+						<div class="panel-body">Program Name: Bridging Generation<p>
+						Hello User! You have registered successfully for this program!
+				We will send you a verification email within 24hours!</p></div>
+
+					</div>
+			</div>
 		</div>
-
-	</div>
-	<!--  //Java Script
-	<script Language = "javascript">
-
-var email = "email address"
-var subject = "subject"
-var body = "body"
-
-document.write("<form name="form" action=\"mailto:"+ email +"\?subject="+ subject +"\&body="+ body +"\" method=\"post\" enctype=\"text/plain\"></form>") 
-
-</script>
- -->
-
-
-	<!-- To submit the form, these are the methods
-<input type="submit"> or <input type="button" value="Submit" onclick="document.form.submit()"> methods.
- -->
-
+	</form>
+	
+	
 	<!-- <footer> -->
 	<div class="navbar navbar-inverse navbar-fixed-bottom"
 		role="navigation">
