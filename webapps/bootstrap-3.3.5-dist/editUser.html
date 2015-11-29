@@ -5,29 +5,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE - Admin Edit User</title>
+<title>I'MPOSSIBLE - Addmin Edit User</title>
 
-
-<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-	    <link href="css/bootstrap.min.css" rel="stylesheet">
-		
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
-  
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/jquery-ui.min.css" rel="stylesheet">
-<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
-<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
-<link rel="stylesheet" type="text/css" href="css/home.css" />
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald'
+	rel='stylesheet' type='text/css'>
+<link href="css/home.css" rel="stylesheet">
+<script src="ckeditor/ckeditor.js"></script>
 </head>
 <body>
-<!-- style="height:2500px" -->
+	<!-- style="height:2500px" -->
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -45,11 +38,8 @@
 				<a class="navbar-brand" href="index.html"> <img id="brand-image"
 					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
 				</a>
-
-
 			</div>
 
-	
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown"><a href="index.html"
@@ -60,7 +50,6 @@
 							<li class="active">
 							<li><a href="viewProgramsNcourses.html"> User Homepage</a></li></li>
 					<li><a href="newAdminIndex.html">Admin homepage</a></li>
-
 				</ul>
 				</li>
 
@@ -79,15 +68,12 @@
 								Schedule</a></li>
 						<li><a href="manageStatus.html"> Manage Status</a></li>
 						<li><a href="manageUser.html"> Manage Users</a></li>
-						<li><a href="manageEnrollment.html"> Manage Enrollment</a></li>
-
+				
 					</ul></li>
 
 
 
 
-
-			
 
 				<!-- add search form -->
 				<li><form class="navbar-form navbar-right" role="search">
@@ -101,9 +87,7 @@
 					</div>
 				</form></li>
 				
-			
-								
-				        <li class="dropdown">
+				       <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
@@ -121,34 +105,42 @@
                         </li>
                     </ul>
                 </li>
+				
+								
+
 				</ul>
 			</div>
 
 		</div>
 	</div>
 
+
 	<div class="container">
+		
 
-		<div class="jumbotron">
-			<div class="container-fluid">
-			<!-- <div class="alert alert-danger">
-				<i class="fa fa-exclamation-circle"></i> Warning: You do not have
-				permission to modify courses!
-				<button type="button" class="close" data-dismiss="alert">&times;</button>
-			</div> -->
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-						<i class="fa fa-pencil"></i>  Edit Customer User
-					</h3>
-				</div>
-				<div class="panel-body">
- <div class="content">
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+   
+      <h1>Client User</h1>
+	  
+  <ul class="breadcrumb">
+			<li><a href="newAdminIndex.html">Home</a></li>
+			<li><a href="manageUser.html">Client User</a></li>
+		  </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+        <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> Edit Client User</h3>
+      </div>
+      <div class="panel-body">
+        <form action="#" method="post" enctype="multipart/form-data" id="form-category" class="form-horizontal">
 
- 
 
-<form class="form-horizontal" role="form">
-    <div class="form-group form-group-md">
+        
+   <div class="form-group form-group-md">
   
 
   
@@ -616,45 +608,24 @@
             </div>
           </div>
         </form>
+						
+		    </div>
+			
+							<div class="form-group">
+							<div class="form-actions">
+								<button type="submit" class="btn btn-primary">Save
+									changes</button>
+								<a href="manageUser.html"><button type="button"
+										class="btn btn-danger">Cancel</button></a>
 
-
-      
-
- </div>
- 		<div class="form-group">
-  
+							</div>
+							
+						</div>
+    </div>
 	
-	
-	
-<div class="form-actions">
-<button type="submit" class="btn btn-primary">Save changes</button>
- <a href="adminCourseSchedule.html" ><button type="button" class="btn btn-danger">Cancel</button></a>
-
-</div>
-
-
-  </form>
-</div>
-		
-		</div>
-
-
-
-
 	</div>
-
-
-
-
- </div>
-		
-		</div>
-
-
-
-
 	</div>
-
+	</div>
 	<!-- <Fixed footer> -->
 	<div class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="container">
@@ -671,53 +642,19 @@
 		</div>
 	</div>
 
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 
-	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 
-
-
-
-<script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-     $( "#dp1" ).datepicker({
-		//changeMonth: true,
-		//changeYear: true
-	});
-	 $( "#dp2" ).datepicker({
-		//changeMonth: true,
-		//changeYear: true
-	});
-	
-	
- </script>
-   
-	    <script>
-YUI().use(
-                                     'aui-timepicker',
-                                     function(Y) {
-                                       new Y.TimePicker(
-                                         {
-                                           trigger: '#time',
-                                           popover: {
-                                             zIndex: 1
-                                           },
-                                           on: {
-                                             selectionChange: function(event) {
-                                               console.log(event.newSelection)
-                                             }
-                                           }
-                                         }
-                                       );
-                                     }
-                                    );
-                                    
- </script>
- 
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
 
 </body>
 </html>
-
-
