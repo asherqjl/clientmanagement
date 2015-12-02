@@ -17,13 +17,6 @@ padding-bottom: 100px;
 }
 
 
-.navbar-fixed-top .nav {
-    padding: 15px 0;
-}
-}
-.navbar-fixed-top .navbar-brand {
-    padding: 0 15px;
-}
 
 @media(min-width:768px) {
     #index{
