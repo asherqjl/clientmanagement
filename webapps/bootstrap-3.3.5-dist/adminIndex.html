@@ -4,19 +4,17 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="ckeditor/ckeditor.js"></script>
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE - About</title>
+<title>I'MPOSSIBLE - Admin Index Page</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="css/home.css" rel="stylesheet">
-
 </head>
+
 <body>
-	<!-- Start of navigation Bar -->
 	<div class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -35,28 +33,32 @@
 					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
 				</a>
 
-			</div>
 
+			</div>
 
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown"><a href="index.html"
+					<li class="dropdown"><a href="newAdminIndex.html"
 						class="dropdown-toggle" data-toggle="dropdown">Home<b
 							class=caret></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="index.html">Public homepage</a></li>
 							<li class="active">
-							<li><a href="viewProgramsNcourses.html"> User Homepage</a></li></li>
-			<li><a href="adminIndex.html">Admin homepage</a></li>
+							<li><a href="user.html"> User Homepage</a></li></li>
+					<li><a href="adminIndex.html">Admin homepage</a></li>
+				
 
 				</ul>
-				</li>
 
-				<li class="dropdown"><a href="newAdminIndex.html"
+
+				</li>
+		
+
+				<li class="dropdown"><a href="index.html"
 					class="dropdown-toggle" data-toggle="dropdown">Manage<b
 						class=caret></b></a>
 					<ul class="dropdown-menu">
-					<li><a href="manageIndex.html"> Manage Public Home Page</a></li>
+						<li><a href="manageIndex.html"> Manage Public Home Page</a></li>
 						<li><a href="manageAbout.html">Manage About</a></li>
 						<li><a href="manageContactUs.html">Manage ContactUs</a></li>
 						<li><a href="manageCategory.html"> Manage Category</a></li>
@@ -67,12 +69,29 @@
 								Schedule</a></li>
 						<li><a href="manageStatus.html"> Manage Status</a></li>
 						<li><a href="manageUser.html"> Manage Users</a></li>
-				
+			
+
+
+
 
 					</ul></li>
 
 
+				</li>
 
+
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown">Courses & Programs<b class=caret></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="">About</a></li>
+						<li class="active">
+						<li><a href="viewProgramsNcourses.html"> Currently
+								Available Now</a></li>
+						<li><a href="viewProgramsNcourses.html">Full List</a></li>
+					</ul></li>
+
+				</li>
+				
 
 
 			
@@ -89,8 +108,7 @@
 					</div>
 				</form></li>
 				
-			
-								
+				
 				        <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -109,57 +127,80 @@
                         </li>
                     </ul>
                 </li>
+				
+								
+
+
 				</ul>
 			</div>
+
 		</div>
 	</div>
 
-	<!-- End of navigation Bar -->
+	<div style="padding-top: 100px; text-align: center">
+		<div class="container marketing">
+			<div class="row">
+				<div class="col-lg-3">
+					<img class="img-circle" src="image/Courses-icon.png"
+						alt="Generic placeholder image" width="160" height="160">
+					<h2>Manage Courses</h2>
+					<p>View/Add/Edit/Delete Course</p>
 
-	<!-- Start of Body  -->
-	<div class="container">
+				</div>
+				<div class="col-lg-3">
+					<img class="img-circle" src="image/schedule.png"
+						alt="Generic placeholder image" width="160" height="160">
+					<h2>Manage Course Schedule</h2>
+					<p>View/Add/Edit/Delete Course Schedule</p>
 
-		<div class="jumbotron text-center">
-		<textarea name="about" contenteditable="true">
-			<p>Throughout life, most people experience times when they feel
-				overwhelmed. Having guidance through these difficult times can be
-				life altering.</p>
+				</div>
+				<div class="col-lg-3">
+					<img class="img-circle" src="image/program.jpg"
+						alt="Generic placeholder image" width="160" height="160">
+					<h2>Manage Program </h2>
+					<p>View/Add/Edit/Delete Program, Link Courses to program</p>
 
-			<p>
-				<b>I'M POSSIBLE Counselling can provide guidance.</b>
-			</p>
+				</div>
+				<div class="col-lg-3">
+					<img class="img-circle" src="image/user.jpg"
+						alt="Generic placeholder image" width="160" height="160">
+					<h2>Manage User </h2>
+					<p>View/Add/Edit/Delete Admin, Client and Coach User</p>
 
-			<p>We are a multinational group of counsellors, therapists and
-				psychologists in Singapore working as a team to provide the best
-				level of care, support and guidance to help you through difficult
-				times. Our approach is empathetic, non-judgmental, discreet,
-				confidential and always professional. We provide individual
-				counselling and psychotherapy, as well as child, couple and family
-				counselling. Our services are for anyone struggling to make sense of
-				an issue, a problem, their history or their relationships.</p>
+				</div>
+			</div>
 
-			<p>
-				<b>Speak to a multilingual counsellor in Singapore today.</b>
-			</p>
-
-			<p>Communicate with a therapist who speaks your native language.
-				We speak English, French, German, Spanish, Portuguese, Swedish,
-				Cantonese and Mandarin.</p>
-</textarea>
-				<script>
-					 CKEDITOR.disableAutoInline = true;
-    CKEDITOR.inline( 'about' );
-
-						</script>
+			<div class="row">
+				<div class="col-lg-3">
+					<p>
+						<a class="btn btn-default" href="studentrecentjournals.html"
+							role="button">Manage Course &raquo;</a>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p>
+						<a class="btn btn-default" href="myCourseNPrograms.html"
+							role="button">Manage Course Schedule &raquo;</a>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p>
+						<a class="btn btn-default" href="#" role="button">Manage Program &raquo;</a>
+					</p>
+				</div>
+						<div class="col-lg-3">
+					<p>
+						<a class="btn btn-default" href="#" role="button">Manage User &raquo;</a>
+					</p>
+				</div>
+			</div>
 		</div>
-	</div>
-	<!-- End of Body  -->
 
-	<!-- <Fixed footer> -->
+			<!-- <Fixed footer> -->
 	<div class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="container">
 			<div class="navbar-text pull-left">
-				<p>&#169;COPYRIGHT 2015 I'MPOSSIBLE</p>
+				<p>COPYRIGHT 2015 I'MPOSSIBLE</p>
 
 			</div>
 			<div class="navbar-text pull-right">
@@ -170,52 +211,12 @@
 			</div>
 		</div>
 	</div>
-	<!-- End <Fixed footer> -->
 
-	<!-- Start of Log In Popup Modal -->
-	<!-- 	Place bootstrap core javascript below so pages load faster -->
-	<div class="modal fade" id="login">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<form class="form-horizontal" role="form">
-					<div class="modal-header">
-						<img src="image/impossiblelogo.png" alt="image logo"
-							align="middle" style="width: 204px; height: 48px;">
-					</div>
-					<div class="modal-body">
-						<div class="form-group">
-							<label for="login-email" class="col-sm-2 control-label">Email:</label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" id="Login-email"
-									placeholder="tomcat@domain.com">
-							</div>
-						</div>
 
-						<div class="form-group">
-							<label for="login-pwd" class="col-sm-2 control-label">Password*</label>
-							<div class="col-sm-5">
-								<input type="password" class="form-control" id="Login-name"
-									placeholder="Password">
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<a class="btn btn-default" data-dismiss="modal">Close</a>
-						<button type="submit" class="btn btn-primary">Sign In</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- End of Log In Popup Modal -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
