@@ -344,3 +344,7 @@ tr {
 	color: #BBBBBB;
 	padding: 0 5px;	
 }
+
+.form-actions{
+text-align: right
+}
