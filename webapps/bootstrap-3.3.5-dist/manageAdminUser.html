@@ -148,48 +148,43 @@ rel='stylesheet' type='text/css'>
 
 
 
-
 		<h2>Search</h2>
 		  <div class="well">
 	  <div class="row">
 		<div class="col-sm-4">
 		  <div class="form-group">
-			<label class="control-label" for="input-name">Course Name</label>
+			<label class="control-label" for="input-name">Name</label>
 			<input type="text" name="filter_name" value="" placeholder="Course Name" id="input-name" class="form-control" />
 		  </div>
 		  <div class="form-group">
-			<label class="control-label" for="course_type">Course Type</label>
-<select name="filter_type" id="course_type"class="form-control" >
-	<option value="2">Coaching</option>
-	<option value="1">Workshop</option>
-</select>
+			<label class="control-label" for="email">Email</label>
+<input type="email" name="filter_email" value="" placeholder="Email" id=input-email" class="form-control" />
 	 
 		  </div>
 		</div>
 		<div class="col-sm-4">
 		  <div class="form-group">
-			<label class="control-label" for="input-sDate">Start Date</label>
+			<label class="control-label" for="input-sDate">Registered Date</label>
 			<input type="text" name="filter_sDate" value="" placeholder="Start Date" id=input-sDate" class="form-control" />
 		  </div>
-		  <div class="form-group">
-			<label class="control-label" for="input-eDate">End Date</label>
-			<input type="text" name="filter_eDate" value="" placeholder="End Date" id=input-eDate" class="form-control" />
-		  </div>
+		
+		
 	   
 		</div>
 		<div class="col-sm-4">
-		  <div class="form-group">
-			<label class="control-label" for="input-status">Status</label>
+		    <div class="form-group">
+			<label class="control-label" for="input-status">Role</label>
 			<select name="filter_status" id="input-status" class="form-control">
-<option value="2">Draft</option>
-								<option value="1">Available</option>
-								<option value="0">Coming Soon</option>
+
+								<option value="1">System Admin	</option>
+								<option value="0">Admin</option>
 							  </select>
 		  </div>
 		  <button type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fa fa-search"></i> Filter</button>
 		</div>
 	  </div>
 	</div>
+		
 		
 	</div>
 	</div>	
