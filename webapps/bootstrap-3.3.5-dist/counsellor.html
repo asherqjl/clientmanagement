@@ -11,9 +11,7 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
 <link href="css/home.css" rel="stylesheet">
-
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -46,29 +44,23 @@ th {
 					</a>
 				</div>
 
-							
 				<div class="navbar-collapse collapse">
-									<ul class="nav navbar-nav navbar-center">	
-	<li><form class="navbar-form navbar-center" role="search">
-	<div class="col-md-12">
-								<div class="input-group">
-								
-									<input type="text" class="form-control" placeholder="Search ">
-									<span class="input-group-btn">
-										<button type="submit" class="btn btn-default">
-											<span class="glyphicon glyphicon-search"></span>
-										</button>
-									</span>
-								</div>
+					<ul class="nav navbar-nav navbar-center">
+						<li><form class="navbar-form navbar-center" role="search">
+								<div class="col-md-12">
+									<div class="input-group">
+
+										<input type="text" class="form-control" placeholder="Search ">
+										<span class="input-group-btn">
+											<button type="submit" class="btn btn-default">
+												<span class="glyphicon glyphicon-search"></span>
+											</button>
+										</span>
+									</div>
 								</div>
 							</form></li>
-							
-							
-									</ul>
+					</ul>
 					<ul class="nav navbar-nav navbar-right">
-					
-				
-							
 						<li class="dropdown"><a href="#" class="dropdown-toggle"
 							data-toggle="dropdown"> Home <b class=caret></b></a>
 							<ul class="dropdown-menu">
@@ -85,7 +77,7 @@ th {
 								<li class="active">
 								<li><a href="counsellorjournals.html">All Journals</a></li>
 							</ul></li>
-					
+
 
 						<li class="dropdown"><a href="#" class="dropdown-toggle"
 							data-toggle="dropdown"><i class="fa fa-user"></i> John Smith
@@ -106,159 +98,176 @@ th {
 			</div>
 		</div>
 		<div class="container">
-	<div class="jumbotron text-center">
- <div class="container-fluid">
- <div class="panel panel-default">
- 
+			<div class="jumbotron text-center">
+				<div class="container-fluid">
+					<div class="panel panel-default">
 
-	<h1>Counsellor</h1>
-	<h2>Search</h2>
-        <div class="well">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label class="control-label" for="input-name">Student Name</label>
-                <input type="text" name="filter_name" value="" placeholder="Course Name" id="input-name" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label class="control-label" for="course_type">Course Type</label>
-	<select name="filter_type" id="course_type"class="form-control" >
-		<option value="2">Coaching</option>
-		<option value="1">Workshop</option>
-	</select>
-         
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label class="control-label" for="input-sDate">Start Date</label>
-                <input type="text" name="filter_sDate" value="" placeholder="Start Date" id=input-sDate" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label class="control-label" for="input-eDate">End Date</label>
-                <input type="text" name="filter_eDate" value="" placeholder="End Date" id=input-eDate" class="form-control" />
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label class="control-label" for="input-status">Status</label>
-                <select name="filter_status" id="input-status" class="form-control">
-				<option value="2">Draft</option>
-									<option value="1">Available</option>
-									<option value="0">Coming Soon</option>
-                                  </select>
-              </div>
-              <button type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fa fa-search"></i> Filter</button>
-            </div>
-          </div>
-        </div>
-		</div>
-		</div>
-	</div>
-	</div>
-	
-	<div class="container">
-		<div class="container-fluid">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">My Students</h3>
+
+						<h1>Counsellor</h1>
+						<h2>Search</h2>
+						<div class="well">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label class="control-label" for="input-name">Student
+											Name</label> <input type="text" name="filter_name" value=""
+											placeholder="Course Name" id="input-name"
+											class="form-control" />
+									</div>
+									<div class="form-group">
+										<label class="control-label" for="course_type">Passed
+											Counsellor</label> <input type="text" name="filter_name" value=""
+											placeholder="passedcounsellor" id="input-name"
+											class="form-control" />
+
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label class="control-label" for="input-sDate">Join
+											Date</label> <input type="text" name="filter_sDate" value=""
+											placeholder="Start Date" id=input-sDate
+											" class="form-control" />
+									</div>
+									<div class="form-group">
+										<label class="control-label" for="course_type">Student's
+											Parent</label> <input type="text" name="filter_name" value=""
+											placeholder="parent" id="input-name" class="form-control" />
+
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label class="control-label" for="input-status">Issues
+											Facing</label> <select name="filter_status" id="input-status"
+											class="form-control">
+											<option value="2">Time Management</option>
+											<option value="1">Family Counselling</option>
+											<option value="0">Individual Counselling</option>
+											<option value="3">Child & Youth Counselling</option>
+
+										</select>
+									</div>
+									<button type="button" id="button-filter"
+										class="btn btn-primary pull-right">
+										<i class="fa fa-search"></i> Filter
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+			</div>
+		</div>
 
-				<div class="panel-body">
+		<div class="container">
+			<div class="container-fluid">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">My Students</h3>
+					</div>
 
-					<form action="#" method="post" enctype="multipart/form-data"
-						id="form-course">
-						<div class="table-responsive">
-							<table class="table table-bordered table-hover">
+					<div class="panel-body">
 
-<thead>
-							<tr>
-								<th class="text-left">Student's Name</th>
-								<th class="text-left">Student's Parent</th>
-								<th class="text-left">Passed Counsellor</th>
-								<th class="text-left">Join Date</th>
-								<th class="text-left">Issues Facing</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-							<td class="text-left"><a href="studentdetails.html">Judith Loh</a></td>
-								<td class="text-left">Sarah Ong</td>
-								<td class="text-left">Mary Seah</td>
-								<td class="text-left">23 November 2015</td>
-								<td class="text-left">Time Management</td>
-							</tr>
-							<tr>
-								<td class="text-left"><a href="studentdetails.html">Winston Ong</a></td>
-								<td class="text-left">David Ong</td>
-								<td class="text-left">Jia Le</td>
-								<td class="text-left">5 November 2015</td>
-								<td class="text-left">Family Counselling</td>
-							</tr>
-							<tr>
-								<td class="text-left"><a href="studentdetails.html">Mama Ang</a></td>
-								<td class="text-left">Yes</td>
-								<td class="text-left">Judith Tan</td>
-								<td class="text-left">8 November 2015</td>
-								<td class="text-left">Time Management</td>
-							</tr>
-							<tr>
-								<td class="text-left"><a href="studentdetails.html">Sorah Max</a></td>
-								<td class="text-left">Cindy Max</td>
-								<td class="text-left">Priscillia Loh</td>
-								<td class="text-left">8 November 2015</td>
-								<td class="text-left">Individual Counselling</td>
-							</tr>
-							<tr>
-								<td class="text-left"><a href="studentdetails.html">Minh Ong</a></td>
-								<td class="text-left">Lex Ah</td>
-								<td class="text-left">Piggy Ong</td>
-								<td class="text-left">5 November 2015</td>
-								<td class="text-left">Individual Counselling</td>
-							</tr>
-							<tr>
-								<td class="text-left"><a href="studentdetails.html">Isabella Tan</a></td>
-								<td class="text-left">Yasmin Goh</td>
-								<td class="text-left">Vanessa Tan</td>
-								<td class="text-left">2 November 2015</td>
-								<td class="text-left">Child & Youth Counselling</td>
-							</tr>
-							<tr>
-								<td class="text-left"><a href="studentdetails.html">Christine Ong</a></td>
-								<td class="text-left">Soh Goh Qi</td>
-								<td class="text-left">Sarah</td>
-								<td class="text-left">14 November 2015</td>
-								<td class="text-left">Family Counselling</td>
-							</tr>
-							
-							</table>
+						<form action="#" method="post" enctype="multipart/form-data"
+							id="form-course">
+							<div class="table-responsive">
+								<table class="table table-bordered table-hover">
+
+									<thead>
+										<tr>
+											<th class="text-left">Student's Name</th>
+											<th class="text-left">Student's Parent</th>
+											<th class="text-left">Passed Counsellor</th>
+											<th class="text-left">Join Date</th>
+											<th class="text-left">Issues Facing</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-left"><a href="studentdetails.html">Judith
+													Loh</a></td>
+											<td class="text-left">Sarah Ong</td>
+											<td class="text-left">Mary Seah</td>
+											<td class="text-left">23 November 2015</td>
+											<td class="text-left">Time Management</td>
+										</tr>
+										<tr>
+											<td class="text-left"><a href="studentdetails.html">Winston
+													Ong</a></td>
+											<td class="text-left">David Ong</td>
+											<td class="text-left">Jia Le</td>
+											<td class="text-left">5 November 2015</td>
+											<td class="text-left">Family Counselling</td>
+										</tr>
+										<tr>
+											<td class="text-left"><a href="studentdetails.html">Mama
+													Ang</a></td>
+											<td class="text-left">Yes</td>
+											<td class="text-left">Judith Tan</td>
+											<td class="text-left">8 November 2015</td>
+											<td class="text-left">Time Management</td>
+										</tr>
+										<tr>
+											<td class="text-left"><a href="studentdetails.html">Sorah
+													Max</a></td>
+											<td class="text-left">Cindy Max</td>
+											<td class="text-left">Priscillia Loh</td>
+											<td class="text-left">8 November 2015</td>
+											<td class="text-left">Individual Counselling</td>
+										</tr>
+										<tr>
+											<td class="text-left"><a href="studentdetails.html">Minh
+													Ong</a></td>
+											<td class="text-left">Lex Ah</td>
+											<td class="text-left">Piggy Ong</td>
+											<td class="text-left">5 November 2015</td>
+											<td class="text-left">Individual Counselling</td>
+										</tr>
+										<tr>
+											<td class="text-left"><a href="studentdetails.html">Isabella
+													Tan</a></td>
+											<td class="text-left">Yasmin Goh</td>
+											<td class="text-left">Vanessa Tan</td>
+											<td class="text-left">2 November 2015</td>
+											<td class="text-left">Child & Youth Counselling</td>
+										</tr>
+										<tr>
+											<td class="text-left"><a href="studentdetails.html">Christine
+													Ong</a></td>
+											<td class="text-left">Soh Goh Qi</td>
+											<td class="text-left">Sarah</td>
+											<td class="text-left">14 November 2015</td>
+											<td class="text-left">Family Counselling</td>
+										</tr>
+								</table>
+							</div>
+						</form>
+						<div class="row">
+							<div class="col-sm-6 text-left">
+
+								<ul class="pagination">
+									<li class="disabled"><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+
+							</div>
+							<div class="col-sm-6 text-right">Showing 1 to 20 of 38 (2
+								Pages)</div>
 						</div>
-					</form>
-					<div class="row">
-						<div class="col-sm-6 text-left">
-						
-						<ul class="pagination">
-						<li class="disabled"><a href="#">&laquo;</a></li>
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">&raquo;</a></li>
-					</ul>
-					
-						</div>
-						<div class="col-sm-6 text-right">Showing 1 to 20 of 38 (2
-							Pages)</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
-	
-		
-	
+
+
+
 	<!-- <footer> -->
 	<div class="navbar navbar-inverse navbar-fixed-bottom"
 		role="navigation">
