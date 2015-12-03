@@ -4,17 +4,18 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="ckeditor/ckeditor.js"></script>
+
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE - About</title>
+<title>I'MPOSSIBLE - Manage About</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="css/home.css" rel="stylesheet">
+<script src="ckeditor/ckeditor.js"></script>
 
 </head>
+
 <body>
 	<!-- Start of navigation Bar -->
 	<div class="navbar navbar-default navbar-fixed-top">
@@ -117,9 +118,29 @@
 	<!-- End of navigation Bar -->
 
 	<!-- Start of Body  -->
-	<div class="container">
+<div class="container">
 
-		<div class="jumbotron text-center">
+<div id="content">
+<div class="page-header">
+<div class="container-fluid">
+
+<h1>Manage About</h1>
+
+<ul class="breadcrumb" >
+	<li><a href="adminIndex.html">Home</a></li>
+<li><a href="manageIndex.html">Manage Index</a></li>
+<li><a href="manageAbout.html">Manage About</a></li>
+</ul>
+</div>
+</div>
+	<div class="container-fluid">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<i class="fa fa-pencil"></i> Edit About Page
+				</h3>
+			</div>
+			<div class="panel-body">
 		<textarea name="about" contenteditable="true">
 			<p>Throughout life, most people experience times when they feel
 				overwhelmed. Having guidance through these difficult times can be
@@ -144,15 +165,42 @@
 
 			<p>Communicate with a therapist who speaks your native language.
 				We speak English, French, German, Spanish, Portuguese, Swedish,
-				Cantonese and Mandarin.</p>
+				Cantonese and Mandarin.
+			</p>
 </textarea>
-				<script>
-					 CKEDITOR.disableAutoInline = true;
-    CKEDITOR.inline( 'about' );
-
+	
+						
+						
+						<script>
+									// Replace the <textarea id="editor1"> with a CKEditor
+									// instance, using default configuration.
+									CKEDITOR.replace('about');
 						</script>
-		</div>
-	</div>
+</div>
+								<div class="form-group">
+						<div class="form-actions">
+							<button type="submit" class="btn btn-primary">Save
+								changes</button>
+							<a href="adminIndex.html"><button type="button"
+									class="btn btn-danger">Cancel</button></a>
+
+						</div>
+				
+					</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+			
+
+			
+
+
+		
+
 	<!-- End of Body  -->
 
 	<!-- <Fixed footer> -->
@@ -208,14 +256,12 @@
 		</div>
 	</div>
 	<!-- End of Log In Popup Modal -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
