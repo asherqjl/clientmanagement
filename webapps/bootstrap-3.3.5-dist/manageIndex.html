@@ -9,8 +9,7 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <link href="css/home.css" rel="stylesheet">
 
@@ -26,36 +25,11 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
 <![endif]-->
 
 <link href="css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.
-This must be loaded before fileinput.min.js -->
-<script src="js/canvas-to-blob.min.js" type="text/javascript"></script>
-<script src="js/fileinput.min.js" type="text/javascript"></script>
-<!-- bootstrap.js below is only needed if you wish to use the feature of viewing details 
-of text file preview via modal dialog -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
-<!-- optionally if you need translation for your language then include 
-locale file as mentioned below -->
-<script src="js/fileinput_locale_<lang>.js"></script>
+
 </head>
 
 
-<script src="js/fileinput.js"></script>
 
-<script src="ckeditor/ckeditor.js"></script>
-<style>
-#uploadImages .thumbnail {
-width: 150px;
-height: 150px;
-float: left;
-margin: 2px;
-}
-
-#uploadImages .thumbnail img {
-width: 150px;
-height: 150px;
-}
-</style>
 <body>
 <!-- style="height:2500px" -->
 <div class="navbar navbar-default navbar-fixed-top">
@@ -162,7 +136,7 @@ height: 150px;
 <h1>Manage Home Page</h1>
 
 <ul class="breadcrumb" >
-<li><a href="newAdminIndex.html">Admin Home</a></li>
+	<li><a href="adminIndex.html">Home</a></li>
 <li><a href="manageIndex.html">Manage Index</a></li>
 
 </ul>
@@ -201,20 +175,7 @@ height: 150px;
 </div>
 </div>
 </div>
-<script>
-$("#input-image-1").fileinput({
-uploadUrl: "/site/image-upload",
-allowedFileExtensions: ["jpg", "png", "gif"],
-maxImageWidth: 200,
-maxFileCount: 1,
-resizeImage: true
-}).on('filepreupload', function() {
-$('#kv-success-box').html('');
-}).on('fileuploaded', function(event, data) {
-$('#kv-success-box').append(data.response.link);
-$('#kv-success-modal').modal('show');
-});
-</script>
+
 <div class="form-group required"></div>
 		  					<!-- IMAGE  -->
 <div class="form-group required">
@@ -237,20 +198,7 @@ $('#kv-success-modal').modal('show');
 </div>
 </div>
 </div>
-<script>
-$("#input-image-2").fileinput({
-uploadUrl: "/site/image-upload",
-allowedFileExtensions: ["jpg", "png", "gif"],
-maxImageWidth: 200,
-maxFileCount: 1,
-resizeImage: true
-}).on('filepreupload', function() {
-$('#kv-success-box').html('');
-}).on('fileuploaded', function(event, data) {
-$('#kv-success-box').append(data.response.link);
-$('#kv-success-modal').modal('show');
-});
-</script>
+
 <div class="form-group required"></div>
 					<!-- IMAGE  -->
 <div class="form-group required">
@@ -273,20 +221,7 @@ $('#kv-success-modal').modal('show');
 </div>
 </div>
 </div>
-<script>
-$("#input-image-3").fileinput({
-uploadUrl: "/site/image-upload",
-allowedFileExtensions: ["jpg", "png", "gif"],
-maxImageWidth: 200,
-maxFileCount: 1,
-resizeImage: true
-}).on('filepreupload', function() {
-$('#kv-success-box').html('');
-}).on('fileuploaded', function(event, data) {
-$('#kv-success-box').append(data.response.link);
-$('#kv-success-modal').modal('show');
-});
-</script>
+
 			
 
 			
@@ -299,7 +234,7 @@ $('#kv-success-modal').modal('show');
 						<div class="form-actions">
 							<button type="submit" class="btn btn-primary">Save
 								changes</button>
-							<a href="newAdminIndex.html"><button type="button"
+							<a href="adminIndex.html"><button type="button"
 									class="btn btn-danger">Cancel</button></a>
 
 						</div>
@@ -335,12 +270,69 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script
-src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.
+This must be loaded before fileinput.min.js -->
+<script src="js/canvas-to-blob.min.js" type="text/javascript"></script>
+<script src="js/fileinput.min.js" type="text/javascript"></script>
+<!-- bootstrap.js below is only needed if you wish to use the feature of viewing details 
+of text file preview via modal dialog -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- optionally if you need translation for your language then include 
+locale file as mentioned below -->
+<script src="js/fileinput_locale_<lang>.js"></script>
+<script>
+$("#input-image-1").fileinput({
+uploadUrl: "/site/image-upload",
+allowedFileExtensions: ["jpg", "png", "gif"],
+maxImageWidth: 200,
+maxFileCount: 1,
+resizeImage: true
+}).on('filepreupload', function() {
+$('#kv-success-box').html('');
+}).on('fileuploaded', function(event, data) {
+$('#kv-success-box').append(data.response.link);
+$('#kv-success-modal').modal('show');
+});
+</script>
+<script>
+$("#input-image-2").fileinput({
+uploadUrl: "/site/image-upload",
+allowedFileExtensions: ["jpg", "png", "gif"],
+maxImageWidth: 200,
+maxFileCount: 1,
+resizeImage: true
+}).on('filepreupload', function() {
+$('#kv-success-box').html('');
+}).on('fileuploaded', function(event, data) {
+$('#kv-success-box').append(data.response.link);
+$('#kv-success-modal').modal('show');
+});
+</script>
+<script>
+$("#input-image-3").fileinput({
+uploadUrl: "/site/image-upload",
+allowedFileExtensions: ["jpg", "png", "gif"],
+maxImageWidth: 200,
+maxFileCount: 1,
+resizeImage: true
+}).on('filepreupload', function() {
+$('#kv-success-box').html('');
+}).on('fileuploaded', function(event, data) {
+$('#kv-success-box').append(data.response.link);
+$('#kv-success-modal').modal('show');
+});
+</script>
+
+<script src="js/fileinput.js"></script>
+
+<script src="ckeditor/ckeditor.js"></script>
+
 </body>
 </html>
