@@ -271,6 +271,7 @@ margin:0 auto; /* center your carousel if other than 100% */
 
 .navbar-fixed-bottom {
  height: 15px;
+  background-color:#1A242F;
 }
 /* .modal-content {
   width: 500px;

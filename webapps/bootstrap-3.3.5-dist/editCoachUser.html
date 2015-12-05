@@ -50,7 +50,7 @@
 				</ul>
 				</li>
 
-				<li class="dropdown"><a href="newAdminIndex.html"
+				<li class="dropdown"><a href="adminIndex.html"
 					class="dropdown-toggle" data-toggle="dropdown">Manage<b
 						class=caret></b></a>
 					<ul class="dropdown-menu">
@@ -133,161 +133,90 @@
         <h3 class="panel-title"><i class="fa fa-pencil"></i>Edit Coach User</h3>
       </div>
       <div class="panel-body">
-        <form action="#" method="post" enctype="multipart/form-data" id="form-category" class="form-horizontal">
+      <form action="#" method="post" enctype="multipart/form-data" id="form-category" class="form-horizontal">
 
 
-        
-                 <div class="form-group form-group-md">
+							<div class="form-group form-group-md">
 
 
+								   <div class="form-group">
+									<label class="control-label col-sm-2" for="aName">Coach Name:</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="text" id="cName"
+											value="Allen Tan Yao Hui">
+									</div>
+								</div>
+								
+								   <div class="form-group">
+									<label class="control-label col-sm-2" for="cName">Coach Email:</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="email" id="aEmail"
+											value=" 123@12345.com  ">
+									</div>
+								</div>
+		 <div class="form-group">
+									<label class="control-label col-sm-2" for="cName">Password:</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="email" id="aEmail"
+											value=" **********">
+									</div>
+								</div>
+								
+							 <div class	="form-group">
+									<label class="control-label col-sm-2" for="cName">Confirm Password:</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="email" id="aEmail"
+											value="**********  ">
+									</div>
+								</div>
+								
 
 
+									 <div class	="form-group">
+									<label class="control-label col-sm-2" for="cName">Mobile:</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="email" id="aEmail"
+											value="93274892  ">
+									</div>
+								</div>
+								
+										 <div class	="form-group">
+									<label class="control-label col-sm-2" for="cName">Address</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="email" id="aEmail"
+											value=" Marina barrage ">
+									</div>
+								</div>
+								
+													 <div class	="form-group">
+									<label class="control-label col-sm-2" for="cName">Coach Hourly Rate:</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="email" id="aEmail"
+											value="$10/h  ">
+									</div>
+								</div>
+						
+									<div class="form-group">
+										<label class="control-label col-sm-2" for="status">Status:</label>
+										<div class="col-sm-4">
+											<select class="form-control" id="status">
+												<option>Enabled</option>
+												<option>Disabled</option>
+											</select>
+									</div>
 
- <div class="tab-content">
-		<div class="tab-pane active" id="tab-general">
-		  <div class="row">
-			<div class="col-sm-2">
-			  <ul class="nav nav-pills nav-stacked" id="address">
-				<li class="active"><a href="#tab-customer" data-toggle="tab">General</a></li>
-													   
-													 
-															   <li><a href="#tab-address2" data-toggle="tab"><i class="fa fa-minus-circle" onclick="$('#address a:first').tab('show'); $('#address a[href=\'#tab-address1\']').parent().remove(); $('#tab-address1').remove();"></i> Add Student</a></li>
-												
-			  </ul>
-			</div>
-			<div class="col-sm-10">
-			  <div class="tab-content">
-				<div class="tab-pane active" id="tab-customer">
-				  <div class="form-group">
-					<label class="col-sm-2 control-label" for="input-customer-group">Role</label>
-					<div class="col-sm-10">
-					  <select name="customer_group_id" id="input-customer-group" class="form-control">
-																				<option value="1" selected="selected">Coach</option>
-																				
-																				
-																			  </select>
-					</div>
-				  </div>
-				  <div class="form-group required">
-					<label class="col-sm-2 control-label" for="input-firstname">First Name</label>
-					<div class="col-sm-10">
-					  <input type="text" name="firstname" value="112456" placeholder="First Name" id="input-firstname" class="form-control" />
-											  </div>
-				  </div>
-				  <div class="form-group required">
-					<label class="col-sm-2 control-label" for="input-lastname">Last Name</label>
-					<div class="col-sm-10">
-					  <input type="text" name="lastname" value="123" placeholder="Last Name" id="input-lastname" class="form-control" />
-											  </div>
-				  </div>
-				  <div class="form-group required">
-					<label class="col-sm-2 control-label" for="input-email">E-Mail</label>
-					<div class="col-sm-10">
-					  <input type="text" name="email" value="123@12345.com" placeholder="E-Mail" id="input-email" class="form-control" />
-											  </div>
-				  </div>
-				  <div class="form-group required">
-					<label class="col-sm-2 control-label" for="input-telephone">Telephone</label>
-					<div class="col-sm-10">
-					  <input type="text" name="telephone" value="123123" placeholder="Telephone" id="input-telephone" class="form-control" />
-											  </div>
-				  </div>
-  
-										<div class="form-group required">
-					<label class="col-sm-2 control-label" for="input-password">Password</label>
-					<div class="col-sm-10">
-					  <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" autocomplete="off" />
-											  </div>
-				  </div>
-				  <div class="form-group required">
-					<label class="col-sm-2 control-label" for="input-confirm">Confirm</label>
-					<div class="col-sm-10">
-					  <input type="password" name="confirm" value="" placeholder="Confirm" autocomplete="off" id="input-confirm" class="form-control" />
-											  </div>
-				  </div>
-		  
-				  <div class="form-group">
-					<label class="col-sm-2 control-label" for="input-status">Status</label>
-					<div class="col-sm-10">
-					  <select name="status" id="input-status" class="form-control">
-													<option value="1" selected="selected">Enabled</option>
-						<option value="0">Disabled</option>
-												  </select>
-					</div>
-				  </div>
-
-				</div>
+									</div>
+						
    
+
+								</div>
+								
 				
-				<div class="tab-pane" id="tab-address2">
-				<div class ="container">
+								
 
-
-
-
-  
-<table class="table table-striped">
-<thead>
-	  <input type="hidden" name="address[1][address_id]" value="962" />
-				  <div class="form-group required">
-	<th>Student Name</th>
-		<th>Action-Delete</th>
-
-</thead>
-<tbody>
-	<tr>
-		<td> <div class="form-group">
-
-			
-		
-					<div class="col-sm-10">
-					
-					  
-		<select class="form-control" name="address[1][firstname]">
-	<option>Jia Le</option>
-	<option>Xenia</option>
-	<option>Toh Kee Heng</option>
-	<option>Julian Robert</option>
-	<option>Dickson Pang</option>
-	<option>Tay Zhan An</option>
-		<option>Dickson Pang</option>
-	<option>Tay Zhan An</option>
-  </select>
-  </div>
-</td>
-		
-		<td><a href="#" class="remove-row"><span class=" glyphicon glyphicon-minus"></span></a></td>
-	</tr>
-</tbody>
-</table>
-<div ><a href="#" id="add-row"><span class="glyphicon glyphicon-plus"></span>Add More Student</a></div>
-
-<div id="text"></div>
-<br><br>
-
-
-</div>
-				
-				
-			
-
-   
-	  
-
-
-				</div>
-			   </div>
-			</div>
-		  </div>
-		</div>
-
-
-					<div class="tab-pane" id="tab-ip">
-		  <div id="ip"></div>
-		</div>
-	  </div>
-
-	</form>
+							</div>
+							
+						</form>
 							<div class="form-group">
 							<div class="form-actions">
 								<button type="submit" class="btn btn-primary">Save
