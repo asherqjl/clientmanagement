@@ -12,9 +12,7 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
 <link href="css/home.css" rel="stylesheet">
-
 
 </head>
 <body id="index">
@@ -37,8 +35,6 @@
 				<a class="navbar-brand" href="index.html"> <img id="brand-image"
 					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
 				</a>
-
-
 			</div>
 
 			<div class="navbar-collapse collapse">
@@ -47,9 +43,8 @@
 					<li><a href="about.html">About</a></li>
 					<li><a href="viewProgramsNcourses.html">Courses & Programs</a></li>
 					<li><a href="ContactUs.html">Contact Us</a></li>
-
 					<li><a href="#login" data-toggle="modal">Log In</a></li>
-	
+
 					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
 
 					<!-- add search form -->
@@ -65,35 +60,20 @@
 							</div>
 						</form>
 					</li>
-					
-					<li class="dropdown"><a href="shoppingcart.html" class="dropdown-toggle"
-						data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span><b class="caret"></b></a>
-					<!-- class="btn btn-default btn-lg"> -->
-					
-						
+					<!-- end of add search form -->
+
+					<!-- shopping cart -->
+					<li class="dropdown"><a href="shoppingcart.html"
+						class="dropdown-toggle" data-toggle="dropdown"> <span
+							class="glyphicon glyphicon-shopping-cart"></span> <b
+							class="caret"></b>
+					</a>
+
 						<ul class="dropdown-menu">
 							<li><a href="#">Bag</a></li>
 							<li><a href="#">Checkout</a></li>
-						</ul>
-					</a>
-					</li>
-					
-					<!--
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b
-							class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-							</li>
-							<li><a href="#"><i class="fa fa-fw fa-envelope"></i>
-									Inbox</a></li>
-							<li><a href="#"><i class="fa fa-fw fa-gear"></i>
-									Settings</a></li>
-							<li class="divider"></li>
-							<li><a href="#"><i class="fa fa-fw fa-power-off"></i>
-									Log Out</a></li>
 						</ul></li>
-						-->
+					<!-- end of shopping cart -->
 					
 				</ul>
 			</div>
@@ -174,9 +154,7 @@
 			<h2>Latest Courses and Programs</h2>
 		</div>
 
-
 		<div class="row">
-
 			<div class="col-sm-4">
 				<a href="#" class="thumbnail home-thumb"> <img
 					src="image/couples-counselling.jpg"
@@ -188,6 +166,7 @@
 					remember that there are options.</p>
 				<a href="viewProgramsNcourses.html" class="btn btn-success">View</a>
 			</div>
+			<!-- col-sm-4 -->
 
 			<div class="col-sm-4">
 
@@ -199,6 +178,7 @@
 					with the stresses and strains of family..</p>
 				<a href="viewProgramsNcourses.html" class="btn btn-success">View</a>
 			</div>
+			<!-- col-sm-4 -->
 
 			<div class="col-sm-4">
 				<a href="#" class="thumbnail home-thumb"> <img
@@ -210,13 +190,14 @@
 					and hope.</p>
 				<a href="viewProgramsNcourses.html" class="btn btn-success">View</a>
 			</div>
-
+			<!-- col-sm-4 -->
 		</div>
+		<!-- row -->
 
 		<br>
+
 		<div class="row">
 			<div class="col-sm-4">
-
 				<a href="#" class="thumbnail home-thumb"> <img
 					src="image/Family-image.jpg" style="width: 280px; height: 228px;" />
 				</a>
@@ -225,20 +206,21 @@
 					affirmation as</p>
 				<a href="viewProgramsNcourses.html" class="btn btn-success">View</a>
 			</div>
-			<div class="col-sm-4">
+			<!-- col-sm-4 -->
 
+			<div class="col-sm-4">
 				<a href="#" class="thumbnail home-thumb"> <img
 					src="image/transition-image.jpg"
 					style="width: 280px; height: 228px;" />
-
 				</a>
 				<h3>Transition Change Counselling</h3>
 				<p>Transitions are life's way of asking us to reexamine our
 					present way of</p>
 				<a href="viewProgramsNcourses.html" class="btn btn-success">View</a>
 			</div>
+			<!-- col-sm-4 -->
+
 			<div class="col-sm-4">
-				<!-- <a href="#" class="thumbnail" title="Grief Counselling"></a> -->
 				<a href="#" class="thumbnail home-thumb"> <img
 					src="image/grief-counselling.jpg"
 					style="width: 280px; height: 228px;" />
@@ -247,18 +229,14 @@
 				<p>One of life's most challenging events is mourning the loss of
 					someone or something we care deeply for.</p>
 				<a href="viewProgramsNcourses.html" class="btn btn-success">View</a>
-
 			</div>
+			<!-- col-sm-4 -->
 		</div>
 		<!-- row -->
 	</div>
-
 	<!-- end of lastest courses -->
 
-
 	<!-- Start of <Fixed footer> -->
-	<!-- end of body container -->
-
 	<div class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="container">
 			<div class="navbar-text pull-left">
@@ -275,18 +253,19 @@
 		</div>
 	</div>
 	<!-- End of <Fixed footer> -->
+
 	<!-- start of login popup modal -->
 	<!-- 	Place bootstrap core javascript below so pages load faster -->
 	<div class="modal fade" id="login">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<form class="form-horizontal" role="form">
+
 					<div class="modal-header">
 						<img src="image/impossiblelogo.png" alt="image logo"
 							align="middle" style="width: 204px; height: 48px;">
-
-
 					</div>
+
 					<div class="modal-body">
 						<div class="form-group">
 							<label for="login-email" class="col-sm-2 control-label">Email:</label>
@@ -304,6 +283,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="modal-footer">
 						<a class="btn btn-danger" data-dismiss="modal">Close</a>
 						<button type="submit" class="btn btn-warning">
@@ -311,34 +291,31 @@
 						</button>
 					</div>
 				</form>
-
-
 			</div>
 		</div>
 	</div>
-
-	<!-- end of /the popout -->
+	<!-- end of the popout modal -->
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
-
-	<!-- start of /the rotating banner javascript -->
+	<!-- start of the rotating banner javascript -->
 	<script>
 		$('.carousel').carousel({
 			interval : 3000
 		})
 	</script>
-	<!-- end of /the rotating banner javascript -->
+	<!-- end of the rotating banner javascript -->
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
-
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/bootstrap.js"></script>
+
 </body>
 </html>
