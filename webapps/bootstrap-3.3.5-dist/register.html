@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>I'MPOSSIBLE - Courses & Program</title>
+<title>I'MPOSSIBLE - Register</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,6 @@
 <link rel="stylesheet" type="text/css" href="css/home.css" />
 
 
-
 <style>
 .filter-col {
 	padding-left: 10px;
@@ -54,7 +53,17 @@
 	margin-bottom: 100px;
 }
 </style>
-
+<!-- for validation of the form -->
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled up");
+        return false;
+    }
+}
+</script>
+<!-- end of validation for form -->
 </head>
 
 <body>
@@ -86,6 +95,8 @@
 					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
 
 					<!-- add search form -->
+					
+
 					<form class="navbar-form navbar-right" role="search">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Search ">
@@ -98,43 +109,39 @@
 					</form>
 				</ul>
 			</div>
-
 		</div>
 	</div>
 
-
-
 	<form class="form-horizontal" method="post">
 		<div class="container">
-
 			<div class="container-fluid">
-
 				<div class="registrationpanel">
 					<div class="panel panel-primary">
 						<div class="panel-heading">
 							<h3 class="panel-title">Program Registered</h3>
 						</div>
-
-						<div class="panel-body">Program Name: Bridging Generation</div>
-
+							<div class="panel-body">Program Name: Bridging Generation</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</form>
+<!--	
+<form name="myForm" action="demo_form.asp"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
 
-
-	<form class="form-horizontal" method="post">
+-->
+	<form name="myForm" class="form-horizontal" onsubmit="return validateForm()" method="post">
 		<div class="container">
-
 			<div class="container-fluid">
-
 				<div class="registrationpanel">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Registration Page</h3>
 						</div>
-
 
 						<fieldset style="padding-left: 10px">
 							<h3>Personal Details Of Parent</h3>
@@ -158,8 +165,7 @@
 								<div class="form-group form-group-md">
 									<label class="col-xs-2" for="category">Full Name:</label>
 									<div class="col-xs-2">
-										<input type="text" class="form-control" id="course_price"
-											placeholder="Surname">
+										<input type="text" class="form-control" placeholder="Surname" name="fname">
 									</div>
 									<div class="col-xs-3">
 										<input type="text" class="form-control" id="course_price"
@@ -400,14 +406,17 @@
 								</div>
 							</div>
 						</fieldset>
-	</form>
-	</div>
-	<div class="form-group">
+						
+							<div class="form-group">
 		<div class="col-md-12" style='text-align: right'>
-			<a class="btn btn-primary" href="registerpassword.html">Next</a> <a
-				class="btn btn-danger" href="viewProgramsNcourses.html">Cancel</a>
+			<input class="btn btn-primary" value="Next" type="submit" href="registerpassword.html">
+
+			<a class="btn btn-danger" href="viewProgramsNcourses.html">Cancel</a>
 		</div>
 	</div>
+	</form>
+	</div>
+
 	</div>
 	</div>
 	</div>
