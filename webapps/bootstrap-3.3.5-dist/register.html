@@ -58,7 +58,7 @@
 function validateForm() {
     var x = document.forms["myForm"]["fname"].value;
     if (x == null || x == "") {
-        alert("Name must be filled up");
+        alert("Name must be filled out");
         return false;
     }
 }
@@ -406,17 +406,16 @@ Name: <input type="text" name="fname">
 								</div>
 							</div>
 						</fieldset>
-						
-							<div class="form-group">
-		<div class="col-md-12" style='text-align: right'>
-			<input class="btn btn-primary" value="Next" type="submit" href="registerpassword.html">
+								<input type="submit" value="Hello">
 
-			<a class="btn btn-danger" href="viewProgramsNcourses.html">Cancel</a>
-		</div>
-	</div>
 	</form>
 	</div>
-
+	<div class="form-group">
+		<div class="col-md-12" style='text-align: right'>
+			<a class="btn btn-primary" href="registerpassword.html">Next</a> <a
+				class="btn btn-danger" href="viewProgramsNcourses.html">Cancel</a>
+		</div>
+	</div>
 	</div>
 	</div>
 	</div>
