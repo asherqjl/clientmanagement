@@ -13,6 +13,8 @@
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <link href="css/home.css" rel="stylesheet">
+<!-- tablesorter theme file-->
+<link rel="stylesheet" href="css/theme.default.css">
 </head>
 
 <script src="ckeditor/ckeditor.js"></script>
@@ -114,46 +116,6 @@
 										<li class="active"><a href="programAdmin.html">Manage
 								Programs</a></li>
 					</ul>
-					<h2>Search</h2>
-					<div class="well">
-						<div class="row">
-							<div class="col-sm-4">
-								<div class="form-group">
-									<label class="control-label" for="input-name">Program
-										Name</label> <input type="text" name="filter_name" value=""
-										placeholder="Program Name" id="input-name"
-										class="form-control" />
-								</div>
-
-							</div>
-
-							<div class="col-sm-4">
-								<div class="form-group">
-									<label class="control-label" for="input-status">Status</label>
-									<select name="filter_status" id="input-status"
-										class="form-control">
-										<option value="2">Draft</option>
-										<option value="1">Available</option>
-										<option value="0">Coming Soon</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="form-group">
-									<label class="control-label" for="venue">Venue</label> <select
-										name="filter_venue" id="venue" class="form-control">
-										<option value="2">Coaching</option>
-										<option value="1">Workshop</option>
-									</select>
-
-								</div>
-								<button type="button" id="button-filter"
-									class="btn btn-primary pull-right">
-									<i class="fa fa-search"></i> Filter
-								</button>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -193,14 +155,15 @@ false;">
 					<form action="#" method="post" enctype="multipart/form-data"
 						id="form-category">
 						<div class="table-responsive">
-							<table class="table table-bordered table-hover">
+											<table id="myTable" class="table table-bordered table-hover tablesorter" >
 
 								<thead>
 									<tr>
-										<td style="width: 1px;" class="text-center"><input
+							<td style="width: 1px;" class="text-center" data-sorter="false"><input
 											type="checkbox"
 											onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
-										<td class="text-left"><a href="#" class="asc">Image</a>
+
+										<td class="text-left" data-sorter="false"><a href="#" class="Image">Image</a>
 										<td class="text-left"><a href="#" class="asc">Program
 												Name</a>
 										<td class="text-left"><a href="#" class="asc">Cost</a>
@@ -453,6 +416,25 @@ false;">
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<!-- load jQuery and tablesorter scripts -->
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
 
+<!-- tablesorter widgets (optional) -->
+<script type="text/javascript" src="js/jquery.tablesorter.widgets.js"></script>
+	<script> 
+	
+<!-- 	Start by telling tablesorter to sort your table when the document is loaded: -->
+	$(function(){
+  $("#myTable").tablesorter();
+});
+
+<!-- pass in configuration options when you initialize the table. This tells tablesorter to sort on the first and second column in ascending order.  -->
+$(function(){
+  $("#myTable").tablesorter({ sortList: [ [1,0], [2,0],] });
+});
+  
+
+	</script>
 </body>
 </html>

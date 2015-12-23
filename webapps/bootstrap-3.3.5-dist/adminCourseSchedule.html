@@ -18,6 +18,9 @@
 	rel="stylesheet"></link>
 <link href="css/home.css" rel="stylesheet">
 
+<!-- tablesorter theme file-->
+<link rel="stylesheet" href="css/theme.default.css">
+
 </head>
 <body>
 	<!-- style="height:2500px" -->
@@ -192,17 +195,16 @@ false;">
 						</div>
 					</div>
 
-					<form action="#" method="post" enctype="multipart/form-data"
-						id="form-product">
+					<form action="#" method="post" enctype="multipart/form-data" id="form-product">
 						<div class="table-responsive">
-							<table class="table table-bordered table-hover">
+							<table id="myTable" class="table table-bordered table-hover tablesorter" >
 								<thead>
 									<tr>
-										<td style="width: 1px;" class="text-center"><input
+										<td style="width: 1px;" class="text-center" data-sorter="false"><input
 											type="checkbox"
 											onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
 
-										<td class="text-left"><a href="#" class="asc">Course
+										<td class="text-left" ><a href="#" class="asc">Course
 												Title</a></td>
 
 										<td class="text-left"><a href="#">Start date</a></td>
@@ -386,5 +388,28 @@ false;">
 			});
 		});
 	</script>
+
+	<!-- load jQuery and tablesorter scripts -->
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+
+<!-- tablesorter widgets (optional) -->
+<script type="text/javascript" src="js/jquery.tablesorter.widgets.js"></script>
+	<script> 
+	
+<!-- 	Start by telling tablesorter to sort your table when the document is loaded: -->
+	$(function(){
+  $("#myTable").tablesorter();
+});
+
+<!-- pass in configuration options when you initialize the table. This tells tablesorter to sort on the first and second column in ascending order.  -->
+$(function(){
+  $("#myTable").tablesorter({ sortList: [ [1,0], [2,0],] });
+});
+
+
+	</script>
+	
+	
 </body>
 </html>

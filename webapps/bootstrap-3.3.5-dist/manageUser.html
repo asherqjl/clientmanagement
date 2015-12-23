@@ -25,7 +25,8 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
 <script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
 <link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css" rel="stylesheet"></link>
 <link href="css/home.css" rel="stylesheet">
-
+<!-- tablesorter theme file-->
+<link rel="stylesheet" href="css/theme.default.css">
 </head>
 <body>
 <!-- style="height:2500px" -->
@@ -145,42 +146,6 @@ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.cs
 
 
 
-		<h2>Search</h2>
-		  <div class="well">
-	  <div class="row">
-		<div class="col-sm-4">
-		  <div class="form-group">
-			<label class="control-label" for="input-name">Name</label>
-			<input type="text" name="filter_name" value="" placeholder="Course Name" id="input-name" class="form-control" />
-		  </div>
-		  <div class="form-group">
-			<label class="control-label" for="email">Email</label>
-<input type="email" name="filter_email" value="" placeholder="Email" id=input-email" class="form-control" />
-	 
-		  </div>
-		</div>
-		<div class="col-sm-4">
-		  <div class="form-group">
-			<label class="control-label" for="input-sDate">Enrollment Date</label>
-			<input type="text" name="filter_sDate" value="" placeholder="Start Date" id=input-sDate" class="form-control" />
-		  </div>
-		
-		
-	   
-		</div>
-		<div class="col-sm-4">
-		    <div class="form-group">
-			<label class="control-label" for="input-status">Status</label>
-			<select name="filter_status" id="input-status" class="form-control">
-
-								<option value="1">Active</option>
-								<option value="0">Inactive</option>
-							  </select>
-		  </div>
-		  <button type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fa fa-search"></i> Filter</button>
-		</div>
-	  </div>
-	</div>
 		
 	</div>
 	</div>	
@@ -226,12 +191,13 @@ false;">
 <form action="#" method="post" enctype="multipart/form-data"
 							id="form-product">
 							<div class="table-responsive">
-								<table class="table table-bordered table-hover">
+											<table id="myTable" class="table table-bordered table-hover tablesorter" >
 									<thead>
 										<tr>
-											<td style="width: 1px;" class="text-center"><input
-												type="checkbox"
-												onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
+									<td style="width: 1px;" class="text-center" data-sorter="false"><input
+											type="checkbox"
+											onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
+
 
 											<td class="text-left"><a href="#" class="asc">Client Name</a></td>
 										
@@ -373,7 +339,26 @@ false;">
 
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/bootstrap.js"></script>
+	<!-- load jQuery and tablesorter scripts -->
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
 
+<!-- tablesorter widgets (optional) -->
+<script type="text/javascript" src="js/jquery.tablesorter.widgets.js"></script>
+	<script> 
+	
+<!-- 	Start by telling tablesorter to sort your table when the document is loaded: -->
+	$(function(){
+  $("#myTable").tablesorter();
+});
+
+<!-- pass in configuration options when you initialize the table. This tells tablesorter to sort on the first and second column in ascending order.  -->
+$(function(){
+  $("#myTable").tablesorter({ sortList: [ [1,0], [2,0],] });
+});
+
+
+	</script>
 </body>
 </html>
 
