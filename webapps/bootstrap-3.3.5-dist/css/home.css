@@ -31,7 +31,7 @@ padding-bottom: 100px;
 
 .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
-    }.navbar-nav{
+    }ul.navbar-nav{
 padding-right:15px;
 
 }
@@ -62,30 +62,30 @@ background-color:transparent;
 }
 
 
-.navbar-default .navbar-nav > li > a{                   /*   //setting navigation link font color white */
+.navbar-default ul.navbar-nav > li > a{                   /*   //setting navigation link font color white */
 color:#FFFFFF
 
 }
 
-navbar-default .navbar-nav  > .active > a,                              /*   //setting navigation link font color white */
-navbar-default .navbar-nav > .active > a.hover,
- navbar-default .navbar-nav  >.active > a:focus{
+.navbar-default ul.navbar-nav  > .active > a,                              /*   //setting navigation link font color white */
+.navbar-default ul.navbar-nav > .active > a.hover,
+.navbar-default ul.navbar-nav  >.active > a:focus{
  
  color:#FFFFFF;
  background-color:#1A242F;
  
  }
  
-.navbar-default .navbar-nav > li > a:hover,      /* navigation link hover color : turquoise */
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default ul.navbar-nav > li > a:hover,      /* navigation link hover color : turquoise */
+.navbar-default ul.navbar-nav > li > a:focus {
 color:#18BC9C;
 background-color:transparent;
 }
 
 
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus{
+.navbar-default ul.navbar-nav > .open > a,
+.navbar-default ul.navbar-nav > .open > a:hover,
+.navbar-default ul.navbar-nav > .open > a:focus{
  background-color:#1A242F;
   
  color:#FFFFFF;
