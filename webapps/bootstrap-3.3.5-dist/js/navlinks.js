@@ -1,3 +1,4 @@
+<link href="css/home.css" rel="stylesheet">
 <script>
 document.getElementById("nav01").innerHTML =
 
