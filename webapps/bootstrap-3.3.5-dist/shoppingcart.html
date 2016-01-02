@@ -67,7 +67,7 @@
 					<!-- shopping cart -->
 					<li class="dropdown"><a href="shoppingcart.html"
 						class="dropdown-toggle" data-toggle="dropdown"> <span
-							class="glyphicon glyphicon-shopping-cart"></span> <b
+							class="glyphicon glyphicon-shopping-cart"></span> <span class="badge">2</span><b
 							class="caret"></b>
 					</a>
 
@@ -85,15 +85,25 @@
 	<br>
 	<br>
 
+
+                                		                                		
 	<div class="container">
 		<div class="page-header">
-			<h1>MY BAG</h1>
+			<h1>My Bag</h1>
 		</div>
+		
 
+		
 		<div class="row">
 			<div class="col-md-3">
 				<img src="image/cat-food-hearts-icon.png">
 			</div>
+			
+			<!--<div class="col-md-8">
+					<p> Remove </p>
+			</div>
+			-->
+			
 			<div class="col-md-5">
 				<p>
 					<b>Program Name: </b>Bridging Generation
@@ -115,7 +125,33 @@
 		<div class="col-md-12" style='text-align: right'>
 			<a class="btn btn-primary" href="login.html">Proceed to checkout</a>
 			<!-- <a class="btn btn-danger" href="viewProgramsNcourses.html">Back</a> -->
-		</div>
+
+		
+		
+		    <!-- Button -->
+    <a href="#myModal" class="btn btn-primary" data-toggle="modal">PC</a>
+   		</div> 
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Check out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
 	</div>
 
 	<!-- Start of <Fixed footer> -->
