@@ -15,7 +15,7 @@ document.getElementById("navMenu").innerHTML =
 	'<!-- for the responsive icon bar when page shrink -->'+
 	'</button>'+
 
-	'<a class="navbar-brand" href="index.html"> <img id="brand-image" alt="Website logo" src="image/brandimage.PNG" /> I*MPOSSIBLE'+
+	'<a class="navbar-brand" href="index.html"> <img id="brand-image" alt="Website logo" src="image/brandimage.PNG" />'+
 	'</a>'+
 	'</div>'+
 	'	<div class="navbar-collapse collapse">'+
@@ -27,7 +27,7 @@ document.getElementById("navMenu").innerHTML =
 	'<li><a href="#login" data-toggle="modal">Log In</a></li>'+
 	'<li><form class="navbar-form navbar-right" role="search">'+
 	'<div class="input-group">'+
-	'	<input type="text" class="form-control" placeholder="Search ">'+
+	'	<input type="text" class="form-control" placeholder="Search" id="searchText">'+
 	'<span class="input-group-btn">'+
 	'<button type="submit" class="btn btn-default">'+
 	'<span class="glyphicon glyphicon-search"></span>'+
