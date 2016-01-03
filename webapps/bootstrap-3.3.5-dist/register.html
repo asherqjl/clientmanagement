@@ -67,50 +67,9 @@ function validateForm() {
 </head>
 
 <body>
-	<div class="navbar navbar-default navbar-fixed-top">
-
-		<div class="container">
-
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html"> <img id="brand-image"
-					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
-				</a>
-
-			</div>
-
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="viewProgramsNcourses.html">Courses & Programs</a></li>
-					<li><a href="ContactUs.html">Contact Us</a></li>
-
-					<li><a href="#login" data-toggle="modal">Log In</a></li>
-					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
-
-					<!-- add search form -->
-					
-
-					<form class="navbar-form navbar-right" role="search">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search ">
-							<span class="input-group-btn">
-								<button type="submit" class="btn btn-default">
-									<span class="glyphicon glyphicon-search"></span>
-								</button>
-							</span>
-						</div>
-					</form>
-				</ul>
-			</div>
-		</div>
-	</div>
+<!-- start of navigation bar  -->
+	<nav id = "navMenu"> </nav>
+	<!-- End of navigation bar  -->
 
 	<form class="form-horizontal" method="post">
 		<div class="container">
@@ -488,25 +447,13 @@ Name: <input type="text" name="fname">
 		});
 	</script>
 
-
-	<!-- <footer> -->
-	<div class="navbar navbar-inverse navbar-fixed-bottom"
-		role="navigation">
-		<div class="container">
-			<div class="navbar-text pull-left">
-				<p>&#169;COPYRIGHT 2015 I'MPOSSIBLE</p>
-			</div>
-
-			<div class="navbar-text pull-right">
-				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
-					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
-					class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
-					class="fa fa-linkedin-square fa-2x"></i></a>
-			</div>
-
-		</div>
-	</div>
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
 	
+	
+		<script src="js/navlinks.js"></script>
+	<script src="js/footer.js"></script>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
