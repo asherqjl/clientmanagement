@@ -23,8 +23,6 @@ padding-bottom: 100px;
 	padding-top: 30px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 	}
 	
-
-
     body {
         padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
@@ -82,7 +80,6 @@ color:#18BC9C;
 background-color:transparent;
 }
 
-
 .navbar-default ul.navbar-nav > .open > a,
 .navbar-default ul.navbar-nav > .open > a:hover,
 .navbar-default ul.navbar-nav > .open > a:focus{
@@ -109,7 +106,6 @@ background-color:transparent;
   color:#FFFFFF;
 }
 
-
 .btn-success {
 
  background-color:#18BC9C;        /*  //change blue to nave blue */
@@ -126,9 +122,6 @@ background-color:transparent;
   border-color:#13987E;
   color:#FFFFFF;
 }
-
-
-
 
 
 .btn-default {
@@ -167,7 +160,6 @@ max-height:100%;
 	font-size: 20px;
 }
 
-
 .title{
 	text-align: center;
 	font-size: 20px;
@@ -198,8 +190,6 @@ height: 400px; /* This is your slider height */
 width:100%; 
 margin:0 auto; /* center your carousel if other than 100% */ 
 }
-
-
 
 
 .row{
