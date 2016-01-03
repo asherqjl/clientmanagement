@@ -15,7 +15,9 @@ document.getElementById("navMenu").innerHTML =
 	'<!-- for the responsive icon bar when page shrink -->'+
 	'</button>'+
 
+<<<<<<< HEAD
 	'<a class="navbar-brand" href="index.html"> <img id="brand-image" alt="Website logo" src="image/brandimage.PNG" />'+
+
 	'</a>'+
 	'</div>'+
 	'	<div class="navbar-collapse collapse">'+

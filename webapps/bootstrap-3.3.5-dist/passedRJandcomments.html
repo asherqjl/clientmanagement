@@ -23,8 +23,6 @@
       <scricpt src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-	
 <!-- <style>	
 .backgroundcolor{
 background-color: #7C1F8F;
@@ -32,338 +30,230 @@ background-color: #7C1F8F;
 </style> -->
 <script src="ckeditor/ckeditor.js"></script>
 </head>
+
 <body>
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container">
+	<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
+	<!-- End of navigation bar  -->
 
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html"> <img id="brand-image"
-					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
-				</a>
-			</div>
+	<!-- start of body container -->
+	<!-- start of body rotating banner -->
 
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown"> Home <b class=caret></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="user.html">User's Home</a></li>
-							<li class="active">
-							<li><a href="index.html">I'M Counselling</a></li>
-						</ul></li>
+	<div id="carousel-example-generic" class="carousel slide"
+		data-ride="carousel" data-interval="3000">
 
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown"> Courses & Programs <b class=caret></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="myCourseNPrograms.html">My Courses &
-									Programs</a></li>
-							<li class="active">
-							<li><a href="viewProgramsNcourses.html">All Courses &
-									Programs</a></li>
-						</ul></li>
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0"
+				class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
 
-					<li><a href="ContactUs.html">Contact Us</a></li>
-
-					<!-- add search form -->
-				<li><form class="navbar-form navbar-right" role="search">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Search ">
-						<span class="input-group-btn">
-							<button type="submit" class="btn btn-default">
-								<span class="glyphicon glyphicon-search"></span>
-							</button>
-						</span>
-					</div>
-				</form></li>
-				
-				        <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                        </li>
-                    </ul>
-                </li>
-				</ul>
-			</div>
-		</div>
-	</div>
-<!-- End of navigation bar  -->
-
-<!-- start of body container -->
-<!-- start of body rotating banner -->
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
-
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				</ol>
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner">
-					<div class="item active">
-								
-		<div class="container">
-		
-		<div class="container-fluid">
-
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title"> Passed Journals & Comments</h3>
-				</div>
-				<div class="panel-body">
-				
-				<div class="row">
-					<a href="passedRJandcomments.html"> Day 01 : 5 November 2015</a>
-				</div>
-
-				<br>
-
-				<div class="row">
-					<label>Reflection Journal:</label>
-					<textarea name="editor1" id="editor1" rows="10" cols="80">
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Passed Journals & Comments</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<a href="passedRJandcomments.html"> Day 01 : 5 November
+										2015</a>
+								</div>
+								<br>
+								<div class="row">
+									<label>Reflection Journal:</label>
+									<textarea name="editor1" id="editor1" rows="10" cols="80">
 						Passed RJ is being shown here.           	
 						</textarea>
-					<script>
-	                // Replace the <textarea id="editor1"> with a CKEditor
-	                // instance, using default configuration.
-	                CKEDITOR.replace( 'editor1' );
-	            	</script>
-				</div>
-				
-				<br />
-				<div class="row">
-					<label>Counsellor's Comment:</label> <br />
-					<h5>Line 1</h5>
-					<h5>Line 2</h5>
-					<h5>Line 3</h5>
-					<i>Commented on 5:00PM, 10 November 2015 by Judith</i>
-				</div>
-				<ul class="pager">
-					<li class="previous"><a href="#">&larr; Previous</a></li>
-					<li class="next"><a href="#">Next &rarr;</a></li>
-				</ul>
-			</div>
-		</div>
-</div>
-</div>
-					</div>
-					<div class="item">
-								
-		<div class="container">
-		
-		<div class="container-fluid">
-
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title"> Passed Journals & Comments</h3>
-				</div>
-				<div class="panel-body">
-				
-				<div class="row">
-					<a href="passedRJandcomments.html"> Day 02 : 10 November 2015</a>
-				</div>
-
-				<br>
-
-				<div class="row">
-					<label>Reflection Journal:</label>
-					<textarea name="editor1" id="editor1" rows="10" cols="80">
-						Passed RJ is being shown here.           	
-						</textarea>
-					<script>
-	                // Replace the <textarea id="editor1"> with a CKEditor
-	                // instance, using default configuration.
-	                CKEDITOR.replace( 'editor1' );
-	            	</script>
-				</div>
-				
-				<br />
-				<div class="row">
-					<label>Counsellor's Comment:</label> <br />
-					<h5>Line 1</h5>
-					<h5>Line 2</h5>
-					<h5>Line 3</h5>
-					<i>Commented on 5:00PM, 10 November 2015 by Judith</i>
-				</div>
-				<ul class="pager">
-					<li class="previous"><a href="#">&larr; Previous</a></li>
-					<li class="next"><a href="#">Next &rarr;</a></li>
-				</ul>
-			</div>
-		</div>
-</div>
-</div>
-					</div>
-					<div class="item">
-									
-		<div class="container">
-		
-		<div class="container-fluid">
-
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title"> Passed Journals & Comments</h3>
-				</div>
-				<div class="panel-body">
-				
-				<div class="row">
-					<a href="passedRJandcomments.html"> Day 03 : 15 November 2015</a>
-				</div>
-
-				<br>
-
-				<div class="row">
-					<label>Reflection Journal:</label>
-					<textarea name="editor1" id="editor1" rows="10" cols="80">
-						Passed RJ is being shown here.           	
-						</textarea>
-					<script>
-	                // Replace the <textarea id="editor1"> with a CKEditor
-	                // instance, using default configuration.
-	                CKEDITOR.replace( 'editor1' );
-	            	</script>
-				</div>
-				
-				<br />
-				<div class="row">
-					<label>Counsellor's Comment:</label> <br />
-					<h5>Line 1</h5>
-					<h5>Line 2</h5>
-					<h5>Line 3</h5>
-					<i>Commented on 5:00PM, 10 November 2015 by Judith</i>
-				</div>
-				<ul class="pager">
-					<li class="previous"><a href="#">&larr; Previous</a></li>
-					<li class="next"><a href="#">Next &rarr;</a></li>
-				</ul>
-			</div>
-		</div>
-</div>
-</div>
-					</div>
-
-					<div class="item">
-									
-		<div class="container">
-		
-		<div class="container-fluid">
-
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title"> Passed Journals & Comments</h3>
-				</div>
-				<div class="panel-body">
-				
-				<div class="row">
-					<a href="passedRJandcomments.html"> Day 04 : 25 November 2015</a>
-				</div>
-
-				<br>
-
-				<div class="row">
-					<label>Reflection Journal:</label>
-					<textarea name="editor1" id="editor1" rows="10" cols="80">
-						Passed RJ is being shown here.           	
-						</textarea>
-					<script>
-	                // Replace the <textarea id="editor1"> with a CKEditor
-	                // instance, using default configuration.
-	                CKEDITOR.replace( 'editor1' );
-	            	</script>
-				</div>
-				
-				<br />
-				<div class="row">
-					<label>Counsellor's Comment:</label> <br />
-					<h5>Line 1</h5>
-					<h5>Line 2</h5>
-					<h5>Line 3</h5>
-					<i>Commented on 5:00PM, 10 November 2015 by Judith</i>
-				</div>
-				<ul class="pager">
-					<li class="previous"><a href="#">&larr; Previous</a></li>
-					<li class="next"><a href="#">Next &rarr;</a></li>
-				</ul>
-			</div>
-		</div>
-</div>
-</div>
+									<script>
+										// Replace the <textarea id="editor1"> with a CKEditor
+										// instance, using default configuration.
+										CKEDITOR.replace('editor1');
+									</script>
+								</div>
+								<br />
+								<div class="row">
+									<label>Counsellor's Comment:</label> <br />
+									<h5>Line 1</h5>
+									<h5>Line 2</h5>
+									<h5>Line 3</h5>
+									<i>Commented on 5:00PM, 10 November 2015 by Judith</i>
+								</div>
+								<ul class="pager">
+									<li class="previous"><a href="#">&larr; Previous</a></li>
+									<li class="next"><a href="#">Next &rarr;</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic"
-					role="button" data-slide="prev"> <span
-					class="glyphicon glyphicon-chevron-left"></span>
-				</a> <a class="right carousel-control" href="#carousel-example-generic"
-					role="button" data-slide="next"> <span
-					class="glyphicon glyphicon-chevron-right"></span>
-				</a>
-	
-			<!-- Carousel -->
-<!-- end of body rotating banner -->
-<!-- 
-			<h1>I'MPOSSIBLE</h1>
-			<p>I'MPOSSIBLE IS #1 Counselling agency</p> -->
-			<!-- <a href="register.html" class="btn btn-primary">Register with us!</a>
-			<a href="viewProgramsNCourses.html" class="btn btn-success">View Courses</a> -->
-	
-	</div>
-
-<br><br>
+			</div>
 			
+			<div class="item">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Passed Journals & Comments</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<a href="passedRJandcomments.html"> Day 02 : 10 November
+										2015</a>
+								</div>
+								<br>
+								<div class="row">
+									<label>Reflection Journal:</label>
+									<textarea name="editor1" id="editor1" rows="10" cols="80">
+						Passed RJ is being shown here.           	
+						</textarea>
+									<script>
+										// Replace the <textarea id="editor1"> with a CKEditor
+										// instance, using default configuration.
+										CKEDITOR.replace('editor1');
+									</script>
+								</div>
+								<br />
+								<div class="row">
+									<label>Counsellor's Comment:</label> <br />
+									<h5>Line 1</h5>
+									<h5>Line 2</h5>
+									<h5>Line 3</h5>
+									<i>Commented on 5:00PM, 10 November 2015 by Judith</i>
+								</div>
+								<ul class="pager">
+									<li class="previous"><a href="#">&larr; Previous</a></li>
+									<li class="next"><a href="#">Next &rarr;</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Passed Journals & Comments</h3>
+							</div>
+							<div class="panel-body">
 
+								<div class="row">
+									<a href="passedRJandcomments.html"> Day 03 : 15 November
+										2015</a>
+								</div>
+								<br>
+								<div class="row">
+									<label>Reflection Journal:</label>
+									<textarea name="editor1" id="editor1" rows="10" cols="80">
+						Passed RJ is being shown here.           	
+						</textarea>
+									<script>
+										// Replace the <textarea id="editor1"> with a CKEditor
+										// instance, using default configuration.
+										CKEDITOR.replace('editor1');
+									</script>
+								</div>
+								<br />
+								<div class="row">
+									<label>Counsellor's Comment:</label> <br />
+									<h5>Line 1</h5>
+									<h5>Line 2</h5>
+									<h5>Line 3</h5>
+									<i>Commented on 5:00PM, 10 November 2015 by Judith</i>
+								</div>
+								<ul class="pager">
+									<li class="previous"><a href="#">&larr; Previous</a></li>
+									<li class="next"><a href="#">Next &rarr;</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<div class="item">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Passed Journals & Comments</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<a href="passedRJandcomments.html"> Day 04 : 25 November
+										2015</a>
+								</div>
+								<br>
 
+								<div class="row">
+									<label>Reflection Journal:</label>
+									<textarea name="editor1" id="editor1" rows="10" cols="80">
+						Passed RJ is being shown here.           	
+						</textarea>
+									<script>
+										// Replace the <textarea id="editor1"> with a CKEditor
+										// instance, using default configuration.
+										CKEDITOR.replace('editor1');
+									</script>
+								</div>
+
+								<br />
+								<div class="row">
+									<label>Counsellor's Comment:</label> <br />
+									<h5>Line 1</h5>
+									<h5>Line 2</h5>
+									<h5>Line 3</h5>
+									<i>Commented on 5:00PM, 10 November 2015 by Judith</i>
+								</div>
+								<ul class="pager">
+									<li class="previous"><a href="#">&larr; Previous</a></li>
+									<li class="next"><a href="#">Next &rarr;</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic"
+			role="button" data-slide="prev"> <span
+			class="glyphicon glyphicon-chevron-left"></span>
+		</a> <a class="right carousel-control" href="#carousel-example-generic"
+			role="button" data-slide="next"> <span
+			class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+
+	</div>
+
+	<br>
+	<br>
 
 	<!-- Start of <Fixed footer> -->
-
-	
-	<div class="navbar navbar-inverse navbar-fixed-bottom">
-		<div class="container">
-			<div class="navbar-text pull-left">
-			<div style = "color:white"
-				<p>&#169;COPYRIGHT 2015 I'MPOSSIBLE</p>
-			</div>
-			</div>
-			<div class="navbar-text pull-right">
-				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
-					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
-					class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
-					class="fa fa-linkedin-square fa-2x"></i></a>
-			</div>
-		</div>
-	</div>
+	<footer id="footerMenu"></footer>
 	<!-- End of <Fixed footer> -->
-<!-- start of login popup modal -->
+
+	<script src="js/footer.js"></script>
+	<script src="js/navlink-user.js"></script>
+
+	<!-- start of login popup modal -->
 	<!-- 	Place bootstrap core javascript below so pages load faster -->
 	<div class="modal fade" id="login">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<form class="form-horizontal" role="form">
 					<div class="modal-header">
-						<img src="image/impossiblelogo.png" alt="image logo" align="middle"
-							style="width: 204px; height: 48px;">
+						<img src="image/impossiblelogo.png" alt="image logo"
+							align="middle" style="width: 204px; height: 48px;">
 
 
 					</div>
@@ -375,7 +265,6 @@ background-color: #7C1F8F;
 									placeholder="tomcat@domain.com">
 							</div>
 						</div>
-
 						<div class="form-group">
 							<label for="login-pwd" class="col-sm-2 control-label">Password*</label>
 							<div class="col-sm-5">
@@ -390,25 +279,23 @@ background-color: #7C1F8F;
 					</div>
 				</form>
 
-
 			</div>
 		</div>
 	</div>
-
 	<!-- end of /the popout signin shit -->
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	
-	
+
+
 	<!-- start of /the rotating banner javascript -->
 	<script>
 		$('.carousel').carousel({
 			interval : 100000000000000
 		})
 	</script>
-		<!-- end of /the rotating banner javascript -->
+	<!-- end of /the rotating banner javascript -->
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script

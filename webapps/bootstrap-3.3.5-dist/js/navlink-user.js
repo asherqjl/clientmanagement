@@ -61,6 +61,20 @@ document.getElementById("navMenu").innerHTML =
 '							<li><a href="#"><i class="fa fa-fw fa-power-off"></i>'+
 '									Log Out</a></li>'+
 '						</ul></li>'+
+
+
+	'<li class="dropdown"><a href="shoppingcart.html"'+
+	'						class="dropdown-toggle" data-toggle="dropdown"> <span'+
+	'							class="glyphicon glyphicon-shopping-cart"></span> <span class="badge">2</span><b'+
+	'							class="caret"></b>'+
+	'					</a>'+
+	'						<ul class="dropdown-menu">'+
+	'							<li><a href="shoppingcart.html">Bag</a></li>'+
+	'							<li><a href="#">Checkout</a></li>'+
+	'						</ul></li>'+
+	
+	
+	
 '				</ul>'+
 '			</div>'+
 '		</div>'+
