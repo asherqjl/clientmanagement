@@ -21,8 +21,8 @@ document.getElementById("navMenu").innerHTML =
 '	<div class="navbar-collapse collapse">'+
  '<ul class="nav navbar-nav navbar-right">'+
   '<li><a href="index.html">Home</a></li>'+
-  '<li><a href="viewProgramsNcourses.html">Courses and Programs</a></li>'+
   '<li><a href="about.html">About</a></li>'+
+    '<li><a href="viewProgramsNcourses.html">Courses and Programs</a></li>'+
    '<li><a href="ContactUs.html">Contact Us</a></li>'+
       '<li><a href="#login" data-toggle="modal">Log In</a></li>'+
 		   '<li><form class="navbar-form navbar-right" role="search">'+
@@ -35,4 +35,20 @@ document.getElementById("navMenu").innerHTML =
 							'</span>'+
 						'</div>'+
 					'</form></li>'+
- '</ul>';
+
+					
+
+ '<li class="dropdown"><a href="shoppingcart.html"'+
+'						class="dropdown-toggle" data-toggle="dropdown"> <span'+
+'							class="glyphicon glyphicon-shopping-cart"></span> <span class="badge">2</span><b'+
+'							class="caret"></b>'+
+'					</a>'+
+'						<ul class="dropdown-menu">'+
+'							<li><a href="shoppingcart.html">Bag</a></li>'+
+'							<li><a href="#">Checkout</a></li>'+
+'						</ul></li>'+
+ '</ul>'+
+ 
+ 			'</div>'+
+		'</div>'+
+	'</div>'	;

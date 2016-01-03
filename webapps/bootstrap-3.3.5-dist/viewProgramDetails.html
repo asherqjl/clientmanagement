@@ -59,16 +59,32 @@
 					<!--  l#login is for reference for jquery, #data-toggle to triggle function -->
 
 					<!-- add search form -->
-					<form class="navbar-form navbar-right" role="search">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search ">
-							<span class="input-group-btn">
-								<button type="submit" class="btn btn-default">
-									<span class="glyphicon glyphicon-search"></span>
-								</button>
-							</span>
-						</div>
-					</form>
+					<li id="search">
+						<form class="navbar-form navbar-right" role="search">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search ">
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-default">
+										<span class="glyphicon glyphicon-search"></span>
+									</button>
+								</span>
+							</div>
+						</form>
+					</li>
+					<!-- end of add search form -->
+
+					<!-- shopping cart -->
+					<li class="dropdown"><a href="shoppingcart.html"
+						class="dropdown-toggle" data-toggle="dropdown"> <span
+							class="glyphicon glyphicon-shopping-cart"></span> <b
+							class="caret"></b>
+					</a>
+
+						<ul class="dropdown-menu">
+							<li><a href="shoppingcart.html">Bag</a></li>
+							<li><a href="#">Checkout</a></li>
+						</ul></li>
+					<!-- end of shopping cart -->
 				</ul>
 			</div>
 
@@ -143,8 +159,7 @@
 
 						<div class="form-group">
 							<div class="col-sm-offset-10 col-sm-2">
-								<a class="btn btn-info" href="login.html"> Register Here
-									&raquo; </a>
+								<a class="btn btn-info" href="shoppingcart.html"> Add to Cart</a>
 							</div>
 						</div>
 					</div>
@@ -166,7 +181,7 @@
 							class="fa fa-linkedin-square fa-2x"></i></a>
 					</div>
 				</div>
-			</div>
+			</div>			
 
 			<!-- End of <Fixed footer> -->
 			<!-- start of login popup modal -->
@@ -216,8 +231,8 @@
 				src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			<!-- Include all compiled plugins (below), or include individual files as needed -->
 			<script src="js/bootstrap.min.js"></script>
-
 			<script src="js/jquery-1.10.2.js"></script>
 			<script src="js/bootstrap.js"></script>
+			
 </body>
 </html>
