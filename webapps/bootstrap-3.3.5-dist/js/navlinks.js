@@ -15,7 +15,7 @@ document.getElementById("navMenu").innerHTML =
 	'<!-- for the responsive icon bar when page shrink -->'+
 	'</button>'+
 
-<<<<<<< HEAD
+
 	'<a class="navbar-brand" href="index.html"> <img id="brand-image" alt="Website logo" src="image/brandimage.PNG" />'+
 
 	'</a>'+
@@ -48,6 +48,15 @@ document.getElementById("navMenu").innerHTML =
 	'						<ul class="dropdown-menu">'+
 	'							<li><a href="shoppingcart.html">Bag</a></li>'+
 	'							<li><a href="#">Checkout</a></li>'+
+		'							<li><a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>'+
+'							</li>'+
+'							<li><a href="#"><i class="fa fa-fw fa-envelope"></i>'+
+'									Inbox</a></li>'+
+'							<li><a href="#"><i class="fa fa-fw fa-gear"></i>'+
+'									Settings</a></li>'+
+'							<li class="divider"></li>'+
+'							<li><a href="#"><i class="fa fa-fw fa-power-off"></i>'+
+'									Log Out</a></li>'+
 	'						</ul></li>'+
 	'</ul>'+
 

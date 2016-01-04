@@ -10,7 +10,7 @@ document.getElementById("navMenu").innerHTML =
 '						class="icon-bar"></span>'+
 '				</button>'+
 '				<a class="navbar-brand" href="user.html"> <img id="brand-image"'+
-'					alt="Website logo" src="image/brandimage.PNG" /> I\'MPOSSIBLE'+
+'					alt="Website logo" src="image/brandimage.PNG" />'+
 '				</a>'+
 '			</div>'+
 ''+
@@ -47,20 +47,8 @@ document.getElementById("navMenu").innerHTML =
 '							</div>'+
 '						</form></li>'+
 ''+
-'					<li class="dropdown"><a href="#" class="dropdown-toggle"'+
-'						data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b'+
-'							class="caret"></b></a>'+
-'						<ul class="dropdown-menu">'+
-'							<li><a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>'+
-'							</li>'+
-'							<li><a href="#"><i class="fa fa-fw fa-envelope"></i>'+
-'									Inbox</a></li>'+
-'							<li><a href="#"><i class="fa fa-fw fa-gear"></i>'+
-'									Settings</a></li>'+
-'							<li class="divider"></li>'+
-'							<li><a href="#"><i class="fa fa-fw fa-power-off"></i>'+
-'									Log Out</a></li>'+
-'						</ul></li>'+
+'					<li><a href="#" ><i class="fa fa-user"></i> John Smith</a>'+
+'						</li>'+
 
 
 	'<li class="dropdown"><a href="shoppingcart.html"'+
@@ -71,6 +59,15 @@ document.getElementById("navMenu").innerHTML =
 	'						<ul class="dropdown-menu">'+
 	'							<li><a href="shoppingcart.html">Bag</a></li>'+
 	'							<li><a href="#">Checkout</a></li>'+
+	'							<li><a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>'+
+'							</li>'+
+'							<li><a href="#"><i class="fa fa-fw fa-envelope"></i>'+
+'									Inbox</a></li>'+
+'							<li><a href="#"><i class="fa fa-fw fa-gear"></i>'+
+'									Settings</a></li>'+
+'							<li class="divider"></li>'+
+'							<li><a href="#"><i class="fa fa-fw fa-power-off"></i>'+
+'									Log Out</a></li>'+
 	'						</ul></li>'+
 	
 	
