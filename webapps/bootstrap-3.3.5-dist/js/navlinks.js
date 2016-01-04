@@ -25,7 +25,6 @@ document.getElementById("navMenu").innerHTML =
 	'<li><a href="about.html">About</a></li>'+
 	'<li><a href="viewProgramsNcourses.html">Courses and Programs</a></li>'+
 	'<li><a href="ContactUs.html">Contact Us</a></li>'+
-	'<li><a href="#login" data-toggle="modal">Log In</a></li>'+
 	'<li><form class="navbar-form navbar-right" role="search">'+
 	'<div class="input-group">'+
 	'	<input type="text" class="form-control" placeholder="Search" id="searchText">'+
@@ -54,6 +53,9 @@ document.getElementById("navMenu").innerHTML =
 '							<li><a href="#"><i class="fa fa-fw fa-gear"></i>'+
 '									Settings</a></li>'+
 '							<li class="divider"></li>'+
+
+'<li><a href="login.html"><i class="fa fa-fw fa-sign-in"></i>'+
+'							Log In</a></li>'+
 '							<li><a href="#"><i class="fa fa-fw fa-power-off"></i>'+
 '									Log Out</a></li>'+
 	'						</ul></li>'+
