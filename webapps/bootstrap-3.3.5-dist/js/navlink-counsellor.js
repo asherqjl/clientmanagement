@@ -12,7 +12,7 @@ document.getElementById("counsellorMenu").innerHTML =
 		+ '					</button>'
 		+ '					<a class="navbar-brand" href="index.html"> <img'
 		+ '						id="brand-image" alt="Website logo" src="image/brandimage.PNG" />'
-		+ '						I\'MPOSSIBLE'
+
 		+ '					</a>'
 		+ '				</div>'
 		+ ''
