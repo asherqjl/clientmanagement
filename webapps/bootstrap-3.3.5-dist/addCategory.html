@@ -10,8 +10,7 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <link href="css/home.css" rel="stylesheet">
 <script src="ckeditor/ckeditor.js"></script>
@@ -20,7 +19,7 @@
 
 <!-- start of navigation bar  -->
 	<nav id="navMenu"></nav>
-	<!-- End of navigation bar  -->
+<!-- End of navigation bar  -->
 
 	<div class="container">
 		
@@ -48,27 +47,25 @@
 
         
                   <div class="form-group required">
-                    <label class="col-sm-2 control-label" for="input-name1">Category Name</label>
+                    <label class="col-sm-2 control-label" for="cat_name">Category Name</label>
                     <div class="col-sm-10">
-                      <input type="text" name="category_description[1][name]" value="" placeholder="Category Name" id="input-name1" class="form-control" />
+                      <input type="text" name="category_name" value="" " id="cat_name" class="form-control" required />
                                           </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-2 control-label" for="input-description1">Description</label>
+                    <label class="col-sm-2 control-label" for="cat_description">Description</label>
                     <div class="col-sm-10">
-                      <textarea name="category_description[1][description]" placeholder="Description" id="input-description1" class="form-control"></textarea>
+                      <textarea name="category_description" id="cat_description" class="form-control" ></textarea>
 					  
 	
 										<script>
 											// Replace the <textarea id="editor1"> with a CKEditor
 											// instance, using default configuration.
-											CKEDITOR.replace('category_description[1][description]');
+											CKEDITOR.replace('category_description');
 										</script>
                     </div>
                   </div>
-
-	</form>
-							<div class="form-group">
+				  			<div class="form-group">
 							<div class="form-actions">
 								<button type="submit" class="btn btn-primary">Save
 									changes</button>
@@ -78,7 +75,9 @@
 							</div>
 							
 						</div>
-		    </div>
+
+	</form>
+	</div>
     </div>
 	
 	</div>

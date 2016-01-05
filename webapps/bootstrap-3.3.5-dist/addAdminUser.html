@@ -45,8 +45,7 @@
 						</h3>
 					</div>
 					<div class="panel-body">
-						<form action="#" method="post" enctype="multipart/form-data"
-							id="form-category" class="form-horizontal">
+						<form action="#" method="post" enctype="multipart/form-data" id="form-category" class="form-horizontal"  data-toggle="validator">
 
 
 							<div class="form-group form-group-md">
@@ -56,22 +55,26 @@
 									<label class="control-label col-sm-2" for="aName">Admin
 										Name:</label>
 									<div class="col-sm-9">
-										<input class="form-control" type="text" name="cName"
-											value="Allen Tan Yao Hui" required>
+										<input class="form-control" type="text" name="aName" data-error="Please enter your name" required>
 									</div>
 								</div>
 
 								<div class="form-group">
-									<label class="control-label col-sm-2" for="cName">Admin
+									<label class="control-label col-sm-2" for="aEmail">Admin
 										Email:</label>
 									<div class="col-sm-9">
-										<input class="form-control" type="email" name="aEmail"
-											value=" 123@12345.com  " required>
+										<input class="form-control" type="email" name="aEmail" data-error="Please enter your email"  required>
 									</div>
 								</div>
 
 
-
+                                <div class="form-group">
+									<label class="control-label col-sm-2" for="aPassword">Admin
+										Password:</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="password" name="aPassword" data-error="Please enter your password" required>
+									</div>
+								</div>
 
 
 								<div class="form-group">
@@ -89,14 +92,7 @@
 
 
 							</div>
-						</form>
-					</div>
-
-
-
-					<div class="form-group">
-
-						<div class="form-actions">
+								<div class="form-actions">
 
 							<button type="submit" class="btn btn-primary">Save
 								changes</button>
@@ -104,14 +100,18 @@
 									class="btn btn-danger">Cancel</button></a>
 
 						</div>
+						</form>
 					</div>
 
+
+
+			
 
 
 
 				</div>
 			</div>
-
+					
 		</div>
 	</div>
 
