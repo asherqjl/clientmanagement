@@ -26,102 +26,11 @@
 <link rel="stylesheet" href="css/theme.default.css">
 </head>
 <body>
-	<!-- style="height:2500px" -->
-	<!-- start of navigation bar  -->
-	<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-					<span class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-					<span class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-				</button>
 
-				<a class="navbar-brand" href="index.html"> <img id="brand-image"
-					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
-				</a>
-
-
-			</div>
-
-
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown"><a href="index.html"
-						class="dropdown-toggle" data-toggle="dropdown">Home<b
-							class=caret></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="index.html">Public homepage</a></li>
-							<li class="active">
-							<li><a href="viewProgramsNcourses.html"> User Homepage</a></li></li>
-					<li><a href="adminIndex.html">Admin homepage</a></li>
-				</ul>
-				</li>
-
-				<li class="dropdown"><a href="adminIndex.html"
-					class="dropdown-toggle" data-toggle="dropdown">Manage<b
-						class=caret></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="manageIndex.html"> Manage Public Home Page</a></li>
-						<li><a href="manageAbout.html">Manage About</a></li>
-						<li><a href="manageContactUs.html">Manage ContactUs</a></li>
-						<li><a href="manageCategory.html"> Manage Category</a></li>
-						<li class="active">
-						<li><a href="courseAdmin.html"> Manage Course</a></li>
-						<li><a href="programAdmin.html"> Manage Program</a></li>
-						<li><a href="adminCourseSchedule.html"> Manage Course
-								Schedule</a></li>
-						<li><a href="manageStatus.html"> Manage Status</a></li>
-						<li><a href="manageUser.html"> Manage Users</a></li>
-
-					</ul></li>
-
-
-
-
-
-
-
-				<!-- add search form -->
-				<li><form class="navbar-form navbar-right" role="search">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search ">
-							<span class="input-group-btn">
-								<button type="submit" class="btn btn-default">
-									<span class="glyphicon glyphicon-search"></span>
-								</button>
-							</span>
-						</div>
-					</form></li>
-
-
-
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b
-						class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-						</li>
-						<li><a href="#"><i class="fa fa-fw fa-envelope"></i>
-								Inbox</a></li>
-						<li><a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-						</li>
-						<li class="divider"></li>
-						<li><a href="#"><i class="fa fa-fw fa-power-off"></i> Log
-								Out</a></li>
-					</ul></li>
-				</ul>
-			</div>
-
-		</div>
-	</div>
-
+<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
 	<!-- End of navigation bar  -->
+	
 	<div class="container">
 
 
@@ -269,48 +178,12 @@
 			</div>
 		</div>
 	</div>
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
 	<!-- End of <Fixed footer> -->
-	<!-- start of login popup modal -->
-	<!-- 	Place bootstrap core javascript below so pages load faster -->
-	<div class="modal fade" id="login">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<form class="form-horizontal" role="form">
-					<div class="modal-header">
-						<img src="image/impossiblelogo.png" alt="image logo"
-							align="middle" style="width: 204px; height: 48px;">
 
-
-					</div>
-					<div class="modal-body">
-						<div class="form-group">
-							<label for="login-email" class="col-sm-2 control-label">Email:</label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" id="Login-email"
-									placeholder="tomcat@domain.com">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="login-pwd" class="col-sm-2 control-label">Password*</label>
-							<div class="col-sm-5">
-								<input type="password" class="form-control" id="Login-name"
-									placeholder="Password">
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<a class="btn btn-default" data-dismiss="modal">Close</a>
-						<button type="submit" class="btn btn-primary">Sign In</button>
-					</div>
-				</form>
-
-
-			</div>
-		</div>
-	</div>
-
-	<!-- end of /the popout signin shit -->
+	<script src="js/navlinks-admin.js"></script>
+	<script src="js/footer.js"></script>
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

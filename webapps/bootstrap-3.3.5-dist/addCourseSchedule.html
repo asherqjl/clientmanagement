@@ -67,7 +67,7 @@
 										<label class="col-sm-2 control-label" for="cName">Course
 											Title:</label>
 										<div class="col-sm-9">
-											<input class="form-control" type="text" id="cName">
+											<input class="form-control" type="text" id="cName" required>
 										</div>
 									</div>
 
@@ -76,14 +76,14 @@
 											Date:</label>
 										<div class="col-sm-3">
 											<input type="date" class="form-control" id="dp1"
-												value="3/11/2015">
+												value="3/11/2015" required>
 										</div>
 
 										<label class="col-sm-2 control-label" for="dp2">End
 											Date:</label>
 										<div class="col-sm-3">
 											<input type="date" class="form-control" id="dp2"
-												value="3/11/2015">
+												value="3/11/2015" required>
 										</div>
 									</div>
 
@@ -92,7 +92,7 @@
 											Start Time:</label>
 										<div class="col-sm-3">
 											<input id="time" class="form-control" type="text"
-												placeholder="hh:mm" value="9:00 AM">
+												placeholder="hh:mm" value="9:00 AM" required>
 
 										</div>
 
@@ -100,7 +100,7 @@
 											Time:</label>
 										<div class="col-sm-3">
 											<input id="time" type="number" class="form-control"
-												id="etime" value="17:00">
+												id="etime" value="17:00" required>
 										</div>
 									</div>
 
@@ -150,9 +150,7 @@
 									</div>
 								</div>
 						</div>
-						</form>
-
-						<div class="form-group">
+									<div class="form-group">
 							<div class="form-actions">
 								<button type="submit" class="btn btn-primary">Save
 									changes</button>
@@ -162,6 +160,7 @@
 							</div>
 					
 						</div>
+						</form>
 					</div>
 				</div>
 			</div>
