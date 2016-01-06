@@ -10,8 +10,7 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <link href="css/home.css" rel="stylesheet">
 <script src="ckeditor/ckeditor.js"></script>
@@ -50,66 +49,59 @@
 
 
 								   <div class="form-group">
-									<label class="control-label col-sm-2" for="aName">Coach Name:</label>
+									<label class="control-label col-sm-2" for="cName">Coach Name:</label>
 									<div class="col-sm-9">
-										<input class="form-control" type="text" id="cName"
-											value="Allen Tan Yao Hui">
+										<input class="form-control" type="text" name="cName" placeholder="Name" required>
 									</div>
 								</div>
 								
 								   <div class="form-group">
-									<label class="control-label col-sm-2" for="cName">Coach Email:</label>
+									<label class="control-label col-sm-2" for="cEmail">Coach Email:</label>
 									<div class="col-sm-9">
-										<input class="form-control" type="email" id="aEmail"
-											value=" 123@12345.com  ">
+										<input class="form-control" type="email" name="cEmail" placeholder="Email" required>
 									</div>
 								</div>
 		 <div class="form-group">
-									<label class="control-label col-sm-2" for="cName">Password:</label>
+									<label class="control-label col-sm-2" for="cPassword">Password:</label>
 									<div class="col-sm-9">
-										<input class="form-control" type="email" id="aEmail"
-											value=" ">
+										<input class="form-control" type="password" name="cPassword" placeholder="Password" required>
 									</div>
 								</div>
 								
 							 <div class	="form-group">
-									<label class="control-label col-sm-2" for="cName">Confirm Password:</label>
+									<label class="control-label col-sm-2" for="confirmPassword">Confirm Password:</label>
 									<div class="col-sm-9">
-										<input class="form-control" type="email" id="aEmail"
-											value="  ">
+										<input class="form-control" type="email" name="confirmPassword" placeholder="confirmPassword" required>
 									</div>
 								</div>
 								
 
 
 									 <div class	="form-group">
-									<label class="control-label col-sm-2" for="cName">Mobile:</label>
+									<label class="control-label col-sm-2" for="cMobile">Mobile:</label>
 									<div class="col-sm-9">
-										<input class="form-control" type="email" id="aEmail"
-											value="  ">
+										<input class="form-control" type="number" name="cMobile" placeholder="Mobile number">
 									</div>
 								</div>
 								
-										 <div class	="form-group">
-									<label class="control-label col-sm-2" for="cName">Address</label>
+									<div class	="form-group">
+									<label class="control-label col-sm-2" for="cAddress">Address</label>
 									<div class="col-sm-9">
-										<input class="form-control" type="email" id="aEmail"
-											value="  ">
+										<input class="form-control" type="email" name="cAddress" placeholder="Address" required>
 									</div>
 								</div>
 								
-													 <div class	="form-group">
-									<label class="control-label col-sm-2" for="cName">Coach Hourly Rate:</label>
+									<div class	="form-group">
+									<label class="control-label col-sm-2" for="cHourlyRate">Coach Hourly Rate:</label>
 									<div class="col-sm-9">
-										<input class="form-control" type="email" id="aEmail"
-											value="  ">
+										<input class="form-control" type="number" name="cHourlyRate" placeholder="Coach Hourly Rate" required>
 									</div>
 								</div>
 						
 									<div class="form-group">
 										<label class="control-label col-sm-2" for="status">Status:</label>
 										<div class="col-sm-4">
-											<select class="form-control" id="status">
+											<select class="form-control" name="status">
 												<option>Enabled</option>
 												<option>Disabled</option>
 											</select>
