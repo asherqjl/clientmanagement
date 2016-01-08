@@ -143,7 +143,10 @@ background-color:transparent;
 
 #brand-image
 {
-height: 30px;
+  display: inline-block;
+    max-width: 100%;
+    height: 40px;
+	padding-bottom:10px;
 
 }
 #brand

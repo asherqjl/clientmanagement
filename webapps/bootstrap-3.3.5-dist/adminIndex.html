@@ -15,142 +15,42 @@
 </head>
 
 <body>
-	<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-					<span class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-					<span class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-				</button>
-
-				<a class="navbar-brand" href="index.html"> <img id="brand-image"
-					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
-				</a>
-
-
-			</div>
-
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown"><a href="newAdminIndex.html"
-						class="dropdown-toggle" data-toggle="dropdown">Home<b
-							class=caret></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="index.html">Public homepage</a></li>
-							<li class="active">
-							<li><a href="user.html"> User Homepage</a></li></li>
-					<li><a href="adminIndex.html">Admin homepage</a></li>
-				
-
-				</ul>
-
-
-				</li>
-		
-
-				<li class="dropdown"><a href="adminIndex.html"
-					class="dropdown-toggle" data-toggle="dropdown">Manage<b
-						class=caret></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="manageIndex.html"> Manage Public Home Page</a></li>
-						<li><a href="manageAbout.html">Manage About</a></li>
-						<li><a href="manageContactUs.html">Manage ContactUs</a></li>
-						<li><a href="manageCategory.html"> Manage Category</a></li>
-						<li class="active">
-						<li><a href="courseAdmin.html"> Manage Course</a></li>
-						<li><a href="programAdmin.html"> Manage Program</a></li>
-						<li><a href="adminCourseSchedule.html"> Manage Course
-								Schedule</a></li>
-						<li><a href="manageStatus.html"> Manage Status</a></li>
-						<li><a href="manageUser.html"> Manage Users</a></li>
-			
-
-
-
-
-					</ul></li>
-
-
-				</li>
-
-
-				
-
-
-			
-
-				<!-- add search form -->
-				<li><form class="navbar-form navbar-right" role="search">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Search ">
-						<span class="input-group-btn">
-							<button type="submit" class="btn btn-default">
-								<span class="glyphicon glyphicon-search"></span>
-							</button>
-						</span>
-					</div>
-				</form></li>
-				
-				
-				        <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                        </li>
-                    </ul>
-                </li>
-				
-								
-
-
-				</ul>
-			</div>
-
-		</div>
-	</div>
+<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
+	<!-- End of navigation bar  -->
 
 	<div style="padding-top: 100px; text-align: center">
 		<div class="container marketing">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-lg-2">
 					<img class="img-circle" src="image/Courses-icon.png"
 						alt="Generic placeholder image" width="160" height="160">
-					<h2>Manage Courses</h2>
+					<h2>Manage WorkShops</h2>
 					<p>View/Add/Edit/Delete Course</p>
 
 				</div>
-				<div class="col-lg-3">
+					<div class="col-lg-2">
+					<img class="img-circle" src="image/Courses-icon.png"
+						alt="Generic placeholder image" width="160" height="160">
+					<h2>Manage Coaching Session</h2>
+					<p>View/Add/Edit/Delete Course</p>
+
+				</div>
+				<div class="col-lg-2">
 					<img class="img-circle" src="image/schedule.png"
 						alt="Generic placeholder image" width="160" height="160">
-					<h2>Manage Course Schedule</h2>
+					<h2>Manage Workshops Schedule</h2>
 					<p>View/Add/Edit/Delete Course Schedule</p>
 
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-2">
 					<img class="img-circle" src="image/program.jpg"
 						alt="Generic placeholder image" width="160" height="160">
 					<h2>Manage Program </h2>
 					<p>View/Add/Edit/Delete Program, Link Courses to program</p>
 
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-2">
 					<img class="img-circle" src="image/user.jpg"
 						alt="Generic placeholder image" width="160" height="160">
 					<h2>Manage User </h2>
@@ -160,24 +60,35 @@
 			</div>
 
 			<div class="row">
-				<div class="col-lg-3">
+			
+						<div class="col-lg-2">
 					<p>
 						<a class="btn btn-default" href="courseAdmin.html"
-							role="button">Manage Course &raquo;</a>
+							role="button">Manage Workshop &raquo;</a>
 					</p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-2">
+					<p>
+						<a class="btn btn-default" href="courseAdmin.html"
+							role="button">Manage Coaching session&raquo;</a>
+					</p>
+				</div>
+				
+			
+			
+	
+				<div class="col-lg-2">
 					<p>
 						<a class="btn btn-default" href="adminCourseSchedule.html"
-							role="button">Manage Course Schedule &raquo;</a>
+							role="button">Manage WorkShop Schedule &raquo;</a>
 					</p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-2">
 					<p>
 						<a class="btn btn-default" href="programAdmin.html" role="button">Manage Program &raquo;</a>
 					</p>
 				</div>
-						<div class="col-lg-3">
+						<div class="col-lg-2">
 					<p>
 						<a class="btn btn-default" href="manageUser.html" role="button">Manage User &raquo;</a>
 					</p>
@@ -185,27 +96,24 @@
 			</div>
 		</div>
 
-			<!-- <Fixed footer> -->
-	<div class="navbar navbar-inverse navbar-fixed-bottom">
-		<div class="container">
-			<div class="navbar-text pull-left">
-				<p>COPYRIGHT 2015 I'MPOSSIBLE</p>
+	
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
 
-			</div>
-			<div class="navbar-text pull-right">
-				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
-					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
-					class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
-					class="fa fa-linkedin-square fa-2x"></i></a>
-			</div>
-		</div>
-	</div>
+	<script src="js/navlinks-admin.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script
-			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>

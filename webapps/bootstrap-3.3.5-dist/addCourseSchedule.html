@@ -32,102 +32,9 @@
 </head>
 
 <body>
-	<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-					<span class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-					<span class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-				</button>
-
-				<a class="navbar-brand" href="index.html"> <img id="brand-image"
-					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
-				</a>
-			</div>
-
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown"><a href="index.html"
-						class="dropdown-toggle" data-toggle="dropdown">Home<b
-							class=caret></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="index.html">Public homepage</a></li>
-							<li class="active">
-							<li><a href="viewProgramsNcourses.html"> User Homepage</a></li></li>
-				<li><a href="adminIndex.html">Admin homepage</a></li>
-				</ul>
-
-				</li>
-
-				<li class="dropdown"><a href="adminIndex.html"
-					class="dropdown-toggle" data-toggle="dropdown">Manage<b
-						class=caret></b></a>
-					<ul class="dropdown-menu">
-					<li><a href="manageIndex.html"> Manage Public Home Page</a></li>
-						<li><a href="manageAbout.html">Manage About</a></li>
-						<li><a href="manageContactUs.html">Manage ContactUs</a></li>
-						<li><a href="manageCategory.html"> Manage Category</a></li>
-						<li class="active">
-						<li><a href="courseAdmin.html"> Manage Course</a></li>
-						<li><a href="programAdmin.html"> Manage Program</a></li>
-						<li><a href="adminCourseSchedule.html"> Manage Course
-								Schedule</a></li>
-						<li><a href="manageStatus.html"> Manage Status</a></li>
-						<li><a href="manageUser.html"> Manage Users</a></li>
-			
-					</ul></li>
-</li>
-
-
-
-
-
-
-
-				<!-- add search form -->
-				<li><form class="navbar-form navbar-right" role="search">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Search ">
-						<span class="input-group-btn">
-							<button type="submit" class="btn btn-default">
-								<span class="glyphicon glyphicon-search"></span>
-							</button>
-						</span>
-					</div>
-				</form></li>
-				
-				    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                        </li>
-                    </ul>
-                </li>
-				
-	
-
-				</ul>
-			</div>
-
-		</div>
-	</div>
+<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
+	<!-- End of navigation bar  -->
 
 	<div class="container">
 
@@ -160,7 +67,7 @@
 										<label class="col-sm-2 control-label" for="cName">Course
 											Title:</label>
 										<div class="col-sm-9">
-											<input class="form-control" type="text" id="cName">
+											<input class="form-control" type="text" id="cName" required>
 										</div>
 									</div>
 
@@ -169,14 +76,14 @@
 											Date:</label>
 										<div class="col-sm-3">
 											<input type="date" class="form-control" id="dp1"
-												value="3/11/2015">
+												value="3/11/2015" required>
 										</div>
 
 										<label class="col-sm-2 control-label" for="dp2">End
 											Date:</label>
 										<div class="col-sm-3">
 											<input type="date" class="form-control" id="dp2"
-												value="3/11/2015">
+												value="3/11/2015" required>
 										</div>
 									</div>
 
@@ -185,7 +92,7 @@
 											Start Time:</label>
 										<div class="col-sm-3">
 											<input id="time" class="form-control" type="text"
-												placeholder="hh:mm" value="9:00 AM">
+												placeholder="hh:mm" value="9:00 AM" required>
 
 										</div>
 
@@ -193,7 +100,7 @@
 											Time:</label>
 										<div class="col-sm-3">
 											<input id="time" type="number" class="form-control"
-												id="etime" value="17:00">
+												id="etime" value="17:00" required>
 										</div>
 									</div>
 
@@ -243,9 +150,7 @@
 									</div>
 								</div>
 						</div>
-						</form>
-
-						<div class="form-group">
+									<div class="form-group">
 							<div class="form-actions">
 								<button type="submit" class="btn btn-primary">Save
 									changes</button>
@@ -255,28 +160,18 @@
 							</div>
 					
 						</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 
 
-	<!-- <Fixed footer> -->
-	<div class="navbar navbar-inverse navbar-fixed-bottom">
-		<div class="container">
-			<div class="navbar-text pull-left">
-				<p>COPYRIGHT 2015 I'MPOSSIBLE</p>
-
-			</div>
-			<div class="navbar-text pull-right">
-				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
-					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
-					class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
-					class="fa fa-linkedin-square fa-2x"></i></a>
-			</div>
-		</div>
-	</div>
-
+		<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
+	<script src="js/navlinks-admin.js"></script>
+	<script src="js/footer.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

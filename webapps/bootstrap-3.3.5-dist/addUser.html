@@ -30,100 +30,9 @@
 <link rel="stylesheet" type="text/css" href="css/home.css" />
 </head>
 <body>
-	<!-- style="height:2500px" -->
-	<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-					<span class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-					<span class="icon-bar"></span>
-					<!-- for the responsive icon bar when page shrink -->
-				</button>
-
-				<a class="navbar-brand" href="index.html"> <img id="brand-image"
-					alt="Website logo" src="image/brandimage.PNG" /> I'MPOSSIBLE
-				</a>
-			</div>
-
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown"><a href="index.html"
-						class="dropdown-toggle" data-toggle="dropdown">Home<b
-							class=caret></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="index.html">Public homepage</a></li>
-							<li class="active">
-							<li><a href="viewProgramsNcourses.html"> User Homepage</a></li></li>
-		<li><a href="adminIndex.html">Admin homepage</a></li>
-				</ul>
-				</li>
-
-				<li class="dropdown"><a href="adminIndex.html"
-					class="dropdown-toggle" data-toggle="dropdown">Manage<b
-						class=caret></b></a>
-					<ul class="dropdown-menu">
-					<li><a href="manageIndex.html"> Manage Public Home Page</a></li>
-						<li><a href="manageAbout.html">Manage About</a></li>
-						<li><a href="manageContactUs.html">Manage ContactUs</a></li>
-						<li><a href="manageCategory.html"> Manage Category</a></li>
-						<li class="active">
-						<li><a href="courseAdmin.html"> Manage Course</a></li>
-						<li><a href="programAdmin.html"> Manage Program</a></li>
-						<li><a href="adminCourseSchedule.html"> Manage Course
-								Schedule</a></li>
-						<li><a href="manageStatus.html"> Manage Status</a></li>
-						<li><a href="manageUser.html"> Manage Users</a></li>
-				
-					</ul></li>
-
-
-
-
-
-				<!-- add search form -->
-				<li><form class="navbar-form navbar-right" role="search">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Search ">
-						<span class="input-group-btn">
-							<button type="submit" class="btn btn-default">
-								<span class="glyphicon glyphicon-search"></span>
-							</button>
-						</span>
-					</div>
-				</form></li>
-				
-				       <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                        </li>
-                    </ul>
-                </li>
-				
-								
-
-				</ul>
-			</div>
-
-		</div>
-	</div>
-
+<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
+	<!-- End of navigation bar  -->
 
 	<div class="container">
 		
@@ -200,13 +109,13 @@
                       <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-surname"> Surname</label>
                         <div class="col-sm-10">
-                          <input type="text" name="surname" placeholder="Surname" id="input-surname" class="form-control" />
+                          <input type="text" name="surname" placeholder="Surname" id="input-surname" class="form-control"  required/>
                                                   </div>
                       </div>
                       <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-givenname">Given Name</label>
                         <div class="col-sm-10">
-                          <input type="text" name="givenname" placeholder="Given Name" id="input-givenname" class="form-control" />
+                          <input type="text" name="givenname" placeholder="Given Name" id="input-givenname" class="form-control" required />
                                                   </div>
                       </div>
 					  
@@ -214,7 +123,7 @@
 					      <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-nric">NRIC</label>
                         <div class="col-sm-10">
-                          <input type="text" name="nric" value="" placeholder="NRIC" autocomplete="off" id="input-nric" class="form-control" />
+                          <input type="text" name="nric" value="" placeholder="NRIC" autocomplete="off" id="input-nric" class="form-control" required />
                                                   </div>
                       </div>
 					  	
@@ -222,32 +131,32 @@
 					      <div class="form-group required">
                         <label class="col-sm-2 control-label" for="dp1">Date of Birth</label>
                         <div class="col-sm-10">
-                          <input type="date" name="dob" value="" placeholder="Date of Birth" autocomplete="off" id="dp1" class="form-control" />
+                          <input type="date" name="dob" value="" placeholder="Date of Birth" autocomplete="off" id="dp1" class="form-control"  required/>
                                                   </div>
                       </div>
                       <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-email">E-Mail</label>
                         <div class="col-sm-10">
-                          <input type="text" name="email" placeholder="E-Mail" id="input-email" class="form-control" />
+                          <input type="text" name="email" placeholder="E-Mail" id="input-email" class="form-control" required/>
                                                   </div>
                       </div>
                       <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-mobile">Mobile</label>
                         <div class="col-sm-10">
-                          <input type="text" name="mobile"  placeholder="mobile" id="input-mobile" class="form-control" />
+                          <input type="text" name="mobile"  placeholder="mobile" id="input-mobile" class="form-control" required />
                                                   </div>
                       </div>
       
                                             <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-password">Password</label>
                         <div class="col-sm-10">
-                          <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" autocomplete="off" />
+                          <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" autocomplete="off" required />
                                                   </div>
                       </div>
                       <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-confirm">Confirm Password</label>
                         <div class="col-sm-10">
-                          <input type="password" name="confirm" value="" placeholder="Confirm Password" autocomplete="off" id="input-confirm" class="form-control" />
+                          <input type="password" name="confirm" value="" placeholder="Confirm Password" autocomplete="off" id="input-confirm" class="form-control" required/>
                                                   </div>
                       </div>
 				
@@ -255,7 +164,7 @@
 					         <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-address">Address </label>
                         <div class="col-sm-10">
-                          <input type="text" name="address" value="" placeholder="Address " id="input-address" class="form-control" />
+                          <input type="text" name="address" value="" placeholder="Address " id="input-address" class="form-control"required />
                                                   </div>
                       </div>
 					  
@@ -263,7 +172,7 @@
 					         <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-school">School</label>
                         <div class="col-sm-10">
-                          <input type="text" name="school" value="" placeholder="School" id="input-school" class="form-control" />
+                          <input type="text" name="school" value="" placeholder="School" id="input-school" class="form-control" required/>
                                                   </div>
                       </div>
 
@@ -286,20 +195,20 @@
                      <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-surname"> Surname</label>
                         <div class="col-sm-10">
-                          <input type="text" name="surname" placeholder="Surname" id="input-surname" class="form-control" />
+                          <input type="text" name="surname" placeholder="Surname" id="input-surname" class="form-control"required />
                                                   </div>
                       </div>
                       <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-givenname">Given Name</label>
                         <div class="col-sm-10">
-                          <input type="text" name="givenname" placeholder="Given Name" id="input-givenname" class="form-control" />
+                          <input type="text" name="givenname" placeholder="Given Name" id="input-givenname" class="form-control"required />
                                                   </div>
                       </div>
 					  
 					      <div class="form-group required">
                         <label class="col-sm-2 control-label" for="dp2">Date of Birth</label>
                         <div class="col-sm-10">
-                          <input type="date" name="dob" value="" placeholder="Date of Birth" autocomplete="off" id="dp2" class="form-control" />
+                          <input type="date" name="dob" value="" placeholder="Date of Birth" autocomplete="off" id="dp2" class="form-control"required />
                                                   </div>
                       </div>
                          
@@ -313,32 +222,32 @@
 					  		      <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-nric">NRIC</label>
                         <div class="col-sm-10">
-                          <input type="text" name="nric" value="" placeholder="NRIC" autocomplete="off" id="input-nric" class="form-control" />
+                          <input type="text" name="nric" value="" placeholder="NRIC" autocomplete="off" id="input-nric" class="form-control" required />
                                                   </div>
                       </div>
                       <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-email">E-Mail</label>
                         <div class="col-sm-10">
-                          <input type="text" name="email" placeholder="E-Mail" id="input-email" class="form-control" />
+                          <input type="text" name="email" placeholder="E-Mail" id="input-email" class="form-control" required/>
                                                   </div>
                       </div>
                       <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-mobile">Mobile</label>
                         <div class="col-sm-10">
-                          <input type="text" name="mobile"  placeholder="mobile" id="input-mobile" class="form-control" />
+                          <input type="text" name="mobile"  placeholder="mobile" id="input-mobile" class="form-control" required />
                                                   </div>
                       </div>
       
                                             <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-password">Password</label>
                         <div class="col-sm-10">
-                          <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" autocomplete="off" />
+                          <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" autocomplete="off" required />
                                                   </div>
                       </div>
                       <div class="form-group required">
                         <label class="col-sm-2 control-label" for="input-confirm">Confirm Password</label>
                         <div class="col-sm-10">
-                          <input type="password" name="confirm" value="" placeholder="Confirm Password" autocomplete="off" id="input-confirm" class="form-control" />
+                          <input type="password" name="confirm" value="" placeholder="Confirm Password" autocomplete="off" id="input-confirm" class="form-control" required />
                                                   </div>
                       </div>
 					  
@@ -364,11 +273,7 @@
      
              
           </div>
-        </form>
-						
-		    </div>
-			
-							<div class="form-group">
+		  			<div class="form-group">
 							<div class="form-actions">
 								<button type="submit" class="btn btn-primary">Save
 									changes</button>
@@ -378,26 +283,24 @@
 							</div>
 							
 						</div>
+        </form>
+						
+		    </div>
+			
+				
     </div>
 	
 	</div>
 	</div>
 	</div>
-	<!-- <Fixed footer> -->
-	<div class="navbar navbar-inverse navbar-fixed-bottom">
-		<div class="container">
-			<div class="navbar-text pull-left">
-				<p>COPYRIGHT 2015 I'MPOSSIBLE</p>
+	
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
 
-			</div>
-			<div class="navbar-text pull-right">
-				<a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> <a
-					href="#"><i class="fa fa-twitter-square fa-2x"></i></a> <a href="#"><i
-					class="fa fa-google-plus fa-2x"></i></a> <a href="#"><i
-					class="fa fa-linkedin-square fa-2x"></i></a>
-			</div>
-		</div>
-	</div>
+	<script src="js/navlinks-admin.js"></script>
+	<script src="js/footer.js"></script>
+
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>

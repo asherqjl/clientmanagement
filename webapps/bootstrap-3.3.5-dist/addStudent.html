@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>I'MPOSSIBLE - View Program Details</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+<link href="dist/css/bootstrap-spinner.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link href="css/home.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
+	<!-- End of navigation bar  -->
+	
+	<div class="container">
+		
+
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+   
+      <h1>Assign Student to Coach</h1>
+	  
+  <ul class="breadcrumb">
+			<li><a href="adminIndex.html">Home</a></li>
+			<li><a href="manageCoachProfile.html">Manage Coach Profile</a></li>
+		  </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+        <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> Add Student<h3>
+      </div>
+      <div class="panel-body">
+	
+	
+
+		
+					
+	
+						<div class="container">
+<h3>Add Student</h3>
+<table class="table table-striped" style="width:60%">
+<thead>
+	<th>Student Name</th>
+	<th>Student ID</th>
+	<th>Student Email</th>
+	<th>&nbsp</th>
+</thead>
+<tbody>
+	<tr>
+		<td> <div class="form-group">
+
+  <select class="form-control" id="sel1">
+	<option>Judith Tan Yi RU</option>
+	<option>Xenia Koh</option>
+	
+
+  </select>
+  </div>
+</td>
+		<td>13016052</td>
+		<td>13017932@myrp.edu.sg</td>
+
+		<td><a href="#" class="remove-row"><span class=" glyphicon glyphicon-minus"></span></a></td>
+	</tr>
+</tbody>
+</table>
+<div ><a href="#" id="add-row"><span class="glyphicon glyphicon-plus"></span>Add Student</a></div>
+
+<div id="text"></div>
+			</div>			
+				</div>
+									<div class="form-group">
+							<div class="form-actions">
+								<button type="submit" class="btn btn-primary">Save
+									changes</button>
+								<a href="manageStatus.html"><button type="button"
+										class="btn btn-danger">Cancel</button></a>
+
+							</div>
+							
+						</div>
+
+	</div>
+		
+		    </div>
+    </div>
+	
+	</div>
+	</div>
+	</div>
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
+
+	<script src="js/navlinks-admin.js"></script>
+	<script src="js/footer.js"></script>
+
+
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script
+				src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+
+			<script src="js/jquery-1.10.2.js"></script>
+			<script src="js/bootstrap.js"></script>
+			
+			 <script>
+$('#add-row').on('click', function(e){
+    e.preventDefault();
+    var tableBody = $('.table > tbody'), 
+      lastRowClone = $('tr:last-child', tableBody).clone();
+    $('input[type=text]', 'input[type=date]',lastRowClone).val('');  
+    tableBody.append(lastRowClone);
+});
+
+$('.table').on('click', '.remove-row', function(e){
+  e.preventDefault();
+  var row = $(this).parent().parent();
+  row.remove();
+})
+</script>
+</body>
+</html>
