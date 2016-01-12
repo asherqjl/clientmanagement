@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>I'MPOSSIBLE - View Program Details</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+<link href="dist/css/bootstrap-spinner.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link href="css/home.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
+	<!-- End of navigation bar  -->
+	
+
+	<div class="container">
+		<div class="page-header">
+			<h1>Coach User Profile</h1>
+			  <ul class="breadcrumb">
+			<li><a href="adminIndex.html">Home</a></li>
+			<li><a href="manageCoachUser.html">Manage Coach User</a></li>
+		  </ul>
+		</div>
+		<div class="col-sm-4">
+		<div class="avatar-container section">
+
+        <img class="border2 pull-left" alt="Tan Judith" src="https://u.ph.edim.co/default-avatars/44_140.jpg" />
+
+        
+					<div class ="pull-left">
+					
+           <p> <a class="text-15 leftbar-profile-link" href="/home#/user?uid=90158191">Hi, Ms Wong.</a></p>
+					<b>User Role:</b> Coach
+								
+								<p><b>Name:</b> Judith Tan Yi Ru </p>
+					
+							<p>	<b>E-Mail:</b> Judetyr@gmail.com</p>
+
+                            <p><b>Mobile:</b>85228193 </p>
+						    <p><b>Address:</b> Marina barrage</p>
+							
+    <p><b>Description:</b>10 years of experience in couseling. Graduate from Republic Polytechnic year 1996.</p>
+	</div>
+		</div>
+		</div>
+
+
+
+	
+			<div class="col-sm-8">
+						<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						 List of Student 
+					</h3>
+				</div>
+				<div class="panel-body">
+				
+
+			
+				
+	<div class="pull-right">
+						
+							<!--  Icons for delete, edit and copy -->
+						<p class="icons">
+							<a href="addStudent.html"><button type="button"
+									class="btn btn-default btn-sm">
+									<span class="glyphicon glyphicon-plus"></span> Add
+								</button></a>
+							<button type="button" class="btn btn-default btn-sm"
+								onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : 
+false;">
+								<span class="glyphicon glyphicon-trash"></span> Delete
+							</button>
+					
+						</p>
+					</div>
+		
+					<form action="#" method="post" enctype="multipart/form-data"
+								id="form-product">
+								<div class="table-responsive">
+							 <table class="table table-bordered">
+		 
+ <form action="#" method="post" enctype="multipart/form-data"
+								id="form-product">
+								<div class="table-responsive">
+													<table id="myTable" class="table table-bordered table-hover tablesorter" >
+										<thead>
+											<tr>
+												<td style="width: 1px;" class="text-center" data-sorter="false"><input
+											type="checkbox"
+											onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
+
+
+												<td class="text-left"><a href="addAdminUser.html" class="asc">Client Name</a></td>
+											
+												<td class="text-left"><a href="#">Client Email</a></td>
+										
+														<td class="text-left"><a href="#">Client Date</a></td>
+											
+	
+										
+						
+	                                              <td class="text-left"><a href="#">Client Role</a></td>
+									
+											</tr>
+										</thead>
+										<tbody>
+
+											<tr>
+												<td class="text-center"><input type="checkbox"
+													name="selected[]" value="47" /></td>
+
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Allen Tan Yao Hui</a></td>
+
+												<td class="text-left"> 123@12345.com </td>
+										
+												<td class="text-left">May 1,2015 Friday</td>
+								
+												<td class="text-left">Master Admin</td>
+												
+										
+							
+											</tr>
+											<tr>
+												<td class="text-center"><input type="checkbox"
+													name="selected[]" value="28" /></td>
+
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Bendict Ng Jian Hao</a></td>
+										
+												<td class="text-left"> 123@12345@gmail.com </td>
+										
+														<td class="text-left">Jun 3,2015 Wednesday</td>
+									
+												<td class="text-left">Admin</td>
+
+								
+											</tr>
+											<tr>
+												<td class="text-center"><input type="checkbox"
+													name="selected[]" value="41" /></td>
+
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Charles Dickson Diana</a></td>
+							
+											<td class="text-left"> abc@hotmail.com </td>
+									
+												<td class="text-left">Jun 3,2015 Wednesday</td>
+							
+												<td class="text-left">Admin</td>
+												
+
+											</tr>
+											<tr>
+												<td class="text-center"><input type="checkbox"
+													name="selected[]" value="40" /></td>
+
+												<td class="text-left"><a href="listOfCourseStudent.html" class="asc">Grace Tan Yi Ru</a></td>
+
+												<td class="text-left"> flower1996@hotmail.com </td>
+									
+														<td class="text-left">Jun 3,2015 Wednesday</td>
+										
+												<td class="text-left">Admin</td>
+
+									
+											</tr>
+
+
+
+
+
+										</tbody>
+									</table>
+								</div>
+							</form>
+						</div>
+		
+					
+		
+				</div>
+
+	</div>
+
+
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
+
+	<script src="js/navlinks-admin.js"></script>
+	<script src="js/footer.js"></script>
+
+
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script
+				src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+
+			<script src="js/jquery-1.10.2.js"></script>
+			<script src="js/bootstrap.js"></script>
+			
+			 <script>
+$('#add-row').on('click', function(e){
+    e.preventDefault();
+    var tableBody = $('.table > tbody'), 
+      lastRowClone = $('tr:last-child', tableBody).clone();
+    $('input[type=text]', 'input[type=date]',lastRowClone).val('');  
+    tableBody.append(lastRowClone);
+});
+
+$('.table').on('click', '.remove-row', function(e){
+  e.preventDefault();
+  var row = $(this).parent().parent();
+  row.remove();
+})
+</script>
+</body>
+</html>

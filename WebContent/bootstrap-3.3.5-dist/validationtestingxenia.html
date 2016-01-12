@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm()
+{
+  var fields = ["fname", "class", "compname", "mail", "compphone", "adres"]
+
+  var i, l = fields.length;
+  var fieldname;
+  for (i = 0; i < l; i++) {
+    fieldname = fields[i];
+    if (document.forms["register"][fieldname].value === "") {
+      alert(fieldname + " can not be empty");
+      return false;
+    }
+  }
+  return true;
+}
+
+</script>
+</head>
+<body>
+
+<form name="myForm" action="demo_form.asp"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+Class: <input type="text" name="class">
+compname: <input type="text" name="compname">
+mail: <input type="text" name="mail">
+comphone: <input type="text" name="compphone">
+add: <input type="text" name="adres">
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

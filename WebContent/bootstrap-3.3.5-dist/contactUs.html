@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>I'MPOSSIBLE - Contact Us</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="css/home.css" rel="stylesheet">
+
+
+<style>
+.map {
+	min-width: 300px;
+	min-height: 300px;
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	background-color: #F5F5F5;
+	color: #36A0FF;
+	height: 70px;
+	font-size: 27px;
+	padding: 10px;
+}
+
+.navbar-fixed-bottom {
+	height: 15px;
+}
+
+.hello {
+	padding-top: 10px;
+}
+</style>
+</head>
+
+
+<body>
+	<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
+	<!-- End of navigation bar  -->
+	<div class="container" style="margin-bottom: 50px">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="well well-sm">
+					<form class="form-horizontal" method="post">
+						<fieldset>
+							<legend class="text-center header">Contact Us</legend>
+							<div class="form-group">
+								<label for="subject" class="col-sm-3 control-label">Subject:</label>
+								<label class="radio-inline"> <input type="radio"
+									name="optradio">Enquiry
+								</label> <label class="radio-inline"> <input type="radio"
+									name="optradio">Feedback
+								</label>
+							</div>
+
+							<div class="col-xs-5">
+								Salutation: <select class="form-control">
+									<option>Mr</option>
+									<option>Mrs</option>
+									<option>Ms</option>
+									<option>Mdm</option>
+									<option>Dct</option>
+									<option>Prf</option>
+								</select>
+							</div>
+
+							<div class="col-xs-5">
+								Surname: <input id="name" name="fullname" type="text"
+									class="form-control" placeholder="Name">
+							</div>
+
+
+							<div class="col-xs-6">
+								<div class="hello">
+									Given Name: <input type="text" class="form-control"
+										placeholder="">
+								</div>
+							</div>
+
+
+							<div class="col-xs-5">
+								<div class="hello">
+									Contact Number: <input id="phonenumber" name="phone" type="tel"
+										class="form-control" placeholder="Mobile Number">
+								</div>
+							</div>
+
+							<div class="col-xs-5">
+								<div class="hello">
+									Email Address: <input id="emailaddress" name="mail"
+										type="email" class="form-control"
+										placeholder="jane.doe@example.com">
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<hr />
+								<div class="hello">
+									Message For Us:
+									<textarea class="form-control" id="message" name="message"
+										placeholder="Enter your message for us here. We will get back to you within 2 business days."
+										rows="7"></textarea>
+								</div>
+							</div>
+
+
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1"></div>
+							</div>
+
+
+						</fieldset>
+					</form>
+					<div class="form-group">
+						<div class="form-actions">
+							<a class="btn btn-primary btn-md" href="#">Submit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-6">
+				<div>
+					<div class="panel panel-default">
+
+						<legend class="text-center header">Our Office</legend>
+						<div class="panel-body text-center">
+							<div>
+								<address class="text-center">
+									<address>
+										<strong>Find Us @ </strong> <br> 9 Woodlands Ave 9 <br>
+										Singapore 738984 <br />
+										<br /> Closest MRT Station : Botanical Gardens <br />
+										<br /> <strong>Call Us @ </strong> <br> (65) 6466 - 8120
+
+										<br />
+										<br /> <strong>Mail Us @ </strong> <br> <a
+											href="mailto:#"> admin@impossiblecounselling.com.sg</a>
+									</address>
+								</address>
+
+							</div>
+							<hr />
+
+							<div id="map1" class="map">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5533445145584!2d103.785503!3d1.4428249999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1305aa7388d7%3A0x2b7f5e0463382f8!2sRepublic+Polytechnic!5e0!3m2!1sen!2ssg!4v1444296070701"
+									width="400" height="300" frameborder="0" style="border: 0"
+									allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
+
+
+	<script src="js/navlinks.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- start of the rotating banner javascript -->
+	<script>
+		$('.carousel').carousel({
+			interval : 3000
+		})
+	</script>
+	<!-- end of the rotating banner javascript -->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
+
+

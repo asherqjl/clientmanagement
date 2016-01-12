@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>I'MPOSSIBLE - Add New Admin User</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link href="css/home.css" rel="stylesheet">
+<script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+
+<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
+	<!-- End of navigation bar  -->
+
+	<div class="container">
+
+
+		<div id="content">
+			<div class="page-header">
+				<div class="container-fluid">
+
+					<h1>Adminstrator</h1>
+
+					<ul class="breadcrumb">
+						<li><a href="adminIndex.html">Home</a></li>
+						<li><a href="manageAdminUser.html">Manage Admin User</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<i class="fa fa-pencil"></i> Add New Adminstrator
+						</h3>
+					</div>
+					<div class="panel-body">
+						<form  class="form-horizontal"  data-toggle="validator" role="form">
+
+
+							<div class="form-group form-group-md">
+
+
+								<div class="form-group">
+									<label class="control-label col-sm-2" for="aName">Admin
+										Name:</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="text" name="aName" placeholder="Name" data-error="Please enter your name" required>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="control-label col-sm-2" for="aEmail">Admin
+										Email:</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="email" name="aEmail" placeholder="Email" data-error="This email address is invalid" required>
+										 <div class="help-block with-errors"></div>
+									</div>
+								</div>
+
+
+                                <div class="form-group">
+									<label class="control-label col-sm-2" for="aPassword">Admin
+										Password:</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="password" name="aPassword" placeholder="Password" data-error="Please enter your password" required>
+									</div>
+								</div>
+
+
+								<div class="form-group">
+									<label class="control-label col-sm-2" for="status">Admin
+										Role:</label>
+									<div class="col-sm-4">
+										<select class="form-control" name="status">
+											<option>System Admin</option>
+											<option>Admin</option>
+										</select>
+									</div>
+
+								</div>
+
+
+
+							</div>
+								<div class="form-actions">
+
+							<button type="submit" class="btn btn-primary">Save
+								changes</button>
+							<a href="adminIndex.html"><button type="button"
+									class="btn btn-danger">Cancel</button></a>
+
+						</div>
+						</form>
+					</div>
+
+
+
+			
+
+
+
+				</div>
+			</div>
+					
+		</div>
+	</div>
+
+	
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
+
+	<script src="js/navlinks-admin.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
