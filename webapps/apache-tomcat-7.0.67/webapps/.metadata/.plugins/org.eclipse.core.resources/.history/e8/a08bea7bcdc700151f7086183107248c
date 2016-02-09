@@ -1,0 +1,142 @@
+
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class editCoachUser
+ */
+@WebServlet("/editCoachUser")
+public class editCoachUser extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public editCoachUser() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		final String DB_URL="jdbc:mysql://localhost:3306/mydb";
+
+		//  Database credentials
+		final String USER = "root";
+		final String PASS = "";
+
+		// Set response content type
+		response.setContentType("text/html");
+
+		PrintWriter out = response.getWriter();
+
+		try{
+
+
+			// Register JDBC driver
+			Class.forName("com.mysql.jdbc.Driver");
+
+			// Open a connection
+			Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+			String id =null;
+			String saluation =null;
+			String 	sname=null;
+			String	gname =null;
+			String	email =null;
+
+			String	pw =null;
+			String	mobile =null;
+			String	address =null;
+			String	uStatus =null;
+			String	role =null;
+			String	hr =null;
+			String	profile =null;
+			id= request.getParameter("Coachid");
+			uStatus= request.getParameter("userStatus");
+			role= request.getParameter("role");
+			saluation= request.getParameter("salutation");
+			sname= request.getParameter("csName");
+			gname= request.getParameter("cgName");
+			email= request.getParameter("cEmail");
+			pw= request.getParameter("cPassword");
+			mobile= request.getParameter("cMobile");
+			address= request.getParameter("cAddress");
+			hr= request.getParameter("cHR");
+			profile= request.getParameter("cProfile");
+
+			out.println(id); 
+			out.println(saluation);
+			out.println(sname);
+			out.println(gname);
+			out.println(email);
+
+			out.println(pw);
+			out.println(mobile);
+			out.println(address);
+			out.println(uStatus);
+			out.println(role);
+			out.println(hr);
+			out.println(profile);
+			java.util.Date dt = new java.util.Date();
+			java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+			String currentTime = sdf.format(dt);
+			// Execute SQL query
+
+			// Execute SQL query
+			Statement stmt = null;
+			Statement ustmt = null;
+			stmt = conn.createStatement();
+			ustmt = conn.createStatement();
+			// create the java mysql update preparedstatement
+
+			int i= stmt.executeUpdate("UPDATE `user` SET`email`='x',`password`='x',`surname`='x',`given_name`='x',`mobile`='98445553',`role`='coach',`create_update_datetime`='"+currentTime+"',`salutation`='Mr',`address`='punggol',`userStatus_id`='1' WHERE coach_id='"+id+"'");
+
+
+
+
+			int c = ustmt.executeUpdate("UPDATE `coach` SET`coach_hourly_rate`='"+hr+"',`coach_profile`='"+profile+"' WHERE coach_id='"+id+"'");
+
+
+
+
+			conn.close();
+
+			if(i==1 && c==1){
+				response.sendRedirect("manageCoachUser.jsp");
+
+			}else{
+				out.println("There is an error");
+
+			}
+		}
+
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			out.println("Error: " + e.getMessage());
+		}
+		finally
+		{
+			out.close();
+		}
+
+
+	}
+
+}

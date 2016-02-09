@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY>
+	<center>
+		<input type="button" value="Add row" onClick="addRow()" /> <input
+			type="button" value="Add column" onClick="addColumn()" /> <input
+			type="button" value="Delete selected rows"
+			onClick="deleteSelectedRows()" /> <input type="button"
+			value="Delete column" onClick="deleteColumn()" /> <input
+			type="button" value="Delete all rows" onClick="deleteAllRows()" /> <br>
+		<table id="my_table" align="center" border="2" cellpadding="0"
+			cellspacing="0">
+			<thead>
+				<tr>
+					<th>Select</th>
+					<th>Name</th>
+					<th>City</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td><input type="text" /></td>
+					<td><select><option value="1">Bhubaneswar
+							<option value="2">Mumbai
+							<option value="3">Banglore</select></td>
+				</tr>
+
+				<tr>
+					<td><input type="checkbox"></td>
+					<td><input type="text" /></td>
+					<td><select><option value="1">Bhubaneswar
+							<option value="2">Mumbai
+							<option value="3">Banglore</select></td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+	
+	
+	<script>
+	// Add row to the HTML table
+	function addRow() {    
+	 var table = document.getElementById('my_table'); //html table
+	 var rowCount = table.rows.length; //no. of rows in table
+	 var columnCount =  table.rows[0].cells.length; //no. of columns in table          
+	 var row = table.insertRow(rowCount); //insert a row            
+	 
+	 var cell1 = row.insertCell(0); //create a new cell           
+	 var element1 = document.createElement("input"); //create a new element           
+	 element1.type = "checkbox"; //set the element type 
+	 element1.setAttribute('id', 'newCheckbox'); //set the id attribute         
+	 cell1.appendChild(element1); //append element to cell
+	             
+	 var cell2 = row.insertCell(1);            
+	 var element2 = document.createElement("input");            
+	 element2.type = "text"; 
+	 element2.setAttribute('id', 'newInput'); //set the id attribute
+	 cell2.appendChild(element2);             
+	 
+	 var cell3 = row.insertCell(2);            
+	 var element3 = document.createElement("select");
+	 element3.setAttribute('id', 'newSelect'); //set the id attribute      
+	 //Create options dynamically. This will not work in mozilla.
+	 var option1 = document.createElement("option"); //create a option element
+	 option1.text = "Bhubaneswar"; //set the text for option
+	 option1.value = "1"; //set the value for option
+	 element3.add(option1); //add option to select box  
+	 
+	 var option2 = document.createElement("option");
+	 option2.text = "Mumbai";
+	 option2.value = "2"; 
+	 element3.add(option2);
+	 
+	 var option3 = document.createElement("option");
+	 option3.text = "Banglore";
+	 option3.value = "3";
+	 element3.add(option3);
+
+	 cell3.appendChild(element3);
+	 //Add the cells for more than 3 columns
+	 if(columnCount >= 3){
+	  for (var i=4; i<=columnCount; i++) {
+	   var newCel = row.insertCell(i-1); //create a new cell           
+	   var element = document.createElement("div"); //create a div element
+	   var txt = document.createTextNode("cell "+i); //create a text element
+	   element.appendChild(txt); //append text to div      
+	   newCel.appendChild(element); //appent div to cell
+	  }
+	 }
+	} 
+
+	// delete the selected rows from table
+	function deleteSelectedRows() {    
+	 var table = document.getElementById('my_table'); //html table
+	        var rowCount = table.rows.length; //no. of rows in table          
+	 for(var i=0; i< rowCount; i++) { //loops for all row in table               
+	  var row = table.rows[i]; //return a particular row              
+	  var chkbox = row.cells[0].childNodes[0]; //get check box onject               
+	  if(null != chkbox && true == chkbox.checked) { //wheather check box is selected                   
+	   table.deleteRow(i); //delete the selected row                    
+	   rowCount--; //decrease rowcount by 1                   
+	   i--;               
+	  }             
+	 }
+	}
+
+	// append column to the HTML table
+	function addColumn() {    
+	 var tblHeadObj = document.getElementById('my_table').tHead; //table head
+	 for (var h=0; h< tblHeadObj.rows.length; h++) {
+	  var newTH = document.createElement('th');
+	  tblHeadObj.rows[h].appendChild(newTH); //append ne th to table
+	  newTH.innerHTML = 'Column '+ (tblHeadObj.rows[h].cells.length); //append th content to th
+	 }
+
+	 var tblBodyObj = document.getElementById('my_table').tBodies[0]; //table body
+	 for (var i=0; i< tblBodyObj.rows.length; i++) {
+	  var newCell = tblBodyObj.rows[i].insertCell(-1); //create new cell
+	  newCell.innerHTML = 'cell '+ (tblBodyObj.rows[i].cells.length); //append data to cell
+	 }
+	}
+
+	// delete table rows with index greater then 0
+	function deleteAllRows() {    
+	 var tbl = document.getElementById('my_table'); // table reference        
+	 lastRow = tbl.rows.length - 1; // set the last row index           
+	 // delete rows with index greater then 0    
+	 for (i = lastRow; i > 0; i--) {        
+	  tbl.deleteRow(i);  //delete the row  
+	 }
+	} 
+	  
+	// delete last table column
+	function deleteColumn() {    
+	 var allRows = document.getElementById('my_table').rows;
+	 for (var i=0; i< allRows.length; i++) {
+	  if (allRows[i].cells.length > 3) {
+	   allRows[i].deleteCell(-1); //delete the cell
+	  } else {
+	   alert("You can't delete more columns.");
+	   return;
+	  }
+	 }
+	}
+
+
+	
+	</script>
+</BODY>
+</HTML>

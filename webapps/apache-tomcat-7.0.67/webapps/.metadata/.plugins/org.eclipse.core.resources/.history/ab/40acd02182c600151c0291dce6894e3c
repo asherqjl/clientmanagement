@@ -1,0 +1,99 @@
+
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+/**
+ * Servlet implementation class editCategory
+ */
+@WebServlet("/editCategory")
+public class editCategory extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public editCategory() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		// TODO Auto-generated method stub
+				// JDBC driver name and database URL
+
+				final String DB_URL="jdbc:mysql://localhost:3306/mydb";
+
+				//  Database credentials
+				final String USER = "root";
+				final String PASS = "";
+
+				// Set response content type
+				response.setContentType("text/html");
+
+				PrintWriter out = response.getWriter();
+
+
+
+				try{
+					
+					
+					// Register JDBC driver
+					Class.forName("com.mysql.jdbc.Driver");
+
+					// Open a connection
+					Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+
+					String name =null;
+					String 	desc=null;
+					String 	id=null;
+					id= request.getParameter("catid");
+					name= request.getParameter("editname");
+					desc= request.getParameter("editcategory");
+			
+
+					// Execute SQL query
+					final  Statement stmt = conn.createStatement();
+					// create the java mysql update preparedstatement
+				      String query = "UPDATE `category` SET `category_name`= ?,`category_desc`= ? WHERE category_id=?";
+				      PreparedStatement preparedStmt = conn.prepareStatement(query);
+				      preparedStmt.setString  (1, "xy");
+				      preparedStmt.setString(2, "lester");
+				      preparedStmt.setInt(3, 1);
+				      // execute the java preparedstatement
+				      preparedStmt.executeUpdate();
+				       
+				      conn.close();
+
+
+
+
+				}catch(SQLException se){
+					//Handle errors for JDBC
+					se.printStackTrace();
+				}catch(Exception e){
+					//Handle errors for Class.forName
+					e.printStackTrace();
+				}
+			}
+
+}

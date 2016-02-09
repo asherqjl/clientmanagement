@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<jsp:include page="main/userNavigation.jsp"></jsp:include>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>I'MPOSSIBLE - Assign Student</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet"
+	href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/jquery-ui.min.css" rel="stylesheet">
+<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css"
+	rel="stylesheet"></link>
+<script type='text/javascript'
+	src='http://code.jquery.com/jquery-1.11.0.js'></script>
+<link rel="stylesheet" type="text/css"
+	href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css">
+<script type='text/javascript'
+	src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="css/home.css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"> <img
+						id="brand-image" alt="Website logo" src="image/brandimage.PNG" />
+						I'MPOSSIBLE
+					</a>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"> Home <b class=caret></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="counsellor.html">User's Home</a></li>
+								<li class="active">
+								<li><a href="index.html">I'M Counselling</a></li>
+							</ul></li>
+
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"> Counsellor <b class=caret></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="counsellornotes.html">All Notes</a></li>
+								<li><a href="counsellorstudents.html">All Students</a></li>
+								<li class="active">
+								<li><a href="counsellorjournals.html">All Journals</a></li>
+								<li><a href="calendarschedule.html">Manage Schedule</a></li>
+							</ul></li>
+						<li><form class="navbar-form navbar-right" role="search">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search ">
+									<span class="input-group-btn">
+										<button type="submit" class="btn btn-default">
+											<span class="glyphicon glyphicon-search"></span>
+										</button>
+									</span>
+								</div>
+							</form></li>
+
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown"><i class="fa fa-user"></i> John Smith
+								<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="fa fa-fw fa-user"></i>
+										Profile</a></li>
+								<li><a href="#"><i class="fa fa-fw fa-envelope"></i>
+										Inbox</a></li>
+								<li><a href="#"><i class="fa fa-fw fa-gear"></i>
+										Settings</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="fa fa-fw fa-power-off"></i>
+										Log Out</a></li>
+							</ul></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="jumbotron">
+				<div class="container-fluid">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<i class="fa fa-pencil"></i> Add Course For Student
+							</h3>
+						</div>
+						<div class="panel-body">
+							<div class="form-group form-group-md">
+								<label class="col-sm-2 control-label" for="status">Student
+									Name:</label>
+								<div class="col-sm-4">
+									<select class="form-control" id="status">
+										<option>Judith</option>
+										<option>Jia Le</option>
+										<option>Xenia</option>
+
+									</select>
+								</div>
+
+							</div>
+							<br>
+							<h3>Add Courses</h3>
+							<table class="table table-striped">
+
+								<thead>
+									<th>Course Title</th>
+									<th>Start Date</th>
+									<th>End Date</th>
+									<th>Start Time</th>
+									<th>End Time</th>
+									<th>Action-Delete</th>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>
+											<div class="form-group">
+												<select class="form-control" id="sel1">
+													<option>Stress Therapy</option>
+													<option>Mid-Life Transition Therapy</option>
+													<option>Grief Therapy</option>
+												</select>
+											</div>
+										</td>
+
+										<td><input type="text" class="form-control" id="dp1"
+											value="3/11/2015"></td>
+										<td><input type="text" class="form-control" id="dp2"
+											value="3/11/2015"></td>
+										<td><input id="time" class="form-control" type="text"
+											placeholder="hh:mm" value="9:00 AM"></td>
+										<td><input id="time" class="form-control" type="text"
+											placeholder="hh:mm" value="9:00 AM"></td>
+										<td><a href="#" class="remove-row"><span
+												class=" glyphicon glyphicon-minus"></span></a></td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div>
+								<a href="#" id="add-row"><span
+									class="glyphicon glyphicon-plus"></span>Add Course Schedule</a>
+							</div>
+							</form>
+
+							<div class="form-group">
+								<div class="form-actions" style="text-align: right">
+									<button type="submit" class="btn btn-primary">Submit</button>
+									<a href="counsellorstudents.html"><button type="button"
+											class="btn btn-danger">Cancel</button></a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+     $( "#dp1" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	 $( "#dp2" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+	
+	
+ </script>
+
+	<script>
+YUI().use(
+                                     'aui-timepicker',
+                                     function(Y) {
+                                       new Y.TimePicker(
+                                         {
+                                           trigger: '#time',
+                                           popover: {
+                                             zIndex: 1
+                                           },
+                                           on: {
+                                             selectionChange: function(event) {
+                                               console.log(event.newSelection)
+                                             }
+                                           }
+                                         }
+                                       );
+                                     }
+                                    );
+                                    
+ </script>
+
+
+	<script>
+$('#add-row').on('click', function(e){
+    e.preventDefault();
+    var tableBody = $('.table > tbody'), 
+      lastRowClone = $('tr:last-child', tableBody).clone();
+    $('input[type=text]', 'input[type=date]',lastRowClone).val('');  
+    tableBody.append(lastRowClone);
+});
+
+$('.table').on('click', '.remove-row', function(e){
+  e.preventDefault();
+  var row = $(this).parent().parent();
+  row.remove();
+})
+</script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

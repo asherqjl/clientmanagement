@@ -1,0 +1,251 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>I'MPOSSIBLE - Admin Index Page</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="css/home.css" rel="stylesheet">
+</head>
+
+<jsp:include="main/adminNavigations.jsp"/>
+
+<body>
+	<%
+	
+	
+	
+		//allow access only if session exists
+		String user = null;
+
+		String role=(String) session.getAttribute("role");
+		String uid = null;
+		 if(session.getAttribute("name") == null || session.getAttribute("role") == null || !role.equals("admin")){
+		response.sendRedirect("login.html");
+		}else user = (String) session.getAttribute("name");
+		 uid = (String) session.getAttribute("uid");
+		String userName = null;
+		String sessionID = null;
+		String userrole = null;
+		String userID = null;
+		Cookie[] cookies = request.getCookies();
+		if (cookies != null) {
+			for (Cookie cookie : cookies) {
+				if (cookie.getName().equals("name"))
+					userName = cookie.getValue();
+				if (cookie.getName().equals("JSESSIONID"))
+					sessionID = cookie.getValue();
+				if (cookie.getName().equals("role"))
+					userrole = cookie.getValue();
+				if (cookie.getName().equals("id"))
+					userID = cookie.getValue();
+			}
+		} else {
+			sessionID = session.getId();
+		}
+
+		/* no session validation logic in the above JSP. It contains link to another JSP page,  */
+	%>
+	<h3>
+		Hi
+		<%=userName%>, Login successful. Your Session ID=<%=sessionID%>
+		role=<%=userrole%></h3>
+	<br> User=<%=user%>
+	
+		<br> UserIDSession=<%=uid%>
+			<br> UserIDCookie=<%=userID%>
+	<br>role=<%=role%>
+	<!-- need to encode all the URLs where we want session information to be passed -->
+	<a href="CheckoutPage.jsp">Checkout Page</a>
+	<form action="LogoutServlet" method="post">
+		<input type="submit" value="Logout">
+	</form>
+<!-- 	<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
+	End of navigation bar  -->
+
+
+	<div class="container marketing">
+		<div class="row">
+			<div class="col-lg-2">
+				<img class="img-circle" src="image/Courses-icon.png"
+					alt="Generic placeholder image" width="160" height="160">
+				<h2>Manage WorkShops</h2>
+				<p>View/Add/Edit/Delete WorkShops</p>
+
+			</div>
+			<div class="col-lg-2">
+				<img class="img-circle" src="image/Courses-icon.png"
+					alt="Generic placeholder image" width="160" height="160">
+				<h2>Manage Coaching Session</h2>
+				<p>View/Add/Edit/Delete Session</p>
+
+			</div>
+			<div class="col-lg-2">
+				<img class="img-circle" src="image/program.jpg"
+					alt="Generic placeholder image" width="160" height="160">
+				<h2>Manage Program</h2>
+				<p>View/Add/Edit/Delete Program</p>
+
+			</div>
+			<div class="col-lg-2">
+				<img class="img-circle" src="image/schedule.png"
+					alt="Generic placeholder image" width="160" height="160">
+				<h2>Manage Workshops Schedule</h2>
+				<p>View/Add/Edit/Delete Course Schedule</p>
+
+			</div>
+
+			<div class="col-lg-2">
+				<img class="img-circle" src="image/user.jpg"
+					alt="Generic placeholder image" width="160" height="160">
+				<h2>Manage User</h2>
+				<p>View/Add/Edit/Delete Admin, Client and Coach User</p>
+
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-lg-2">
+				<p>
+					<a class="btn btn-default" href="workshopAdmin.jsp" role="button">Manage WorkShops &raquo;</a>
+				</p>
+			</div>
+					<div class="col-lg-2">
+					<p>
+						<a class="btn btn-default" href="coachingAdmin.jsp" role="button">Manage
+							Coaching session&raquo;</a>
+					</p>
+				</div>
+>
+
+
+
+
+			<div class="col-lg-2">
+				<p>
+					<a class="btn btn-default" href="adminCourseSchedule.html"
+						role="button">Manage WorkShop Schedule &raquo;</a>
+				</p>
+			</div>
+			<div class="col-lg-2">
+				<p>
+					<a class="btn btn-default" href="programAdmin.jsp" role="button">Manage
+						Program &raquo;</a>
+				</p>
+			</div>
+			<div class="col-lg-2">
+				<p>
+					<a class="btn btn-default" href="manageUser.jsp" role="button">Manage
+						User &raquo;</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container marketing">
+		<div class="row">
+			<div class="col-lg-2">
+				<img class="img-circle" src="image/setting.png"
+					alt="Generic placeholder image" width="160" height="160">
+				<h2>Manage Status</h2>
+				<p>View/Add/Edit/Delete Status</p>
+
+			</div>
+			<div class="col-lg-2">
+				<img class="img-circle" src="image/category.png"
+					alt="Generic placeholder image" width="160" height="160">
+				<h2>Manage Category</h2>
+				<p>View/Add/Edit/Delete Category</p>
+
+			</div>
+			<div class="col-lg-2">
+				<img class="img-circle" src="image/homepage.png"
+					alt="Generic placeholder image" width="160" height="160">
+				<h2>Manage Index Home Page</h2>
+				<p>Insert Banner Picture</p>
+
+			</div>
+			<div class="col-lg-2">
+				<img class="img-circle" src="image/setting.png"
+					alt="Generic placeholder image" width="160" height="160">
+				<h2>Manage About</h2>
+				<p>Insert About </p>
+
+			</div>
+			<div class="col-lg-2">
+				<img class="img-circle" src="image/contactus.jpg"
+					alt="Generic placeholder image" width="160" height="160">
+				<h2>Manage Contact Us</h2>
+				<p>Insert Contact Us Information</p>
+
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-lg-2">
+				<p>
+					<a class="btn btn-default" href="manageItemStatus.jsp" role="button">Manage
+						Status &raquo;</a>
+				</p>
+			</div>
+			<div class="col-lg-2">
+				<p>
+					<a class="btn btn-default" href="manageCategory.jsp" role="button">Manage
+						Category&raquo;</a>
+				</p>
+			</div>
+
+
+
+
+			<div class="col-lg-2">
+				<p>
+					<a class="btn btn-default" href="manageIndex.jsp"
+						role="button">Manage Index Home Page &raquo;</a>
+				</p>
+			</div>
+			<div class="col-lg-2">
+				<p>
+					<a class="btn btn-default" href="manageAbout.jsp" role="button">Manage About &raquo;</a>
+				</p>
+			</div>
+			<div class="col-lg-2">
+				<p>
+					<a class="btn btn-default" href="manageContactUs.jsp" role="button">Manage Contact Us &raquo;</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
+
+	<script src="js/navlinks-admin.js"></script>
+	<script src="js/footer.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>

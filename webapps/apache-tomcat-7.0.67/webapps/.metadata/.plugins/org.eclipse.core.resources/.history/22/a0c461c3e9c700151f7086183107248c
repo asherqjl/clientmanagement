@@ -1,0 +1,312 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>I'MPOSSIBLE - Admin Workshop Schedule</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+<link href="http://cdn.alloyui.com/3.0.1/aui-css/css/bootstrap.min.css"
+	rel="stylesheet"></link>
+<link href="css/home.css" rel="stylesheet">
+
+<!-- tablesorter theme file-->
+<link rel="stylesheet" href="css/theme.default.css">
+
+</head>
+<body>
+<!-- start of navigation bar  -->
+	<nav id="navMenu"></nav>
+	<!-- End of navigation bar  -->
+	<div class="container">
+
+		<div class="jumbotron text-center">
+		 <div class="container-fluid">
+ <div class="panel panel-default">
+
+			<h1>
+			Course Schedule
+			</h1>
+						<ul class="breadcrumb">
+							<li><a href="adminIndex.html">Home</a></li>
+					<li class="active"><a href="courseAdmin">Manage
+							Courses</a></li>
+					<li><a href="adminCourseSchedule.html">Manage Course Schedule</a></li>
+				</ul>
+
+
+			<div id="wrapper">
+				<div id="myScheduler"></div>
+			</div>
+
+
+		</div>
+	</div>
+		</div>
+			</div>
+			<div class="container">
+		<div class="container-fluid">
+			<!-- <div class="alert alert-danger">
+				<i class="fa fa-exclamation-circle"></i> Warning: You do not have
+				permission to modify courses!
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+			</div> -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						 Course Schedule List
+					</h3>
+				</div>
+				<div class="panel-body">
+
+					<div id="wrapper">
+						<div id="myScheduler"></div>
+					</div>
+
+					<div class="row">
+						<div class="pull-right">
+
+							<!--  Icons for delete, edit and copy -->
+							<p class="icons">
+								<a href="addCourseSchedule.html"><button type="button"
+										class="btn btn-default btn-sm">
+										<span class="glyphicon glyphicon-plus"></span> Add
+									</button></a>
+								<button type="button" class="btn btn-default btn-sm"
+									onclick="confirm('Delete/Uninstall cannot be undone! Are you sure you want to do this?') ? $('#form-product').submit() : 
+false;">
+									<span class="glyphicon glyphicon-trash"></span> Delete
+								</button>
+								<a href="editCourseSchedule.html"><button type="button"
+										class="btn btn-default btn-sm">
+										<span class="glyphicon glyphicon-edit"></span> Edit
+									</button></a>
+								<button type="button" class="btn btn-default btn-sm">
+									<span class="glyphicon glyphicon-copy"></span> Copy
+								</button>
+							</p>
+						</div>
+					</div>
+
+					<form action="#" method="post" enctype="multipart/form-data" id="form-product">
+						<div class="table-responsive">
+							<table id="myTable" class="table table-bordered table-hover tablesorter" >
+								<thead>
+									<tr>
+										<td style="width: 1px;" class="text-center" data-sorter="false"><input
+											type="checkbox"
+											onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
+
+										<td class="text-left" ><a href="#" class="asc">Course
+												Title</a></td>
+
+										<td class="text-left"><a href="#">Start date</a></td>
+										<td class="text-left"><a href="#">End date</a></td>
+										<td class="text-left"><a href="#">Start Time</a></td>
+										<td class="text-left"><a href="#">End Time</a></td>
+
+										<td class="text-left"><a href="#">Trainer</a></td>
+										<td class="text-left"><a href="#">Venue</a></td>
+
+										<td class="text-left"><a href="#">Status</a></td>
+									</tr>
+								</thead>
+								<tbody>
+
+									<tr>
+										<td class="text-center"><input type="checkbox"
+											name="selected[]" value="47" /></td>
+
+										<td class="text-left"><a href="listOfCourseStudent.html"
+											class="asc">Therapy for woman</a></td>
+
+										<td class="text-left">23/10/2015</td>
+										<td class="text-left">23/10/2015</td>
+										<td class="text-left">09:00</td>
+										<td class="text-left">17:00</td>
+
+										<td class="text-left">Alice Tan</td>
+										<td class="text-left">Seminar Room</td>
+										<td class="text-left">Active</td>
+
+									</tr>
+									<tr>
+										<td class="text-center"><input type="checkbox"
+											name="selected[]" value="28" /></td>
+
+										<td class="text-left"><a href="listOfCourseStudent.html"
+											class="asc">Adjustment/Transition Change Therapy for
+												Women</a></td>
+
+										<td class="text-left">23/10/2015</td>
+										<td class="text-left">23/10/2015</td>
+										<td class="text-left">09:00</td>
+										<td class="text-left">17:00</td>
+										<td class="text-left">Ben Quek</td>
+										<td class="text-left">Class W65D</td>
+										<td class="text-left">Active</td>
+
+
+									</tr>
+									<tr>
+										<td class="text-center"><input type="checkbox"
+											name="selected[]" value="41" /></td>
+
+										<td class="text-left"><a href="listOfCourseStudent.html"
+											class="asc">Mid-Life Transition Therapy for Women</a></td>
+
+										<td class="text-left">23/10/2015</td>
+										<td class="text-left">23/10/2015</td>
+										<td class="text-left">09:00</td>
+										<td class="text-left">17:00</td>
+										<td class="text-left">Charles Koh</td>
+										<td class="text-left">Class W65F</td>
+										<td class="text-left">Active</td>
+
+
+									</tr>
+									<tr>
+										<td class="text-center"><input type="checkbox"
+											name="selected[]" value="40" /></td>
+
+										<td class="text-left"><a href="listOfCourseStudent.html"
+											class="asc">Grief Therapy for Women</a></td>
+
+										<td class="text-left">23/10/2015</td>
+										<td class="text-left">23/10/2015</td>
+										<td class="text-left">09:00</td>
+										<td class="text-left">17:00</td>
+										<td class="text-left">Dick Tan</td>
+										<td class="text-left">Class W65Q</td>
+										<td class="text-left">Inactive</td>
+
+									</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+					</form>
+			
+		
+			<div class="row">
+							<div class="col-sm-6 text-left">
+
+								<ul class="pagination">
+									<li class="disabled"><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+
+							</div>
+							<div class="col-sm-6 text-right">Showing 1 to 20 of 38 (2
+								Pages)</div>
+						</div>
+	</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- footer -->
+	<footer id="footerMenu"></footer>
+	<!-- end of footer -->
+	
+	
+	<!-- Start of <Fixed footer> -->
+	<footer id="footerMenu"></footer>
+	<!-- End of <Fixed footer> -->
+
+	<script src="js/navlinks-admin.js"></script>
+	<script src="js/footer.js"></script>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+		YUI().use('aui-scheduler', function(Y) {
+			var events = [ {
+				content : 'Partial Lunar Eclipse',
+				endDate : new Date(2013, 3, 25, 5),
+				startDate : new Date(2013, 3, 25, 1)
+			}, {
+				color : "#8d8",
+				content : 'Earth Day Lunch',
+				disabled : true,
+				endDate : new Date(2013, 3, 22, 13),
+				meeting : true,
+				reminder : true,
+				startDate : new Date(2013, 3, 22, 12)
+			}, {
+				content : "Weeklong",
+				endDate : new Date(2013, 3, 27),
+				startDate : new Date(2013, 3, 21)
+			} ];
+
+			var agendaView = new Y.SchedulerAgendaView();
+			var dayView = new Y.SchedulerDayView();
+			var weekView = new Y.SchedulerWeekView();
+			var monthView = new Y.SchedulerMonthView();
+
+			var eventRecorder = new Y.SchedulerEventRecorder();
+
+			new Y.Scheduler({
+				activeView : weekView,
+				boundingBox : '#myScheduler',
+				date : new Date(2013, 3, 25),
+				eventRecorder : eventRecorder,
+				items : events,
+				render : true,
+				views : [ dayView, weekView, monthView, agendaView ]
+			});
+		});
+	</script>
+
+	<!-- load jQuery and tablesorter scripts -->
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+
+<!-- tablesorter widgets (optional) -->
+<script type="text/javascript" src="js/jquery.tablesorter.widgets.js"></script>
+	<script> 
+	
+<!-- 	Start by telling tablesorter to sort your table when the document is loaded: -->
+	$(function(){
+  $("#myTable").tablesorter();
+});
+
+<!-- pass in configuration options when you initialize the table. This tells tablesorter to sort on the first and second column in ascending order.  -->
+$(function(){
+  $("#myTable").tablesorter({ sortList: [ [1,0], [2,0],] });
+});
+
+
+	</script>
+	
+	
+</body>
+</html>

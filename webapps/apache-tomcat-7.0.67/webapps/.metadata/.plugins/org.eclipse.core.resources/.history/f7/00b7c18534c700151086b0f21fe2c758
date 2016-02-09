@@ -1,0 +1,129 @@
+<%@ page import="java.sql.*"%>
+<%@ page import="javax.sql.*"%>
+
+<%
+	//parent
+	String salutation = request.getParameter("salutation");
+	String sname = request.getParameter("sname");
+	String gname = request.getParameter("gname");
+	String gender = request.getParameter("gender");
+	String country = request.getParameter("country");
+	String contact_number = request.getParameter("contact_number");
+	String address = request.getParameter("address");
+	String postal_code = request.getParameter("postal_code");
+	String email = request.getParameter("email");
+	String password = request.getParameter("password");
+
+	//child
+	String dob = request.getParameter("dob");
+	String relationship = request.getParameter("relationship");
+	String salutation1 = request.getParameter("salutation1");
+	String sname1 = request.getParameter("sname1");
+	String gname1 = request.getParameter("gname1");
+	String gender1 = request.getParameter("gender1");
+	String country1 = request.getParameter("country1");
+	String contact_number1 = request.getParameter("contact_number1");
+	String address1 = request.getParameter("address1");
+	String postal_code1 = request.getParameter("postal_code1");
+	String email1 = request.getParameter("email1");
+	String password1 = request.getParameter("password1");
+	/* out.println(country);
+	
+	out.println(address);
+	
+	out.println(sname); */
+
+	Class.forName("com.mysql.jdbc.Driver");
+	java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "");
+	Statement st = con.createStatement();
+	final Statement ut = con.createStatement();
+	st.executeUpdate("INSERT INTO `parent`() VALUES ()", Statement.RETURN_GENERATED_KEYS);
+	int i=st.executeUpdate("INSERT INTO `parent`() VALUES ()"); 
+	out.println(i);
+	
+	if(i>0){
+		int id =st.executeUpdate("SELECT LAST_INSERT_ID()");
+		out.println(id);
+		 response.sendRedirect("welcome.jsp");
+	} else {
+	    response.sendRedirect("index.html");
+	}
+	ResultSet rs = st.getGeneratedKeys();
+
+	int autoIncValue = 0;
+
+
+	while (rs.next()) {
+		/* { */
+		autoIncValue = rs.getInt(1);
+
+		/*You can get more generated keys if they are generated in your code*/
+		out.println(autoIncValue);
+		ut.executeUpdate("INSERT INTO `mydb`.`user` (`user_id`, `coach_id`, `client_id`, `parent_id`, `email`, `password`, `surname`, `given_name`, `mobile`, `role`, `create_update_datetime`, `salutation`, `address`, `country`, `userStatus_id`) VALUES ('1', NULL, NULL, '4', 'mk@gmail.com', 'lv', 'hua', 'yang yang', '99887766', 'parent', '2016-01-22 00:00:00', 'Ms', 'admiralty', '65', '1');");
+
+	}
+	response.sendRedirect("index.html");
+
+	/*   	ct.executeUpdate("INSERT INTO `client`(`client_dob`,`relationship_to_child`) VALUES ('"+autoIncValue+"','"+dob+"','"+relationship+"')", Statement.RETURN_GENERATED_KEYS);
+	ResultSet cs = ct.getGeneratedKeys(); */
+	/* 
+	
+	  cs.next();
+	  	{
+	  		autoChildIncValue = cs.getInt(1);
+	  	 	cut.executeUpdate("INSERT INTO user(`parent_id`,`client_id`,`parent_id, `email`,`password`,`surname`,`given_name`,`mobile`,`role`,`salutation`,`address`,`country`,`userStatus_id`,`gender`,`postal_code`) VALUES ('"+autoIncValue+"'+'"+ autoChildIncValue+"', '"+email1+"', '"+password1+"', '"+ sname1 +"', '"+ gname1 +"', '"+ contact_number1 +"', 'client', '"+ salutation1 +"', '"+ address1 +"', '"+ country1+"', '12', '"+gender1+"', '"+postal_code1+"');");
+	  	}
+	  	response.sendRedirect("welcome.jsp"); */
+	/* }
+	}
+	else {
+	    response.sendRedirect("index.html");
+	}
+	 */
+
+	/*int i=st.executeUpdate("INSERT INTO `parent`() VALUES ()"); 
+	out.println(i);
+	
+	if(i>0){
+		int id =st.executeUpdate("SELECT LAST_INSERT_ID()");
+		out.println(id);
+		 response.sendRedirect("welcome.jsp");
+	} else {
+	    response.sendRedirect("index.html");
+	}*/
+%>
+
+<%-- <%
+	Connection conn = null;
+	try {
+
+		String dbURL = "jdbc:mysql://localhost:3306/mydb";
+		String user = "root";
+		String pwd = "";
+		String driver = "com.mysql.jdbc.Driver";
+
+		String query = "INSERT INTO user (`email`,`password`,`surname`,`given_name`,`mobile`,`role`,`salutation`,`address`,`country`,`userStatus_id`,`gender`,`postal_code`) VALUES ('aaa', 'bbb','ccc', 'ddd', '123456789', 'parent', 'MR', 'BLK', 'SG', '1', 'MALE', '123456');";
+		Class.forName(driver);
+		conn = DriverManager.getConnection(dbURL, user, pwd);
+		Statement statement = conn.createStatement();
+		statement.executeUpdate(query);
+		statement.close();
+
+		out.println("Data is successfully inserted!");
+
+	} catch (ClassNotFoundException e) {
+		System.err.println("Database Driver class not Found!");
+		e.printStackTrace();
+	} catch (SQLException e) {
+		e.printStackTrace();
+	} finally {
+		try {
+			if (conn != null) {
+				conn.close();
+			}
+		} catch (SQLException e) {
+			System.err.println("Problems when closing connection");
+			e.printStackTrace();
+		}
+	}
+%> --%>
